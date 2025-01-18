@@ -1,6 +1,7 @@
 import streamlit as st
 import requests
 from datetime import datetime
+from io import StringIO
 
 # Streamlit secrets for API key
 API_KEY = st.secrets["FIREFLIES_API_KEY"]
@@ -72,19 +73,30 @@ def fetch_transcript_details(transcript_id):
         return {}
 
 
+def generate_individual_transcript_file(transcript):
+    details = fetch_transcript_details(transcript["id"])
+    if not details:
+        return None
+
+    title = details["title"]
+    date = datetime.fromtimestamp(details["date"] / 1000).strftime("%Y-%m-%d")
+    file_content = f"Meeting Name: {title}\nMeeting Date: {date}\n\n"
+
+    speaker_mapping = {speaker["id"]: speaker["name"] for speaker in details["speakers"]}
+    for sentence in details["sentences"]:
+        speaker_name = speaker_mapping.get(sentence["speaker_id"], "Unknown Speaker")
+        file_content += f"{speaker_name}: {sentence['raw_text']}\n"
+
+    file_content += "\nEND MEETING\n"
+    return file_content
+
+
 def consolidate_transcripts(transcripts):
     consolidated_text = ""
     for transcript in transcripts:
-        details = fetch_transcript_details(transcript["id"])
-        if details:
-            title = details["title"]
-            date = datetime.fromtimestamp(details["date"] / 1000).strftime("%Y-%m-%d")
-            consolidated_text += f"Meeting Name: {title}\nMeeting Date: {date}\n\n"
-            for sentence in details["sentences"]:
-                speaker_name = sentence.get("speaker_id", "Unknown Speaker")
-                raw_text = sentence.get("raw_text", "")
-                consolidated_text += f"{speaker_name}: {raw_text}\n"
-            consolidated_text += "\nEND MEETING\n\n"
+        file_content = generate_individual_transcript_file(transcript)
+        if file_content:
+            consolidated_text += file_content + "\n\n"
     return consolidated_text
 
 
@@ -111,15 +123,29 @@ if st.button("Fetch Transcripts"):
                 date = datetime.fromtimestamp(transcript["date"] / 1000).strftime("%Y-%m-%d")
                 st.write(f"{idx}. {transcript['title']} - {date}")
 
-            if st.button("Generate Consolidated File"):
-                with st.spinner("Generating consolidated file..."):
-                    consolidated_text = consolidate_transcripts(transcripts)
+                # Generate individual transcript file
+                individual_file_content = generate_individual_transcript_file(transcript)
+                if individual_file_content:
+                    file_name = f"{transcript['title'].replace(' ', '_')}_{date}.txt"
+                    st.download_button(
+                        label=f"Download {transcript['title']}",
+                        data=individual_file_content.encode("utf-8"),  # Ensure UTF-8 encoding
+                        file_name=file_name,
+                        mime="text/plain"
+                    )
 
+            # Generate consolidated transcript file
+            with st.spinner("Generating consolidated file..."):
+                consolidated_text = consolidate_transcripts(transcripts)
+
+            if consolidated_text:
                 st.download_button(
                     label="Download Consolidated File",
-                    data=consolidated_text,
+                    data=consolidated_text.encode("utf-8"),  # Ensure UTF-8 encoding
                     file_name="Consolidated_Transcripts.txt",
                     mime="text/plain"
                 )
+            else:
+                st.warning("No consolidated file content generated.")
         else:
             st.warning("No transcripts found for the given filters.")
