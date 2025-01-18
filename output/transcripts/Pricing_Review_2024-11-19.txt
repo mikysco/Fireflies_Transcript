@@ -1,0 +1,572 @@
+Meeting Name: Pricing Review
+Meeting Date: 2024-11-19
+
+Barney, Darryl: Hey, can you hear me?
+Mik (Collate): Hey, Daryl.
+Mik (Collate): Yeah, loud and clear.
+Mik (Collate): How's it going?
+Mik (Collate): Doing.
+Barney, Darryl: It's been a little crazy.
+Barney, Darryl: I had to take my.
+Barney, Darryl: My dog is getting very old.
+Barney, Darryl: I had to run to that and.
+Barney, Darryl: Wife had me do a trip on the way back, but Google got me lost.
+Barney, Darryl: But I'm in the car.
+Barney, Darryl: I can focus on you now without any stresses.
+Barney, Darryl: I slowly take my drive back home.
+Mik (Collate): So.
+Mik (Collate): Yeah, unfortunately, I went through this similar thing earlier this year, so if you need.
+Mik (Collate): If we have to reschedule, I totally understand, Daryl.
+Barney, Darryl: No, no, no, no, no.
+Barney, Darryl: She's got months ahead.
+Barney, Darryl: Months ahead.
+Barney, Darryl: But it's.
+Barney, Darryl: It's.
+Barney, Darryl: But we can see.
+Barney, Darryl: We can see.
+Barney, Darryl: I'm starting to form, but I know we're good there.
+Barney, Darryl: They're gonna get back on the blood work and see how things.
+Mik (Collate): L.
+Mik (Collate): Okay.
+Barney, Darryl: So anyways.
+Barney, Darryl: Yep.
+Barney, Darryl: Fun, fun.
+Mik (Collate): You're.
+Mik (Collate): You're not able to see a screen, are you?
+Barney, Darryl: I'm at a stoplight, so.
+Barney, Darryl: And I'll be home in 15, so no problem.
+Mik (Collate): Would it be better if we waited?
+Barney, Darryl: We can start piecing the narrative.
+Barney, Darryl: We can start, oh, hang on there.
+Barney, Darryl: And then, you know, I'm either going to be home or we'll just, you know, pause for five.
+Barney, Darryl: It says I'll be home in actually 13 minutes.
+Barney, Darryl: So.
+Barney, Darryl: Yeah.
+Barney, Darryl: Okay.
+Barney, Darryl: So you needed some information.
+Mik (Collate): Yeah, yeah.
+Mik (Collate): So I.
+Mik (Collate): I have a proposal drafted together.
+Mik (Collate): I can refine it more with more information from you.
+Barney, Darryl: Yeah.
+Mik (Collate): And I think, you know, we're.
+Mik (Collate): We're kind of, you know, this is always how it goes.
+Mik (Collate): You kind of feel around in the dark until you find something more tangible that you can grasp onto and create a plan around.
+Mik (Collate): We have a set of defaults that I can share, and that's, you know, usually where it's a.
+Mik (Collate): It's usually serves as a decent starting point for how these rollouts go.
+Mik (Collate): But, yeah, you know, today I wanted to kind of talk through the next few steps where we share proposal and then talk about the PoC process and then, like, what a potential enterprise rollout might look like.
+Mik (Collate): So that's.
+Mik (Collate): That's kind of what I had to talk about today.
+Mik (Collate): But I'm.
+Mik (Collate): I can.
+Mik (Collate): I can shape the conversation differently.
+Mik (Collate): If you had any specific things that you wanted to go through initially, we can do that.
+Mik (Collate): No, if you have.
+Barney, Darryl: Not at all.
+Mik (Collate): Okay.
+Barney, Darryl: You just tell me what information you need.
+Barney, Darryl: I can start providing you some ballparks and we can go from there.
+Mik (Collate): Okay.
+Mik (Collate): So, you know, there is.
+Mik (Collate): There's a large addressable landscape of stuff that we can do with Orlando, right?
+Mik (Collate): Like you and I both know that.
+Mik (Collate): I think that one thing that can lead, that can make projects like these go difficult is when we don't have a focus when we, when we're trying to do boil the ocean approach, that's that difficult.
+Mik (Collate): So I think like usually we like to have a more limited rollout for a year one or at least a phase one and then expand as we go through sort of green light boxes and pull more and more teams in and have colate become more and more available to different parts of the organization.
+Mik (Collate): So that's why we have our user pricing based the way that we do and have our data assets chunked out the way that we do as well.
+Mik (Collate): So we have an enterprise package which is I think pretty well suited to Orlando and it gets you pretty far.
+Mik (Collate): But eventually we'll probably have to start expanding to other teams, other parts of the organization and you know, just that will change the unit economics of you know, just how we price things.
+Mik (Collate): So anyway, all that say we can talk about the POC process that's probably not super relevant for right now because we want to talk about pricing.
+Mik (Collate): With the enterprise plan, you know, we default everyone into 250 users and then 50k data assets.
+Mik (Collate): Data asset is generally a table but it also contains several different other definitions.
+Mik (Collate): And I'll send you, once you get home I can send you the full definition so you can see like when it's not.
+Barney, Darryl: The good news is we've been through generally what an asset is.
+Barney, Darryl: I remember it's like tables, views, stored procedures, functions.
+Barney, Darryl: Each one is an asset.
+Barney, Darryl: So.
+Barney, Darryl: So I'm not too concerned about that piece fortunately.
+Mik (Collate): Okay, good.
+Mik (Collate): So we're in.
+Mik (Collate): Where do you, I mean have you gotten to the point where there's an initial scope of like what the tier one assets are that you want to ingest into collate or.
+Barney, Darryl: So your guys definition of Tier 1 doesn't really fit ours.
+Barney, Darryl: And I say that very broadly because here's why.
+Barney, Darryl: Every service line has their tier ones.
+Barney, Darryl: Enterprise data has its tier one.
+Barney, Darryl: Every department is going to have a different perspective.
+Barney, Darryl: Not everybody uses Epic for example.
+Barney, Darryl: They want their finance stuff.
+Barney, Darryl: Our ambulatory team was there.
+Barney, Darryl: Here's how I would suggest we have about 25 different data sources.
+Barney, Darryl: Most of those are SQL and Oracle on prem, but a few SFTP source and very limited API source and one MySQL literally that's generally it.
+Barney, Darryl: But we consume of the 25 data sources somewhere around 1000 tables and I can get a more precise number.
+Barney, Darryl: We aren't consuming Functions, sort procedures, things like that.
+Barney, Darryl: Because whenever possible we're grabbing the raw table in that you can multiply that three times.
+Barney, Darryl: There's a dev, there's a stage, there's a producer, everything is CI, cd, automated.
+Barney, Darryl: So I know once I give you the exact number, it's just times three.
+Barney, Darryl: And that is how many artifacts we are bringing in from all our source systems through the process and consumed.
+Barney, Darryl: At an end user point I only have around 40 to 80 depending on how you want to negotiate, you know, discuss people who are going to get in.
+Barney, Darryl: So the 250 is more than enough.
+Barney, Darryl: Right now we're well below, we're around 100, but I know we need the enterprise for like a possible data plane and other reasons.
+Barney, Darryl: Anyways, so right now I can see about 3,000 artifacts to around 100 people.
+Barney, Darryl: So that's a starting point to the conversation.
+Barney, Darryl: Is that fair across 25 different data sources, times, you know, obviously each environment.
+Mik (Collate): Totally.
+Mik (Collate): Yeah, that's pretty, pretty reasonable.
+Barney, Darryl: Yeah.
+Barney, Darryl: So we, we, I shared the phased approach that we proposed to Ray and I gave that to Shaheedle.
+Barney, Darryl: We probably have to go over that.
+Barney, Darryl: He'll want to refine or what have you if we are to move forward.
+Barney, Darryl: And I meet with him hopefully tomorrow, assuming my meeting doesn't get canceled and collate was going to be a big part of the conversation.
+Barney, Darryl: But I don't see, you know, yeah, we're going to want a slow phased approach, you know, data lineage, getting the data lineage in there, starting to put glossaries in dictionary terms.
+Barney, Darryl: We have a data governance team who would help build all that out, build the roles, the profiles, the users in the roles.
+Barney, Darryl: You know, there are back and Persona perspectives and I imagine that's your phase one, like that's tons, that might even be two phases of work.
+Barney, Darryl: So that's kind of where my mind is.
+Barney, Darryl: I think we also are planning a slow rollout.
+Barney, Darryl: We don't know what we don't know.
+Barney, Darryl: We only have about 40 to 50 consumers outside of our own enterprise data team.
+Barney, Darryl: But we also consider our pro platform kind of in a poc.
+Barney, Darryl: Like it's an early release or it's not general availability.
+Barney, Darryl: It's not generally communicated to the larger audience.
+Barney, Darryl: So we know when you've got 30,000 employees there's definitely going to be more than 50 to 100 users rapidly.
+Mik (Collate): Yeah, totally.
+Barney, Darryl: So I think we're in agreement, I think we're in alignment with our general starting point.
+Mik (Collate): Yeah, I would agree.
+Mik (Collate): And then yeah, the phased approach I think is exactly what we recommend.
+Mik (Collate): In this situation, the only other thing we would recommend adding would be collate AI.
+Mik (Collate): And that's basically to accelerate the, the onboarding process to ensure that all of the data that you're ingesting is labeled correctly and you have a lot more power to actually take advantage of that data.
+Mik (Collate): We talked a bit about this, but it's probably more conversation worth having around the AI piece and that could add value and that'll obviously increase the price somewhat.
+Mik (Collate): We tend to find that it's a pretty good exchange of dollars from value, especially when it comes to eliminating rote, repetitive tasks.
+Mik (Collate): So, yeah, worth considering.
+Mik (Collate): And we can talk about adding that.
+Mik (Collate): We'll bring it up and have more of a proper demonstration of the AI features.
+Mik (Collate): Yeah.
+Barney, Darryl: And I tend to think that we're going to give Shaheed a ballpark starting point.
+Barney, Darryl: Tell him what the.
+Barney, Darryl: I'll probably sit down and go here, look.
+Barney, Darryl: And then there's this AI add on and it does X, Y and Z.
+Barney, Darryl: That'll make our super small data governance seem a lot more effective faster.
+Barney, Darryl: That's what this costs.
+Barney, Darryl: Your total would be this if you want everything, you know, and I'd probably approach the conversation much like that.
+Mik (Collate): Yeah.
+Barney, Darryl: And then, hey, and if you're not sure, they're more than happy to give you a 15 minute demo.
+Barney, Darryl: His time is, as you could tell, very tight, so obviously we can't go too long, but he'll want to, he loves his 5 and 10 minute video.
+Barney, Darryl: You know, he'll probably want a very quick video of the AI capability if he, if he's curious.
+Mik (Collate): Okay, yeah, I'm going to.
+Mik (Collate): I'm actually working with Joe to record a quick 5 minute overall demo and then we'll do a separate one that's more AI focused.
+Barney, Darryl: Love it, love it, love it.
+Mik (Collate): Okay, cool.
+Mik (Collate): Awesome.
+Mik (Collate): All right, that's easy.
+Mik (Collate): I mean, I think that we're generally on the same page here then, and there might be a couple of tweaks to a final quote, but what you have was a good starting point, especially when it comes to the, the phased onboarding approach.
+Barney, Darryl: Yeah, we are.
+Barney, Darryl: Our system is metadriven extract, is metadata driven extracted.
+Barney, Darryl: So we know the exact tables and objects that we're bringing into our platform and that are being consumed downstream from beginning to end.
+Barney, Darryl: So the good news is there's a finite amount of tables.
+Barney, Darryl: We very precisely know what it is.
+Barney, Darryl: So that'll make scoping it during implementation or determining what to apply it to very easy.
+Barney, Darryl: We export it, we say sort by source and there's your List of things that we need collate to consume throughout the whole environment.
+Mik (Collate): Okay, are there other data sources that were.
+Mik (Collate): That are not in scope for collate at the moment?
+Barney, Darryl: I think the whole platform would be in scope.
+Barney, Darryl: The thing that is, we're rapidly deploying new data sources.
+Barney, Darryl: Like, I have somewhere between 15 and 25 new data sources being ingest planned.
+Barney, Darryl: But a lot of them, their table counts are dozens of tables, not thousands.
+Barney, Darryl: So even if I did 25 times 10, that's 250 tables times three environments.
+Barney, Darryl: I'm still talking a thousand objects, not tens of thousands, where I fear that we would hit a wall.
+Barney, Darryl: The only other thing that I'm not considering that I think you guys consider an object are things like notebooks, pipelines, and Power BI's dashboard.
+Barney, Darryl: Is that correct?
+Barney, Darryl: Those are.
+Barney, Darryl: That's the area that I start to get concerned about.
+Barney, Darryl: Like how do we scope the dashboards properly?
+Barney, Darryl: Because we have thousands of Power bi's thousands.
+Barney, Darryl: Our community is using them rapidly.
+Barney, Darryl: But the fact of it is, I could probably manually pick 100 subscriptions with 5 in them and say that's our starting point and then we scale out from there.
+Barney, Darryl: Is that a typical approach?
+Barney, Darryl: Go hit the ones that we know for a fact are needed because they consume from our platform and just focus on those.
+Mik (Collate): I mean, if there is a way to easily tell that, hey, these are all duplicative dashboards that are referencing the same data in very slightly different ways and probably eliminate those.
+Mik (Collate): I think in general, people don't worry too much about de scoping the number of dashboards they have, but it's a worthwhile concern.
+Barney, Darryl: Well, I mean, I'll be very candid.
+Barney, Darryl: My gut feeling is we have less than 100 dashboards or power BI that we're truly concerned about.
+Barney, Darryl: And it may be less than that.
+Barney, Darryl: It would just be great because you guys would be giving us visibility to people and how they consume our data through the lineage.
+Barney, Darryl: So it sounds to me like we should still have a lot of room for padding though.
+Mik (Collate): Yeah.
+Mik (Collate): And then, I mean, even with dashboards, like, if you ever wanted to go through a cleanup process, if you ingested the metadata of those dashboards into cola, you could also figure out like which of these are being used and which aren't being used.
+Barney, Darryl: Pretty removed.
+Barney, Darryl: Yeah.
+Barney, Darryl: So when you bill us for an entity, are you.
+Barney, Darryl: Is it literally, is it like quarterly?
+Barney, Darryl: Is it monthly?
+Barney, Darryl: Is it, you know, if I, if I was to pull everything in power BI but then filter out 80%, did I get billed for the entity count?
+Barney, Darryl: Of everything in power.
+Barney, Darryl: Bi.
+Barney, Darryl: Does that make sense?
+Mik (Collate): Yeah, I mean you're able to scope what information is ingested into collate at the like while you're setting up that ingestion process.
+Mik (Collate): So we would work with you to make sure that like the right data is being ingested and not the wrong data.
+Mik (Collate): But we're only.
+Mik (Collate): We're basically billing you for data assets that exist within collate.
+Mik (Collate): So that's.
+Mik (Collate): I think that's calling it.
+Barney, Darryl: Okay.
+Barney, Darryl: No, I'm following you entirely.
+Barney, Darryl: Okay, well then.
+Barney, Darryl: And then the data plane deployment is part of enterprise.
+Barney, Darryl: Is that still the case?
+Mik (Collate): That's correct.
+Mik (Collate): Yeah.
+Barney, Darryl: Okay.
+Barney, Darryl: I think that'll just be so easy to get our security through that concept once I get.
+Barney, Darryl: Pulling Doug out of the cart.
+Barney, Darryl: Oh, there we go.
+Barney, Darryl: Okay.
+Mik (Collate): Poor girl.
+Barney, Darryl: She's getting up there.
+Barney, Darryl: 14 year old golden mix.
+Barney, Darryl: So she's slowing down.
+Mik (Collate): So.
+Barney, Darryl: Okay then what other information do you need from me?
+Mik (Collate): No, I think that we're.
+Mik (Collate): We're in a fine starting point.
+Mik (Collate): This is.
+Mik (Collate): Yeah, I have all that I need in.
+Barney, Darryl: Okay.
+Mik (Collate): Yeah, I think that what I'll just do is update that proposal that I shared earlier and incorporate the AI pieces and then we'll send over a consolidated product demo for Shaheedle and then do a separate one for AI.
+Barney, Darryl: Okay.
+Barney, Darryl: Yeah.
+Barney, Darryl: And then I'm actually at my desk.
+Barney, Darryl: In about five seconds, so let me switch to the screen.
+Barney, Darryl: Thank you for being flexible with me.
+Barney, Darryl: It's been a.
+Barney, Darryl: It's been a day.
+Barney, Darryl: Okay.
+Barney, Darryl: Transfer.
+Barney, Darryl: There we go.
+Barney, Darryl: Okay.
+Barney, Darryl: Sorry about that.
+Barney, Darryl: Okay, now you said you sent me some starting point.
+Mik (Collate): Yeah, let me.
+Mik (Collate): We've had enough threads that it's going to take me a minute to dig through and find it.
+Barney, Darryl: No, no problem.
+Mik (Collate): No.
+Mik (Collate): Okay, so let me.
+Mik (Collate): I still have to find it, but I'll send over, you know, actual updated pricing to you.
+Barney, Darryl: Sounds good.
+Mik (Collate): It's fairly similar to what we've already talked about in the past.
+Barney, Darryl: I figured is that with it fairly similar with the AI or it's just a little higher because of.
+Barney, Darryl: Obviously it's been, you know, almost a year and AI adds to that even further?
+Mik (Collate): Both.
+Mik (Collate): Yes.
+Barney, Darryl: Okay.
+Mik (Collate): Yes, we've updated the enterprise pricing somewhat.
+Mik (Collate): We've also.
+Mik (Collate): The AI is going to also add a cost component to it.
+Mik (Collate): And then I also kind of put in.
+Mik (Collate): This is more future focused.
+Mik (Collate): But I'll show you line of sight with increased users and increased data assets, you understand how price scales over time if we do end up adding more sources and adding more users.
+Mik (Collate): So.
+Barney, Darryl: Yeah, no, that makes sense.
+Barney, Darryl: And I mean, I'M looking at enterprise.
+Barney, Darryl: Well, I love how enterprise is unlimited on the website, but I know it starts at.
+Barney, Darryl: You're saying you're just going to start with 250, which is more than enough to start.
+Barney, Darryl: And then I'm.
+Barney, Darryl: I'm guessing the faster it grows, the cheaper per user per asset really is.
+Mik (Collate): Yeah, exactly.
+Mik (Collate): Yeah.
+Mik (Collate): Okay, we, we say unlimited because there was a.
+Mik (Collate): Some confusion around with some people who were like, oh, you can only support 250 users.
+Mik (Collate): It's like, no, no, that's our minimum.
+Barney, Darryl: Yeah, yeah, it might be best just to say minimum.
+Barney, Darryl: 250, you know, but I hear.
+Barney, Darryl: Yeah, okay, very good.
+Barney, Darryl: And you said it was 10,000 data assets initially.
+Barney, Darryl: 5,000.
+Mik (Collate): So with, with enterprise we actually scale up to 50 initially.
+Barney, Darryl: Okay, 50,000.
+Barney, Darryl: Yeah.
+Mik (Collate): You'll have funny ad room.
+Barney, Darryl: Oh yeah, I'm gonna have a lot of room with that actually.
+Barney, Darryl: That gives us extreme flexibility.
+Barney, Darryl: So that's, that's very good.
+Barney, Darryl: Okay, great.
+Barney, Darryl: And then single set on API, SDK, AWS vpn.
+Barney, Darryl: That's interesting.
+Barney, Darryl: Especially.
+Barney, Darryl: Well, so your AWS vpn, we could technically do a VPN for the data place.
+Barney, Darryl: We put the data plan on our environment and then VPN the data to you guys.
+Barney, Darryl: Correct.
+Barney, Darryl: So from our Azure to your aws.
+Mik (Collate): Yep.
+Barney, Darryl: That's everything our security would love to hear.
+Barney, Darryl: So we're not punching a million ports across our network.
+Barney, Darryl: Exactly.
+Barney, Darryl: That's exactly what we'd want to do.
+Barney, Darryl: I've never done Azure to AWS vpn, but a VPN is a vpn.
+Mik (Collate): Please few existing customers with Azure to Amazon vpn, so it shouldn't be a problem.
+Barney, Darryl: It says it's an add on.
+Barney, Darryl: Make a call out to what that cost is on the line item.
+Barney, Darryl: I imagine it's not expensive, but I'm sure there is.
+Barney, Darryl: You guys are putting an hour of labor in it kind of fee.
+Mik (Collate): Yeah, we.
+Mik (Collate): There's like, you know, labor and then potential updates and stuff.
+Barney, Darryl: But yeah, and run costs.
+Barney, Darryl: I mean there are some run costs on this, on those vpn.
+Barney, Darryl: So I get it.
+Barney, Darryl: Okay, so I.
+Barney, Darryl: If all goes to plan, I meet with Shaheed all.
+Barney, Darryl: Let me see.
+Barney, Darryl: Oh, please still be on my calendar.
+Barney, Darryl: Well, that's interesting.
+Barney, Darryl: Hold on.
+Barney, Darryl: Now.
+Barney, Darryl: I'm not even showing.
+Barney, Darryl: I have an appointment with him.
+Barney, Darryl: Okay, give me a second.
+Barney, Darryl: I'm gonna figure out when I built the W.
+Barney, Darryl: I thought it was tomorrow.
+Barney, Darryl: I do see him tomorrow.
+Barney, Darryl: I do see him a lot on Thursday, but that's with another vendor.
+Barney, Darryl: I'll figure out when I see him next.
+Barney, Darryl: So you're aware as well.
+Barney, Darryl: Interesting.
+Barney, Darryl: My next meeting I do know I have with him is next Wednesday.
+Mik (Collate): Okay.
+Barney, Darryl: But I.
+Barney, Darryl: When did I meet with him last?
+Barney, Darryl: He wasn't here last.
+Barney, Darryl: I think we're missing one.
+Barney, Darryl: His schedule moves around on me a lot, too, though, so it may be that they just moved me.
+Mik (Collate): Busy guy.
+Barney, Darryl: Yeah, well, yeah, definitely very busy.
+Barney, Darryl: Okay.
+Barney, Darryl: Well, hey, we'll talk more soon, but I figure you'll have that to me pretty early in the morning, and then I'll see what I can.
+Barney, Darryl: If I can get some time in front of him, so.
+Barney, Darryl: For some feedback, and we'll go from there.
+Mik (Collate): Excellent.
+Mik (Collate): Yeah.
+Mik (Collate): Last question for you.
+Mik (Collate): What's Needle's latest take on Purview and Unity catalog?
+Barney, Darryl: I don't know, to be very candid.
+Barney, Darryl: Well, he's used Purview before, and Unity Catalog doesn't do a fraction of what you're doing.
+Barney, Darryl: You know, you can put dictionaries in.
+Barney, Darryl: There, you can classify data, but it's not nearly as flexible.
+Barney, Darryl: From what little he said, I got the impression that he recognizes that you guys are a more powerful solution for both Purview and Unity catalog.
+Barney, Darryl: I don't think there's much question.
+Barney, Darryl: Everybody on my side was lighting up.
+Barney, Darryl: I mean, I wish he was in the room.
+Barney, Darryl: That would have been very telling.
+Barney, Darryl: But he mentioned there was an assessment, and he's talking to peers, and I don't have visibility to that.
+Barney, Darryl: So as soon as I can get visibility on it, I will be doing just that.
+Barney, Darryl: But I'm looking.
+Barney, Darryl: I think with some time that I will see him Thursday, I might be able to also try and catch him.
+Mik (Collate): Okay.
+Mik (Collate): Awesome.
+Barney, Darryl: Yeah, we're.
+Barney, Darryl: We're hopeful.
+Barney, Darryl: We're optimistic.
+Barney, Darryl: You know, you heard Adele.
+Barney, Darryl: He.
+Barney, Darryl: He's, like, short of me.
+Barney, Darryl: He's.
+Barney, Darryl: He's the second biggest fanboy of your product because price for capability just blows out anything we have.
+Barney, Darryl: And we.
+Barney, Darryl: We.
+Barney, Darryl: He and I have been communicating that Purview wasn't very effective.
+Barney, Darryl: So we'll see how that all plays out.
+Barney, Darryl: We're still reading the guy.
+Barney, Darryl: He's been here 60, 70, 80 days tomorrow.
+Barney, Darryl: You know, plus or minus on, depending on how many days in the month, but I think you get the point.
+Barney, Darryl: 30.
+Barney, Darryl: 31.
+Barney, Darryl: Yeah, he's at 80 days right now.
+Barney, Darryl: I don't even know if.
+Barney, Darryl: If he's put a proposal in front of our CIO yet.
+Barney, Darryl: So it's hard to just really read him at the moment, and we don't know what he's telling our partners and vendors, so we're still gathering information.
+Barney, Darryl: So that.
+Barney, Darryl: Yeah, I've given you everything I've got.
+Barney, Darryl: Sorry, man.
+Mik (Collate): This is helpful.
+Mik (Collate): Thank you.
+Barney, Darryl: Yeah.
+Barney, Darryl: For whatever it's worth.
+Mik (Collate): Great.
+Mik (Collate): Okay.
+Mik (Collate): Well, yeah, I'll, I'll have the updated proposal to you probably tonight and then.
+Mik (Collate): Yeah, looking forward to any feedback you can share when you get it.
+Barney, Darryl: Don't work, don't work late in the night for this.
+Barney, Darryl: I mean, you know, I'll be on site.
+Barney, Darryl: He will be on site tomorrow too.
+Barney, Darryl: So even if it's, you know, tomorrow at 9 or 10, that's fine too.
+Barney, Darryl: So.
+Barney, Darryl: Okay.
+Barney, Darryl: I thought I had a meeting with.
+Barney, Darryl: Him at like 9:30 or 10 and I just don't.
+Barney, Darryl: So I got to figure out when I'm going to get this in front of him or, or if it will be next week.
+Barney, Darryl: So don't, don't work into the night.
+Mik (Collate): We'll get the job done.
+Mik (Collate): It's all.
+Mik (Collate): It's still 2:00pm on my end here.
+Barney, Darryl: Okay.
+Barney, Darryl: Yeah.
+Barney, Darryl: And it's 5:00 here, so.
+Barney, Darryl: Okay.
+Barney, Darryl: That's 100% fair then.
+Barney, Darryl: Thank you very much.
+Barney, Darryl: I appreciate it and I'm optimistic.
+Barney, Darryl: I'm cautiously optimistic.
+Mik (Collate): Love that.
+Mik (Collate): Hey, I'll take it.
+Barney, Darryl: Yeah.
+Mik (Collate): Thanks again for facilitating the onsite.
+Mik (Collate): That was fun for Joe.
+Barney, Darryl: Yeah.
+Barney, Darryl: And look, if, if this hits it off, I do strongly think that he sh.
+Barney, Darryl: Might be a fan of a proof of value.
+Barney, Darryl: You know, I think that might be an interesting opportunity too.
+Barney, Darryl: We'll see how he gauges the price and, and the feedback we get.
+Barney, Darryl: But we might turn around and say, hey, if you're interested, but you're still on the fence.
+Barney, Darryl: You know, we have some options.
+Barney, Darryl: I know you and I discussed that in the past, but, you know, I, I don't want to just walk over to him and volunteer that until we get a feel for where he's at.
+Mik (Collate): Yeah, yeah.
+Mik (Collate): And you know, we were obviously happy to engage in that.
+Mik (Collate): It will, it always adds a bit more time than we expect to the.
+Barney, Darryl: I understand.
+Mik (Collate): And it ends up being just like an onboarding event anyway.
+Mik (Collate): Like we're, we do all the hardest parts of onboarding during the poc, so.
+Barney, Darryl: I get that.
+Barney, Darryl: And, and you know what's sad about it too is we're not going to have data governance input into it.
+Barney, Darryl: And by the way, our lineage is going to be a problem because we have to create a notebook to inject the lineage.
+Barney, Darryl: So to your point, how much is a POV really going to give us?
+Barney, Darryl: It'll give us a lot, but it's.
+Barney, Darryl: Not going to give us everything.
+Mik (Collate): Yeah, I think some of the, maybe the exciting parts would be, you know, if we had a limited scope of data quality, that would be an interesting experiment.
+Mik (Collate): But then, you know, those are sort of like non, non like tier one pain points as well.
+Mik (Collate): Those aren't.
+Mik (Collate): It's not like necessarily nice to have, but it's not like the make or break decision part of the process as well.
+Mik (Collate): Let's keep it in our back pocket as an option.
+Mik (Collate): The environment overall is quite basic in a good way from our perspective.
+Mik (Collate): Azure and databricks are great and we have great integrations with them.
+Mik (Collate): There won't be any problem ingesting that data and making it actionable for you guys.
+Mik (Collate): Obviously the hard part is just like taking in all the necessary context to get good lineage to be updated and just onboarding everyone and getting them trained up.
+Barney, Darryl: So that's out of curiosity.
+Barney, Darryl: You said that you could theoretically could get into the Azure Marketplace, which would be very interesting proposal for me to give.
+Barney, Darryl: Shaheedl what are we talking about?
+Barney, Darryl: Are you Talking like a 5, 6% kind of markup or did you get a rough idea?
+Barney, Darryl: I mean you haven't given me the number, but if you needed to do that, what's the rough overhead?
+Mik (Collate): I need to double check that figure.
+Barney, Darryl: Would you please?
+Barney, Darryl: Because it's the difference of us having to issue a PO and cut through and get signatures versus me just hitting the marketplace and clicking add.
+Barney, Darryl: It's significantly faster.
+Barney, Darryl: If it's a marginal amount, I can tell him that, hey, that money that you have an account, you wouldn't have to touch it because we can hide it and bury it in the Azure spend that I projected for you.
+Barney, Darryl: You know, it's an interesting narrative, but.
+Barney, Darryl: There'S a point where the return isn't there.
+Barney, Darryl: You know, if you're talking 25%, yeah, that's just too much.
+Barney, Darryl: We'll do paperwork and drag it out.
+Mik (Collate): I think they're only extending to us like a less than 10% add on for our costs.
+Mik (Collate): So we're not going to, we're not adding profit to that.
+Mik (Collate): I figured I needed to double check.
+Barney, Darryl: Because yeah, I mean we would just.
+Barney, Darryl: See where, you know what I typically.
+Barney, Darryl: Hear to what you just said and please, yeah, double check.
+Barney, Darryl: You can get back to me a little later than the quote if needed.
+Barney, Darryl: I'm just curious.
+Barney, Darryl: Actually, you know what, I just googled it.
+Barney, Darryl: Azure Marketplace is a 3% service fee.
+Barney, Darryl: Now the last few vendors I've asked that question to, they're like, look, literally we're just going to pass that on as a convenience to get you as a client kind of thing.
+Barney, Darryl: I mean you might need a 1.
+Barney, Darryl: Or 1% overhead, but if you came in very close to that overhead, it might give Shaheed a more flexibility with his spend which he might appreciate.
+Barney, Darryl: So again, keeping that in our back pocket as an option that in a conversation you'd be able to go, hey, we could do X, you know.
+Mik (Collate): Yeah.
+Mik (Collate): And I, I have other clients that need Marketplace.
+Mik (Collate): Azure market.
+Mik (Collate): We're already in GCP and AWS and we have a partner that like integrates us into other marketplaces and you know.
+Barney, Darryl: Okay, so you have Azure's plus their overhead you'd have to pass along.
+Mik (Collate): Well, I mean it's, again, it's not going to be significant.
+Mik (Collate): So yeah, I mean they've been easy for us to work with.
+Barney, Darryl: Love it.
+Mik (Collate): So yeah, I mean all we need is basically three weeks lead time for Azure and we implemented.
+Mik (Collate): So I mean as soon as we get to a verbal yes, I'll switch.
+Barney, Darryl: So what's interesting about that is if we can get through the Azure marketplace, I might be able to protect us through the BAA that we have with Microsoft, which speeds up the legal side of things.
+Barney, Darryl: So what we'll usually do is confirm with Microsoft that we're protected.
+Barney, Darryl: Then if so we'll work in NDA in parallel so that we have a direct NDA, but we can continue moving things forward through the Microsoft baa.
+Barney, Darryl: So there's become some options there too.
+Barney, Darryl: So I would have to look at our contract with Microsoft.
+Barney, Darryl: That might be something that helps with the acceleration of end timeline.
+Mik (Collate): Totally.
+Mik (Collate): Yeah, that'd be awesome.
+Mik (Collate): I mean we're pretty flexible compared to a big enterprise on the, on the legal side of things.
+Mik (Collate): If we can accelerate that with Microsoft Umbrella, that'd be amazing.
+Barney, Darryl: Well, we won't be able to eliminate it, but it will have to happen.
+Barney, Darryl: But just so you're aware, the lead time with contracting right now is 45 plus days.
+Mik (Collate): Yeah, okay.
+Barney, Darryl: Just we're a big hospital.
+Barney, Darryl: You know, all those acquisitions, the contracting is brutal.
+Barney, Darryl: So you know, marketplace purchase buys this time.
+Barney, Darryl: I'll tell you there's another.
+Barney, Darryl: It would databricks.
+Barney, Darryl: You know, we're working on it with.
+Barney, Darryl: Contracting with them too, but we called Microsoft up.
+Barney, Darryl: It's a different relationship than what you guys have because they're first party SaaS, pass whatever you want to call them.
+Barney, Darryl: But you know, Microsoft was like, yes, you're good there.
+Barney, Darryl: But we also agree do the NDA.
+Barney, Darryl: So you have a direct relationship, you.
+Barney, Darryl: Know, so we, I'm hoping we could.
+Barney, Darryl: Do the same with a marketplace item.
+Barney, Darryl: I just have to.
+Barney, Darryl: I'll have to check with our account team.
+Mik (Collate): Okay, great.
+Mik (Collate): Okay.
+Mik (Collate): I guess, you know, assuming that Shaheedle is okay with our price and I guess let's also assume we go Azure Marketplace.
+Mik (Collate): What kind of timing are we looking at for getting a contract in place and getting hands on keyboard?
+Barney, Darryl: I couldn't define that yet again.
+Barney, Darryl: I don't know what instructions he's getting from above or anything like that.
+Barney, Darryl: I literally do not.
+Barney, Darryl: I don't know if he'd want our vendor partner to help build this out.
+Barney, Darryl: If he'd hand it to me, I imagine you'd be landing right at early Q1 of next year just because the holidays and things like that.
+Barney, Darryl: So if we could get him committed and saying yeah, you know what, I like this path by first week of December, my guess is, and I say, hey, it's Azure Marketplace.
+Barney, Darryl: We just got to build a VM so they could put the data plane on there and crack open some firewalls and VPN tunnel.
+Barney, Darryl: VPN tunnel is a two week delay just because of change control on our side.
+Barney, Darryl: So I mean theoretically January, February is reasonable if we can get him to.
+Barney, Darryl: If we can get his thumbs up to move forward.
+Mik (Collate): Okay, awesome.
+Mik (Collate): Last thing to leave on your plate if I don't know this and we have no financial stake in your answer to this question.
+Mik (Collate): So it's not a thing that we deeply care about.
+Mik (Collate): But if there was interest on your side for having professional integration partner, like you know, a full pro serve team.
+Mik (Collate): We do have a good relationship with epam.
+Barney, Darryl: Shaheedle has made it very clear to me that he is open to those conversations.
+Mik (Collate): Okay, cool.
+Barney, Darryl: So I would want a different line item but he has told me he does like strategic partnerships.
+Barney, Darryl: Historically I don't again not knowing the direction or the budget he has, but it would definitely be a worthy line item.
+Barney, Darryl: Whether it's a mention that they're available and they typically have a starting point range, it would accelerate the investment.
+Barney, Darryl: I get that.
+Barney, Darryl: So yes, I don't hesitate to propose something like that.
+Barney, Darryl: Just make sure it's, you know, you have your option A and B and C.
+Barney, Darryl: A is without AI, B is with AI, C is with AI and an implementation partner.
+Barney, Darryl: I think that'd be a wise way to go about it.
+Mik (Collate): Okay, awesome.
+Mik (Collate): And they are, you know, really big databricks shop so they do a ton of work with that.
+Barney, Darryl: That is a huge call out too.
+Barney, Darryl: That.
+Barney, Darryl: Yes, if you mention that that would be huge and you've mentioned that.
+Barney, Darryl: There's kind of hacks allow you to go two ways with databricks anyways, so that'd be a win.
+Mik (Collate): Very cool.
+Mik (Collate): Okay, all good to know.
+Mik (Collate): Thank you so much.
+Barney, Darryl: Excellent.
+Barney, Darryl: Thanks a lot, Mick.
+Barney, Darryl: We'll talk soon.
+Barney, Darryl: Let's cross our fingers and hope you know.
+Barney, Darryl: Look, I'm at the point.
+Barney, Darryl: I think you're there.
+Barney, Darryl: I don't want to waste your time.
+Barney, Darryl: I'm looking forward to some direction one way or the other.
+Barney, Darryl: That's what I'm hoping for.
+Mik (Collate): 100%.
+Barney, Darryl: Yeah.
+Barney, Darryl: So you know me.
+Barney, Darryl: Hey, catch you later.
+Barney, Darryl: You have a great one.
+Mik (Collate): Talk to you soon.
+Mik (Collate): All right.
+Barney, Darryl: Yep.
+Mik (Collate): Bye.
+
+END MEETING

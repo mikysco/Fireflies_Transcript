@@ -1,0 +1,175 @@
+Meeting Name: Collate | Orlando Health - Proposal Prep & Synapse/Data Factory
+Meeting Date: 2024-06-24
+
+Darryl: Hey, morning.
+Darryl: Just give me one or two minutes.
+Darryl: I need to finish a conversation and then I'm off to the races with you.
+Mik Cepulis: Okay, perfect.
+Mik Cepulis: Yep, no worries.
+Darryl: It okay, this is a slippery slope so I'm just going to minimize that team's chat.
+Darryl: So.
+Darryl: Hey Mick, how are you doing today?
+Mik Cepulis: I'm doing good Darrell.
+Mik Cepulis: Happy Monday.
+Darryl: Yeah, happy Monday.
+Darryl: So what do we got today?
+Mik Cepulis: I wanted to connect you and Harsha together to review a couple of the items we had brought last week.
+Mik Cepulis: I'm still working on the proposal for Ray so we need more progress there.
+Mik Cepulis: We're building up that more detailed PDF like I mentioned and then converting that to I think we're going to have like four or five slides probably to lay out sort of the implementation phases and tying, you know, especially to higher order business value drivers.
+Mik Cepulis: We have a messaging I think that will resonate with like you know, AI and ML ops like we had discussed as well.
+Mik Cepulis: So that's still in progress.
+Mik Cepulis: I think that other stuff I wanted to dive into were like walking through the PoC and those technical details to make sure that if we have any prep work we can do to knock that out.
+Mik Cepulis: But yeah, that was mostly.
+Mik Cepulis: I don't think I have a ton of updates for you right now.
+Darryl: Okay.
+Mik Cepulis: Yeah, this might be, this might be quick and hardship.
+Mik Cepulis: I'm not sure he's able to right now.
+Darryl: Do you have any and that's fine.
+Darryl: Do you have any documentation by the way on doesn't collate, or should say open metadata have an ability to have people requesting access to a dataset?
+Mik Cepulis: So we are going to implement that in 1.5.
+Mik Cepulis: So that's the data access request.
+Mik Cepulis: Nice.
+Mik Cepulis: Let's see.
+Mik Cepulis: So it's a two parter.
+Darryl: I would love any detail you can share on that because we're having some access permission requests.
+Darryl: We're trying to figure out how to govern this and manage it.
+Darryl: And what I'm interested in specifically is as part of a selling point is to go look.
+Darryl: This also solves a governance problem in delivering these capabilities to our service lines faster.
+Darryl: We're having provisioning challenges in scale.
+Darryl: If you might be providing us that solution this year, that would be incredible even if you had a very loose outline.
+Mik Cepulis: Yep.
+Mik Cepulis: So I can share high level.
+Mik Cepulis: As part of the 1.5 release, we're releasing the data access request workflow which is essentially formal governance, data governance notion where you can as a user access request data through collate that will be provisioned to the end user if he or she gets approval outside of collate.
+Mik Cepulis: And then what we're also building, I believe, for 1.6 is the ability to approve and then provision access all within the collate application.
+Mik Cepulis: So if you connect a data source to colaid, enable the requesting basically authorization through our product, you can actually just do that whole motion within the Colead app itself.
+Darryl: Oh wow.
+Darryl: I'll be very curious to see what mechanisms you guys decide on that, because that would be, we provision a lot with active directory.
+Darryl: Either you're updating groups in active directory or you're updating databricks catalog.
+Darryl: Unity catalog.
+Darryl: That could get very interesting.
+Darryl: Okay, good to know.
+Darryl: Good to know.
+Mik Cepulis: I think that it'll be through the unity catalog.
+Mik Cepulis: Oh, sorry.
+Mik Cepulis: Harshly in just a second.
+Mik Cepulis: Actually, once he joins, we can talk about that.
+Mik Cepulis: Data access request workflow will be interesting for you to hear.
+Mik Cepulis: Thanks for dropping on Harsha.
+Mik Cepulis: Darryl and I were just speaking about the data access request workflow.
+Mik Cepulis: So we have a couple of things, but that was just the topic at hand at the moment.
+Mik Cepulis: But that's the first iteration of that feature is coming in 1.5, right?
+Darryl: Harsh.
+Sriharsha Chintalapani: Yes, that's right.
+Mik Cepulis: Yeah.
+Mik Cepulis: And it's a two part feature as far as I understood it.
+Mik Cepulis: So essentially the first iteration is going to be users requesting access to data and then data owners going outside of collate to provision access.
+Mik Cepulis: And then part two of the feature will be granting access and then provisioning access all within collate.
+Sriharsha Chintalapani: That's fine.
+Mik Cepulis: Yeah.
+Mik Cepulis: Okay, cool.
+Darryl: I'd be very curious to see how that plays out.
+Darryl: That's something that we're actively in discussions on how to manage our provisioning.
+Darryl: Our scale has gotten too big already and it's only going to skyrocket from here.
+Sriharsha Chintalapani: Yeah.
+Darryl: Okay.
+Darryl: Very good.
+Darryl: Yeah.
+Mik Cepulis: And then last time, Darrell, you and I spoke about provisioning, essentially running the PoC on your aggregate appliance.
+Mik Cepulis: So what we call the collate hybrid deployment model.
+Mik Cepulis: And Harsha and I spoke about that and that won't be a problem.
+Mik Cepulis: So we can run the connectors in your data plane and securely send that to collate.
+Darryl: That'd be an ideal.
+Darryl: Okay.
+Darryl: So yeah, let's put together a proposal for that as well with the slide deck.
+Darryl: You know what that would look like.
+Darryl: What's needed to make that happen?
+Darryl: Obviously there's going to be some ports between you guys and I, but I think you also said, I think I saw that your SoC level two.
+Darryl: Yep.
+Mik Cepulis: Soc two type two.
+Darryl: Which is huge.
+Darryl: Yeah.
+Darryl: Which is huge for us.
+Darryl: So that'll be, that'll make things very easy from a security engineering point.
+Darryl: Of view.
+Darryl: But yeah, let's put that narrative together as well as part of the proposal so that when Ray's talking with the business and trying to sell this, all that's there.
+Darryl: I really think that a proof of value is going to be immensely powerful in this.
+Darryl: So we'll see how that plays out.
+Darryl: But I think that'll be a good thing to have.
+Darryl: And sorry, I'm recovering from a sinus infection and sun poisoning, so I'm drained right now.
+Darryl: So excuse my low energy right this very moment.
+Mik Cepulis: Fun, fun weekend.
+Darryl: Something like that.
+Darryl: Man, the shivers haven't hit me today.
+Darryl: So that's a good win.
+Mik Cepulis: No point out.
+Darryl: No, not at all.
+Mik Cepulis: So last thing might be, could you talk Harsha through quickly the synapse and data factory motions?
+Mik Cepulis: So that was a point of discussion last time, Marsha as well.
+Darryl: Yes, you're right.
+Mik Cepulis: So right now you guys are using synapse, but we're eventually migrating to data factory, correct?
+Darryl: Well, eventually is, I think I'm starting to build the servers for that this and next week, but yeah.
+Darryl: So we currently do dynamic metadata extraction and row extraction on some 20 different data sources in our healthcare environment from APIs, SQL, Oracle postgres, on and on and on.
+Darryl: We'll have to capture that to have a successful point of preview because there is nothing but what is done in synapse.
+Darryl: What do you feel your timeline would be or to be able to actually capture that lineage?
+Sriharsha Chintalapani: Yeah, right now we have it in our roadmap to integrate into Azure synapse, but we can make it high priority.
+Sriharsha Chintalapani: And if that is a blocker for your poc.
+Sriharsha Chintalapani: Yeah, look into that and make it.
+Darryl: Out of it well.
+Darryl: And I've been paying attention to you guys roadmap.
+Darryl: And the good news is it's not like we're going to be able to move forward in the next week or two.
+Darryl: This is just lining everything up so the timing may actually work out perfectly fine.
+Darryl: You're already working 1.5, so it's just a matter of privatization and hopefully you guys will be close enough when we're ready that it might not even be a big ask.
+Mik Cepulis: Yeah, definitely.
+Sriharsha Chintalapani: I think you're planning on Q three, right?
+Darryl: I'm sorry?
+Sriharsha Chintalapani: Are you planning in Q three poc?
+Darryl: It's not my call.
+Darryl: That'll be my chief who decides.
+Darryl: But I take it with Azure synapse integration, you're handling data factory at the same time.
+Mik Cepulis: Yes.
+Darryl: Yeah, I figured because they're 99% the same.
+Darryl: Okay, perfect.
+Darryl: Okay.
+Darryl: Yeah.
+Darryl: My gut feelings we'd be looking at Q three, probably mid to end of Q three once we get the buy in.
+Darryl: Um, but we'll see how that plays out.
+Darryl: The good news is I'm able to help run through and make this get deployed really quick.
+Darryl: Um, so as soon as my boss says yes, let's move forward.
+Darryl: I'll work with security engineering.
+Darryl: Your sock certification will make that very quick.
+Darryl: Um, and then we'll be deploying rapidly so that, that won't be a big concern to me.
+Darryl: Um, so.
+Darryl: Okay, excellent.
+Darryl: Well, that.
+Darryl: That's a, that should be a win.
+Darryl: The timing will likely work out, but yeah, if we look like we're ahead of schedule, we'll let you guys know as soon as we think we have that and we'll make sure it's aligned accordingly.
+Darryl: Very good.
+Darryl: Awesome.
+Mik Cepulis: Okay.
+Mik Cepulis: Yeah, great knowledge for me as well.
+Mik Cepulis: I thought data factory and synapse were two separate motions, so I'm glad that that'll be the same process for us.
+Darryl: They're highly, highly based on the same concepts and design.
+Darryl: Um, except synapse is now being folded into fabric and data factory is standalone and in fabric.
+Darryl: So that muddies and muddies the water a little bit from Microsoft point of view, but I imagine from a reading the logs, it's, it's a lot lighter of a difference.
+Darryl: Excellent.
+Mik Cepulis: Great.
+Darryl: I don't have any asks at the moment.
+Mik Cepulis: Okay, great.
+Mik Cepulis: Yeah.
+Mik Cepulis: And there, I'll send you over a draft sometime this week that we can share with Ray.
+Mik Cepulis: Yeah, they probably have a.
+Mik Cepulis: I expect we'll have a couple turns, a couple iterations to make sure it's, you know, nice and tight.
+Darryl: Sounds great.
+Darryl: No, no problem at all.
+Darryl: I appreciate it.
+Mik Cepulis: Okay, awesome.
+Mik Cepulis: Yeah.
+Mik Cepulis: Thank you, guys.
+Mik Cepulis: Helpful, brief call, but yeah, we'll talk to you soon, Daryl.
+Darryl: Sounds great.
+Darryl: Thank you very much and have a great one.
+Mik Cepulis: All right, cheers.
+Sriharsha Chintalapani: You too.
+Sriharsha Chintalapani: Bye.
+
+END MEETING

@@ -1,0 +1,291 @@
+Meeting Name: Darryl Barney and Collate
+Meeting Date: 2024-05-09
+
+Darryl: See if they're going to join.
+Darryl: They're actually my director and my chief.
+Darryl: I'm going to give you a very quick, quick crash course before they get in.
+Darryl: Just not to waste their time.
+Darryl: We have been on a path in Azure to move towards databricks.
+Darryl: We're currently Synapse plus databricks on their Azure storage lake.
+Darryl: We might be moving from synapse to data factory for ingestion and then everything else be done in databricks that's still being planned out.
+Darryl: But we're in healthcare as data is growing, the modeling, the lineage, the actual functioning catalog that is more capable than purview, data observability, all that is of interest.
+Darryl: Databricks has some capabilities built in.
+Darryl: We're not wanting to build IaaS stuff.
+Darryl: And when I found get colate basically is like much like astronomer is to airflow.
+Darryl: I saw you guys as a big one on open metadata and I'm like, okay, so let's just get a quick demo.
+Darryl: A crash course of what get colate does, how they deploy and what your, how well you integrate with compare and contrast to what Databricks has out of the box.
+Darryl: And I know you guys are open metadata is linked to databricks quite a bit, but where's the unity catalog start and end?
+Darryl: And where do you guys and your product, you know, go, you know, making sure that we don't have conflicting products, but supportive and complimentary products, those are all things of interest because we know Unity catalog can do a fair amount for us in our favor.
+Darryl: But there's a lot of gaps and you know, I'll give you an example.
+Darryl: Synapse with Purview was painful.
+Darryl: Just, it was, but you know, so Ray, who's joining, he's my chief, one of my big bosses.
+Darryl: So that was an initial just kind of level set and hey Ray.
+Ray Deiotte: Hello Darrell.
+Darryl: Just telling him briefly the standard what is our platform technology stack and mentioned databricks you need catalog.
+Darryl: Where does this all, how would this all mingle if this was of interest?
+Darryl: And we'll talk a little bit about the offering.
+Ray Deiotte: Awesome.
+Darryl: Just doing that prep dump.
+Mik Cepulis: Thank you, Daryl.
+Mik Cepulis: And thank you Ray, for joining.
+Mik Cepulis: My name is Mick.
+Mik Cepulis: So I work on the customer facing team at Cole for the US.
+Mik Cepulis: Yeah.
+Mik Cepulis: And so today my goals were to meet you both, get an understanding of the framework of where you're both approaching this problem from.
+Mik Cepulis: Get a level set for where we're at today and where we're hoping to go.
+Mik Cepulis: So Darryl was able to share some initial background and context with me.
+Mik Cepulis: And it sounds like your main sort of product focused interest is to get a sense for what colate is, what we can do and how we compare ourselves and contrast to databricks platform for data cataloging and whatnot, as well as potentially Microsoft's purview tool as well.
+Mik Cepulis: So that's great agenda items.
+Mik Cepulis: I think that to a level set with you guys, happy to share a bit of high level information.
+Mik Cepulis: I'm not the product expert, so I think I'd prefer to shift some of that deeper technical discussion and feature by feature comparison to more comprehensive demo with an engineer that we could invite for again like a more comprehensive product walkthrough.
+Mik Cepulis: So from my perspective today, it'd be super helpful to get some contextual information, understand again where we're at today, where we're hoping to go, what's forcing the conversation to happen right now.
+Mik Cepulis: And then we can schedule a deeper follow up to go deeper into the collate products and more closely map that to the use cases you're going to solve for what we can do, what we can't do, and how we compare ourselves to again like databricks and Azure's product suite.
+Darryl: Thank you, Mick.
+Darryl: Yeah, I think that makes sense.
+Darryl: Right now I just wanted to get a feel for things and then if Ray and cat like the direction, we can dive down in a separate call.
+Darryl: So yeah, perfect.
+Mik Cepulis: Yeah, so I guess it would be helpful to understand, I guess Ray and Daryl, I did some, you know, LinkedIn searching.
+Mik Cepulis: So Darryl, it looks like you're, you know, matched to the, the data platforms team at Orlando Health.
+Mik Cepulis: And then Ray, it looks like you're potentially a consultant or are you, are you working directly for Orlando Health?
+Ray Deiotte: Yeah, so I'm all over the place, but at this point I am the chief data and analytics officer at Orlando Health Interim and trying to get this organizations set up so that they're in the best possible data and analytic state that they can be from a, well, from a technology perspective but also from a process and people perspective.
+Ray Deiotte: So what I'd love to learn is kind of how can you help us augment our governance around data identification, data cataloging, data searching and data availability with potential for pipeline and pedigree from the COlA tool perspective given that we are an Azure and databricks organization at the moment, so that as we are pushing towards self service analytics, self service data, self service data engineering people have the ability to go to a single source of truth for what is this data?
+Ray Deiotte: What is it good for?
+Ray Deiotte: What is it not good for?
+Ray Deiotte: What constitutes this information and what is its source of truth.
+Mik Cepulis: Thank you.
+Mik Cepulis: That's super helpful.
+Mik Cepulis: Context and yeah, I mean, what you're describing is really, I think, the north star of where colit's entire company vision is mapped onto.
+Mik Cepulis: We see a lot of secular industry trends that have shaped needs in the enterprise, especially like as data grows and teams want to become more independent and less dependent on central it to answer questions like that and ensure trust in data, the need for strong metadata management is more and more relevant, which is, I think why we're having the conversation today.
+Mik Cepulis: So maybe it would be good to set some context with a few slides and I'll do that right now.
+Mik Cepulis: So feel free to ask any questions.
+Mik Cepulis: Jump in.
+Mik Cepulis: This is really just going to set context for what collated is as a company and what our product is intended for.
+Mik Cepulis: I think that in general we're probably speaking to the right people here collectively.
+Mik Cepulis: I think that the problems you're laying out, Daryl and Ray, are mapped really well to what our product solves and make.
+Darryl: Just if you didn't see one of my directors, Kat Walker, also joined.
+Darryl: She's very closely in directing me based on what Ray big Boss trickle down.
+Darryl: So she's on the call too.
+Darryl: So just an FYI.
+Mik Cepulis: Okay, Kathleen, Kat, great to meet you.
+Mik Cepulis: Thanks for being here.
+Kathleen Walker: Thanks.
+Mik Cepulis: Awesome.
+Mik Cepulis: So let me share some quick background about collate.
+Mik Cepulis: So we are a commercial organization that are the main contributors to an open source metadata management product called Open Metadata.
+Mik Cepulis: You'll see some references to open metadata.
+Mik Cepulis: You'll see references to collate.
+Mik Cepulis: They are in large part the same product, although Collate would be considered the hosted version of open metadata.
+Mik Cepulis: You can see that comparison across many products, databricks being one of them.
+Mik Cepulis: Databricks is built on top of a core open source technology, but they're obviously the commercial entity that will establish business relationships and add commercial products hosting capabilities and just a general business relationship with all their customers.
+Mik Cepulis: So that's what colate is in relation to open metadata.
+Mik Cepulis: So our vision is to help data teams and folks across organizations, whether they be technical or non technical, build high quality data assets and ensure trust in their data.
+Mik Cepulis: We have a unified platform that combines lots of different capabilities that traditionally have been set in disparate products into a single platform.
+Mik Cepulis: So we combine discovery, observability and governance into a single tool.
+Mik Cepulis: We have a strong pedigree.
+Mik Cepulis: Our co founders especially have done this several times before, but they're creators of Apache Atlas, founders of Hortonworks, and spent a lot of time more recently at Uber several years at Uber, building their own enterprise wide metadata management product called Databook.
+Mik Cepulis: So databook is actually publicly available.
+Mik Cepulis: You can find the source code for that on the Internet.
+Mik Cepulis: You can find the story and the history of how our co founders, before they started up metadata and collate, helped build the data culture at Uber and ensure that organization had strong customer data, had strong self service, and just rely on a single tool to help them map out as data changed and just ensuring that the right people knew what was going on.
+Mik Cepulis: So we are a younger company, but we still have a very strong, I would say just personally, as the sales guy in the room, I'm super impressed how far we've come in a short time.
+Mik Cepulis: So we have some of the Fortune 50, we work with the federal government in the US and we also have a global spread.
+Mik Cepulis: So we have employees and customers globally, which makes us not only able to serve a global customer base, but even something as simple as ensuring strong 24 by seven support.
+Mik Cepulis: Maybe not necessary for a company that's only based in Florida, but still, it's good to know that if something happens at three in the morning, you can ping us and we have engineers in India that will pick the phone up or hit you with a slack message any time of day, anytime of night.
+Mik Cepulis: And we have a strong open source community.
+Mik Cepulis: Like I said, on the open metadata side, thousands of production deployments in the field.
+Mik Cepulis: Today we have hundreds of contributors and we have a strong open source slack community.
+Mik Cepulis: That is maybe not necessary for Orlando Health, but it's still good to know that the core technology that Colit is built on top of has not only the strong backing of our company, but also the backing of thousands of invested companies out there that are building their own versions of open metadata in the field and maintaining those production deployments today.
+Mik Cepulis: Any questions so far?
+Darryl: I don't have any.
+Darryl: Thank you.
+Mik Cepulis: So, yeah, we're motivated and inspired by major industry trends.
+Mik Cepulis: So I think that you, Darrell, mapped out a couple already.
+Mik Cepulis: But there are major secular trends and just investments in data, data warehousing, ensuring that teams can make independent choices with data and have access to it.
+Mik Cepulis: There's obviously the growing need and the growing potential value from including AI on top of data.
+Mik Cepulis: AI is super powerful and has potential strong value for enterprises, but it's a classic garbage and garbage out story.
+Mik Cepulis: If you cannot trust the data going in, you can't trust the information that it's spitting out on the backend.
+Mik Cepulis: Huge investments are being made in data stacks and companies are trying to enable teams across engineering and non engineering organizations to make use of that data.
+Mik Cepulis: So with these growing volumes and growing opportunities, there are complexities involved.
+Mik Cepulis: There are so many different layers in the stack, it's tough to track and define what's happening across each layer, and it's tough to get teams with visibility.
+Mik Cepulis: They need to know what is going on.
+Mik Cepulis: And we have different practitioners across different parts of organizations.
+Mik Cepulis: They each have their own unique problems.
+Mik Cepulis: Analysts want to know where data is coming from and ensuring that they're looking at the right customer table.
+Mik Cepulis: Data scientists are always trying to poke and prod and ensure that their pipelines are strongly built, that the data engineering organization is building the right tooling for the data scientists organization to again make inference on.
+Mik Cepulis: Each of these teams use their own unique tools to get their jobs done and be productive.
+Mik Cepulis: Each of these tools don't necessarily always talk to each other, and traditionally they have not.
+Mik Cepulis: So what open metadata and what colate does is addresses these problems of sprawling data siloed teams, poor communication across those teams, and just general data sprawl and seeing that the transformation of data likes turning into data swaps.
+Mik Cepulis: So again, this is a little repetitive here, but again, each of these teams have their unique problems that are mapped to unique tools.
+Mik Cepulis: And then again, the tools aren't communicating well with each other.
+Mik Cepulis: And the fragmented approach does slow communication.
+Mik Cepulis: It increases the costs of getting the job done and collates here to solve those problems.
+Mik Cepulis: We designed our approach by unifying the approach to discovery, observability and governance into a single tool.
+Mik Cepulis: So instead of having a siloed stack, we have a single unified stack.
+Mik Cepulis: And yeah, we've made huge investments and huge progress.
+Mik Cepulis: We already have native automations and AI built into the products, which is super interesting in terms of giving folks leverage who are investing into collate, the ability to make even better use of the data they've already spent time combing and maturing.
+Mik Cepulis: So yeah, we have a pretty unique approach here that instead of having.
+Mik Cepulis: Yeah, so anyway, sorry, any questions so far?
+Darryl: What's the scope of the AI you referenced?
+Mik Cepulis: Yeah, so it's a newer feature we've released into the product and what we've essentially done is partnered with a third party vendor that allows us to integrate the open AI API into Cola.
+Mik Cepulis: So it enables data practitioners to ask questions of their data.
+Mik Cepulis: It enables us to analyze SQL queries that you're writing based on the information that lives in collate and offer either more efficient queries or building structured queries already.
+Mik Cepulis: So if you're asking what's my quarter over quarter growth across this single metric, it'll spit out an answer to that SQL query you can plug.
+Mik Cepulis: And then we're also enabling teams, if they're ingesting tables and information into collate, to use that AI tool to identify gaps in that labeling.
+Mik Cepulis: So if there are gaps altogether, it'll suggest just net new information to add to ensure that the tables are fully filled out and the tags are correctly tagged.
+Mik Cepulis: It'll also suggest updated labeling if there are insufficient or maybe unclear labels that are already pre existing.
+Mik Cepulis: So that's the initial go to market with the AI tool, and we have a lot more planned for our roadmap in terms of how to increase the sort of the horsepower or the value you're getting from that AI tool.
+Darryl: Understood.
+Darryl: No, there's some interesting use cases.
+Darryl: I appreciate that.
+Darryl: Thank you.
+Mik Cepulis: Yeah.
+Mik Cepulis: And that's something we'll show in greater depth in a product demo.
+Mik Cepulis: Yeah.
+Mik Cepulis: So again, our approach, this is something where I'm not going to go into too much depth, but our approach to solving metadata is to ingest all the information into a single place and then layer on super useful tooling that is catered to different teams into a single place and allowing collaboration and sort of commingling of the different practices, again into a single pane of glass, for lack of a better term.
+Mik Cepulis: And we're built on open standards, which I think is important even for a non technical audience because the core open source tool, open metadata and coli, are built with an API first approach, which is super interesting because it allows our platform to be very flexible.
+Mik Cepulis: We can address unique use cases that prop up and we can also and do iterate our product very quickly.
+Mik Cepulis: So we have an aggressive roadmap and we put out a lot of features from our customers needs, from suggestions from our community.
+Mik Cepulis: And again, we're built on a modern stack, which shouldn't be a scary thing.
+Mik Cepulis: We're built on very robust and well understood technology, but we're combining modern data practice, best standards, best practices in terms of how we've architected and thought about data.
+Mik Cepulis: Yeah.
+Mik Cepulis: And so I'm going to go into.
+Kathleen Walker: A demo to really kind of detail in what the maintenance and operational cost becomes with this from our, if we choose to move forward.
+Mik Cepulis: Absolutely.
+Mik Cepulis: Yeah.
+Mik Cepulis: So, you know, I would love to set a demo up.
+Mik Cepulis: I don't think I'll, you know, we don't really have enough time today to go through a comprehensive demo, and I'd prefer, you know, a more product expert to lead to the demo to give you better answers to your questions.
+Mik Cepulis: So I think Darryl and I will work together to set up time to.
+Kathleen Walker: Run through a full demo, and I appreciate that.
+Kathleen Walker: And what I would say is I really want to understand what the lift becomes from a support perspective as you start to crawl across an enterprise wide use case need for it, especially when you have so much, whether it's AI analytics, driven from your lake, whatever the use cases.
+Kathleen Walker: Right.
+Kathleen Walker: I would want to understand the maintenance, upkeep, cost.
+Kathleen Walker: What are we looking at here?
+Mik Cepulis: Sure.
+Mik Cepulis: Okay.
+Mik Cepulis: Are there certain use cases that you're particularly focusing on for sort of, I guess like the next generation of data management for your team?
+Kathleen Walker: I think when you talk about crawling that particular branch everywhere from your ingest layer to out to your visualization layer, there's so much, whether it's pipeline work, whether it's ETL work, it just, it really goes very far and wide and broad.
+Kathleen Walker: So I'm trying to understand what would it, what's the lift to maintain something like this?
+Kathleen Walker: I understand the need for that catalog to be able to find and see the lineage between each layer, but I have to wonder what it's going to take to maintain it.
+Mik Cepulis: Okay.
+Mik Cepulis: Yep, that makes sense.
+Mik Cepulis: I think you'll be happy to see the types of automation that we have implemented already that automate a lot of actions like this.
+Mik Cepulis: We actually released a feature recently, so it's not going to be a whole cultural shift, but the idea of you're constantly ingesting new information from new tables, your teams can probably create a structure of identifying if the table matches these different characteristics, apply these different tags to that table, and ensure that it goes through these data quality checks before it's given a check or a passing grade.
+Mik Cepulis: And we've implemented a lot of those automations for you.
+Mik Cepulis: So again, as you have a concentration of data coming in, you can ensure it adheres to certain shapes and standards before it's given the blessing for production use.
+Mik Cepulis: But that's, again, one of many ways that we approach that problem, because obviously it's a multifaceted problem.
+Kathleen Walker: Agreed.
+Kathleen Walker: All right, thank you.
+Mik Cepulis: Yeah, yeah.
+Mik Cepulis: So I won't repeat too much here.
+Mik Cepulis: I think that we can go in much greater depth in a full product walkthrough, but really wanted to give you a flavor of who we are as a team and what our product is addressing.
+Mik Cepulis: Again, decathlone's point problem space that has lots of breadth and lots of depth.
+Mik Cepulis: Yeah.
+Mik Cepulis: So anyway, I appreciate everyone being here today.
+Mik Cepulis: I think we have a pretty good idea for what you're looking for in a demo and in a solution.
+Mik Cepulis: And I know we have a lot more questions to go through, so again, we'll schedule more time for a more in depth discussion.
+Mik Cepulis: But I wanted today to be more of an introduction to who we are and for me to get some sense of what your team is looking for.
+Mik Cepulis: So this has been helpful from that perspective, I think some other information.
+Mik Cepulis: And Ray and Kathleen, if you don't need to stay here for the sort of other Q and a, you don't have to.
+Mik Cepulis: But be helpful for me to understand where you're at in your evaluation process.
+Mik Cepulis: Are you looking at other vendors?
+Mik Cepulis: Like at what stage of a new vendor implementation are we at today?
+Darryl: Just initial discovery, I think would be the right way to summarize.
+Mik Cepulis: And then you've been doing work with databricks products and Azure's purview.
+Mik Cepulis: Was there a certain point where your team decided this is no longer sufficient to get the job done?
+Mik Cepulis: Was there a breaking point?
+Darryl: We've just started our databricks journey, but our purview journey was fraught with pain.
+Darryl: It doesn't integrate with a lot of different data sources.
+Darryl: It's quite laborious.
+Darryl: Not really a non technical entry by any means.
+Darryl: It was difficult to navigate for someone who doesn't understand data, and we've got to deliver to the business as well.
+Darryl: I'm sure Kat and Ray might have more to add, but I think that'd be a good starting point.
+Ray Deiotte: Yeah, I think I would add that we kind of have two tiers of needs.
+Ray Deiotte: One is the technical data curators needs, which is identifying, documenting and managing pedigree and metadata around data.
+Ray Deiotte: But then also the business side of the house, which is, hey, I'm trying to solve x need, I need y thing.
+Ray Deiotte: And purview just is so technically deep.
+Ray Deiotte: And even Unity catalog is so deep technically, that for business people who don't understand the data, but they understand the business, it makes it impossible for them to leverage that information.
+Ray Deiotte: And so you wind up what I think we found and what we've run into is that you need then two sets of metadata curators, one for the technical teams and one for the business teams, and it just becomes overly onerous without a singleton entity.
+Ray Deiotte: And I understand that there's going to be need for both, but I'd love to not replicate work.
+Mik Cepulis: Okay.
+Mik Cepulis: Yeah, I guess.
+Mik Cepulis: Did you find that purview was a suitable solution from like more of a data engineering perspective?
+Darryl: Personally, I was deeply involved in that.
+Darryl: And no, it was very incomplete that when we were using it, they didn't have views and they wouldn't commit to a timeline for view consumption.
+Darryl: They didn't natively work with a lot of the tools that we're using.
+Darryl: I mean, they worked with fabric, not fabric, with factory fairly well synapse.
+Darryl: Okay ish.
+Darryl: But when it came to pointing to an oracle server or a SQL server, there was a lot of entities and assets that were completely missed.
+Darryl: Stored procedures, views, functions were completely lost.
+Darryl: So what lineage you would get wouldn't even be a complete picture.
+Darryl: So the extract of the data wasn't adequate to function in any significant way, and context was completely lost in that tool.
+Mik Cepulis: Okay, understood.
+Mik Cepulis: Yeah, that could be very frustrating.
+Mik Cepulis: Yeah.
+Mik Cepulis: And I guess to both your points, Daryl, we have, I think it's arguable we probably have the best lineage product in the market right now.
+Mik Cepulis: Obviously time will tell, and if we choose to go through a POC, we'll do that and ensure that we're giving your team the information that's required.
+Mik Cepulis: And then, Ray, we also do a lot of work on the business glossary and knowledge center side of things to up level information to make it more digestible to various teams.
+Mik Cepulis: And we have features even like a chrome extension or Firefox extension, that actually we find a lot of business users find useful, where you're able to be in a data visualization tool, or you can be maybe in your looker dashboard, for instance, and highlight a term or highlight a technical database table name and right click on it and go straight to the collate information where the business glossary term is mapped to and understand if it's PII, understand the different taggings that you have associated with it, or even understand who the data owner is.
+Mik Cepulis: If you have to ask questions to the core maintainer of that table or column, for instance, we find that helpful as well.
+Mik Cepulis: Go ahead.
+Darryl: Yeah, Mick, one of the things when we get to a demo that I'm personally interested in, we have technical debt and data ingestion that I think you guys can help us address.
+Darryl: And what I mean by that is we have an ETL extract, and the ETL extract says it was successful, but instead of the 150,000 rows it should return, it returned zero because some of the prerequisites, the file didn't get dumped on time or what have you.
+Darryl: So those kinds of quality profile insight metrics would be very interesting to get a glance at, because I know, last I recall, open metadata, you can create rule engines and look at the heuristics and have the system tell us, hey, something a little bizarre may have happened, and that'd be valuable because we're scaling data up so much and the consumers are growing rapidly upstream and downstream, that it's going to become a lot of technical debt if we don't figure out a way to keep an eye on an alert, kind of when expected, lineage movement doesn't quite behave the way we would think.
+Mik Cepulis: Okay.
+Mik Cepulis: Yeah, common problem, and we do a lot of great work on the automation side.
+Mik Cepulis: When we were ingesting information from a new source for the first time to ensure that you're not having to go, it's like searching through the bowels of the beast to make sure information's propagating correctly.
+Mik Cepulis: But we also give you the flexibility, if needed, to have more nuanced opinions on which data you're capturing from a new source from the highest point upstream.
+Mik Cepulis: Yeah, that's a combination that we certainly help with that.
+Darryl: Excellent.
+Darryl: Thank you.
+Mik Cepulis: I'm curious, on the topic of AI, is Orlando health doing anything in that space right now?
+Mik Cepulis: Are you making investments with databricks to help, I guess, to get more leverage out of your data using some of the new LLM tools?
+Ray Deiotte: So I think that's a wildly broad conversation for what it would relate to with collate.
+Ray Deiotte: It's how do we augment the extensively manual processes that are required for data governance, data tagging, data lineage at that point, we are not leveraging those.
+Ray Deiotte: What we're trying to do through our data laking and data bridge efforts is to empower the ability to do machine learning, machine reasoning, generative AI on our data asset and, and leverage it that way.
+Ray Deiotte: I think what we would be looking for in a tool like collate is the meta reasoning perspective, which is, you know, how do we leverage augmentation for identification of data, for classification of data, for segmenting of data, for pedigree of data, so that we don't have to cat's point, this exceptionally manual process of tagging and tracking and quality assessment of data as it comes in or as we bring it in or as we link it between data sources, because that's honestly the downfall of every tool.
+Ray Deiotte: Right?
+Ray Deiotte: Every tool, every vendor says the same thing, but at the end of the day, it boils down to our people sitting down and going, okay, this data is indicative of this.
+Ray Deiotte: We've done an assessment of the quality of that, and it all is manual processes.
+Ray Deiotte: What we would love to be able to do is bring in a partner that has the ability to augment the three or four people who are doing that work to help accelerate adoption of data governance, data lineage, data pedigree data catalog in a way that does not require endless man years of manual effort to build and then maintain that effort.
+Mik Cepulis: Yep.
+Ray Deiotte: So, so it's two different.
+Ray Deiotte: It's two different things, right.
+Ray Deiotte: It's one is how do we apply it for operations of the business?
+Ray Deiotte: And then how do we apply it from a meta perspective within operations of the operations of the business?
+Mik Cepulis: Yeah, yeah.
+Mik Cepulis: So it's like, yeah, we're, we're helping you even get to the starting line to make sure that the.
+Mik Cepulis: You can extract the value that you need from the investments you're making and the data lake space.
+Mik Cepulis: So, yeah, I agreed.
+Mik Cepulis: It's a very broad topic.
+Darryl: But it does bring an interesting point because I didn't get in the, in the minute we had before everybody jumped on is we are, we do our own internal development, but we're building the facilities to enable the business in healthcare.
+Darryl: So every business line is trying to be enabled here.
+Darryl: So looking at a catalog with the capabilities to help enable and help answer questions or guide people to get to where they need, because right now there's a lot of handholding.
+Darryl: So, you know, when I saw this product open metadata and then saw there was a SAS solution, it's like, wait, this could be an opportunity because as the more data comes in and the more customers we move on to it, the more questions we're getting.
+Darryl: So how do we enable the business to be fairly independent?
+Darryl: How do we build the facilities that enable them to do whatever they need?
+Darryl: And Ray went into some of those opportunities he wants to provide.
+Darryl: So that's what this is, is a component to the platform that enables the service lines.
+Mik Cepulis: Yeah, yeah, yeah.
+Mik Cepulis: I appreciate everyone.
+Mik Cepulis: The input here has been super helpful in setting context.
+Mik Cepulis: I think that we can dive into a pretty comprehensive demo here and knock off a lot of these important problems you're looking to solve.
+Mik Cepulis: So I'm excited for the next step.
+Mik Cepulis: And we'll bring in an expert who can get super deep into the product and map it to these initiatives here.
+Darryl: Excellent scheduling with Kat and Ray.
+Darryl: I'll help with that.
+Darryl: So you just coordinate with me when you start having lists.
+Darryl: I don't think next week will be, could just be as short, but the following week.
+Darryl: Ray, is that sound good to you?
+Darryl: About two weeks out?
+Ray Deiotte: Yeah, two weeks is good.
+Darryl: Okay.
+Darryl: Yeah.
+Darryl: Then I'll start looking at calendars and work with you, Mick, once you have a resource and some dates.
+Mik Cepulis: Perfect.
+Mik Cepulis: All right, Daryl, Ray and Kathleen, thank you all for being here and looking forward to speaking with everyone again.
+Ray Deiotte: Awesome, sounds great.
+Ray Deiotte: Thanks, Mike.
+Darryl: Thank you.
+Kathleen Walker: Thank you.
+Kathleen Walker: Cheers.
+
+END MEETING

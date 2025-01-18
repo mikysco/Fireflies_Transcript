@@ -1,0 +1,932 @@
+Meeting Name: Collate (Data Catalog) - Demo
+Meeting Date: 2024-11-18
+
++13*******83: Hey, Mick.
+Mik (Collate): Hey, Joe.
+Mik (Collate): How's it going?
++13*******83: Pretty good.
++13*******83: Can you hear us okay?
+Mik (Collate): Yeah, yeah.
+Mik (Collate): My picture's coming in kind of fuzzy, but they're all good to see you, too.
+Mik (Collate): Excellent.
+Mik (Collate): Yeah, you are fuzzy, actually.
+Mik (Collate): We all are.
+Mik (Collate): I blame the Apple device.
+Mik (Collate): Blame Steve Jobs.
+Mik (Collate): Yeah.
+Mik (Collate): Darrell, do we have a quorum on your side?
+Mik (Collate): We do not.
+Mik (Collate): We are waiting for Kathleen Walker Shahidal, and then Adele might call in.
++13*******83: Adele's on, I think.
++13*******83: Oh, is he?
++13*******83: That'd be great.
+Mik (Collate): There he is.
+Mik (Collate): Yes.
++13*******83: Perfect.
+Mik (Collate): So we're waiting on them.
+Mik (Collate): Kat confirmed she'll probably be walking down momentarily.
+Mik (Collate): And then Shaheed.
+Mik (Collate): Alice accepted and got back from lunch, so he should be here any moment as well.
+Mik (Collate): Hey, Adele.
+Mik (Collate): How are you, man?
+Mannan, Shahidul: It's a Monday.
++13*******83: Monday gets too much hate.
++13*******83: Tuesday is the worst day of the week, in my opinion.
+Mik (Collate): We're all happy to be here, Joe.
+Mik (Collate): I'm glad you and Daryl could meet in person.
+Mik (Collate): It's exciting.
++13*******83: Yeah, it's nice to be able to just, you know, zip across.
++13*******83: Yeah.
+Mik (Collate): He's probably only 15 minutes later.
++13*******83: Yeah, exactly.
++13*******83: Yeah.
++13*******83: When you were like, oh, only if you didn't say it.
+Mik (Collate): I'm like, oh, okay.
+Mik (Collate): Sheila said he'll be here in about five.
+Mik (Collate): Okay.
+Mik (Collate): I'll just tell him where we're at.
+Mik (Collate): The in person experience is too infrequent these days.
++13*******83: Yep.
++13*******83: Mick, do you want to just test to make sure you're able to share?
++13*******83: Okay.
++13*******83: And it looks fine on.
++13*******83: On my end.
++13*******83: Yes.
++13*******83: Yeah.
+Mik (Collate): Good call.
+Mik (Collate): All right, let me.
+Mik (Collate): When you can see.
++13*******83: Yep.
+Mik (Collate): Awesome.
+Mik (Collate): Loving this cooler weather.
++13*******83: Yeah.
+Mik (Collate): Had the windows open for days now.
+Mik (Collate): It's been great.
++13*******83: Went on a run yesterday afternoon.
++13*******83: I was able to actually go in the afternoon because it wasn't 90 degrees.
++13*******83: Usually it's like either, you know, sun up or just after sundown.
+Mik (Collate): Yeah.
+Mik (Collate): What's cooler weather for you guys?
++13*******83: 70S high 60s.
++13*******83: Right now it's 79, which is still pretty nice.
++13*******83: It's not as humid.
++13*******83: There's like a dryness to the air, which is nice.
+Mik (Collate): Shahido told me he's actually going to be on team, so we'll see him shortly.
++13*******83: Okay.
++13*******83: Hey.
++13*******83: Hi.
+Mik (Collate): Hello.
++13*******83: How are you?
+Mik (Collate): Yeah, Shadel said he's going to be joining the team, so we.
+Mik (Collate): Oh, no, we can close it.
+Mik (Collate): Sorry, sorry.
+Mik (Collate): Yeah, so it's just Del's already on the call and SHIELD said he's just running.
+Mik (Collate): About three more minutes and we can get started, though.
+Mik (Collate): Lean back and take a deep breath.
+Mik (Collate): Yeah.
++13*******83: There you go.
++13*******83: Go for it.
+Mik (Collate): Good to hear from Kathleen again.
+Mik (Collate): It's been A while.
+Mik (Collate): Yeah, it's probably been what truly five or six months.
+Mik (Collate): I just checked.
+Mik (Collate): It was middle of June.
++13*******83: Five months.
++13*******83: Yeah, there we go.
+Mik (Collate): Time flies.
++13*******83: What's her role in the group?
+Mik (Collate): I'm sorry, I was gonna say I was appreciate you putting the meeting together today, getting everyone in person.
++13*******83: Yeah, no problem.
++13*******83: How many days are you a week?
++13*******83: Are you in the office?
+Mik (Collate): It varies.
+Mik (Collate): Typically I'm here twice a week.
+Mik (Collate): Yeah, it varies.
+Mik (Collate): Like this week, I'll be in three times a week.
+Mik (Collate): So it as needed.
++13*******83: But.
+Mik (Collate): Joe, the drive over was easy.
++13*******83: Yeah, yeah, super smooth.
++13*******83: No traffic, surprisingly.
+Mik (Collate): Okay, good stuff.
+Mik (Collate): My commute was easy as well.
+Mik (Collate): It took me about eight seconds.
+Mik (Collate): I won't wrap it up.
++13*******83: You're online pretty early this morning, right?
++13*******83: Mick, I think I saw you online around six your time.
+Mik (Collate): Yeah, yeah, it was early for me.
+Mik (Collate): There's a bunch of, you know, internal meetings prep for and then obviously Orlando today.
+Mik (Collate): Adele, I forgot to ask earlier, what's your role at Orlando?
++13*******83: And currently I oversee some ELT ETL teams, power BI teams or resources.
++13*******83: Really, we don't really have a team.
++13*******83: And then the full stack of EPIC analytics.
++13*******83: I think we have 19 folks in that space to support all of Epic.
+Mik (Collate): More recording and analytics standpoint.
+Mik (Collate): Wow.
+Mik (Collate): Very cool.
+Mik (Collate): Have you had a chance to experiment with open metadata or collate yet?
++13*******83: Very little from.
++13*******83: I mean I think Daryl showed me a bit of the horsepower that it has.
++13*******83: I'm just excited to learn more and.
+Mik (Collate): I'm one of our, I think our second biggest or first biggest fan next.
++13*******83: To Daryl for this.
++13*******83: Okay.
+Mik (Collate): I don't know how to respond to that.
+Mik (Collate): Oops.
+Mik (Collate): I unmicked.
+Mik (Collate): And yet we're on a common speaker.
+Mik (Collate): Yeah, I got admit compared to some of the alternatives we have readily available, I can't say I'm not a fan.
++13*******83: We think a fan by default.
+Mik (Collate): Yeah, there you go.
+Mik (Collate): Yeah.
+Mik (Collate): Well, today's session is going to be I think a little bit abbreviated based on the time that we have blocked off.
+Mik (Collate): So if there's an opportunity to dive deeper.
+Mik (Collate): Happy to facilitate that session and you know, go deeper into like ETL and some of the more you know, nuanced features of collate because they'll be certainly higher level.
++13*******83: Yeah, actually I was.
++13*******83: No worries.
+Mik (Collate): Adele, Just a call out.
+Mik (Collate): I was looking at the roadmap and they have SSIs planned in version 1.7 which would be like January, February time.
+Mik (Collate): Beautiful.
+Mik (Collate): Yeah, Microsoft promised that to us two years ago.
+Mik (Collate): Still haven't delivered.
++13*******83: Now you need to say that again.
+Mik (Collate): There's many things I Tell him separately about.
+Mik (Collate): I'm a Microsoft fanboy, but I will not hesitate to call them out.
++13*******83: Yeah.
+Mik (Collate): Daryl, have you been working with Kathleen lately on the collision initiatives?
+Mik (Collate): Yeah, I mean, she.
+Mik (Collate): She's.
+Mik (Collate): She was in one of the original demos.
+Mik (Collate): Yeah.
++13*******83: Yep.
++13*******83: Yeah.
+Mik (Collate): I hear her voice.
+Mik (Collate): So she's right around the corner, really.
+Mik (Collate): Ultimately, just waiting for Sheetal.
++13*******83: Yep.
++13*******83: He's had a pretty big campus.
++13*******83: Right.
+Mik (Collate): Our main campus is gigantic.
+Mik (Collate): This building is way undersized for what we need, but I would rather keep it undersized.
+Mik (Collate): It keeps us partially hybrid.
+Mik (Collate): If they had too many more chairs, we'll have no excuses to be home.
+Mik (Collate): But, yeah, the campus is just.
++13*******83: Because it's strictly medical.
++13*******83: The campus floors, right?
++13*******83: Yeah.
+Mik (Collate): And they're building a women's and children's center right now.
+Mik (Collate): So there's another building starting, so that'll be interesting to see.
++13*******83: Also, just like kind of driving down the street.
++13*******83: Like, every other building is like neurological center, your wound kid.
+Mik (Collate): And then we've got the orthopedic center that just opened up as well.
+Mik (Collate): ORMC has been expanded to the main.
+Mik (Collate): Main flagship hospital has been expanded a few times.
++13*******83: It's crazy.
++13*******83: There's a couple big hospitals already in the area.
++13*******83: I mean, you're like.
+Mik (Collate): It's just Florida Hospital and us.
++13*******83: Oh, really?
+Mik (Collate): Yeah.
++13*******83: I thought there was an Advent Health or.
+Mik (Collate): Not Advent Health is Florida Health.
+Mik (Collate): Sorry, Florida Hospital.
+Mik (Collate): Sorry.
+Mik (Collate): Yeah.
+Mik (Collate): They renamed, but yeah.
+Mik (Collate): So that Health Orlando Health.
+Mik (Collate): That's really it.
++13*******83: Gotcha.
+Mik (Collate): But between the two of us, we were everywhere.
++13*******83: Yeah.
+Mik (Collate): There's a few other hospitals trying to get in the door.
+Mik (Collate): I saw UF Health built an emergency room in Claremont.
++13*******83: Okay.
+Mik (Collate): But that you could tell.
+Mik (Collate): That's their attempt to try and start getting into the market.
+Mik (Collate): And then HCA is somewhere.
+Mik (Collate): I don't remember where they're at, but they're.
+Mik (Collate): They're not in Orlando, but they're on the outskirts in Tampa.
++13*******83: You had Tampa General.
++13*******83: That was basically it, really.
+Mik (Collate): And we're going to be north and south of them, so we already have something in St.
+Mik (Collate): Pete.
+Mik (Collate): We're building north of them.
+Mik (Collate): Okay.
+Mik (Collate): So we're.
+Mik (Collate): We're there.
++13*******83: And then where I grew up, South Florida, you had your memorials, obviously.
++13*******83: And then you had.
++13*******83: Cleveland Clinic was a big one.
+Mik (Collate): Cleveland Clinic.
+Mik (Collate): I think it's building somewhere nearby in here, in Orlando somewhere.
+Mik (Collate): Again, another outskirt.
+Mik (Collate): I think they're planning for the expansion that happened in central Florida.
+Mik (Collate): I spent a lot of time in Cleveland with family, and every third building is a Cleveland Clinic office or some sort.
+Mik (Collate): They're Massive.
++13*******83: From what I've heard, I think it's one of the top three.
+Mik (Collate): So what's happened is, you know, Shaheel hasn't been here long, and then we acquired multiple hospitals, and it's.
+Mik (Collate): Every meeting is, oh, I got floated another day.
+Mik (Collate): I wouldn't be surprised if his current call is just running long.
+Mik (Collate): I think those M and A calls have completely destroyed Adele's schedule on top of what normally is underway.
+Mik (Collate): Did Shahido have a big history of M and A in the past?
+Mik (Collate): Was that part of the reason?
+Mik (Collate): Yeah, he.
+Mik (Collate): Well, I mean, he worked at a hospital far bigger than us.
+Mik (Collate): I can't speak to his background with M and A, but Data has, obviously its fingers everywhere in acquisitions.
++13*******83: Do you guys have, like, an MDM tool that might help with some of that mma?
++13*******83: Not yet.
++13*******83: That's.
++13*******83: What.
++13*******83: When I was at Informatica, that's where I spent a lot of my time there, in the DQ space.
++13*******83: So I wasn't like PowerCenter or Axon or EDC.
++13*******83: It was MDM and MDM.
+Mik (Collate): DQ is huge.
+Mik (Collate): It's a battle, though.
+Mik (Collate): You need a team for that, and we don't have one.
+Mik (Collate): That's why, like, Colette was appealing, because at least we can get that quality element started with some of those quality things.
++13*******83: We have table diffs, and you can do kind of.
++13*******83: It's not true mdm, obviously, but you can start at least understanding, you know, how is this actually different, and how does it compare?
++13*******83: And, you know, one of the reasons why I kind of left the MDM space for the appeal is I thought, you know, MDM is an end goal of sorts.
++13*******83: Having a tool like this set up super saves anything.
++13*******83: It just catalyzes any effort.
++13*******83: If I hadn't done a proper catalog on any of my MDM engagements at Informatica, I would have billed half the amount of time as a consultant just because the amount of time I was spending just trying to understand what's happening.
+Mik (Collate): Did you get everybody on?
+Mik (Collate): No, she was still.
+Mik (Collate): His five minutes grew a little bit.
+Mik (Collate): He was 30 minutes late to my last meeting, and there was only five minutes left in it, so I would just start.
++13*******83: Well, this was all for him.
++13*******83: He.
+Mik (Collate): The other one was all for him.
+Mik (Collate): Yeah.
++13*******83: I mean, if we get started, we.
+Mik (Collate): Just have to restart for him.
+Mik (Collate): All right.
++13*******83: I do have to leave.
++13*******83: Yeah.
+Mik (Collate): How can we.
+Mik (Collate): How can we monopolize on the fact that you're here?
+Mik (Collate): Who else do you have on?
+Mik (Collate): Just Adele.
+Mik (Collate): And then, gentlemen, sorry, I just got another sow.
+Mik (Collate): Okay, so how about first Orient me to the conversation to get collate, you know, just give me the general overview in particular and then you don't have to, you can wait.
+Mik (Collate): If he jumps on then you can go into the double and the details and re kind of sync.
+Mik (Collate): I won't be offended by any means.
++13*******83: But do you want to start with some of those, you know, high level slides then?
++13*******83: I think that might be a good.
+Mik (Collate): Yeah, yeah.
+Mik (Collate): And great to see you again, Kathleen.
+Mik (Collate): We spoke over the summer in June.
+Mik (Collate): So it's been quite a while.
+Mik (Collate): And the purpose of the call today, get Shaheedl up to speed on what kolate is, what the offering is.
+Mik (Collate): In some of the work that Daryl and Joe and I have been doing together over the past few months, we are, you know, we position ourselves as a unified metadata platform, meaning that we ingest data from all of your data sources to help you organize it, assign ownership, hit KPIs around data quality, get insights around data quality and then we do all this with you know, deep like deeply integrating collaboration and artificial intelligence driven insights, you know, based off of all the context that we have in your data.
+Mik (Collate): So that's super high level.
+Mik (Collate): Yeah.
+Mik (Collate): And so again today was really just orienting around showing Chihido, you know who we are, show a brief demo about some product capabilities and then hopefully be the conversation, you know, with Daryl's been championing inside Orlando these past few months.
+Mik (Collate): So yeah, yeah, we again we spoke a while ago but would it be helpful to sort of run through high level slide deck to worry at you?
+Mik (Collate): That'd be great.
+Mik (Collate): And again if he joins, feel free to start all over.
+Mik (Collate): I don't want to, I don't want to interim pose on that particular perspective.
+Mik (Collate): Totally.
+Mik (Collate): So we only have Kat for about what, 15 more minutes or so.
+Mik (Collate): So she's like, yeah, let's try and hit get her up to speed.
+Mik (Collate): There's been a lot of new offerings and add ons and things like that since we last saw the demo.
+Mik (Collate): Okay.
+Mik (Collate): Yeah.
+Mik (Collate): Great.
+Mik (Collate): Kathleen, given that we only have a few minutes, would it be helpful to see an actual product demo as well.
+Mik (Collate): If we get to it?
+Mik (Collate): Yeah, I mean I'm pretty, I like to think I catch on.
+Mik (Collate): So if you want to go through it quick, you're welcome to.
++13*******83: Yeah, I could go through a quick kind of what a user journey would look like and thinking about hitting as many different facets as I can.
++13*******83: That's why it's a little bit more flexible in that regard.
+Mik (Collate): Just stop us.
++13*******83: So Mick did a really good job of this kind of painting that general level, what quality does.
++13*******83: But really what I like to think about with that unified is it allows you to find your data.
++13*******83: Well, what do I care about if I find something that's only half the battle?
++13*******83: I need to understand what the hell it is that I'm actually looking at.
++13*******83: Once I do that, I need to actually trust it.
++13*******83: I can know this is a table about patient information or order information, but I want to know, is it good quality?
++13*******83: You know, has the proper test been done?
++13*******83: Is it, you know, marked appropriately?
++13*******83: Do I have an owner?
+Mik (Collate): Sheila's been able to join.
++13*******83: Thank you, sir.
++13*******83: Perfect.
++13*******83: Hello, everyone.
++13*******83: Thank you.
+Mannan, Shahidul: My Internet dropped.
+Mannan, Shahidul: I don't know when it's going to come back, so I'm calling the phone, but I can see and join.
+Mannan, Shahidul: Good afternoon.
++13*******83: Afternoon.
+Mik (Collate): You have Nick and Joe from the Collate team.
+Mik (Collate): So great to meet you and glad that you have the time.
+Mik (Collate): We were a little bit.
+Mik (Collate): We're a little short on time, so we'll try to go through quickly.
+Mik (Collate): You're able to see my screen, right?
+Mannan, Shahidul: I am, yeah.
+Mannan, Shahidul: Let's get started.
+Mannan, Shahidul: And I think Daryl talked to you and he suggested we speak.
+Mannan, Shahidul: So I want to understand your core capabilities, your secret sauce a little bit and how you can help us solve the data problems.
+Mannan, Shahidul: So carry on.
+Mannan, Shahidul: Take it away.
+Mik (Collate): Awesome.
+Mik (Collate): Yeah.
+Mik (Collate): So my name is Mick.
+Mik (Collate): I on the sales side at Kolate.
+Mik (Collate): I've been in the data space and in startups for my entire career now.
+Mik (Collate): So Cole is sort of a natural extension of my progress so far in my career.
+Mik (Collate): And then Joe joins us from Informatica and Elation.
+Mik (Collate): So he was on the professional services side, has deep expertise in getting organizations up to speed with managing their data better and he has finally joined the winning team.
+Mik (Collate): So we're happy to have Joe with us and he's a great expert and we'll be walking through the demo portion of today, so let me give you a quick background on who we are.
+Mik (Collate): So Collate is a commercial SaaS offering that is brought out of an open source product called Open Metadata.
+Mik (Collate): Our co founders have a deep history in building and founding and scaling enterprise data.
+Mik (Collate): Companies like Hadoop, Hortonworks spent a lot of time at Uber building their data book functionality out.
+Mik (Collate): And the time at DataBook was about four or five years ago and served as the foundational element of how we then spun out the open source Open Metadata, which ultimately became the commercialized collate SaaS.
+Mik (Collate): So OpenMed is an open source product that's very well utilized across the industry.
+Mik (Collate): Collate is essentially a set of commercial functionality, features, support business relationship that you get.
+Mik (Collate): And it's the same experience that you'd have with a Salesforce or any other proprietary SaaS offering out there.
+Mik (Collate): We our core solution is a unified metadata platform powered by AI.
+Mik (Collate): So that it's a bit, you know, marketing speak, but we'll show you what that means in a minute.
+Mik (Collate): Think of us as a modern continuation and much more comprehensive product compared to like a traditional data catalog.
+Mik (Collate): So data catalog would be an older, more single dimension way of organizing data and understanding who owns it.
+Mik (Collate): A unified platform is a more comprehensive version of that where we're sucking in a lot more different data sources and giving your teams different insight.
+Mik (Collate): So with a bit of background on collate, so we are, you know, positioned to support various sizes of organizations, but we've spent the bulk of our work supporting the enterprise and working with large organizations globally.
+Mik (Collate): We have a big EMEA presence, a big US Presence and then some South America presence.
+Mik (Collate): So we have support teams in us, India, Europe and all across the globe.
+Mik (Collate): So it enables us to support teams that are global or just have different, you know, different needs.
+Mik (Collate): We have high security standards met, you know, SoC2, type 2, GDPR, CCPA, and have done a lot of that, you know, groundwork to prepare us to serve, you know, larger clients like Orlando.
+Mik (Collate): Here's a splashy customer deck.
+Mik (Collate): We do work with the healthcare and data space and are comfortable signing BAA agreements and things of that nature just to ensure that data privacy is met.
+Mik (Collate): And obviously having a big European presence means that we do do a lot of work with organizations who care a lot about data residency and data protection and have built our product to suit those needs as well.
+Mik (Collate): So down to the core problem, you know, businesses invest tons of data, tons of money into their data to make it more accessible and extract more value from it.
+Mik (Collate): Lots of employees can be labeled with the hat of data practitioners.
+Mik (Collate): So different analysts and engineers, scientists, business users, executives who want to get more information out of the data, more insights out of the data.
+Mik (Collate): But there are significant challenges to translating that data into value.
+Mik (Collate): So practitioners spend tons of time finding their data, a lot of time fixing bad data, just doing a lot of rote manual data entry and just correcting pretty annoying problems.
+Mik (Collate): Data leaders are not able to get full productivity out of the data teams because of the lack of unified insight into all the different data sources.
+Mik (Collate): And there are a lot of increasing costs and complexity.
+Mik (Collate): Business leaders are faced with issues around not knowing where to trust their data, not knowing where to find their data.
+Mik (Collate): If they get varying conflicting reports from different lieutenants beneath them reporting up information that's conflicting.
+Mik (Collate): It's difficult to get the ground truth.
+Mik (Collate): We support again a variety of large organizations, Mango is in the retail space in Europe and a variety of interesting use cases around, they had bad data leading to incorrect price tagging and that lost tons of sales.
+Mik (Collate): But the core problem that we're really facing here is practitioners having a very difficult time finding the data and getting insights out of that data to then report across the organization.
+Mik (Collate): And one of the reasons for that is existing data tooling is broken.
+Mik (Collate): A huge problem around that is lack of unification.
+Mik (Collate): So getting data imported from a heterogeneous set of data sources.
+Mik (Collate): So you know, maybe you invested heavily in the Azure data ecosystem, but if you have data coming in from data bricks and other sources that are outside of that core Azure ecosystem, existing tooling doesn't support that quite well.
+Mik (Collate): There's a lack of unification, lack of simplified view into understanding where all that data comes in into a single source of truth.
+Mik (Collate): There's also a lack of automation.
+Mik (Collate): So there's a ton of manual work and non standard workflows to manage all that data to make sure that it's comprehensively labeled, to make sure that everyone is assigned ownership, that tagging is correct, that PII data is correctly flagged across a complex and non standardized set of data sources.
+Mik (Collate): There's also a lack of collaboration so you know, in context, in product collaboration to have teams all together understanding the same data sources, speaking the same language, looking at the same set of information, understanding that that data journey, that full data change log, existing tooling doesn't do that very well.
+Mik (Collate): And so yeah to get deep insight into the data stack exists especially with sort of traditional data cataloging tools.
+Mik (Collate): It's, it's quite difficult.
+Mik (Collate): So Kali, again bringing together the cataloging piece as a level one but you know, again unifying that with quality, observability and core governance features as well.
+Mannan, Shahidul: And so quick question.
+Mannan, Shahidul: So you mentioned that you know, Collibra are able their last mile product.
+Mannan, Shahidul: I hope you're going to at some point mention how you are differentiating from them or elation.
+Mannan, Shahidul: Sorry.
+Mik (Collate): Yes, yep.
+Mik (Collate): And we're doing that.
+Mik (Collate): And the next slide after this one I'll spend a bit.
+Mik (Collate): Sure, yeah.
+Mik (Collate): So with the Collate platform again we're unifying several different pieces of core functionality that we think are necessary for teams to be able to get deep extract correct information from their from the data.
+Mik (Collate): So a unified platform that combines discovery, observability and governance features into a single tool, we add a lot onto that.
+Mik (Collate): So instead of beyond just ingesting data and giving you data quality insights, we're layering a lot of value on top of that in the form of AI agents and different forms of automation that allow your teams to avoid a lot of the manual efforts of labeling data correctly and just organizing it, ensuring that quality tests are up to date, that anomalies are flagged.
+Mik (Collate): We also store data in a unified metadata graph, which is interesting just in the way that we can generalize all the data that comes in and enable teams to run tests across it and suck in data from again a very wide variety of sources.
+Mik (Collate): When it comes to differentiating between Collate and other types of traditional data catalogs, again, I've mentioned this a couple times, but a lot of the core differentiators are we have been built from the ground up to intuit data or think about our data in a generalized way.
+Mik (Collate): So we ingest data in JSON format and that allows us to think about the data in more complex ways.
+Mik (Collate): So layering on quality and observability is a huge one.
+Mik (Collate): So Collate has native data quality, native observability features built deeply into the data stack or into the Collate platform.
+Mik (Collate): That a large difference.
+Mik (Collate): Collaboration is again really key, so enabling teams to discuss about the data, discuss changes or issues that they're trying to sort out in a single place is again a very powerful differentiator.
+Mik (Collate): And then, you know, old data catalogs are usually somewhat brittle when it comes to ingesting data from various sources.
+Mik (Collate): And when those upstream sources change, the connections to the old data catalogs can be again somewhat brittle.
+Mik (Collate): And then, you know, I know that Daryl and I spoke about specifically Unity Catalog and Purview as different catalogs that Orlando is considering.
+Mik (Collate): Those two are specifically very good at their universes.
+Mik (Collate): Purview is great at ingesting data from the Azure universe.
+Mik (Collate): Unity Catalog is great at giving you insights from databricks universe, but when it comes to outside those universes, their capabilities are somewhat limited.
+Mik (Collate): And that's again a huge, a huge difference between Collate and Purview and Unity specifically where Collate can provide all the capabilities of those two platforms and then add on richer insights, richer features from day one and then give you a much richer picture from both upstream and downstream sources compared to Unity where again focused mostly just on databricks and changes that are occurring within the databricks lakehouse ecosystem.
+Mik (Collate): Then Purview, when you have data that's sitting outside of Azure, it's Just very limited in terms of what purview can actually show you what's happening inside that platform.
+Mik (Collate): Joe, anything you wanted to add?
+Mik (Collate): When it came to these two, I.
++13*******83: Think you did a good job of covering the point that I would drive home.
++13*******83: Really thinking about that last mile is I think you really want to look at your end user journey.
++13*******83: It's great that, you know, a lot of, you know, current catalogs provide you with insights surrounding data.
++13*******83: I love that that's the trend that, you know, a lot of organizations are going to.
++13*******83: But it's not enough to just, you know, find a table and you know, have to add a description and you know that the end all be all.
++13*******83: There's different elements that we need to really understand.
++13*******83: And again, you know, a word, a sentence, a phrase that describes an object is, you know, one thing.
++13*******83: But you know, can I truly test this?
++13*******83: Can I truly trust this?
++13*******83: Having that observability component through a variety of quality tests and then also knowing, all right, now that I know everything I know, what should I do with this?
++13*******83: And thinking about it from that standpoint, it's one thing to know that something's pii, but how should PII be handled?
++13*******83: What is our policy?
++13*******83: And being able to get to that quickly and easily, I think is that next step which kind of takes you past just pure consumption driven understanding what's out there.
+Mik (Collate): I'm going to have to go to another meeting, but my only ask, whenever you all have time, is I'd like to understand and really see what the ease of use would be from what I like to call the business layer side needs from an analytical catalog, a data catalog versus the technical catalog drill into for versioning and data lineage and all the above.
++13*******83: So at some point maybe you can.
+Mik (Collate): Set up a separate call.
++13*******83: Okay.
+Mik (Collate): Thank you for inviting me.
+Mik (Collate): Yeah, of course.
++13*******83: Nice meeting you.
+Mik (Collate): Nice to meet you.
+Mik (Collate): Take care.
+Mik (Collate): And so, Joe, I think that some ways that we can start talking about the differences between collate and immunity and purview would be helpful to just walk through the product demo as well so we can talk about some side by side comparisons and just dive a bit deeper into the core collid offering.
++13*******83: Perfect.
++13*******83: Yep.
++13*******83: And can you guys see my screen on the call?
+Mik (Collate): We can.
++13*******83: Okay, perfect.
++13*******83: All righty.
++13*******83: So you know, thinking about, you know, kind of what, you know, Mick just spoke about and kind of that, you know, high level of, you know, what I was just referring to, we really want to think about, you know, what I like to think about as the future of your data.
++13*******83: And I Say future because it's a nice little handy acronym to help you find, understand, trust, use and reuse your data assets.
++13*******83: So when a user comes into colate, they are taken to this customizable landing page where they can see what data assets are actually out there.
++13*******83: That's step one, the bare minimum from a discovery standpoint.
++13*******83: I may also want to get things like announcements of what's happening in my data ecosystem, what changes might be occurring, having a timeline, if you will, of your data.
++13*******83: I also want to be able to navigate to things quickly.
++13*******83: My following my recent views, the things I own some Knowledge center articles, getting kind of away from your data.
++13*******83: I'm a data steward in this example, so I also may want to get some key KPIs surrounding my data.
++13*******83: How many assets have ownership?
++13*******83: How many?
++13*******83: What's the percentage of things with the description?
++13*******83: I may want to see my data volume.
++13*******83: So how many assets I have within the tool and then some just high level quality and changes in a variety of different areas.
++13*******83: Again, just kind of that bird's eye view landing area.
++13*******83: But really going back to that example of the future of your data, we want to find our assets and there's a couple ways to do that.
++13*******83: We can for one.
+Mannan, Shahidul: Hey Joe, can I quickly ask, is this being recorded?
+Mannan, Shahidul: Because this is helpful and I think if Kat or others want to see it later, it may help.
+Mik (Collate): I am hitting record right now.
+Mannan, Shahidul: Okay, thank you.
++13*******83: There we go.
++13*******83: Yes, perfect.
++13*******83: So thinking about that future of data, if I.
++13*******83: All right, this is the last one, I'll say.
++13*******83: So if we want to think about that future of data, you know that step one is fine.
++13*******83: Then we can leverage the search bar up top.
++13*******83: I will also say we have very rich RBAC and ABAC controls.
++13*******83: So right now I'm viewing all our domains.
++13*******83: If I wanted to see clients, I can switch that and I'm only going to see eight assets because only eight assets belong to clients.
++13*******83: So really being able to have those segmented views, having users assigned to those domains is that first step in really finding and discovering data.
++13*******83: We want to make sure users are finding data that's relevant to them.
++13*******83: That's going to make sure that something we have in place again we can use that search or we can hit this little Explore button.
++13*******83: By clicking this explore button, I'm seeing assets based off popularity and there's going to be a variety of ways I can kind of filter on these things.
++13*******83: If I only want to see databrick assets, I can click on databricks.
++13*******83: If I only want to See, you know, maybe I want to see ML models instead.
++13*******83: I can click on an ML model or maybe I want to see only things within Power Bi.
++13*******83: I can click on Power Bi.
++13*******83: So a variety of ways just off that, that I can, you know, filter.
++13*******83: If we go to the bottom here, we have over 670 pages.
++13*******83: So obviously we don't want anyone to click one by one.
++13*******83: So let's kind of build out some things we might want to look for.
++13*******83: We might want to look for a specific owner.
++13*******83: So maybe we want to see where Joe is the owner.
++13*******83: We can type Joe and we can see he is the owner of four assets.
++13*******83: We can also maybe look at a variety of tags.
++13*******83: So maybe we want to look at pii, or maybe we want to look at it from a tiering standpoint.
++13*******83: We want to look for tier one esque applications.
++13*******83: We can do that.
++13*******83: We can also become pretty advanced where we can have someone needs to be the owner or we can do an OR statement.
++13*******83: So we're looking at a variety of criteria.
++13*******83: Maybe I want to look at the display name or the data model or the service or the project or the tag.
++13*******83: You know, we can build out these, you know, complicated logic to find exactly what you're looking for.
++13*******83: As we look at the search results, we're seeing this little preview on the right hand side.
++13*******83: So if I click on External audit or Net Interest or Customers by region, this little area changes here.
++13*******83: So I can see right off the bat, you know, the type, the number of queries, high level profile and data quality, the tags associated to this, the description, if there was one, and then the overall schema structure.
++13*******83: So before I even click on an asset I can start to understand it.
++13*******83: Let's see what I'm able to see.
++13*******83: When I click in right now I see that this is the customers table.
++13*******83: It belongs to the customer domains with these individuals as owners.
++13*******83: I see It's a Tier 1 application tag.
++13*******83: One thing I really like about COLA is it doesn't just tell me it's Tier one.
++13*******83: It's not like I'm slapping a sticker on something by just simply floating over.
++13*******83: I can see what it means to be a Tier one application.
++13*******83: Does this mean we have a certain sla?
++13*******83: Does this mean we have certain metrics that we should be deriving?
++13*******83: Does this mean it's, you know, mastered information, you know, and not just for this Tier 1 tag, but things like sensitivity as well?
++13*******83: I can know, oh, this is PII sensitive.
++13*******83: I shouldn't just expose this to anybody or talk about you know this with a friend.
++13*******83: This is private information.
++13*******83: I have that level of almost having a policy association.
+Mik (Collate): So out of curiosity, these tags and these mouse overs, these tool tips, can we go in and create our own?
+Mik (Collate): So Adele on the epic side wants to start saying, hey, this is not advised.
+Mik (Collate): But if you need to use this as an alternative over here you could even annotate things, help guide people in a direction.
++13*******83: So in our govern we have the call classifications and you know, the one we were looking at I think is that pii.
++13*******83: So I can have non sensitive and sensitive and then I can even see how many things are tagged as non sensitive, how many things are tagged as sensitive.
++13*******83: We can also build out automations for this.
++13*******83: We don't want someone going item by Adam tagging.
++13*******83: So if something says Social Security number, we can create an automation.
++13*******83: Whenever you see the column ssn, Social Security number, auto tag it.
++13*******83: We could even take it a step farther.
++13*******83: And during our profiling job we can auto tag.
++13*******83: So if it sees three digits dash two digits, that's four digits, it knows the pattern.
++13*******83: Let's mark this as PII sensitive.
++13*******83: So there's some things we can do that date of birth, first and last name that we auto tag so we don't have to worry about someone going in manually adding.
++13*******83: And it's going to auto tag with this sensitive tag that we've defined.
++13*******83: So there's definitely some cool stuff that we can do in that regard.
++13*******83: Does that hit your question?
+Mik (Collate): Yeah, definitely.
++13*******83: Perfect.
++13*******83: So it's not just tagging.
++13*******83: The common one of understanding your assets is things like descriptions.
++13*******83: So I can see last name, the last name of a customer.
++13*******83: We also have this little friendly robot guy here, call it AI, where if I click on it, it's going to auto suggest AI description.
++13*******83: Wherever there was in a description, it's going to suggest something.
++13*******83: We're also working on what we call the day one experience where all this is already done.
++13*******83: We don't need to go in here table by table, choosing to accept.
++13*******83: We would have the ability to have a feature where we're going to automatically suggest some of these descriptions.
++13*******83: We can see a table that stories data about customers, their lifetime value, et cetera, et cetera.
++13*******83: And that's, you know, some of those columns that it's seeing and picking up.
++13*******83: It's not just looking at the column name, it's also looking at how it's used in queries and drawings and different things like that to provide this unified description.
+Mik (Collate): So we can populate manually, we can populate based on your AI, if I'll just use epic, because Adele, I've seen you guys catalogs.
+Mik (Collate): Could I go to EPIC and export and just load in imports of descriptors?
++13*******83: Yeah, we can take that from a CSV file.
++13*******83: Things like databricks, it's one of our top tier connectors, if you will, we can bring them into the ingestion process.
++13*******83: So any of those databricks, I think they're called tags in databricks as well.
++13*******83: I know they call something different in Snowflake, but we could automatically ingest that in.
++13*******83: So you can even choose where you want to essentially add that context and information.
++13*******83: So absolutely.
+Mik (Collate): And a call out before we started to hear you were mentioning that in Q1 of next year, not only will you be able, you're already able to read from the Unity catalog, but you'll be able to push back into the Unity catalog.
++13*******83: So for a variety of connectors, databricks, snowflakes and a few others, we're having what we call reverse sync or reverse metadata.
++13*******83: So if you curate here, if I were to add a tag here, I want to send it down to databricks, I can.
++13*******83: Because what we don't want is to hold it to be an ivory tower, to live in a bubble.
++13*******83: And it's just somewhere where you have to consume.
++13*******83: Although we would love for that to be the working case, we recognize people are going to stay working in databricks, People are going to stay working in whatever system that is native to them.
++13*******83: We want the information everywhere.
++13*******83: And some of the things that we can already do today is we do have a Google Chrome plugin.
++13*******83: I could sign in real quick.
++13*******83: And that's going to allow you to be, even if you're Googling, patient.
++13*******83: What defines the patient?
++13*******83: Did they just check into the er?
++13*******83: Did I actually need to write them down, Et cetera, et cetera.
++13*******83: We can get the Cola Orlando Health definition, not some generic one.
++13*******83: Even by Googling, I'm able to pull that information.
++13*******83: So the idea is thinking about the unified platform, not just be a place for everyone to come, but for the content that's captured here to be accessible anywhere in the organization.
++13*******83: AI is just obviously one way to supercell that and make sure that we're multiplying our manpower, multiplying our efforts, and not having someone have to go and do any manual redundant tasks.
++13*******83: Thinking ahead, we have some basic features, glossary terms that we can link to again, creating that we can link to knowledge centers or things outside of school.
++13*******83: So if I click on customer here, I don't have access to it.
++13*******83: This shows our, you know, vast RBAC capabilities at work.
++13*******83: Just kidding.
++13*******83: I can see customer here, but if we also went back to that customer table for a second, we can see that I have a customer notion link.
++13*******83: So I could also take people outside of quality and catalog links.
++13*******83: So we want to catalog our tables, we want to catalog our schemas.
++13*******83: We could also catalog our reference material, our knowledge element.
++13*******83: And they don't need to necessarily live here, but just the pure element of them can be linked here.
++13*******83: So if I actually type customer notion link, I'll be able to find that in the tool and I can give it a description and owner, a tag.
++13*******83: And this way things like knowledge elements can live anywhere, but they're still captured, governed in a centralized place and easy to discover.
++13*******83: So really thinking about how we can go, quite frankly, anywhere.
++13*******83: But let's go back to that customer table for a second.
++13*******83: It's one thing to have all these, you know, basic, you know, catalog features, if you will, the type, the descriptions, you know, frequently joined certification.
++13*******83: But we also want to, you know, think about, you know, one can I actually trust this information that I'm looking at?
++13*******83: And this starts getting us into that.
++13*******83: Next thing, we've found the table customers, we've started to understand it, or at least we think we understand it.
++13*******83: We know the tier, the tags, the descriptions of these elements.
++13*******83: But what we really want to do is trust it.
++13*******83: And trust happens in a variety of ways in quality.
++13*******83: Looking at this last name example, it's the last name of the customer.
++13*******83: Well, my last name is Perez.
++13*******83: Let's see what the last name of Michael is.
++13*******83: It's P, period.
++13*******83: Now, I don't think that's his actual last name.
++13*******83: I think it's just an abbreviation.
++13*******83: The description didn't tell that full story though.
++13*******83: I need to look at sample data to truly actually trust what I'm looking at.
++13*******83: If I'm expecting Perez or Smith or Jackson, I'm going to be extremely disappointed when my queries don't match up right when I do a select where Perez P isn't going to pop up.
++13*******83: And that's where we can, you know, layer in sample information.
++13*******83: It's also where we can start looking at things like profiling and data quality to really understand what the data structure looks like.
++13*******83: So we don't necessarily need to expose data.
++13*******83: There might be some concerns about, of course, but we could also look at things like profiling.
+Mik (Collate): If I recall right, the data quality element has an ability to capture significant row Variations from the norm.
+Mik (Collate): Right.
+Mik (Collate): Because one of the issues we've had is we actually have an application that they truncate the table that we source from every hour.
+Mik (Collate): Typically we should expect something like 48,000 rows.
+Mik (Collate): Sometimes we get zero.
+Mik (Collate): And we only find out when the customer comes to us and says, hey, the data is not right and we don't know why.
+Mik (Collate): And then we're searching down.
+Mik (Collate): So this would be able to proactively tell us, hey, there's a significant record count deviation.
++13*******83: Yeah.
++13*******83: And it could even provide you the alert of when that happened.
++13*******83: So right here, this has nothing to do with alert, but we're looking at data volume.
++13*******83: We can see that there's some ups and downs.
++13*******83: So we have the row count at 100 and then all of a sudden it's 105.
++13*******83: And then we can see it goes back to 100 and so on and so forth.
++13*******83: And that's over the last 60 days.
++13*******83: But we can get this in just looking at yesterday, where in this case it does remain pretty stable.
++13*******83: But then the other thing that when we look at, let's say the last 30 days, not just seeing these pivots, but what's actually happening, are they deletes, are they updates, are they inserts?
++13*******83: Really understanding what that actually is, understanding that five were deleted and then only four were updated.
++13*******83: So really getting down to that level.
++13*******83: And again, we can create either data quality rules to send notifications and things like that.
++13*******83: When that happens, kind of getting into data quality.
++13*******83: But let me actually show column profiling.
++13*******83: We can really start understanding how many are null, how many are unique, what's distinct.
++13*******83: We could even click into it and understand what things look like, how long are they?
++13*******83: Or is it just two characters, is it full names, what's the most common and things like that.
++13*******83: But then going into data quality, we can add a test.
++13*******83: And I'm going to do it at the table level.
++13*******83: And what the test can be is let's say to your example, I need the row count to be between a certain value.
++13*******83: Now what we have is this beta feature that we can turn on.
++13*******83: And this dynamic assertion is going to create the threshold for us.
++13*******83: So we don't need to constantly put it needs to be between 95 and 100.
++13*******83: What happens when eventually our data volumes grow?
++13*******83: It's bound to happen.
++13*******83: Do I have to go into the tool for all my tables and market, oh, it needs to be 105 to 115?
++13*******83: No, this dynamic assertion is going to take a rolling average and look at a variety of factors to then suggest what this threshold should be and then potentially notify you when there is an issue.
++13*******83: So row counts, just one example, but we can do that for a variety of things.
++13*******83: We can do that for, you know, values on spend.
++13*******83: We can use this as almost like a threat detection or from an auditing standpoint.
++13*******83: Well, this is an abnormally what's happening here.
++13*******83: Let's investigate this record.
++13*******83: There's a whole lot of things that we can do in a matter of clicks too.
++13*******83: I'm all for being able to develop all these SQL and things like that, but I'm able to just enter a name, select a test case, flip a switch and hit submit.
++13*******83: And now I have a data quality rule.
++13*******83: The time to value isn't that much.
++13*******83: If we needed to though, we can write custom SQL queries in order to generate that.
++13*******83: We also have again, call AI here where I can ask a question and I can say, hey, write me a query to find when the row counts are between this and I can just copy and paste that again, thinking about how we can leverage AI through natural language.
++13*******83: And then I can just stick that SQL expression in there if I chose to.
++13*******83: Just thinking high level about some of those different elements.
++13*******83: And again, this all goes back to the idea that we want to trust what we're looking at.
++13*******83: And that happens not just through sample data, but through profiling and data quality.
++13*******83: We also want to be able to resolve issues before customers say, hey, what happened to the data?
++13*******83: Why was it truncated?
++13*******83: We had 45,000 rows.
++13*******83: I don't have anything here.
++13*******83: We don't want that.
++13*******83: We want to notify the customer that hey, we just truncated this.
++13*******83: It's going to be resolved later this afternoon.
++13*******83: Proactive behavior is way more important than being reactive.
++13*******83: This is how we're able to kind of have that monitoring, you know, coming in a future version.
++13*******83: And I think you might have seen this already.
++13*******83: But we do have a data quality dashboard that we are building out.
++13*******83: And what this will allow you to do is really have that high level area where you can see, you know, the health of your data assets.
++13*******83: And there's different ways we can filter that by owner, tier or tag.
++13*******83: So we can say, oh, there are tier one applications.
++13*******83: What's the overall health, you know, what is the test conditions?
++13*******83: We're looking at accuracy, completeness, consistency, different dimensions.
++13*******83: We can see how things happen over time.
++13*******83: What's our response time?
++13*******83: I think it does a pretty good job of having SLAs and response times, but sometimes data doesn't.
++13*******83: And now we're able to actually capture that we can respond to an incident in eight days, we could respond to an incident in eight hours.
++13*******83: But really being able to capture and quantify some of those elements are also equally important.
++13*******83: And this just again is providing you visibility on your overall data initiatives.
++13*******83: This is one way we also have our data insights where we can define some key KPIs and custom dashboards where we can look at total data, assets, descriptions and things like that to also get an understanding of that.
++13*******83: Or how many Tier one applications do we have, how many users do we have, and then really start understanding our data, the value.
++13*******83: We can also look at it from a cost analytics.
++13*******83: So right here we can say how many apps are actually being used in the last 30 days, how much space are they taking, how much is that actually costing us?
++13*******83: So we can really start quantifying some of these things and reporting on them and using data about our data, not just adding a label to have a label, but what does it actually imply, you know, downstream.
++13*******83: So now I found I understand, I trust my asset.
++13*******83: I may want to use an asset, I may want to discover some more.
++13*******83: What I can do is I can click into the lineage here and start being to really understanding, you know, how things move from system to system.
++13*******83: And this is where I think we might really start differing from things like Unity or Purview, because we're taking an agnostic approach here.
++13*******83: We're not playing favorites.
++13*******83: We don't have an ecosystem.
++13*******83: It's not just databricks, not just Azure and Microsoft.
++13*******83: We can see here that we have some SQL Server and it's feeding some different views.
++13*******83: We can see that we have some redshift, we can have some databricks feeding and then we can hit a variety of our BI objects.
++13*******83: We have Power BI looker, tableau, superset, whatever that may be.
++13*******83: And we can really see how this data flows.
++13*******83: Now this can help from an issue resolution standpoint, but this can also help what asset do I want to use?
++13*******83: I don't want to use the customer table.
++13*******83: I want to consume this Power BI report.
++13*******83: Ultimately, that's what I want to use.
++13*******83: And we can start seeing that.
++13*******83: And what we could also do is look at it from a column level.
++13*******83: Maybe I want to see how first name moves throughout the system.
++13*******83: I can see it's coming from this raw customer name and it's feeding this BI object.
++13*******83: Or maybe I want to look at it from an observability and trust standpoint.
++13*******83: I didn't have any issues within staging, but I started having issues within customers.
++13*******83: Where is that issue actually happening?
++13*******83: So again, I can really start understanding how this is looking within my ecosystem to give me that confidence and trust of oh, this is something I should be using or oh, this isn't something I should be using.
++13*******83: Want to pause here for any questions?
++13*******83: Whether it's on lineage profiling and querying the overall schema.
++13*******83: I know we have 10 minutes left.
++13*******83: There's probably two major elements I want to show after this, but did want to just kind of take a quick breather and pause for questions?
+Mik (Collate): Yeah.
+Mannan, Shahidul: Thank you, Joe.
+Mannan, Shahidul: I think I see the key capabilities and if you can share the deck later, I'll also review that.
+Mannan, Shahidul: And third is if you have any quick few minutes demo of the product, the functionalities, I think this will also help.
+Mannan, Shahidul: But I don't know if you have a 5 minute YouTube demo of any kind that's also helpful for others to know who hasn't attended.
+Mannan, Shahidul: Now the one thing I wanted to see, and if it's maybe it's a couple of minutes, I'm a new user.
+Mannan, Shahidul: I come into use using our data lake or our data warehouse and I want to go through this product to understand the data.
+Mannan, Shahidul: Walk me through that experience.
++13*******83: Yeah.
++13*******83: So you're a new user.
++13*******83: You may use a specific table on your day to day or you may need to generate a report for a specific element.
++13*******83: Now currently you probably have to stick to what you know.
++13*******83: You're not just.
++13*******83: You don't just uncover a new table like it's a new song on the radio.
++13*******83: It takes a process of discovery.
++13*******83: If you don't know about it, you may never know about it.
++13*******83: I think that's where going back to that find, I want to be able to search, I want to be able to type customer and see what information exists around customer.
++13*******83: Then from there is where I think we can start using it.
++13*******83: Maybe we had descriptions and stuff.
++13*******83: I could approve it just for the sake of it.
++13*******83: So I can start understanding this has lifetime value.
++13*******83: Okay, that's actually pretty helpful.
++13*******83: How do I actually now use this?
++13*******83: Well, I can go to lifetime value and I can scroll down here and I can go to this term, this business term.
++13*******83: And this is just me showing some more features.
++13*******83: But I can see this is how we should be calculating customer lifetime value.
++13*******83: This is how we should be calculating the number of days a patient stays within Orlando Health.
++13*******83: Not some arbitrary value that every team has a different version of.
++13*******83: This is the standard one.
++13*******83: I can start seeing what that actually looks like.
++13*******83: I can see what assets have this value so I can use those assets.
++13*******83: Now I can go to the table and I can say, all right, I want something with lifetime value.
++13*******83: And I don't know if I can find one just off the top of my hand, but what I can do is type owner and just because I know I have some queries there it was I need to give myself a better name.
++13*******83: Just so the first one to pop up I can say there is a query here called Customer lifetime value and I can now reuse a query.
++13*******83: So that was the last part of the future that re I want to use data.
++13*******83: I have this table.
++13*******83: I can go to where it is and I can start using it and writing queries or I can use what's already existing.
++13*******83: Now those people way smarter than me.
++13*******83: I want to use what they're developing.
++13*******83: I want to use those standards.
++13*******83: We all should be using this query.
++13*******83: We can do that.
++13*******83: Also, maybe I didn't understand what this query was doing.
++13*******83: I can ask AI to say what is happening here, please.
++13*******83: You always have to say please and spell it right.
++13*******83: Not like me.
++13*******83: Because we never know when AI is going to go Terminator.
++13*******83: And this is how we know it's a real demo because I'm getting thrown an error.
++13*******83: So what this is going to do is it's going to show me what is happening and select all customers from the table to provide a comprehensive view of each customer.
++13*******83: Detail doesn't really make sense, so maybe this is a poor query to use, but it could really break down what the query actually does and things like that.
++13*******83: I have an atrocious example that usually works pretty well.
++13*******83: So if I go back to owner and I go Joe and let's say I want this one explain this query.
++13*******83: It should break it down into four different parts of what this query is doing.
++13*******83: As we can see here, this query isn't written in the best way possible.
++13*******83: It will also show me the query explained a little bit better and written One I think it's the guest WI fi I'm going to chuck it up to and not collate in this case.
++13*******83: But again, kind of going to.
++13*******83: Your initial question of how we can use this is we're capturing all this information and then making it accessible for individuals to use.
++13*******83: So now I can take this, I understand what it's doing, which is important.
++13*******83: Before I use or reuse anything, I can copy this to my clipboard and I can run this in whatever query editor I choose to.
++13*******83: Something that we are considering to have on the roadmap is being able to just run and be able to get to insight that way.
++13*******83: I could ask the AI bot, hey, write me a query to find customer lifetime value based off of this term, the standardized way of calculating it.
++13*******83: Go.
++13*******83: And then I can get that answer, I can get those values and I can start using it from an analytics standpoint.
+Mik (Collate): One other aspect I haven't seen, and I know there's so much to this and we haven't seen a lot of it.
+Mik (Collate): You have the ability to have commentary and conversations in here along with inquiry about how would is an analyst come in and use this?
+Mik (Collate): Yeah, I was going to say I feel like the conversation is also a nice little ad.
++13*******83: Yeah.
++13*******83: So we can make announcements or have conversations.
++13*******83: So I can say, hey, how would I use this customer table?
++13*******83: Or what are some good queries to do?
++13*******83: This, this or that, or hey, I want access to this.
++13*******83: Can you provide me access?
++13*******83: Now that probably takes place right now in teams message.
++13*******83: Is that the best place for that to happen?
++13*******83: No, this is centralized around the asset.
++13*******83: There's no confusion of what asset they're referring to.
++13*******83: They made that conversation surrounding this customer table.
++13*******83: Now if someone said, hey, do you know anything about this patient table?
++13*******83: You're probably going to look at it and be like, which one?
++13*******83: If it happens here, there's that context, there's that information.
++13*******83: Also, how many times do we answer the same question more than once?
++13*******83: How many hours do we spend constantly re answering these questions?
++13*******83: This is all tracked in an activity feed, so we can see all the activities that are happening for this specific table and then be able to, you know, chime in on.
++13*******83: We can upvote.
++13*******83: We could, you know, add a little smiley face, whatever it may be, to those actions that are happening surrounding this specific object.
+Mik (Collate): Another core use case would be, you know, if a table changes, the owner could be alerted to it and then they could maybe tag the operator who made that change or if there's a change request to be made, that can show up as a task.
+Mik (Collate): Same with alerting.
+Mik (Collate): So alerts can be triggered.
+Mik (Collate): When those alerts are triggered, data owners are notified of those changes and then again those are reflected here in the activity feed.
++13*******83: Yep.
++13*******83: So yeah, from an incident standpoint or alerting standpoint, this can be the first step to, you know, resolution.
+Mik (Collate): And one of the things I think I remember asking you guys back in the day was can this conversation be integrated with teams so that we don't have yet another communication tool?
+Mik (Collate): And if I recall right, you could work with multiple API based ticketing systems and with Teams so we have the.
++13*******83: Ability for webhooks, so multiple ticketing systems.
++13*******83: But then we also directly integrate with things like Slack, Keychat and teams to send these types of notifications through a certain place.
++13*******83: And then obviously email, we can directly send an email to an individual and be able to track and capture there.
++13*******83: Again, going back to that cornerstone, we don't want people to have to come to cola.
++13*******83: We want them to be able to access it wherever they work, wherever they do, whether it's teams, whether it's emails, we want this information in their hands.
+Mannan, Shahidul: Yeah.
+Mannan, Shahidul: Thank you.
+Mannan, Shahidul: This is great demonstration.
+Mannan, Shahidul: Let me process this and I'll also talk to my peers and colleagues and we'll get back to you.
+Mannan, Shahidul: One thing would be helpful.
+Mannan, Shahidul: Yeah if you can send us the recording and the information that you have shared.
+Mannan, Shahidul: We're evaluating a few and Daryl may have told you we are actually setting up some with Purview so we'll definitely take this into consideration.
+Mannan, Shahidul: And something we also want to know, I would also want to know is what is the pricing model that you have.
+Mannan, Shahidul: I know we don't have enough time but you can send the information or talk to Daryl and I'll catch up with him and maybe a few weeks out we can have another follow up discussion or session.
+Mannan, Shahidul: Thank you for the time and for the wonderful presentation.
+Mannan, Shahidul: I appreciate it.
++13*******83: Thank you.
+Mik (Collate): Pleasure.
+Mik (Collate): See you soon sir.
+Mik (Collate): Thanks to all.
+Mik (Collate): Hey Adele, did you.
+Mik (Collate): While you.
+Mik (Collate): We've got you for one last minute or so, did you have any thoughts or questions or feedback?
++13*******83: No, pretty much what I, what I.
+Mik (Collate): Remember seeing from you before and I think this would be fantastic especially for.
++13*******83: Like you, like you messaged me.
++13*******83: We answer the same type of question all the time so and I, I.
+Mik (Collate): Would love the idea.
+Mik (Collate): Could you imagine having that ops group of people, that virtual ops getting these messages and being able to finally answer only once or go like we'll, we'll work with the domain owner to get you an answer on that or.
+Mik (Collate): Yeah, yeah.
++13*******83: Certified answers.
++13*******83: Did you.
++13*******83: We just did that today with, with our folks in hris.
++13*******83: You know we had to be the middle, middle person between their needs and you know something that they just could have looked up in something like this and had the right people to communicate to.
+Mik (Collate): Daryl.
+Mik (Collate): One thing that's hard to demonstrate in a brief demo like this is the different Persona journeys that you'd be going on with collate.
+Mik (Collate): So the, a bulk of the configuration and onboarding experience is like building out that viewer type of profile where you don't want somebody going in and making changes that obviously is like it's quite capable to build out the admin, the operator, the viewer, the executive.
+Mik (Collate): And those are just sort of the different Personas and different use cases you have in collate.
+Mik (Collate): When I meet with Shaheed later this week, that's something I'll bring up too is I'm hoping by end of day or tomorrow we'll have everything he's requested, you know, this video and other things.
+Mik (Collate): And it's still recording.
+Mik (Collate): And then literally, yeah.
+Mik (Collate): Mention the Personas.
+Mik (Collate): The unique thing that I found about this product is that Louis can literally tailor to the analyst, to the leader, to the engineer, to the developer, to the, you know, internal to enterprise data, external enterprise data, you know, service line oriented.
+Mik (Collate): That all sounds appealing because, you know, like Adele's team and my team are going to have the most insight foundationally, but there's a lot of insights that the domain owners are going to have as well.
+Mik (Collate): And how do we bridge that together into cohesive ways is been a challenge and I think it's growing as more data comes in.
+Mik (Collate): As I'm looking at I think 20 more data sources in time.
+Mik (Collate): Okay.
++13*******83: So I just like how it's, you know, pretty straightforward with the rules.
++13*******83: Basically choose what resource we want.
+Mik (Collate): Yeah.
++13*******83: What is the operation.
++13*******83: And then we can kind of go from the effect are we allowing or denying.
++13*******83: And then when we kind of look at those operations, we can kind of say, oh, we want them to not be able to do sample or we want them to be able to create an ingestion pipeline automator.
++13*******83: We want them to be able to edit just a custom field or things like that.
++13*******83: And then we could have that conditionality of, well, it's not just yes or no, it's if they're the owner or if they're in the right domain or if they have the right Persona or if it's not this specific tag that tagging especially gives you, Sky's the limit because you can just create these tags on the fly and then it puts.
+Mik (Collate): In our court the ability to let the IT owner own the data as much as the business owner.
+Mik (Collate): You know, Adele is the SME for Epic Everything.
+Mik (Collate): He's our contact.
+Mik (Collate): So his team needs direct ability to contribute to that data.
+Mik (Collate): But for other data sets, it could be someone in enterprise data, it could be someone out in the business.
+Mik (Collate): And so you're saying we can set up the rules to control at a very granular level.
+Mik (Collate): That's nice.
++13*******83: Then as I mentioned prior to the recording and prior to everyone joining Is we do have workflows on the roadmap which will then be let's just not do things, but let's have someone approve.
++13*******83: So it's not yes or no, can I do or can't I do, but it's also you can do, but I have to approve or you can do, but this team is going to have the final say of what it actually looks like.
++13*******83: And that really, I think, you know, getting things done is already hard if you limit the amount of people who can do them.
++13*******83: It's a lot better to have to just approve yes or no what they've done as opposed to just putting up this huge wall and you know, making no, you can't do this.
++13*******83: Yeah, you can do this, but I'm going to need some CID before you do type thing.
+Mik (Collate): Daryl, what else can we share with Shahidl beyond the recording?
+Mik (Collate): So I think you have control of the recording.
+Mik (Collate): I'll send over the slide deck.
+Mik (Collate): We have a more generic collate walkthrough as well on YouTube that it's going to be a little bit, you know, that's something we can share as well.
+Mik (Collate): It's a 45 minute, more comprehensive or I think broader demo that reaches a couple different parts of the project we weren't able to look at today.
+Mik (Collate): We can also talk about some of the ways that like to.
+Mik (Collate): I don't know if it'd be too granular to share information about like how to, you know, divide up, collate and segment it based off of like data ownership and team and user permissioning.
+Mik (Collate): Like that's, that's a little bit more on the admin side.
+Mik (Collate): But obviously we would just want to demonstrate the fact that we can segment data.
++13*******83: Do you have any, do you have.
+Mik (Collate): Any very tight YouTube demo?
+Mik (Collate): Like I think he was indicating like a much shorter five to seven minute maybe kind of thing.
+Mik (Collate): I think that was something of interest of his.
+Mik (Collate): How do you get the quick flyby of the tool?
+Mik (Collate): I suspect he's going to want to have other people just get a broad sense of it and doesn't.
+Mik (Collate): They don't necessarily need the 30 plus.
++13*******83: Minute demo and that's something we can, we can.
++13*******83: 10 minutes isn't hard.
++13*******83: I can get a recording and I.
+Mik (Collate): Think that out there.
+Mik (Collate): I think that'd be great.
+Mik (Collate): I think that'd be a great start.
+Mik (Collate): And then I'd get feedback from pretty quick when, when we meet up with him.
+Mik (Collate): I think Adele and I both have interest in different perspectives of this and so I think if the opportunity exists, we'll raise it up to get further feedback.
+Mik (Collate): All right, good stuff.
+Mik (Collate): Daryl, you and I will be in contact.
+Mik (Collate): And again, thank you for making this happen.
++13*******83: Thanks, guys.
+Mik (Collate): Gotta love the prompts.
+Mik (Collate): Okay, well, hey, gentlemen, thank you for your time.
+Mik (Collate): Likewise.
++13*******83: Thank you.
++13*******83: Have a great one.
+Mik (Collate): Cheers.
++13*******83: Yeah, I'll throw together a little video and I don't know if I'll post it online or just send you kind of a link to it.
+Mik (Collate): Well, we'll see.
+Mik (Collate): But I mean, day at a time.
+Mik (Collate): I'll get all this over to him, hopefully maybe even today, which is tomorrow morning.
+Mik (Collate): And then I think I have a meeting with him Wednesday, so I might be able to listen some feedback and see what he's looking for.
++13*******83: We'll see.
+Mik (Collate): I also don't know if there's another product he's looking at.
+Mik (Collate): I know he did mention Purview, but again, again, that's just the cheapest thing there.
+Mik (Collate): And experience.
+Mik (Collate): The Personas don't exist.
+Mik (Collate): Actually, I don't even think Microsoft's investing in it much anymore.
+Mik (Collate): I've heard, like, mixed things where, like.
++13*******83: They'Re not investing in it until enough people say they're not and they say, oh, we're we doing it?
++13*******83: And then nothing happens for six months.
++13*******83: And then that's kind of how well I've seen from Purview.
++13*******83: It.
++13*******83: It.
++13*******83: Take care, Ron.
++13*******83: Hey, where do you want to meet up?
++13*******83: It party.
++13*******83: It.
++13*******83: It.
++13*******83: It.
++13*******83: It.
++13*******83: It.
++13*******83: It.
++13*******83: It.
++13*******83: That's really what we try to iron out first, but we can't tell them what those are.
++13*******83: Assessment.
++13*******83: Right.
++13*******83: From our advisory.
++13*******83: So, Roman, I'll get with you offline and we'll.
++13*******83: We'll.
++13*******83: It.
+
+END MEETING

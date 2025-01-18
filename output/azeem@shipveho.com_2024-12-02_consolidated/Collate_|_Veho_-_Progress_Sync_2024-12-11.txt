@@ -1,0 +1,304 @@
+Meeting Name: Collate | Veho - Progress Sync
+Meeting Date: 2024-12-11
+
+Mik Cepulis: Adam, how's it going?
+adam: Hey, man, how's it going?
+Mik Cepulis: Going great.
+Mik Cepulis: Thanks for jumping on.
+Mik Cepulis: Well, likewise.
+adam: Appreciate you setting this up and checking in with us.
+adam: It looks like based on the calendar, Azim might not be making it today, which is unfortunate, but figure maybe you and I can at least chat for a few minutes and then.
+Mik Cepulis: Yeah, perfect.
+Mik Cepulis: Yeah.
+Mik Cepulis: I sent Azeem a note.
+Mik Cepulis: One of the things I wanted to do today was like, he seems pretty engaged and you know, obviously being an executive, I wanted to get him in touch with our cto Harsha.
+Mik Cepulis: He's our co founder, cto and you know, he's very deeply product oriented and I figured like, just given Nazim's enthusiasm, he might appreciate the connection.
+Mik Cepulis: And it's always helpful to sort of establish sort of, you know, leader to leader connections, you know, during evaluations like this to give him more insight into our roadmap and things like that.
+Mik Cepulis: So I shot a Zeeman email.
+Mik Cepulis: He has not responded yet.
+Mik Cepulis: But if you, if you have a moment, I appreciate you giving him a ping about that and we can set up time for those two to connect.
+adam: Yeah, can do.
+adam: I appreciate that.
+Mik Cepulis: Yeah.
+Mik Cepulis: Beyond that, you know, I wanted to connect and get an idea of just how things have progressed and then, you know, if needed, set up time with one of our engineers tomorrow or Friday to kind of crank through some technical blockers, if there are any, or just dive deeper into any questions.
+Mik Cepulis: But I thought I could at least quick update, quick summary of progress so far and go from there.
+adam: Yeah, I will say, admittedly, progress continues to be a little bit slow just based on resource constraints.
+adam: It has been a busy few days.
+adam: On the plus side, in some internal conversations trying to drive a little bit more kind of focus and clarity around the scope and shape of our POCs.
+adam: We are sort of honing in a little bit to put more wood behind fewer arrows throughout this process.
+adam: Happy to at least report.
+adam: From an update standpoint, collate is still definitely in the mix.
+adam: The variety of capabilities in kind of the unified platform continues to kind of resonate as a good.
+adam: What's the word I'm looking for?
+adam: Don't mean to undersell this, but a good glue between all of the different platforms that we may be putting together here.
+adam: So intriguing kind of like narrative and capabilities here.
+adam: I think we're really just scratching the surface of what we can possibly do with collate and certainly getting some more technical deep dives I think would be beneficial over the next couple of weeks because that, that'll help give me myself, Charlie, you know, Maybe others on the team, the opportunity to kind of like kick the tires, understand more about the value proposition and help with kind of positioning and pitch.
+adam: One of the things, I guess that's worth mentioning or kind of highlighting for you is in particular when it comes to data monitoring, the overlaps and possibilities for consolidation when it comes to like Monte Carlo is appealing.
+adam: And from a kind of like cataloging and lineage perspective, I will say not.
+adam: Not entirely unexpected, but DBT Labs is coming up for renewal here in the next few months and they're starting renewal talks which are not exactly going super productively in terms of.
+adam: Yeah, not to air out too much dirty laundry, but they're trying to increase, you know, contract value, which they are incentivized to do.
+adam: We are on the flip side trying to reduce contract value.
+adam: And that's kind of coming to loggerheads in terms of, you know, price breaks only being available for like increasing, you know, per unit price breaks only being available for increasing total contract value.
+adam: All that fun stuff.
+adam: So that said, I.
+adam: There may be, you know, an additional window of opportunity there that when it comes to like we were sort of looking at DBT cloud, you know, catalog type functionality, lineage functionality as a sort of low cost, low overhead way of getting more folks exposure to that.
+adam: On the flip side, if they're kind of playing hardball, there's a window of opportunity there to say, how does Colate play into this picture?
+adam: Does it give us kind of a credible negotiating tactic as well?
+adam: So just kind of giving you a little bit of the, you know, inside baseball on that.
+adam: And again, I kind of see Coley story fitting in and again, kind of like opportunity to consolidate tool sets.
+Mik Cepulis: Does DBT sell modules or are they only selling like overall compute?
+Mik Cepulis: Like, how does the contract break down with them?
+adam: They have kind of a hybrid contract which they used to do a seat based model, then they moved to a hybrid seat based plus consumption based model with sort of discounts for various levels of commit.
+adam: Of course, the more seats you buy, the cheaper they charge per seat, the more committed consumption in terms of like successful model runs and model materializations.
+adam: The more you commit to out of the gate, the lower they charge per model or per thousand models or whatever they call it.
+adam: So it's a little bit of a.
+adam: And to be honest, this is just a like, you know, industry criticism.
+adam: I can understand seat based models, I can understand consumption models.
+adam: DBT Labs is kind of double dipping and that's never sat well with me in the last couple of years since they changed their pricing model, but now it's actually sort of like materially impacting our guidance from our finance team.
+adam: And so again, that's why I say there's a window of opportunity for how do we bring Koolaid into the picture, leverage this kind of unified catalog plus tooling for our data engineers, plus tooling for our analysts and consumers into sort of like one metadata platform.
+adam: Like, sign me up.
+Mik Cepulis: Okay.
+Mik Cepulis: Yeah.
+Mik Cepulis: I mean, it's not required to use DBT with collate, of course.
+Mik Cepulis: Like, we have a lot of customers that leverage both platforms.
+Mik Cepulis: I don't see any.
+Mik Cepulis: We don't have many conversations around Collate customers who are using DBT for their cataloging functionality because it's pretty limited compared to ours.
+Mik Cepulis: It's again, just for their core use case, which is, I would say, outside the scope of cataloging and lineage.
+adam: Yeah, I do get a sense that a lot of platforms are going for, I'll call it sort of like more vertical integration or whatnot.
+adam: You know, DBT is trying to develop more cataloging functionality, Collate has developed more monitoring functionality, et cetera.
+adam: But that said, again, the double dipping on pricing structure and the hardball negotiations are sort of like souring me a little bit on.
+adam: I would love to put more people into DBT Cloud to show people how great of a product it is, but they're actively working against my ability to pull more people in.
+adam: And so, you know, again, and I think to your point too, DBT Cloud's lineage functionality was kind of limited to DBT only.
+adam: Again, collate and open metadata sort of branch far beyond that and give us more capabilities in there.
+adam: So, um, all that to say technical progress, POC progress may be slow.
+adam: There are stars that are kind of aligning and wheels in motion that make me, you know, cautiously optimistic about a future and kind of where, where our data stack may be going in this regard.
+adam: So.
+Mik Cepulis: Awesome.
+Mik Cepulis: Good stuff.
+Mik Cepulis: Yeah.
+Mik Cepulis: So I met with Rebecca yesterday to have kind of a procurement sync and understand like where the overall process is tracking from her perspective.
+Mik Cepulis: She mentioned that you're looking at a couple different tools at the same time, like in the stack beyond like just data cataloging and metadata management.
+Mik Cepulis: So you're looking at looker and then potentially other tools.
+Mik Cepulis: Like, I guess this sounds like a sort of wholesale rethink of your data stack and I guess it's happening, you know, for you and crunch time.
+Mik Cepulis: But we have looker in the mix, we have collate in the mix.
+Mik Cepulis: Like, what other POC are you looking at at the moment?
+Mik Cepulis: Because it sounds, sounds like A lot on your plate.
+adam: Yeah.
+adam: We're looking at Sigma as another candidate for BI platform.
+adam: Looking at databricks from a, like, warehouse and compute layer possibility.
+adam: Snowflake is also in the mix.
+adam: So, yeah, that's.
+adam: To be perfectly honest with you, that's part of why Colate progress has been a little bit slow.
+adam: Our team, on top of all of those POCs, we still have some carryover like roadmap work that has persisted far beyond its original scope and rolled over into this month.
+adam: So a couple folks on the team are working on roadmap stuff, a couple folks are working on the POC stuff.
+adam: And unfortunately, the progress on Collate has been a little bit of a victim of that lack of bandwidth.
+Mik Cepulis: Okay, so what is.
+Mik Cepulis: What have you gotten done so far with collate?
+adam: I mean, honestly, my goal this week was to get like the NWAA agent pulling and pushing metadata.
+adam: Haven't had the chance to do that.
+adam: So basically sort of in the same place we were last time we checked in.
+adam: But that's where I was thinking if we had the opportunity to grab, you know, half an hour, hour with a sort of an expert, do a quick sort of like guided tour, just throw the time on the calendar to be able to set something up, do a screen share or something like that, we'd be able to get that next step going.
+Mik Cepulis: Could we find time potentially tomorrow with one of our DevOps guys and Hammer out some of the connection pieces and networking pieces and just get tighter on that?
+Mik Cepulis: Because I think that could be really beneficial.
+Mik Cepulis: Again, we're both victims of an unorthodox POC process here.
+Mik Cepulis: Typically we'll have an official launch, get you dev DevOps time.
+Mik Cepulis: Like we actual sit down, make sure the connections are all working out.
+Mik Cepulis: Well, usually we're able to like, you know, give a cluster to you that's, you know, again, right sized, and then connect data bricks, connect Snowflake or whatever, the core sources, and that's usually a, you know, a great way to like, get a jump start on the testing and you actually see a catalog with some data in it, and then we can kind of, you know, branch out into the broader metadata management side of things.
+Mik Cepulis: So anyway, tomorrow, Friday, we can make something happen if you're.
+Mik Cepulis: If you have an hour or so to block out.
+adam: Yeah, I was going to suggest, if we're looking at tomorrow, 11am Pacific, might work for an hour or else potentially like 1:30 Pacific or later.
+Mik Cepulis: Okay.
+adam: If.
+adam: Would either of those work on your end?
+Mik Cepulis: Yeah, they should.
+Mik Cepulis: Let's see.
+Mik Cepulis: Yeah, tomorrow at 11 I think works well.
+Mik Cepulis: Let's do that.
+adam: Okay, cool.
+Mik Cepulis: I will invite, I'll probably Charlie as well.
+adam: I was going to say invites for probably myself and Charlie would be good.
+Mik Cepulis: Can you share Charlie's email?
+Mik Cepulis: I'm not sure I have it.
+Mik Cepulis: I do have it.
+Mik Cepulis: There we go.
+Mik Cepulis: Thank you.
+Mik Cepulis: Awesome.
+Mik Cepulis: Okay, got that out.
+Mik Cepulis: So once we have data sources connected to Indicolate, what, what's the next step on your end?
+Mik Cepulis: Like what do we have to validate and test in order to kind of say okay this is the right product.
+Mik Cepulis: This is like you know, going to make us happy and satisfied for production rollout.
+adam: I think we will probably have then maybe like a two pronged approach there.
+adam: One is going to be, or I'll call it two and a half pronged approach.
+adam: One is from a like data engineering perspective just understanding management administration of the platform as a whole.
+adam: Kind of like integrations across systems.
+adam: You know we talked a little bit about data overriding and ingestion from these different sources and how that all blends together.
+adam: So like if we pull in DBT documentation, if we pull in like redshift schema information, what sources end up being sort of ingested and then reflected to end users.
+adam: How do those workflows in that administration work?
+adam: And sort of I guess second piece within that is probably going to be understanding and validating a little bit of the data quality and monitoring piece.
+adam: Again just want to understand how that's going to either augment or potentially replace Monte Carlo.
+adam: And then last thing was I thinking about there's probably, I think the other prong of this is going to be around like the more of the data consumer like using the catalog functionality.
+adam: So just general for lack of a better term like ergonomics and understanding, you know if, if we're talking about a couple different Personas, an executive, whether that's a Z or like our CTO getting in there, maybe a couple of like analysts or data scientists giving them an opportunity to like jump in just to say, you know, how does search work?
+adam: What is the overall user experience?
+adam: Could you you know answer the questions that you can't answer today or you know normally you would DM somebody on the team to ask this question can you self service through collate?
+adam: And so I think that would be probably like those are the two main like prongs of the and the final vetting.
+adam: And so from a assuming both of those pan out well then you know we have tech sign off, we have kind of like stakeholder sign off.
+adam: That's a matter of you know commercial terms.
+adam: Right.
+adam: Sizing contract, number of seats, number of assets, all that kind of stuff and.
+Mik Cepulis: Awesome.
+Mik Cepulis: Do you think that we'll have time to get enough done by next Wednesday to show Azim some progress and walk them through what the data looks like on your end?
+adam: I think we could, you know, if we, if we spend some time tomorrow, I think that'll help to kind of like give us another step forward.
+adam: Would give us at least more to kind of be able to do a guided tour or something, screen share with Azim, give him something to kind of sink his teeth into.
+adam: I will say just given sort of the number of constraints and balls we have in the air right now, again have sort of slowed down our cataloging aspirations.
+adam: So from that perspective, I understand.
+adam: I appreciate that you keep sort of checking in on timelines and everything.
+adam: Yeah, just it will probably be tight to be honest, to try to like get executive, you know, user Personas and use cases addressed plus like data scientists or analysts.
+adam: So worthwhile to kind of keep an eye on that as well.
+Mik Cepulis: Okay.
+Mik Cepulis: Yeah.
+Mik Cepulis: I mean we are not going to be at a perfect point in the poc, but I think like some kind of validation of, hey, we can roll these metrics up and put them in a view where it's digestible for someone who's not an expert or a separate matter expert in this specific area, that'll be a good goal for us.
+Mik Cepulis: I'm not sure if you noticed we did upgrade your cluster to the 1.6 version, I think yesterday, the day before.
+Mik Cepulis: So you'll have that new data quality dashboard built in now.
+Mik Cepulis: So it won't have any data in it because you don't have any data in your instance.
+Mik Cepulis: But once there is data in the instance and we have data quality tests running, you'll be able to see sort of a consolidated roll up of all those tests in a single view.
+Mik Cepulis: I mean, you know, we should at least have a placeholder then for the.
+Mik Cepulis: For Wednesday and if we can grab 30 minutes with ZM and you and walk through some progress, that'd be awesome.
+Mik Cepulis: If not, we can, you know, shift to Thursday or Friday.
+adam: Sure.
+adam: If we're looking at next Wednesday, just for the sake of argument, kind of bring things up.
+adam: Oh man, AIM is pretty packed.
+adam: We could potentially do something late day.
+adam: But to be honest, I would need to.
+adam: If we, if we want to try to get anything on his calendar for most of next week, especially Wednesday, I probably need to run through his EA to rearrange some things.
+adam: Happy to do that.
+adam: I think it Makes sense to like kind of set a target just to keep us focused on making forward progress.
+adam: I was going to say, I guess tomorrow if we can orient around probably two things.
+adam: One would be setting up like somehow and again, even if it's like manual and run from like a local runner or something like that, getting position to poll and then ingest MWAA data, I think that would be a great step.
+adam: And then also making sure we get connected to databricks.
+adam: We are early days so there's not a ton of assets in there, but just being able to like we set up redshift, connecting up to databricks and getting those tomorrow would give us a couple things again that we could then target next week being able to demo to Azim, get more sort of momentum built.
+adam: And then I would say next week maybe the target or the opportunity or the next step in this would be to sort of like start to think about, oh yeah, number one, data quality.
+adam: And then number two, how do we build a even more compelling demo for somebody who's maybe like less technical than Azeem?
+adam: Sure.
+Mik Cepulis: What does he have input on that demo, like that structure of how did run a last technical demo?
+adam: He would probably have just maybe, I don't mean to speak for him.
+adam: I can imagine that he would help point to appropriate stakeholders to include in that kind of demo or conversation.
+adam: I'm not sure that he's going to have material kind of like guidance on what they will expect.
+adam: I think we need to do a little bit of like internal discovery requirements discovery for lack of a better term.
+adam: So at that point then, you know, maybe we're looking at the week of the 23rd or something like that, which I know is a holiday week, but ideally that would be an opportunity to like, even if it's an internal roadshow, get some time with our data scientists, maybe get some time with our CTO to just say like, hey, this is what we're considering.
+adam: Here's how all of these different pieces we're exploring are coming together.
+adam: And again, here's kind of how collate sits on top and glues the whole, the whole story together for us.
+Mik Cepulis: Well, if we can get progress to tomorrow and I'm confident we'll be able to get databricks connected, redshift connected, those are basic connectors and we could do some kind of highlight reel to Azim on Wednesday or Thursday next week that could, you know, position us well for a demo on the 23rd to execs.
+Mik Cepulis: So I can see that story working.
+Mik Cepulis: It's a bit Of a stretch of course but you know we're going to give you resources to get that done to the extent that we can.
+Mik Cepulis: I do think so.
+Mik Cepulis: What I'll do tonight is have a request out to our DevOps team to provision you a POC cluster.
+Mik Cepulis: I imagine with like enough redshifted data and databricks data that we should just move you over to a larger cluster.
+Mik Cepulis: I don't want to run into like a 500 asset limit in the middle of this build out and then have to scramble and provision you more capacity.
+Mik Cepulis: Like let's just get that done now if we're presenting to Exacts, let's have you know, as big of a picture possible as a wide of a context window possible to share what we've made or the progress we've made.
+Mik Cepulis: Yeah.
+Mik Cepulis: So with for tomorrow the things that we'll need are some permission sets from databricks and redshift so you can find those in our connector docs.
+Mik Cepulis: We just need to make sure that you.
+Mik Cepulis: There's a, essentially a user profile made in databricks and redshift where we can like read the right data from those systems and pull it into collate.
+Mik Cepulis: That'll be the biggest hang up.
+Mik Cepulis: It's fairly simple.
+Mik Cepulis: We have to have some ports opened to send the data over.
+Mik Cepulis: It shouldn't.
+Mik Cepulis: It's not like a complicated networking process, but it can be a hold up.
+Mik Cepulis: If we try to connect stuff tomorrow and there aren't the correct permissions made then we're not going to make progress.
+adam: Gotcha.
+adam: Yeah, I think we can probably get that going for tomorrow.
+adam: We did set something up with redshift so redshift is connected up.
+Mik Cepulis: Nice.
+Mik Cepulis: Awesome.
+adam: Yeah, we can do the same thing for databricks.
+Mik Cepulis: It'll be a similar process then.
+Mik Cepulis: Yeah, easy.
+adam: Okay.
+Mik Cepulis: And then what is NWA?
+Mik Cepulis: Remind me.
+adam: That's the AWS's hosted version of Airflow.
+Mik Cepulis: Oh, got it.
+Mik Cepulis: Okay.
+Mik Cepulis: Yep.
+adam: Yeah, we were sort of talking about like if we would run sort of like a co located agent or you know, do something like on our own.
+adam: There's, we're talking about having a library or something that we can run locally that'll connect to mwa, pull down a bunch of data and then like push it into collide.
+adam: So again like I said, even, even just that part of it.
+adam: Happy to start manually just to get something in there to play with and then we can figure out the right deployment topology for a production use case as we, as we get further down the road.
+Mik Cepulis: Okay, great.
+Mik Cepulis: Easy.
+Mik Cepulis: Yeah, I mean for anything that's tricky.
+Mik Cepulis: We can obviously do a CSV import.
+Mik Cepulis: So that's a.
+Mik Cepulis: A pretty quick and dirty method.
+adam: Yeah.
+adam: Okay, cool.
+Mik Cepulis: Awesome.
+Mik Cepulis: All right, well, yeah, I have some notes here.
+Mik Cepulis: We'll be ready for tomorrow.
+adam: Yeah.
+Mik Cepulis: Then I'll request that POC instance and then what we'll do is just like transfer over that data.
+Mik Cepulis: We'll take a backup of your free tier cluster, how it exists today, and then restore it into the new one for tomorrow.
+Mik Cepulis: So if you.
+Mik Cepulis: Yeah, anyway, it's a pretty painless process.
+adam: Okay, cool.
+adam: I appreciate that.
+adam: I mean, yeah, I didn't.
+adam: I don't want to presume on like, POC cluster resources, but appreciate the upgrade.
+Mik Cepulis: It costs a few extra dollars.
+Mik Cepulis: But I would rather us having the right, you know, infrastructure in place instead of having to be like, oh, wait, we.
+Mik Cepulis: We hit our 500 limit cap and like that.
+Mik Cepulis: That would be a very, very painful problem to have for no reason.
+adam: Yeah, yeah, I get you.
+adam: Cool.
+adam: I appreciate that.
+Mik Cepulis: Yeah.
+Mik Cepulis: Awesome.
+Mik Cepulis: Adam.
+Mik Cepulis: Cool.
+Mik Cepulis: Well, yeah, I'll talk to you tomorrow and shoot over any questions.
+Mik Cepulis: Cool.
+Mik Cepulis: You have the Slack channel, right?
+adam: I think so.
+adam: Oh, that was.
+adam: I got an invite.
+adam: It's like, for a public kind of Slack community.
+adam: Is that correct?
+Mik Cepulis: Yeah, it's called collate customers.
+adam: Okay.
+Mik Cepulis: Yeah, we just create private channels with our customers.
+Mik Cepulis: It's kind of a startupy way of integrating Slack information, but it's a place where all of our support engineers live, so it's just easy to manage all the customer relationships in one place.
+adam: Gotcha.
+adam: Understood.
+adam: Yeah, make sure to get that logged in and accept the invite and all that kind of stuff.
+Mik Cepulis: Yeah, we'll just.
+Mik Cepulis: I mean, for the PC, we'll need you and Charlie, I think, just, you know, facilitate any Q and A.
+Mik Cepulis: Cool.
+adam: Sounds good.
+adam: I was going to say, I'm also.
+adam: I'll follow up with Azeem's EA about getting some time next Wednesday or Thursday.
+Mik Cepulis: Perfect.
+adam: You think like, 45 minutes would be a good time block for.
+Mik Cepulis: Yeah, you know, I think it depends what we want to cover.
+Mik Cepulis: Like if we can at least show them.
+Mik Cepulis: Hey, Azim, we did xyz.
+Mik Cepulis: These are some of the things we accomplished.
+Mik Cepulis: These are some future states that we want to get to as well.
+Mik Cepulis: Are.
+Mik Cepulis: Are we, you know, meeting some of your objectives and get them.
+Mik Cepulis: Get them talking and make sure that we're heading in the right direction.
+Mik Cepulis: So 30 to 45 would be awesome.
+adam: Okay, cool.
+adam: We'll get right on that and see.
+adam: See what we can find.
+adam: Probably be doing a little bit of telephone back and forth to figure out works, but we'll.
+adam: We'll figure it out.
+Mik Cepulis: Perfect.
+Mik Cepulis: Yeah, no problem.
+Mik Cepulis: Thank you, Adam.
+adam: Thanks.
+Mik Cepulis: All right.
+Mik Cepulis: Cheers to talk you soon.
+Mik Cepulis: Yeah, bye.
+Mik Cepulis: All right, bye.
+
+END MEETING

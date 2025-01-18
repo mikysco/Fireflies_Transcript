@@ -1,0 +1,336 @@
+Meeting Name: Collate | UN - Introductions
+Meeting Date: 2025-01-17
+
+Dan Meierotto: So we're starting off probably just going to serve just DJCM with a kind of metadata management tool and it would be procured via New York.
+Dan Meierotto: So that's always the important thing when I talk to vendors is they should know where it's going to be procured from.
+Dan Meierotto: So the address like on the invoice is going to be the US.
+Dan Meierotto: Okay, so that's one thing to start off with.
+Dan Meierotto: But for the project itself, I would probably run the project.
+Dan Meierotto: If we were to choose your project or I would be your main focal point for operations, for billing and things, we can probably make a contact in New York to sort out like kind of accounting type issues and stuff like that.
+Dan Meierotto: And then the other thing to note is I just found out because we're so fragmented.
+Dan Meierotto: I've been asking around in the U.N.
+Dan Meierotto: and if we have any other metadata management or master data management tools.
+Dan Meierotto: I just found out yesterday they do have a contract with Informatica.
+Dan Meierotto: I don't really want to use Informatica.
+Dan Meierotto: I think it's, it's too heavy and I would like something more modern and lightweight.
+Dan Meierotto: Like what, what you guys like?
+Dan Meierotto: This open Metabase and I'm also looking at Data Hub and things like this.
+Dan Meierotto: I would prefer a smaller tool like that, but we may have to go ahead with Informatica.
+Dan Meierotto: I'm working also in parallel with our kind of the UN global IT which moves at a very slow pace to see if I can get my hands on it, to see if they will give me some access to it.
+Dan Meierotto: Because it could be we have to work through them to do everything and that won't be an option that I will probably proceed with them for.
+Dan Meierotto: With.
+Dan Meierotto: With like a tool like Metabase or Collate or something like that.
+Dan Meierotto: Yeah, so.
+Dan Meierotto: So that's where we're at.
+Dan Meierotto: That's where I am right now.
+Dan Meierotto: I'm really looking to start with basically the feature set that Metabase or Collate offers.
+Dan Meierotto: And the only other part that's kind of missing would be like a reference data management.
+Dan Meierotto: I don't know if that's guys on your guys's roadmap or anything like that to where there's some common lists that we would want to centralize and share outside.
+Dan Meierotto: Like the other way around where you know, the applications have certain drop downs of certain common values across the board where they could pick those up out of a central data hub instead of copying those values into their applications.
+Dan Meierotto: I don't know if that's something you're thinking of implementing in the future.
+Mik Cepulis: So would this be A common set of glossary terms or is it a common set of metrics shared across different applications and databases?
+Dan Meierotto: It might be a common glossary.
+Dan Meierotto: Maybe that's what that you.
+Dan Meierotto: I haven't got spent enough time, but maybe is the glossary intended to serve more than like, it would be like if I had a field with possible values in it.
+Dan Meierotto: Like these are the possible values that could be in a certain field.
+Dan Meierotto: It would be something like.
+Dan Meierotto: What would be a good example?
+Dan Meierotto: Some sort of like a financial codes for a record.
+Dan Meierotto: Like this record can only have these set of 10 coatings.
+Dan Meierotto: And then we would want to store those 10, you know, those list of 10 possible values somewhere so that all of the applications that need to tag their records with those 10 values, they would pick them from our centralized store and not have to have, have their own list internally, if that makes sense.
+Dan Meierotto: I mean it's called, I mean some people call it reference data or lookup data or something like that.
+Dan Meierotto: I don't know if that's what this glossary is intended for.
+Mik Cepulis: You know, I, I would need to chat with our team.
+Mik Cepulis: So we have the concept of a glossary term.
+Mik Cepulis: We have the concept of a metric.
+Mik Cepulis: A metric can be sort of, it's like an algorithmically defined.
+Mik Cepulis: It's, it's a function or a formula that you can tie to what would traditionally be a glossary term.
+Mik Cepulis: And a glossary term is a definition that the team can consolidate around saying like, okay, we all know what the accounts payable means in this context.
+Mik Cepulis: Or you could even have an accounts payable with, you know, some terms that are related to it.
+Mik Cepulis: So just ensuring that, you know, if we're defining Customer churn, if we're defining what a given financial metric is, we all know how the UN defines it or how the different division within the UN defines it.
+Dan Meierotto: Okay, I think I know what you mean.
+Mik Cepulis: Yeah, yeah, I don't believe that we have a that the other which is sounds related where you could say, okay, for a given column only XYZ options can be applied here.
+Mik Cepulis: Now we could probably get there with a data quality test where the data quality test could sample the sums or the values in that row and say if it doesn't equal this, this or this, and we could define that via a SQL statement, then we could certainly backdoor our way into like identifying.
+Dan Meierotto: Yeah, yeah, that, that I, I, yeah, that I can imagine.
+Dan Meierotto: Yeah.
+Dan Meierotto: So, okay, but that's not, that's not at this first round of what I'm looking for.
+Dan Meierotto: Initially we just want to get this Discovery, cataloging, classification, like just this basic, you know, just so everybody can see what we have and then go from there.
+Dan Meierotto: So that, that's, I mean I think the feature set looks really good with the tools that you have.
+Dan Meierotto: My only concern would be, but I've only been playing around with the open source version on my local, I've made a local docker container and been running it and scanning it all works fairly well.
+Dan Meierotto: But it seems like you're, that you're growing so fast right now that like the support channel is very, very active and there's tons of people on there and it doesn't seem like your support team can keep up.
+Dan Meierotto: So what is your, what is your guys is feeling there?
+Dan Meierotto: I mean do you, is that a concern or is it just.
+Dan Meierotto: I just joined your support channel so maybe that's just run of the mill, but it seems pretty active right now.
+Mik Cepulis: You know, it's, it's an area of discussion internally.
+Mik Cepulis: So we have, you know, open source support that we provide for free to our community.
+Mik Cepulis: That is, it's not paid.
+Mik Cepulis: Right.
+Mik Cepulis: No one, no one in the open source support channel is paying us money for that support.
+Mik Cepulis: We obviously have a separate set of, you know, commercial, you know, contracts with our paid customers and then we have separate, you know, support channels for them and that support.
+Mik Cepulis: We, you know, we obviously have to prioritize that.
+Mik Cepulis: So.
+Dan Meierotto: No fully understand.
+Dan Meierotto: Yep.
+Mik Cepulis: So certainly growing fast.
+Mik Cepulis: We are having to make some decisions, you know, in the, at least in the short term about just ensuring that we're ensuring our focus is on the commercial customers.
+Mik Cepulis: With that said, the open source community, I mean if you've ever seen our monthly meetups or you know, just in.
+Mik Cepulis: We clearly invest a lot of money and our time and our energy into the open source community.
+Mik Cepulis: Continue.
+Mik Cepulis: We'll, we'll certainly continue doing so.
+Mik Cepulis: I think that, you know, fair call out though.
+Mik Cepulis: We're growing fast.
+Mik Cepulis: There's a big community, a lot of, a lot of questions.
+Mik Cepulis: So it is tough to keep up and some, some organizations don't appreciate the idea of open source support and sort of think that they can jump into a, you know, a community slack channel and kind of get like tier one, top, top grade support and.
+Dan Meierotto: No, no, no, this I.
+Dan Meierotto: Yeah, yeah, yeah, this is clear.
+Dan Meierotto: The other question I had was if we went and started like, let's say operationally the first year with the open source version, do you ever have customers that switch then to the like paid version?
+Dan Meierotto: Like is there a simple migration path?
+Dan Meierotto: Does that work?
+Mik Cepulis: Yeah, it's a great Question.
+Mik Cepulis: It's kind of, it's one of our core value props.
+Mik Cepulis: It's the kind of assurance or security that our customers can get both on the open source and the commercial side.
+Mik Cepulis: So if you start open metadata, if you start with open metadata and want to upgrade to commercial, you can do that.
+Mik Cepulis: The data model is shared.
+Mik Cepulis: So think of collate really as a set of commercial plugins on top of the core open source.
+Mik Cepulis: And then if something were to happen, if you lost budget or you know, needed to move in house or move on premise for whatever reason, you could shift back from commercial to open source and copy all those same data and you would, you know, there'd be some refactoring, but it'd be super minimal.
+Mik Cepulis: So the simple from my side, it's.
+Dan Meierotto: Just that our budget cycle runs annually and so we're kind of past the budget cycle for this.
+Dan Meierotto: For 2025, maybe I could, I would have to find out how much we're talking about that the tool costs for us.
+Dan Meierotto: But I could imagine that we start this year on the open source and then for 2026 we would probably go to the paid version.
+Dan Meierotto: Okay, that's more, that's probably pretty realistic from my side because infrastructure cost, we have like a buffer for infrastructure.
+Dan Meierotto: So I could set up an infrastructure and within our budget.
+Dan Meierotto: But then the, the soft extra software cost, I don't know if I would be able to find room for that this year.
+Mik Cepulis: Okay, got it.
+Mik Cepulis: You know, we, depending on the scope and scale of the, you know, your, your initial year, we could probably find a relatively affordable option.
+Mik Cepulis: You know, we obviously have plenty of enter enterprise customers where we have to go through enterprise buying cycles and that's fine.
+Mik Cepulis: And if we have to wait till 26, that's totally, totally okay.
+Mik Cepulis: But you know, if you, if we could get creative and have you starting with collate from year one, that'd be, that'd be excellent.
+Mik Cepulis: So let's communications open.
+Dan Meierotto: Okay.
+Dan Meierotto: And then how much do you need in order to provide kind of a quote or some sort of.
+Dan Meierotto: It doesn't even have to be an exact quote, but a rough idea of how much we would have to like a range or something like that.
+Dan Meierotto: That what I would have to budget for or go to my senior management to say, hey, we need to set aside this much.
+Dan Meierotto: Do we have it?
+Dan Meierotto: What, what are we, what would you need from me in order to make a quote like that?
+Mik Cepulis: Yeah.
+Mik Cepulis: So the number of data assets is helpful.
+Mik Cepulis: Okay, I'll share the definition of a data asset for you.
+Mik Cepulis: It is Usually the number of tables that you're adjusting is the biggest driver of your data asset count, but there are a couple others, and then we have another set of, you know, objects that are essentially free.
+Mik Cepulis: So we just call this out too.
+Dan Meierotto: Okay.
+Dan Meierotto: All right.
+Dan Meierotto: Yep.
+Dan Meierotto: Okay.
+Dan Meierotto: I have an idea of that.
+Dan Meierotto: All right.
+Dan Meierotto: Because I scanned our whole lakehouse.
+Dan Meierotto: We have a, basically a databricks lakehouse project that started last year and it's almost done.
+Dan Meierotto: So we have a very good lakehouse.
+Dan Meierotto: And now we want to let people know what's inside there, basically what we're trying to do now.
+Dan Meierotto: So I can probably have a good understanding of tables, dashboards, and things like that.
+Dan Meierotto: Yeah.
+Dan Meierotto: Okay.
+Mik Cepulis: Yeah.
+Mik Cepulis: And the number of users.
+Mik Cepulis: So it would be helpful to understand, especially from this first year's perspective, the number of like, you know, core everyday users and the number of folks who may be logging in once a quarter, once a month, just to check on something that sometimes isn't a big delta, but sometimes it can be a dramatic delta.
+Mik Cepulis: We usually will, like our user pricing is all in.
+Mik Cepulis: So you sort of get.
+Mik Cepulis: You're able to define whatever access a given user.
+Mik Cepulis: User has to the entire platform.
+Mik Cepulis: But in, you know, some larger organizations where they have thousands of employees who may be just curious about searching for data and not ever changing data or interacting with it, then there, you know, we have a, A different skilled model for, for those situations.
+Mik Cepulis: So.
+Dan Meierotto: Okay.
+Mik Cepulis: Number of users you'd expect to be logging in for the first year.
+Dan Meierotto: Okay.
+Dan Meierotto: All right.
+Dan Meierotto: Yeah, I have to think about that because, I mean, the whole organization, DJ Sim itself has around 5,000 staff members, but I don't think we would even have a fraction of those who would just be browsing the models.
+Dan Meierotto: So I would have to find.
+Dan Meierotto: I have to do some research to find out how much, how many people do we think would.
+Dan Meierotto: Would log on and browse?
+Dan Meierotto: Maybe, you know, maximum like 10% of those users or something like that.
+Dan Meierotto: So.
+Mik Cepulis: And then this.
+Mik Cepulis: Yeah.
+Mik Cepulis: And then it would be also be helpful to understand the number of different data connections that'll be made to collate.
+Mik Cepulis: So something like databricks will be a big one.
+Mik Cepulis: If you have goals of having end to end column lineage between your core data sources and visualization tools.
+Mik Cepulis: That's usually a big goal of our new customers, is defining lineage and having that visualized.
+Mik Cepulis: That does involve connecting several different data sources in those cases.
+Dan Meierotto: Yeah, I tried that.
+Dan Meierotto: I ingested the Power bi.
+Dan Meierotto: The problem is that I don't have the Power BI admin access, so I couldn't get the Automatic lineage from Power BI to the internal data set.
+Dan Meierotto: So that will be interesting to know if you guys have a workaround for that, if there's some custom code, because we have, I have a development team as well.
+Dan Meierotto: I could actually probably implement some custom code if, if you guys have whatever, some custom connector that may be able to do the work there.
+Dan Meierotto: So.
+Dan Meierotto: But that would be interesting to see.
+Dan Meierotto: Or I can request our IT to let us have the admin access.
+Dan Meierotto: But it sounds like the admin ingestion setting.
+Dan Meierotto: If I get that IT accesses then all of the workspaces in Power bi, which you can imagine in the UN there's like tens of thousands of reports and stuff and we don't want that.
+Dan Meierotto: We only want our DGACM workspace to be scanned, not the entire UN workspace.
+Dan Meierotto: So that's also maybe something to look into later on.
+Mik Cepulis: Yeah, I mean from a, from a costing perspective, if you only wanted to import a subset of the POWER BI dashboards, we wouldn't be charging you if you scanned all of them.
+Mik Cepulis: And we're only charging you for the ones that are going to be imported to collate.
+Dan Meierotto: Okay, and then the other question I have is, do you recommend that operational databases, like transactional databases be scanned or just because basically our lakehouse takes care of getting the data from the source systems in.
+Dan Meierotto: We don't, I don't think we need to scan the operational databases like the source databases.
+Dan Meierotto: But is that something that you normally do or is.
+Dan Meierotto: Is that normally you just leave those out of this based on your recommendations?
+Mik Cepulis: You know, I think in general companies with more modern data stacks will only import the data warehouse and like the databricks level companies that are a little bit older have older tech stacks or maybe just a diversity of tech stack will also import their postgres and MySQL and everything else.
+Mik Cepulis: And that depends a little bit on like the different end users internally that they are catering to.
+Mik Cepulis: So some folks might want to have the full, you know, corpus of engineering data as well as like the data science data and everything more analytic side.
+Mik Cepulis: But yeah, I would say it sounds like the, you know, the core focus would be just the data warehouse data initially.
+Mik Cepulis: But yeah, I mean we have a.
+Dan Meierotto: Bronze layer that's anyways a map, a one to one mapping of our source database is more or less.
+Dan Meierotto: So it's probably enough in that case.
+Mik Cepulis: Yeah, and you know it's, it's something you could always add later on.
+Dan Meierotto: Yeah, okay.
+Dan Meierotto: All right, I can get you those numbers probably next week.
+Dan Meierotto: I would send you an email with just this tables and assets, things like that, and then the number of users, what we think.
+Dan Meierotto: And then that would help me if you could provide like a quote and then next week or the week after I can get, I can work with my senior management to see what, what it would look like for just theoretically to start this year.
+Dan Meierotto: It also depends on our POC with this Informatica internally, how much they will, if they will give us access and enough access where we can make use of it.
+Mik Cepulis: Okay.
+Dan Meierotto: It might be just locked down to where it's, it's useless to us.
+Dan Meierotto: That's what our IT tends to do.
+Dan Meierotto: So they tend to lock everything down to where we can't use it anymore.
+Mik Cepulis: So that sounds like it's Madaga.
+Mik Cepulis: So it sounds like there might be some budget then available for this year.
+Mik Cepulis: But you're not quite sure?
+Dan Meierotto: I'm not sure.
+Dan Meierotto: Yeah.
+Dan Meierotto: I mean there, there's, there's definitely a little bit, but I, it depends on like not enough for Informatica.
+Dan Meierotto: So I talked to Informatica a few weeks ago and they basically said unless you have so much revenue, this is product is not going to make sense for you.
+Dan Meierotto: It's going to be too expensive.
+Dan Meierotto: And so that was clear to me that we wouldn't have budget.
+Dan Meierotto: But I don't know, I'm not sure what if you're in the same league as Informatica with the cost, the pricing or, or where it's at.
+Dan Meierotto: Because you're the first vendor I've talked to.
+Dan Meierotto: I've.
+Dan Meierotto: We'll also talk to Atlin, I think next week.
+Dan Meierotto: I think I have a call with them also.
+Dan Meierotto: So.
+Dan Meierotto: And then it will, you know, get an idea.
+Dan Meierotto: So we can also start small.
+Dan Meierotto: I mean, I could say for this year we'll start with a smaller data set if that will help us reduce the cost and maybe I can find enough to start with a smaller set and then next year expand the scope to more data sets and things like that.
+Mik Cepulis: Yeah, it would be helpful to understand like, okay, initial scope and then maybe potentially year two scope.
+Mik Cepulis: If there were, if there were different data sets that were, you know, more critical and then if you had a smaller team to build a center of excellence.
+Mik Cepulis: This is sometimes how we do it with a new organization that's interested in migration to collate is they'll start with a smaller team that is data platform core and then expand out over time and then start getting more stakeholders and more data assets involved.
+Mik Cepulis: Yeah, having a phase one, phase two approach might make more sense here and if you do have a sense of the different scale from users and data assets with a phase one versus a phase two, that would be helpful for me and I can give you line of sight on both costings.
+Dan Meierotto: Yeah, yeah, I'll think about that last week and see if I can split that out a little bit and make kind of like a roadmap and then we can with some numbers.
+Dan Meierotto: So phase one, so much data and then phase two, things like that.
+Dan Meierotto: So that, that makes sense.
+Dan Meierotto: I can do that.
+Mik Cepulis: Great.
+Mik Cepulis: Awesome, Dan, thank you.
+Mik Cepulis: Yeah, you know, we're going to be less expensive than Alan and Informatica in most cases.
+Mik Cepulis: So especially we're also, you know, a smaller startup so we can be more creative when it comes to trying to make some good work in the short term here.
+Dan Meierotto: Yeah.
+Dan Meierotto: Okay.
+Dan Meierotto: All right.
+Dan Meierotto: Yeah, so I don't know if I have any other questions.
+Dan Meierotto: I, I mean always with the startups and I'm a big, you know, I'm coming from the UN so I have to watch out.
+Dan Meierotto: I mean I, I hear, I know you probably can't say anything about it but like are you guys on a target path to be acquired sometime in the future or you know, like is that something you can talk about?
+Dan Meierotto: Because that's my concern.
+Dan Meierotto: Also working with a smaller startup like this is like how long will you exist before you get merged with another company or something like that.
+Mik Cepulis: We're so, I mean I, I'm pretty close to the, the team.
+Mik Cepulis: We're in the middle of a fundraise right now.
+Mik Cepulis: We're also a pretty well managed organization for like weird cash flow positive as of this quarter which is pretty, pretty unusual for a company of our age and our size.
+Mik Cepulis: We also work with some of the largest organizations in the world.
+Mik Cepulis: So you know, US federal government and you know, Mercedes and ServiceNow are customers of ours.
+Mik Cepulis: So we have, we have some, you know, big logos that have put their trust in collate and you know, our team is, our co founders are the guys who started Hortonworks and are really big in the open source community.
+Mik Cepulis: So have spent a long time and have, you know, reputations to uphold.
+Mik Cepulis: So you know, to the extent possible that I think that we're going to be a going concern and independent for the foreseeable future.
+Mik Cepulis: Like that's, that's all I know is all I can share but we certainly are not in talks with like any acquisition targets at this point or.
+Dan Meierotto: Okay.
+Dan Meierotto: Okay.
+Dan Meierotto: Yeah, sounds good.
+Dan Meierotto: All right.
+Dan Meierotto: I think, I don't know, do you need anything else for me?
+Dan Meierotto: Otherwise I would get you these numbers and provide them next week and then we can just go from there.
+Mik Cepulis: Yeah.
+Mik Cepulis: So, you know, one thing we can do for sure in the short term is get you access to a free tier of collate.
+Mik Cepulis: And that will eliminate the need to have to stand up your own docker.
+Mik Cepulis: It will mean sending data to a cloud service, AKA collate.
+Mik Cepulis: So if that's going to be a problem from a firewall or IT perspective, then it might be worth thinking about that now, even before, I guess it's like as a next step, the data source connection process, the firewall process, IT networking, that can always be a bit of a burden.
+Mik Cepulis: So if you want to start testing with the cloud, we can flip the switch and get you access asap.
+Mik Cepulis: But if that's going to take some time, then maybe let's start putting the wheels in motion there as well.
+Dan Meierotto: It will, yeah, we have.
+Dan Meierotto: Basically, at least we would need an Azure vpn.
+Dan Meierotto: I don't know how you, I haven't looked into that, how you would make that work on your site so that we could get access to our data.
+Dan Meierotto: And then eventually I would have to apply for a standardization case because I need.
+Dan Meierotto: In order for this to work, it has to be integrated with our Azure ad, which I know you support.
+Dan Meierotto: I looked at the docs.
+Dan Meierotto: But for our IT to allow that to happen, it has to be standardized.
+Dan Meierotto: And that takes some paperwork and effort on my side to get that pushed through.
+Dan Meierotto: It's not always easy, especially now that they have Informatica.
+Dan Meierotto: They may say, no, no, you cannot have this tool because you already have access to Informatica.
+Dan Meierotto: And then I have to do some effort and meetings to convince them that this is only for DGA Sam and blah, blah, blah.
+Dan Meierotto: It's a lot of bureaucracy then at that point.
+Dan Meierotto: So I, I would like to, I thought about it, but I think first let's find out the cost and then, then I'll see if I can make it.
+Dan Meierotto: You know, then I'll probably start at least talking with people to see if there's a chance to get it on the standardization list so that I can integrate it with ad and then the firewall can be set up and then.
+Mik Cepulis: Yeah, okay, great.
+Mik Cepulis: Yeah, so awesome.
+Mik Cepulis: We'll be here.
+Mik Cepulis: Let me know when it's.
+Mik Cepulis: When it makes sense to reconnect.
+Mik Cepulis: If that's next week, great.
+Mik Cepulis: If not, then we'll, we'll stay in touch.
+Dan Meierotto: Yeah, yeah, I'll send you the numbers next week because I'm interested to find out the cost anyway, so.
+Dan Meierotto: And then, so I can get that on the.
+Dan Meierotto: Because I would prefer to use this tool.
+Dan Meierotto: I mean I've.
+Dan Meierotto: I've been playing around with all of the open source ones and setting them up locally at least the local versions of Data Hub and the open Metabase, the main ones I've been looking at, definitely open Metabase has been my preference.
+Dan Meierotto: The DUI is great and it's very easy to use.
+Dan Meierotto: There's some glitches with the ingestion but I think those probably could be ironed out if we went with the collate platform.
+Dan Meierotto: It's most likely that with the better support it will probably start working.
+Dan Meierotto: So that's basically it.
+Mik Cepulis: Ingestions always tends to be, you know, a bit of a snowflake kind of issue.
+Mik Cepulis: Like everyone has a slightly different tweak on, on the.
+Mik Cepulis: The same ingestion path and you know, it's something we work hands on them with.
+Mik Cepulis: With to make sure it's going smoothly.
+Mik Cepulis: Yeah, I guess.
+Mik Cepulis: Were there any other things that.
+Mik Cepulis: So you preferred the UI over Data Hub or the other like feature elements that were compelling to you or.
+Dan Meierotto: Well, I mean what I like on the collate platform that unfortunately is not in the open source version is like the ERD that's new, like it's auto generated ERD is really nice and there was something else in the.
+Dan Meierotto: That's newer in the online the collate version that I was looking at.
+Dan Meierotto: It's well, this automated, you know, classification and tagging based on some rules.
+Dan Meierotto: Those looked pretty good.
+Dan Meierotto: It looks also like this scanner that detects the PII also is more fully featured in the collate one than it is in the open source version.
+Dan Meierotto: It looks like it does work in the open source, but not as well as it works what I gather from reading the forums and the.
+Dan Meierotto: In the documentation.
+Dan Meierotto: But those are some pretty nice features that the other tools don't have.
+Dan Meierotto: I mean the ERD is really nice because at the moment we generate those using some utilities and then we post them so everybody can get access to those.
+Dan Meierotto: So if that's available in the tool that would.
+Dan Meierotto: That's quite a nice help.
+Dan Meierotto: Also the UI is very responsive and just modern, more modern than the other ones are.
+Dan Meierotto: So yeah, that's.
+Dan Meierotto: And it feels like the customer base is very, very active, at least on the open source tool.
+Dan Meierotto: I mean it was easier to get the open source tool up and running than the other tools.
+Dan Meierotto: It took me just about 10 minutes to get something running on my Docker container.
+Dan Meierotto: I mean I had already docker for Windows on my, my machine but it was very easy to get up and running.
+Dan Meierotto: The UI is pretty smooth and responsive, so I think that I noticed a difference over the other tools.
+Dan Meierotto: So.
+Mik Cepulis: Okay, excellent.
+Mik Cepulis: Yeah, we definitely put a lot of.
+Mik Cepulis: A lot of thought and care into the ui.
+Mik Cepulis: Want to make it feel approachable and easy to use for a wide variety of different, you know, user types.
+Dan Meierotto: Yeah, yeah, no, it looks good.
+Dan Meierotto: I mean, the permissions I haven't gotten into yet.
+Dan Meierotto: That will be a big question mark, too.
+Dan Meierotto: It looks like there's a lot of dimensions to the permissions, so that will be really important because we have different.
+Dan Meierotto: A lot of different types of users.
+Dan Meierotto: We'll have to divvy up the permissions and the way they can see the data, but it looks like there's a lot of support there for that.
+Dan Meierotto: I'm not too concerned about how that will work.
+Mik Cepulis: Yeah, we definitely do have a very granular access control.
+Dan Meierotto: Yeah, yeah, no, that's.
+Dan Meierotto: Yeah, that's it.
+Mik Cepulis: Appreciate the feedback and, yeah, I mean, hopefully we can work together.
+Mik Cepulis: This sounds very exciting, like a compelling use case and a great tech stack for us to integrate into.
+Mik Cepulis: And obviously it'd be fun for us to work with the un.
+Mik Cepulis: Yeah, hopefully it works.
+Dan Meierotto: Let's see.
+Dan Meierotto: I'll keep you updated.
+Mik Cepulis: All right, awesome.
+Mik Cepulis: Well, we'll stay in touch then, and have an excellent weekend, Dan.
+Dan Meierotto: Yep, you too.
+Dan Meierotto: Thanks a lot.
+Mik Cepulis: Bye.
+
+END MEETING

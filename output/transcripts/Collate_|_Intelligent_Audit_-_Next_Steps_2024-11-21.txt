@@ -1,0 +1,264 @@
+Meeting Name: Collate | Intelligent Audit - Next Steps
+Meeting Date: 2024-11-21
+
+Mik Cepulis: What's your op?
+Brian Pollack: I think we are going to have a more official debrief concerning this and then the other vendor we're looking at and that'll likely happen Monday morning.
+Mik Cepulis: Okay, awesome.
+Mik Cepulis: Okay, good to know, I guess is your intent to choose one vendor out of the two to do additional testing with and move forward with a potential launch?
+Brian Pollack: Yeah, so I think that's the idea.
+Brian Pollack: And again, so given that so open metadata is obviously open source, I think it would help to have a little bit more clarity on exactly what additional benefits collate offers.
+Brian Pollack: Besides the obvious tech support and support with setting up and starting up with that kind of stuff.
+Brian Pollack: And depending on how we want to move, what's the feasibility for us trying to spin it up open source to do more of our own kind of proof of concept and then onboarding in an enterprise fashion or what kind of options are basically available to us in that kind of way?
+Mik Cepulis: Yeah, I mean usually at this point we would, you know, deploy a testing cluster for your team and dedicate a two week sprint for, you know, basically an intensive evaluation of the commercial product.
+Mik Cepulis: I'll send over a document that details at a high level of the feature differences between open source and Collate.
+Mik Cepulis: Okay.
+Mik Cepulis: They are pretty substantial at this point.
+Mik Cepulis: You know, maybe a year ago the delta wasn't that big, but now, you know, beyond obviously the DevOps and support and SLA is like you're getting a pretty rich set of differentiated features.
+Mik Cepulis: So yeah, we'll send over that document and it's at least a good starting point.
+Brian Pollack: Yeah, the expression lineage stuff was of particular interest for us.
+Brian Pollack: Having that be part of the actual lineage and overview and whatever additional data quality we can do there because that is a key area that is nebulous right now that we need more insight into for our own data.
+Mik Cepulis: Got it.
+Mik Cepulis: Okay, good to know.
+Mik Cepulis: The big things that are really separating our automation so, you know, taking bulk actions on data, the AI capabilities are obviously coated only data quality is pretty differentiated as well.
+Mik Cepulis: So there are various types of data quality tests that are isolated to collate only.
+Mik Cepulis: And then we're launching a new data quality dashboard that is like a set of defaults, you know, filters and reports on like the key items you want to report on.
+Mik Cepulis: And yeah, I mean that's kind of scratching the surface, but I'll send over the document.
+Mik Cepulis: It's a good starting point and then we can jump it from there.
+Mik Cepulis: We're also releasing our 1.6 major release in about a week and that's bringing additional delta between the open Source and commercial.
+Mik Cepulis: So I'll send over kind of a highlight reel of what that new set of features looks like and it details like the open source only, the open source plus collate and then the collate only features.
+Brian Pollack: Okay.
+Brian Pollack: And if I want to.
+Brian Pollack: So just to be very explicit about like something that.
+Brian Pollack: Sorry, I'm just opening up an image here that's a still from our ui.
+Brian Pollack: Okay, and let me screen share real quick.
+Brian Pollack: So, so this is just, this is still an image from our own UI that is both internal facing and also customer facing.
+Brian Pollack: And this is what most end users of our product use.
+Brian Pollack: Something like, you know, there's many different features and whatever and many different things but like this is a basic plot.
+Brian Pollack: One of the things that I really want out of this is the ability to basically have integrated hover information for all of the various terms that are popping up in this that are derived from our tables.
+Brian Pollack: Right.
+Brian Pollack: So in principle they would have definitions in you know, in this catalog if we were rolling this out.
+Brian Pollack: And as long as there's enough API access and it straightforward enough to be able to hover over like the shipper account value, this thing, ndp, you know, freight fuel, assessorial, handling all this stuff like again we have full control over this on our end.
+Brian Pollack: If it's, if this is something that we can actually integrate into our system to provide hover information that is, that is a key thing that we need out of, out of a tool like this.
+Mik Cepulis: You know, I mean that's one of the beauties of working with collate is like, you know, we help our customers solve kind of nuanced problems like this all the time.
+Mik Cepulis: Our API is by default super open, super accessible.
+Mik Cepulis: So if it's not evident, if it's not very self evident, how to extract that specific metadata, put it into a data store and then map that to your own customer data for, you know, hover information Here we would sit with you and make sure we figured out how to problem solve that together.
+Mik Cepulis: It's okay, it's not like a super common use case necessarily, but it's a cool one and it should be pretty straightforward, right?
+Mik Cepulis: You're extracting data from a pretty limited scope of data that lives in colate and then extracting that and presenting it to your own system.
+Mik Cepulis: So like I don't imagine that'll be difficult, but it's the kind of thing where you know, we're more than happy to help and get our hands dirty when it comes to onboarding and getting data profiler Working correctly with your data Sources and mapping Lineage correctly.
+Mik Cepulis: Like there can sometimes be nuance and some decent amount of back and forth with our team and your team to get that up and running.
+Mik Cepulis: And that's independent of open source and commercial.
+Mik Cepulis: Right.
+Mik Cepulis: Like there are just nuances to Lineage and if we're.
+Mik Cepulis: We have to make sure we're pulling the right information from right data sources.
+Mik Cepulis: And you know, certain databases require query log information.
+Mik Cepulis: Some of them don't.
+Mik Cepulis: And you know, we have a lot of that, you know, a lot of that documented.
+Mik Cepulis: Not all of it's self evident.
+Mik Cepulis: And part of the beauty is like getting a lot faster to value when it comes to onboarding.
+Mik Cepulis: The Collate team are experts in that.
+Brian Pollack: Okay, perfect.
+Brian Pollack: Yeah.
+Mik Cepulis: And then from a, from a product perspective, how are you thinking it sounds like the other vendor is proprietary only.
+Mik Cepulis: Not open source.
+Brian Pollack: No, also open source.
+Brian Pollack: I mean.
+Brian Pollack: Yeah.
+Brian Pollack: So Data Hub is the other.
+Mik Cepulis: Yep.
+Brian Pollack: Yeah, so.
+Brian Pollack: So Acryl and Data Hub would be the other vendor we're considering.
+Brian Pollack: You know, your offerings certainly overlap in some aspects, but I want to understand what the key differentiators are.
+Mik Cepulis: Sure.
+Mik Cepulis: Okay.
+Mik Cepulis: Yeah.
+Mik Cepulis: And we have some more docs I can share about Collate and acrel, so happy to.
+Brian Pollack: Yeah, great.
+Brian Pollack: Yeah, that would be.
+Brian Pollack: That would be very useful.
+Mik Cepulis: Have you gone through a demo with them already?
+Brian Pollack: We have done an initial demo with them too.
+Brian Pollack: Yeah.
+Mik Cepulis: And was the feedback different from the team?
+Mik Cepulis: Like, were there things that jumped out for macro versus collate that were interesting to highlight?
+Brian Pollack: I'll need to do a full debriefing.
+Brian Pollack: So the expression handling that you guys went over that.
+Brian Pollack: I know it's like a very new feature still in your beta portion is something that stood out to me at least.
+Brian Pollack: Knowing that this is a key area of concern that we have this basically last mile calculation before something is displayed to a customer or to an end user.
+Brian Pollack: And nothing like that was explicitly mentioned by Acril.
+Brian Pollack: But that doesn't mean they don't have it.
+Brian Pollack: It's just that it didn't come up in our.
+Brian Pollack: In our conversation.
+Mik Cepulis: Okay, got it.
+Brian Pollack: There's some other differentiators as well, but again, I'll have a better idea after we finish our debriefing because it was a couple of weeks ago now.
+Mik Cepulis: Okay, cool.
+Mik Cepulis: Awesome.
+Mik Cepulis: Does it make sense to sync then Tuesday, Wednesday, next week?
+Brian Pollack: I probably won't have time to until the following week just because like next week's half gone because of Thanksgiving anyway, so I'd be happy to sync the first week of December.
+Mik Cepulis: Okay, cool.
+Mik Cepulis: Let me send over Monday more Monday placeholder for like one.
+Brian Pollack: For do two.
+Brian Pollack: Tuesday is, is much better for me.
+Brian Pollack: Okay, Tuesday, early afternoon.
+Brian Pollack: I have a lot of blocks free there.
+Mik Cepulis: Awesome.
+Mik Cepulis: Okay.
+Brian Pollack: Remind me ballpark, what does pricing look like for collate?
+Mik Cepulis: So our all in and that's not including some of the AI features is 50 per year.
+Mik Cepulis: And that includes, you know, support, onboarding, all the features that we, you know, went through during the demo.
+Brian Pollack: Yeah.
+Brian Pollack: And how many users on our end?
+Mik Cepulis: 25 users.
+Brian Pollack: Okay.
+Brian Pollack: Would that also count like an API access?
+Mik Cepulis: API users free.
+Brian Pollack: Okay.
+Brian Pollack: And how many data assets does that cover?
+Mik Cepulis: 5,000 data assets and then no charge for data sources.
+Mik Cepulis: So you can have unlimited data sources.
+Mik Cepulis: It's just we only meter on data sources.
+Brian Pollack: How do you differentiate between an asset and a source in this case?
+Mik Cepulis: So a source would be Snowflake, redshift, you know, postgres, MySQL, something that's connected to collate using one of our native connectors and then setting us data.
+Mik Cepulis: It's you know, created as a first class data entity.
+Mik Cepulis: So you know, in API Endpoint we treat as a first class data entity in a lineage graph that what we're not, we're not charging you money to connect that API source or Snowflake or postgres to collate.
+Mik Cepulis: It's only the number of, you know, assets that's generating so a table or ML topic or pipeline.
+Mik Cepulis: So I'll send you the official definition.
+Brian Pollack: And I know you have native, at least from, from the slides.
+Brian Pollack: It looks like you have native interaction with HubSpot, with Datadog.
+Brian Pollack: Do you have JIRA and Slack integration as well?
+Brian Pollack: Or Atlassian in general?
+Mik Cepulis: Yeah, we do have Atlassian in Slack.
+Mik Cepulis: Yep.
+Mik Cepulis: And we actually.
+Mik Cepulis: Yeah, so it's worth, worth diving into some of those as well.
+Mik Cepulis: I don't remember if we have HubSpot actually.
+Brian Pollack: Pretty sure I saw it in one of your slides, so I'm not sure.
+Brian Pollack: Yeah, HubSpot we treat as a ground truth source for customer level data of ours that feeds into our numerous tables and the vast majority of our data assets will be postgres.
+Mik Cepulis: Okay, and how does HubSpot play in?
+Mik Cepulis: Or is that generating data or is it like a middle, like a sort of middle tier part of the pipeline?
+Brian Pollack: It should be, it should be at kind of the.
+Brian Pollack: A very upstream part of the pipeline where HubSpot is generating data or our users are inputting data into HubSpot, assuming that that is the new ground truth.
+Brian Pollack: And so that should be used to populate downstream tables or downstream processes.
+Mik Cepulis: Got it.
+Mik Cepulis: Okay.
+Mik Cepulis: I think that most of our customers would Send that data to a snowflake or a redshift and then use that as the primary upstream source.
+Brian Pollack: I mean, we can do the.
+Brian Pollack: We do the same thing.
+Brian Pollack: We just did it with Postgres by sending it to a Postgres table.
+Mik Cepulis: Is having HubSpot part of that pipeline important then?
+Mik Cepulis: If it's all going to Postgres anyway?
+Brian Pollack: I mean, it's certainly a nice to have.
+Brian Pollack: It's not a complete killer, but given that it's one of our.
+Brian Pollack: I would say it's one of our highest priority third party integrations.
+Brian Pollack: Okay, so if we're trying to like just map out our priority integrations, like HubSpot is definitely one Datadog is a priority integration, but that is ingesting a lot of downstream data as opposed to generating its own.
+Brian Pollack: I mean, generates alerts and whatever, but you know, it ingests a lot of data.
+Brian Pollack: We have Atlassian suite for general monitoring, general monitoring of all this stuff and communication platforms, Slack and Zoom.
+Brian Pollack: I don't know if I care too much about how closely integrated that stuff is.
+Brian Pollack: And then there's other third party integrations, but they're not nearly as important for me right now.
+Brian Pollack: And then of course the generic API access to make sure that we can integrate it into our UI to get that kind of.
+Brian Pollack: Because again, the end goal of having easy accessible hover information for any user on our system to bring like that is a constant source of confusion is like, what do these things actually mean?
+Brian Pollack: Like what are the actual definitions of these terms?
+Brian Pollack: And so lowering the barrier to entry there is really important for us.
+Mik Cepulis: One way that we solve that it might be a lot easier.
+Mik Cepulis: Like easier win versus integrating the API is we have a Chrome extension or a browser extension.
+Brian Pollack: Yeah, you guys showed us.
+Brian Pollack: And I definitely would want to take advantage of that first.
+Brian Pollack: So immediately taking advantage of that, using that as like a workaround.
+Brian Pollack: But we can't assume that all of our customers can be using Chrome and install like a third party extension.
+Brian Pollack: So for our own users, certainly.
+Brian Pollack: But long term, it would definitely have to be a full integration.
+Brian Pollack: Yep.
+Mik Cepulis: Okay, got it.
+Mik Cepulis: I will say that we don't support HubSpot as a native data connector at this point.
+Mik Cepulis: That might have been from the acrel team.
+Mik Cepulis: I don't know if they support it, it's not a common ask, but it is something that we can work with you on and build a connector for if.
+Mik Cepulis: And also if short term we can use Postgres as a data source instead.
+Brian Pollack: Yeah, HubSpot has their own pretty easy to use SDK and APIs.
+Brian Pollack: So at the end of the day it can happen.
+Brian Pollack: If you guys already had like a native support, even better.
+Brian Pollack: But whatever.
+Brian Pollack: It's not like a huge.
+Mik Cepulis: We do have documentation about how to build, you know, support for third party connectors like that.
+Brian Pollack: Yeah.
+Mik Cepulis: And I can send that to you in a second as well.
+Mik Cepulis: Okay.
+Brian Pollack: Yeah.
+Brian Pollack: As far as, as far as pricing, if you can give me more detail about the data quality differentiators, especially if there are things that allow for data normalization of any kind.
+Brian Pollack: That is an issue on our end.
+Brian Pollack: We have certainly projects underway to help normalize data.
+Brian Pollack: But you know, if this can solve some of those problems for us, that means we don't have to waste time on engineering to come up with a separate solution.
+Brian Pollack: And that of course makes the final purchase a much easier decision.
+Mik Cepulis: Yep.
+Mik Cepulis: Okay, makes sense.
+Mik Cepulis: With data normalization, do you mean like pulling?
+Mik Cepulis: I guess.
+Mik Cepulis: Is it when you have the same term across different elements or entities in a lineage graph, making sure those are correctly.
+Brian Pollack: So it would be.
+Brian Pollack: And I don't know if this is possible because at some level this would be like trying to scrape through active data as it's getting sent to our system.
+Brian Pollack: But for instance, something entered in all caps, something having like too many like commas or periods or other like special characters that would need to be removed.
+Brian Pollack: So again, it could be just that like we set up, there's probably ways around that like setting up the SQL queries to identify these kind of things using like regex or whatever.
+Brian Pollack: Like on top of that.
+Brian Pollack: Yep.
+Mik Cepulis: But that is possible.
+Mik Cepulis: Like yeah, we'll install the data agents on your data systems and then we can have, you know, either we have pre built user interface driven data quality tests.
+Mik Cepulis: We also support REDEX or SQL queries that will, you know, enable more nuanced data quality.
+Brian Pollack: Yeah.
+Mik Cepulis: You know, tests and whatnot.
+Mik Cepulis: And those are all sent back to collate.
+Mik Cepulis: So you can have teams flagged when something is not adhering to the set of parameters that you define.
+Mik Cepulis: That would be.
+Mik Cepulis: Certainly that's something that's natively supported right now.
+Brian Pollack: Yeah, if you can send me a follow up because I would like to get you some examples of, of common issues that we would want flagged and just see like is this something that's easy enough?
+Brian Pollack: You know, even if you can't like automatically correct the data for us, which I don't think you, you can.
+Brian Pollack: And I don't think we'd want you guys to actually be changing data in the system, but flagging it and you know, having that Whatever pipeline is set up to alert the appropriate people when this is happening, that is, that brings us pretty close to the, to the desired goal right there.
+Mik Cepulis: Okay, awesome.
+Mik Cepulis: I will, I will do that.
+Mik Cepulis: We'll send a few examples.
+Mik Cepulis: I'll send over as well a consolidated overview of the products.
+Mik Cepulis: We have like a 15 minute demo that is a refresher to walk through.
+Mik Cepulis: It also highlights the new data quality Dashboard that is coming in 1.6 that I don't.
+Mik Cepulis: We saw briefly, but it's a, it's a reminder like if you go into the collate sandbox now, you're not going to see that, that data quality dashboard, it'll show up probably next week or the week after.
+Mik Cepulis: Okay.
+Mik Cepulis: Anyway, so bunch of, a bunch of good content to send and yeah, I mean appreciate any feedback.
+Mik Cepulis: In the meantime, after your call next week, the team and then otherwise you and I will meet on Tuesday, first week of December.
+Brian Pollack: All right, perfect.
+Mik Cepulis: I also, I'll send you a quote as well with you know, a bit more granularity on what's.
+Brian Pollack: So that would be great.
+Brian Pollack: And how much more would the price increase if we wanted to run on Prem as opposed to aws?
+Mik Cepulis: So yeah, with the deployment option that we had in mind was, you know, we host the core service in our Amazon and you host the data connectors in your VPC and then you're only pushing the metadata to collate.
+Mik Cepulis: That is a more cost effective way of deploying collate as opposed to running on premise.
+Mik Cepulis: There's a lot more overhead when it comes to deployment, upkeep, maintenance, upgrades and all that stuff.
+Mik Cepulis: So that, that is reserved for the enterprise tier of collate.
+Mik Cepulis: So you know, you'd increase your limits, right.
+Mik Cepulis: You'd have a lot more users, a lot more data assets to send, but the price jumps to 100k entry price.
+Brian Pollack: Okay.
+Brian Pollack: Probably outside of our range that we're willing to spin on this right now, but that's fine.
+Brian Pollack: I think it's just important to know what the, what the tiers are, what the options are.
+Mik Cepulis: Yeah, awesome.
+Mik Cepulis: That's something we could, you know, if there was a reason to in the future we could migrate obviously to on premise in general.
+Mik Cepulis: Like your life's going to be a lot easier if you can run in SaaS.
+Mik Cepulis: Just you're going to get the upgrades faster, you'll get any kind of support quicker because we can actually, you know, have a bit of telemetry into what's happening in the system as opposed to BYOC where it's really a black box and we have to, you know, there's a lot more friction in between a.
+Brian Pollack: Support query, so I do need to drop for actually another call that's kind of double booked.
+Brian Pollack: One last question though, sorry.
+Brian Pollack: The sample data stuff, can that be turned off for individual data assets?
+Mik Cepulis: Okay, it can, yep.
+Mik Cepulis: On a table level it also can be restricted based off of the user, so you can have an admin who has sample data access to everything, or you can have, you know, individual table by table granularity, flipping it on and off.
+Brian Pollack: Yeah, we'll probably have some user, some customers that have particular assets where we're just not allowed to transfer any even sample data to, so.
+Brian Pollack: Okay, that's good to know.
+Mik Cepulis: And then, you know, PII flagging, we have an ML model built in that, that's tunable on your end.
+Mik Cepulis: And then the PII is, you know, we can, we can run the model, fix the model and make it, make it more accurate, but.
+Brian Pollack: Yeah, okay, perfect.
+Mik Cepulis: Well, awesome.
+Mik Cepulis: Brian.
+Mik Cepulis: Well, yeah, today I've got some follow ups here for you and then I'll drop this as well in my follow up.
+Mik Cepulis: This is the definition of a data asset.
+Brian Pollack: Okay, perfect.
+Brian Pollack: Yeah, yeah, include that in your follow up.
+Brian Pollack: That'll be very useful for me.
+Brian Pollack: All right, thanks so much.
+Brian Pollack: Right on.
+Mik Cepulis: Thanks, Brian.
+Mik Cepulis: Have a great weekend.
+Mik Cepulis: Talk to you soon.
+Brian Pollack: Thanks, you too.
+
+END MEETING

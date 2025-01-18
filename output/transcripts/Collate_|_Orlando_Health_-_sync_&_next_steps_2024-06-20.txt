@@ -1,0 +1,302 @@
+Meeting Name: Collate | Orlando Health - sync & next steps
+Meeting Date: 2024-06-20
+
+Mik Cepulis: Hey Darrell.
+Darryl: Give me just a second.
+Darryl: They're wrapping up the call.
+Darryl: I'm hearing the like summary portion so I wanted to join.
+Darryl: It just won't end.
+Darryl: But I'm doing this because I don't want to leave the call.
+Darryl: I'm going to see if I can quiet teams down and then Monday you can just send us an email or something that will.
+Darryl: Yeah, sure.
+Darryl: Send you a text or something through the phone.
+Darryl: So now I'm happy.
+Darryl: Okay.
+Darryl: I got off.
+Darryl: I got off.
+Darryl: Hey Mick.
+Mik Cepulis: Hey Darryl.
+Darryl: Oh, that was painful.
+Darryl: So, so painful.
+Darryl: Okay, we need to attack because I've got about ten to 15 minutes of your time first.
+Darryl: My leadership is very interesting, your tool.
+Darryl: I'm excited about it.
+Darryl: Even our data governance manager who was able to join on the call, he is even excited about it and it's a lot of his lifts.
+Darryl: Once I get a data source connected in, it's on him to deal with the downstream.
+Darryl: So the plan we need to get into in front of Ray, a draft, a concept that he needs to try and sell this to the business.
+Darryl: And I will tell you this isn't going to happen fast.
+Darryl: The cost isn't the problem.
+Darryl: I don't think when we saw the cost, it's like for the middle tier, not your enterprise.
+Darryl: I don't want to own Kubernetes.
+Darryl: Just bringing in your data plane in, that's the route we would want to go, I'll tell you that candidly because of security reasons, but I know you're SoC compliant, which is huge.
+Darryl: Please send me the SoC compliance certificate, please.
+Darryl: But it's about what the rollout looks like.
+Darryl: When are the benefits, what do we need them to put into?
+Darryl: I remember, I'm sorry.
+Darryl: I'm dealing with a whole financial system that's having to be restored back like weeks and this is a two hour call on how to do this and it's not on the DBA side.
+Darryl: I'm sitting here listening to the backloads they have to do and I'm like, that's not my world, but I have to stay on the call.
+Darryl: I'll be silent for 30 minutes and then I'll ask one quick 15 2nd question and it's like, oh, why am I here?
+Darryl: Do you recall what Ray was also looking for?
+Darryl: Because he liked what I was suggesting.
+Darryl: You know, hey, level one maturity means that we've done x and we populated with Y and you see the benefits of Z.
+Darryl: Was there more of your takeaway from how he was wording it?
+Mik Cepulis: Yeah.
+Mik Cepulis: Check your email.
+Mik Cepulis: I put together a quick structure, kind of what he was outlining.
+Mik Cepulis: So I think this is a starting point and we can definitely add more detail and connect it to more business outcomes.
+Mik Cepulis: I think that overall, like, there isn't that much investment.
+Mik Cepulis: We automate so many tasks for you.
+Mik Cepulis: So like once you connect to data sources, you get a bunch of positive outcomes right away.
+Mik Cepulis: Like there are usage stats and lineage extraction.
+Mik Cepulis: You're able to, if there are existing glossaries, existing tagging schemas, those can all be imported automatically and assigned to the correct data sources and tables and whatnot.
+Mik Cepulis: Another big part of the journey will be assigning ownership.
+Mik Cepulis: So ensuring that the correct people own the correct data tables.
+Mik Cepulis: And that will unlock the ability to do alerting and have deeper tagging and run more like, you know, automated data quality checks and whatnot.
+Mik Cepulis: You know, the alerts and quality checks are more meaningful when you can assign like an owner to them.
+Mik Cepulis: So a couple of things like that, but it's not, it's not a massive, massive hurdle.
+Mik Cepulis: It's like, you know, once we can block off the time to connect some data sources, even just the primary, like the p one or p zero data sources that I think will show like a big tangible benefit right off the gate.
+Darryl: Okay, I'm putting in the chat and you might need to, you're going to likely have to refer to someone else and get them talking to me.
+Darryl: Teams or emails or zoom, whatever is fine.
+Darryl: Your data lineage is great for all the static stuff.
+Darryl: We're going here, we're going there.
+Darryl: But the pipeline often are dynamic and purview, azure purview couldn't even handle the dynamic ness of it all.
+Darryl: I need to know if you guys can.
+Darryl: Right now we're using synapse and I know you're adding synapse in the near future, but we're going to be converting to data factory for this stuff.
+Darryl: I need to know, and if not, I need to have a very quick call with one of your people to say, okay, how could I inject that in there?
+Darryl: Because I can have my guys take the pipeline and do a scenario where, okay, now we're going to inject a, b and c through the API.
+Darryl: We could do that, but I need to know that because part of the positive outcomes of lineage, the notebooks that do the movement are critical.
+Darryl: Now I'm sure you guys can say, hey, this field in this source and this field in this destination are the same and maybe do some kind of, some kind of automated thing that you guys do behind the scenes, but the best you can get is when the lineage tells you or the pipeline tells you, the notebook tells you.
+Darryl: So we need to know that piece and I can have a dedicated call about that.
+Darryl: If you're assuming one week and I don't have that piece you could see where I, you know, I don't want to communicate that.
+Mik Cepulis: Sure.
+Mik Cepulis: Yep.
+Darryl: Yep.
+Darryl: Descriptions.
+Mik Cepulis: Can you maybe rephrase the lineage question?
+Mik Cepulis: So there's the question.
+Mik Cepulis: Lower new data sources over time.
+Mik Cepulis: Will those lineage or metadata here I'm.
+Darryl: Putting it in the chat.
+Darryl: Our metadata extraction from a source to our bronze azure data lake is dying.
+Darryl: Dynamic.
+Darryl: When we tried to capture this lineage in purview it did not happen as purview as dynamic queries could not be captured.
+Darryl: Does open metadata, because it's ultimately open metadata, capture this data or do we need to inject some?
+Darryl: If so, I need a call.
+Darryl: Synapse switching to data factory in next 60 to 120 days.
+Darryl: I know you guys are about to ask synapse support so you guys might say, hey, for a POV we'll throw you our draft because you only need this one piece that we feel confident in.
+Darryl: Or you could go, look, our integration will do it but we'll help you inject that data into an API by helping you structure it with the data you've got.
+Darryl: I don't know what that looks like but that's the open ended question and we can have a dedicated quick call on that next week if we need to.
+Darryl: So positive outcomes, existing data id gaps in descriptions.
+Darryl: I need to know in each phase what the end user is gaining.
+Darryl: I know you kind of put that in there, but make the business care discovery will happen.
+Darryl: Now that discovery happens the business gets a, b c D E without question.
+Darryl: And if you populate with some tag rules for data ownership, boom boom boom, you then get the following.
+Darryl: I think that's the big sell we in it are handling.
+Darryl: A, you guys will help augment with b.
+Darryl: The output is c.
+Darryl: I don't know what that formula looks like but I think you see where I'm going at.
+Darryl: If we can get this into a single one or two page slide or a phase one slide, a phase two slide, phase three slide, we do x.
+Darryl: You add this, so much effort you're going to see z.
+Darryl: That would be a nice, you know, nice rollout.
+Darryl: And you have three slides for it.
+Darryl: So that's huge.
+Darryl: You know, three phases, three slides and then you can go phase four, five and six.
+Darryl: Could be, but it's off to you guys.
+Darryl: You know where you want to take things because you guys have, you know, I'll tell you, a phase four would include data quality.
+Darryl: You guys had the ability to see that my loads deviated drastically.
+Darryl: We got zero rows when we usually expect 1000.
+Darryl: That is gold for us because it happens.
+Darryl: You also have the ability to say, hey, this column name changed.
+Darryl: That happens now.
+Darryl: It happens with Excel.
+Darryl: And I think you guys can capture that, can't you?
+Mik Cepulis: I believe you'll have to manually upload those.
+Mik Cepulis: Or we obviously have an API as well.
+Mik Cepulis: So you can create a pipeline where you're uploading those excel documents.
+Darryl: Well, no, our metadata extraction is reading those excel files.
+Darryl: We have that.
+Darryl: You're getting that schema as long as you have a way to capture that going, hey, yeah, you loaded this file from the source.
+Darryl: Help me figure that out.
+Darryl: But that would be again phase four.
+Darryl: We're down the line now.
+Darryl: You're helping us increase success.
+Darryl: And then maybe we also have the teams integration.
+Darryl: We use teams, we use Surewell.
+Darryl: Surewell is API driven too, so you could inject and create tickets.
+Darryl: We also use DevOps.
+Darryl: We use teams.
+Darryl: Azure DevOps and Surewell.
+Darryl: Any integrations that are easy you could in that like phase 1.5, integrate with azure DevOps for.
+Darryl: Or maybe it's wherever data quality.
+Darryl: Maybe it's in data quality.
+Darryl: That's when you want DevOps integration and it's 4 hours of work or 2 hours of work.
+Darryl: Teams, teams is huge because you had that chatting ability sort of.
+Darryl: And that is so cool.
+Darryl: But I'm not always gonna have data governance people in there to see those chats in a timely fashion.
+Darryl: But we respond to teams rapidly, so that would be huge.
+Darryl: And I think you guys said that's a non issue.
+Darryl: My data governance team would probably love.
+Mik Cepulis: That because you mean team integration for the in product chats in collate.
+Darryl: Yeah, if you guys have that, if you don't, then it's not even a thing.
+Darryl: But if you do, that would probably be huge.
+Darryl: I think we take this once you gather and clean it up.
+Darryl: We mocked together what a rough slide could look like.
+Darryl: Yeah, we did this for you.
+Darryl: You guys contributed this information.
+Darryl: Some tagging rules that do X, Y and Z.
+Darryl: We gave you that as an output.
+Darryl: We don't mature it.
+Darryl: We just drafted.
+Darryl: And I can go take it to Ray next.
+Darryl: We can go Ray, do you like this direction?
+Darryl: How do you want us to shift?
+Darryl: Yep, I think that, yeah, so that we're not, you know, 8 hours into an effort and you know, he loves that iterativeness, you know, where we spend an hour and a half on it.
+Darryl: Here's a draw draft of what it could look like if we clean it up.
+Darryl: Why do you like it?
+Darryl: Okay, great.
+Darryl: We'll plug the rest of the information in there, you know, or make tweaks.
+Darryl: He doesn't like people burning too much time only to have to redo.
+Darryl: So he took this very positively, by the way, as you see, this is an action item because of his interest.
+Darryl: My team loves what we're seeing.
+Darryl: This is a big gap.
+Darryl: Databricks does not do.
+Darryl: Unity catalog isn't doing what you're doing.
+Darryl: It's pieces.
+Darryl: And you guys are integrating with the unity catalog, so that's a big deal.
+Darryl: So I think we're in parity.
+Darryl: Just very candidly, the timeline isn't going to be pretty.
+Darryl: Orlando health move slowly, even if he gets people aligned.
+Darryl: Now a pOv, can you briefly any other questions on this?
+Darryl: I know you got about three minutes, so I need a minute and a half of that.
+Mik Cepulis: Yeah, no, this is.
+Mik Cepulis: This looks good.
+Mik Cepulis: What I need to, you know, to keep flushing this out.
+Mik Cepulis: I think I'll make a more verbose PDF and then throw the higher priorities up on the slide.
+Mik Cepulis: One, two, three.
+Darryl: Good news.
+Darryl: You're going to be able to use this for other clients, too.
+Darryl: We're not new.
+Mik Cepulis: Yeah, exactly.
+Mik Cepulis: Yeah, yeah.
+Mik Cepulis: A lot of the initiatives around AI as well aligned super well with the customers we're going out.
+Darryl: Yeah.
+Darryl: So they're putting mlops into our databricks, and AI is obviously going to be derived from that.
+Darryl: So if you want to throw in another phase around that specifically, those are buzzwords certain leaders are loving.
+Darryl: So that's a great call out mlops and AI, please.
+Darryl: And how we enable your AI.
+Darryl: Knowing your roadmap, you know, you can have a phase six and go by the time you get here.
+Darryl: Our roadmap included some other things that you wanted.
+Darryl: I saw schema, compare, and dynamic ERD diagrams would be huge because we don't have time to draw er diagrams.
+Darryl: We're going right into SQL, building the tables, building the joins, building the model, shoving it up there.
+Darryl: And there was no ER diagram.
+Darryl: That's, you know, when you get to a certain level, that's just documentation at that point.
+Darryl: Okay, a pOv.
+Darryl: You guys sent me.
+Darryl: You guys, not you specifically.
+Darryl: Your system somehow got my Gmail account at one point, and it notified me of, like, let me.
+Darryl: Oh, come on.
+Darryl: Where is it free manage open metadata.
+Mik Cepulis: Yes.
+Mik Cepulis: So that's a brand new thing we just launched.
+Mik Cepulis: We're very excited about it.
+Mik Cepulis: It's essentially your own dedicated very small test instance of collate.
+Mik Cepulis: So full features, full commercial feature set that is intended for basically people who are kicking the tires and want to figure out like okay, I see the sandbox, I want to test with my own data and see how that feels.
+Mik Cepulis: That for us, like depending on how much time you need in the POV, that could be a good option for you.
+Mik Cepulis: But usually we'll do a proof of concept, proof of value with our prospects who were actively engaged with that last about two weeks.
+Mik Cepulis: That's going to be dedicated time.
+Mik Cepulis: We'll have a shared slack channel or communication channel where we're working with you.
+Mik Cepulis: We'll have Zoom calls, treat you like a full customer onboarding essentially, and essentially do a sprint with you to see initial data sources are connected and let's see what kind of positive we can generate.
+Darryl: I think that'd be very interesting.
+Darryl: Can you do that with a deployed data plane in our Azure or does it have to be on your side?
+Darryl: If it has to be on your side, that will now go nowhere.
+Mik Cepulis: We can do an on premise POC, but those are, we charge for them.
+Darryl: I'm talking just the data plane.
+Darryl: Just the data.
+Darryl: I don't want a Kubernetes environment like the single server gateway middleman.
+Darryl: Could you look into that?
+Darryl: Because the thing it is is security will not allow you guys to touch the sources we need you to touch.
+Darryl: We don't open up that many ports publicly.
+Mik Cepulis: Now we have a hybrid approach as well where we can essentially run the POV with the same deployment model that we would have in your production.
+Mik Cepulis: So you'd have the data connectors in your environment.
+Mik Cepulis: That's what I want.
+Darryl: That's exactly when I follow the data plane.
+Darryl: I'm talking the data connectors so that we have one port, probably SSL or VPN to you guys and not, you connect to all our data sources and deal with permissions and change controls and all that overhead.
+Mik Cepulis: We don't.
+Mik Cepulis: Yeah, I understand.
+Mik Cepulis: Like with HIPAA and being healthcare, like, that's, that's going to be a no go.
+Mik Cepulis: So yeah, I don't think it's going to be a problem for us.
+Darryl: Okay.
+Darryl: Yeah, if we could do the connector, we would focus on the Azure and Microsoft SQL side of things.
+Darryl: So we're not, we don't even touch Oracle in the scope of this, I don't believe unless ray changes that.
+Darryl: I don't know, timeline.
+Darryl: My guess would be that two or four week window.
+Darryl: But let's get this in front of him and then say, hey, speaking to Daryl, we could do a whatever proposal.
+Darryl: The connector would be pre deployed.
+Darryl: You get a dedicated your entry point web app and I know you're at top of our.
+Darryl: We can put that on a final slide.
+Darryl: Where do we go from here?
+Darryl: With approval, we can do a pov.
+Darryl: Then we go get some of the customers involved, you know, and get them in there.
+Darryl: Because if they say yes, we want this, the leadership will all sign up.
+Darryl: So we want to get, you know, HR analytics, supply chain, get the three or four of the big hitters and off the races it goes.
+Darryl: Okay, so I think you and I are thinking in agreement generally, so see what you can get.
+Darryl: V if you happen, the longer the better.
+Darryl: We are a healthcare organization.
+Darryl: We are slow as bleep.
+Darryl: Just being very honest.
+Darryl: You guys can put time resources on that.
+Darryl: But when it comes to connectivity, I would be dedicating a DBA so he'd be doing the connectivity across Azure, SQL, Oracle, the works.
+Darryl: So you guys wouldn't have to have that overhead.
+Darryl: You just say, hey, here's how you go in here and start configuring.
+Darryl: We'll deal with firewalling, we'll deal with networking.
+Darryl: We'll do what, we do that with everything cloud anyways, so we got the people on the top.
+Mik Cepulis: Right on.
+Mik Cepulis: Awesome.
+Darryl: Yeah, let's, I'm out tomorrow, so I could circle back with you Monday or Tuesday based on your availability if necessary.
+Mik Cepulis: Perfect.
+Mik Cepulis: Daryl.
+Mik Cepulis: Yeah, that sounds great.
+Mik Cepulis: Enjoy the time off.
+Mik Cepulis: By the way, I got a response back from Harsha.
+Darryl: Thank you.
+Mik Cepulis: So we can support dynamic queries.
+Mik Cepulis: I'm just reading the response you sent me.
+Mik Cepulis: So queries can be read through query logs and they can provide allocation and azure file system for us to grab them.
+Mik Cepulis: We do not yet support synapse or data factory.
+Mik Cepulis: Those can be prioritized part of a commercial arrangement.
+Mik Cepulis: So essentially we can bump those up our own data connector priority queue.
+Mik Cepulis: Would those be required for a pov?
+Darryl: Synapse is literally doing all our data movement, okay.
+Darryl: It's doing everything from source.
+Darryl: I mean, without it you're not going to get lineage.
+Darryl: We don't need data factory.
+Darryl: We're going to be transitioning to data factory from synapse.
+Darryl: That effort will start probably in another 30 to 60 days.
+Darryl: And that's going to be a two month effort.
+Darryl: And when we're committed and ready and we're going through security approvals and contracting, data factory would be.
+Darryl: But Synapse is currently the thing.
+Darryl: You guys show it in your roadmap.
+Darryl: You guys do show that in your roadmap?
+Mik Cepulis: Oh, yes.
+Mik Cepulis: It's targeted for August.
+Darryl: I for our pov.
+Darryl: If you guys wanted to use us as guinea pigs for it, that might work out well, you know, and say, hey, you got an early release.
+Darryl: They need this much.
+Darryl: Is that stable enough to let them add it?
+Darryl: Then we might get lucky because if they're reading the logs, maybe they just focus on that versus the other pieces.
+Mik Cepulis: Yeah, we might be able to accelerate if you were able to actively engage with us develop in the Synapse connector.
+Mik Cepulis: We'll need essentially like someone the clients own, you know, structure to.
+Mik Cepulis: To more quickly generate that data connector.
+Darryl: We've done something.
+Darryl: We've done partnerships like that before, so.
+Darryl: Yeah.
+Darryl: Okay, perfect.
+Darryl: I know we both got to run.
+Darryl: You have a great one and we'll talk early next week.
+Mik Cepulis: Awesome.
+Mik Cepulis: Perfect.
+Mik Cepulis: Enjoy the time off.
+Darryl: Thank you.
+Mik Cepulis: Appreciate it.
+
+END MEETING

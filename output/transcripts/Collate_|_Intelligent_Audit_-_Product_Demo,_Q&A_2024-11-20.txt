@@ -1,0 +1,704 @@
+Meeting Name: Collate | Intelligent Audit - Product Demo, Q&A
+Meeting Date: 2024-11-20
+
+Mik Cepulis: How's it going?
+Jo Perez: Going.
+Mik Cepulis: Hey Brian.
+Brian Pollack: Hey, how's it going?
+Mik Cepulis: Going great.
+Mik Cepulis: Good to see you again.
+Brian Pollack: Good to see you too.
+Mik Cepulis: Hey, Margaret.
+Mik Cepulis: Hi.
+Mik Cepulis: Morning.
+Mik Cepulis: Good to meet you.
+Mik Cepulis: Next team.
+Mik Cepulis: Anyone else?
+Brian Pollack: I am.
+Brian Pollack: I'm hoping this invite didn't slip him.
+Brian Pollack: One second.
+Brian Pollack: All right, I think we can probably get started.
+Brian Pollack: I'm hopeful that Ashish can join us, but I think there was a last minute conflict.
+Mik Cepulis: Is that.
+Mik Cepulis: So who is Ashish at the.
+Brian Pollack: He's.
+Brian Pollack: He's our database architect.
+Mik Cepulis: Right.
+Mik Cepulis: If it's important enough we can reschedule as well to have.
+Brian Pollack: All right.
+Brian Pollack: He is able to join so he'll be hopping on right now.
+Mik Cepulis: Awesome.
+Mik Cepulis: Okay, great.
+Brian Pollack: Hey Ashish, thanks a lot.
+Brian Pollack: Sorry about this last minute stuff.
+Ashish Mukherjee: Hello Brian.
+Ashish Mukherjee: Yeah, no problem.
+Ashish Mukherjee: I think some mix up with the calendar, but that's fine.
+Mik Cepulis: Ashish, great to meet you.
+Mik Cepulis: This is Mick and Joe from the Collate team.
+Mik Cepulis: Appreciate you taking the time.
+Ashish Mukherjee: Yes, hello.
+Ashish Mukherjee: Thanks for joining the meeting.
+Ashish Mukherjee: Nice to meet you both.
+Mik Cepulis: Great to meet you.
+Mik Cepulis: Yeah.
+Mik Cepulis: So today I don't know how much background Brian shared but we're sort of doing a quick overview of Collate and then walking through a product demo led by Joe.
+Mik Cepulis: So I'm on the sales side and then Joe is my counterpart on the engineering side side and I guess.
+Ashish Mukherjee: Sure look forward to that.
+Mik Cepulis: Yeah, let's get into it.
+Mik Cepulis: So we'll do a couple intros on our side and then would love to turn it back over to you guys to get to know the team a bit better.
+Mik Cepulis: So.
+Mik Cepulis: Yeah, my name is Mick.
+Mik Cepulis: I've been in the data space for my entire career so far.
+Mik Cepulis: Worked at elasticsearch and then a database startup and have sold other developer tools along the way and yeah.
+Mik Cepulis: So latest stop here is collate and collate a sort of natural extension for a lot of the things I've learned and yeah, excited to chat with you guys more.
+Mik Cepulis: And then Joe, over to you.
+: Yeah, like Mix mentioned on his counterpart from the engineering side acting as a solutions engineer prior to joining the COY team.
+: I also have been in the data space for some time now at companies like Informatica and Elation within their professional services.
+: So really have hands on experience on, you know, making these types of solutions or these types of tools into solutions for your problem.
+: So excited to, you know, talk to.
+Jo Perez: You guys today about it.
+Jo Perez: Coli.
+Brian Pollack: All right, great.
+Mik Cepulis: Awesome.
+Mik Cepulis: And Brian, you and I spoke a couple weeks ago but.
+Mik Cepulis: And you're head of data science, so.
+Mik Cepulis: Yeah, that's, that's awesome.
+Mik Cepulis: And I guess Margaret and Ashish would Be great to get a bit of background about your both.
+Brian Pollack: Yeah, sure, I can.
+Brian Pollack: I'll let you guys introduce yourselves.
+Jo Perez: Cool, thank you.
+Mik Cepulis: Yeah, I'm Margaret, I'm a senior data analyst on Brian's team.
+Mik Cepulis: So I'm primarily working with the data in our custom UI and I'm really excited to hear what you have today.
+Jo Perez: Awesome.
+Mik Cepulis: Right?
+Ashish Mukherjee: Yeah, and I'm Ashish and I'm with the Intelligent Audit sysadmin team as a database administrator and managing the production databases of the company and generally looking at data strategy related things where I collaborate with Brian.
+Ashish Mukherjee: Yeah.
+Mik Cepulis: Okay, awesome.
+Brian Pollack: Yeah.
+Brian Pollack: So Margaret will represent kind of like a power user end user kind of situation.
+Brian Pollack: So she has to deal with a lot of the, the difficulties that an end user right now has, especially around, you know, all things data governance I guess, but the issues that they're running into and of course Ashish on much more on the database integration side, you know, handles those kind of problems and those kind of issues.
+Mik Cepulis: Okay, great.
+Mik Cepulis: Both relevant.
+Mik Cepulis: Awesome.
+Mik Cepulis: Well, let's, let's get into it then.
+Mik Cepulis: So we'll run through a quick kind of summary of Brian and I's conversation from last time and then I'll share a bit more about Colate for you both Ashish and Margaret and then we'll hop over to just product demo.
+Mik Cepulis: So when Brian and I spoke, you know, I think we had a conversation that follows a pattern that many of our customers have where there is a lack of unified metadata solution or lack of a single place to go and identify where data is and who owns it and what the quality of that data looks like.
+Mik Cepulis: And yeah, so Kollate was identified after looking at some open source solutions.
+Mik Cepulis: You guys, you know, obviously have many core competencies and running a random open source product maybe isn't one of them.
+Mik Cepulis: So let's, let's focus our efforts on, you know, what makes us, what makes the company, you know, tick on a day to day basis instead of running DevOps yourselves.
+Mik Cepulis: It sounds like Brian and your team are looking at a fairly aggressive timeline, so making a decision by end of the month from what we last discussed.
+Mik Cepulis: And yeah, so you know, Joe and I are here to help move quickly with those goals.
+Mik Cepulis: And yeah, so some challenges are, you know, silo data, which is a very common theme, lack of robust data quality.
+Mik Cepulis: So you know, lack of trust in data, difficulty making decisions about that data and then, you know, not having a deep understanding of lineage and impact analysis is another common one.
+Mik Cepulis: So you know, lack of lineage is huge.
+Mik Cepulis: And so we do that quite well, so you know, what is collate?
+Mik Cepulis: I think you guys maybe have some background, but I'll share this anyway.
+Mik Cepulis: So we came from the open source product called Open Metadata.
+Mik Cepulis: That's what our two co founders built.
+Mik Cepulis: They have a storied history in building and scaling open source products.
+Mik Cepulis: So they're, you know, if you've heard of Apache Hadoop and Apache Atlas and if you've heard of the company hortonworks, they actually founded hortonworks back in the day.
+Mik Cepulis: I spent more of their time recently at Uber building out their data book function, which is Uber's enterprise metadata proprietary in house, open source now metadata management solution.
+Mik Cepulis: And that was a foundational experience for them because it allowed them to solve the metadata problems at a modern company with modern data stack at huge scale, with huge complexity and a lot of user demands.
+Mik Cepulis: And they brought those learnings over to, to sort of the philosophical beginnings of OpenMEDA.
+Mik Cepulis: And that's what we are.
+Mik Cepulis: We are the commercial entity behind the Open Metadata project.
+Mik Cepulis: So think of ourselves as, you know, any type of SaaS vendor, like a Salesforce or whoever else that you're actually using.
+Mik Cepulis: We offer commercial features and commercial, you know, business relationships and support SLAs, everything else you'd expect from a standard proprietary vendor.
+Mik Cepulis: But the beauty is we're also backed by open source and so that our product is interchangeable with the open source.
+Mik Cepulis: So open source and commercial can go back and forth.
+Mik Cepulis: We don't fork our open source.
+Mik Cepulis: So you know, we do hold both entities in like very high esteem.
+Mik Cepulis: And at the end of the day both open source and commercial are kind of skating towards the same puck.
+Mik Cepulis: So we're an AI powered platform that unifies data discovery, observability and governance.
+Mik Cepulis: Sorry, a little slow this morning.
+Mik Cepulis: It's early for me.
+Mik Cepulis: We do work at large scale and small scale.
+Mik Cepulis: Most all of the companies we work with, whether they are, you know, Fortune 500s or much smaller, tend to have pretty high data security needs.
+Mik Cepulis: And I think that's a clear and present need for almost anyone these days.
+Mik Cepulis: So we have built our product to achieve those things as well.
+Mik Cepulis: We're stock two type two and have a very elegant SaaS architecture and can support things like people, you know, teams needing on premise deployments as well.
+Mik Cepulis: I don't think that's relevant here but you know, should it ever be relevant, you know, Colit can be deployed in your own private cloud.
+Mik Cepulis: But our SaaS offering is top tier.
+Mik Cepulis: It's single tenant, no multi tenancy architecture, no shared resourcing.
+Mik Cepulis: So you're Getting a nice secure, dedicated deployment that we can tailor and monitor specifically for intelligent audit.
+Mik Cepulis: Yeah, and you know, obviously have SSO integration and.
+Mik Cepulis: But everything else in terms of encrypted at rest and encrypted at transit, this is a fun splashy slide.
+Mik Cepulis: We do a lot of work across a lot of industries.
+Mik Cepulis: These are all commercial collate customers.
+Mik Cepulis: We do have a fair bit of work in the science space these days and other top financial services firms.
+Mik Cepulis: So fair bit of spread and a fair bit of secure environments that we work in and whatnot.
+Mik Cepulis: So yeah, so onto the problem statement.
+Mik Cepulis: This will be a little repetitive because I think that we all know that we're in the right room, but we work with companies that invest a lot of money in their data stacks.
+Mik Cepulis: And many companies are employing a lot of different folks that are required to be data fluent data engineers and scientists, governance people.
+Mik Cepulis: A lot of business users and executives need to have data fluency and spend their time in various, various parts of the complicated stack.
+Mik Cepulis: But they're facing challenges because it is difficult to translate that data stack investment into value.
+Mik Cepulis: So practitioners have a difficult time finding data.
+Mik Cepulis: They spend a lot of the time fixing bad data.
+Mik Cepulis: And data leaders are seeing poor productivity from their teams because data is stuck in silos.
+Mik Cepulis: Data is hard to trust.
+Mik Cepulis: Data is like hard to discover and figure out ownership structures and then you know, ultimately leadership decisions are difficult to be made because of all these complexities.
+Mik Cepulis: Lot of money's lost on compliance violations or bad data in general.
+Mik Cepulis: We have a story.
+Mik Cepulis: So Mango is sort of e, I don't know, technology forward commercial retailer in the EU and they had a bad data incident that led to them looking for a solution that landed on collate.
+Mik Cepulis: They had a bunch of price tags that are electronically updated.
+Mik Cepulis: There was a bug or an error in one of their data pipelines that led to them issuing wrong price tags for a lot of their clothing.
+Mik Cepulis: And they led to a lot of money in lost sales.
+Mik Cepulis: They were mispricing by an order of magnitude off, which is a pretty easy thing to flag when you have a nice data quality pipeline.
+Mik Cepulis: And so people were trying to wondering why the discount retailer Mango was selling 20 shirts for 200.
+Mik Cepulis: They had to eventually fix that, of course.
+Mik Cepulis: It would have been nice to have that flag ahead of time before the prices were issued though.
+Mik Cepulis: So there is the issues that we just spoke about because data tooling is broken.
+Mik Cepulis: It's not unified, it's not automated, it's not collaborative.
+Mik Cepulis: These are all expected for all tier one tools these days.
+Mik Cepulis: So all SaaS tools, people expect them to have some element of collaboration built in, they have some element of automating a way annoying problems built in.
+Mik Cepulis: And obviously, you know, as a data team, you need to have a single place where you can go look at your entire corpus of data without having to jump from tool to tool.
+Mik Cepulis: So that is what the collate approach looks like.
+Mik Cepulis: We're solving old data problems and new data problems using first rentals approach.
+Mik Cepulis: We have a very interesting stack.
+Mik Cepulis: So, you know, we obviously are doing all of the things that you expect from a data catalog.
+Mik Cepulis: We call ourselves a unified metadata platform because we're also combining observability and governance tasks into the same core platform.
+Mik Cepulis: We do this with holding our data in what we call a unified metadata graph, which enables us to layer on a lot of AI and automation on top of that data because we're generalizing all the data that comes in and converting it to JSON format.
+Mik Cepulis: That allows us to do a lot in the way of like extracting additional value from your data, giving you AI assistance agents on top of that data, allowing you to take bulk action on top of all of your metadata in the form of lineage propagation or assigning ownership, assigning tagging to all of you data based on a series of criteria that you deploy, as opposed to going in individually to one data set, doing a thing, jumping to the next data set, doing a thing, jump to the next data set, doing the same thing.
+Mik Cepulis: Why not automate that away?
+Mik Cepulis: So we've done a lot of work that especially technical and cutting edge teams like because it allows them to do their jobs faster.
+Mik Cepulis: And this is a quick, you know, a lot of folks ask us like, what's the difference between a catalog and a unified metadata platform?
+Mik Cepulis: I briefly mentioned it just now, but a catalog is really focused on that level one data.
+Mik Cepulis: So maybe they have lineage, but it's really a discovery tool.
+Mik Cepulis: And maybe you can assign tagging and ownership, but going to the next level and layering, layering in a quality information, having automated freshness checks, going deeper on lineage, having column level lineage and solid data governance structures in place is also lacking in a traditional data catalog.
+Mik Cepulis: So that's a lot of reason why folks will invest in a tool like Collate.
+Mik Cepulis: So let me pause here, ask any questions and then, yeah, cool, Joe, I'm going to hand it over to you.
+Jo Perez: Sounds good.
+: So, you know, what I kind of want to show is really what that, you know, user journey, you know, starts to look like.
+: You know, there's a lot of cool things that, you know, Mick obviously said, but really we want to think about that, you know, cohesive piece and how these aren't all, you know, isolated elements, but really things that have to naturally come together in order us for us to get value out of our data.
+: So I like to think about it as the future of data and I use the word future as an acronym to be able to find, understand, trust, use and reuse your data.
+: So really thinking before I can actually use something, I need to actually find where it is.
+: Before I can use it, I need to understand exactly what it is or I need to trust it, et cetera, et cetera.
+: And then bringing all those elements together and I simplified user journey.
+: So right here we're looking at our Colate landing page.
+: It is extremely customizable based off user Persona and we're able to see already a couple of those key elements here.
+: So here I'm able to see, you know, the number of types of data assets I have.
+: We have over 80 plus connectors, everything from your databricks and Power BI to your S3 and redshift and tableau to your lookers and ML flows and you know, custom DBs if needed and et cetera, et cetera.
+: So a lot that we're able to, you know, unlock and discover and then also just thinking about the user experience, you know, we may want to bookmark specific assets and be able to follow them.
+: We may want to be able to track, you know, our recent views or the data assets that I'm responsible for.
+: For an ownership standpoint, we also want to think about not just having data in the platform, but also having, you know, knowledge articles and links as well and thinking about how we can standardize and govern those elements.
+Jo Perez: In this specific instance, I am a data steward, so I'm able to also see some KPI surrounding ownership and descriptions of my assets.
+Jo Perez: We can see the total asset counts and then we can even get into some quality things.
+Jo Perez: So thinking about, you know, data quality tests, you know, the success and fail.
+: Pipeline, status, et cetera, et cetera.
+: So really a lot here to unpack on just the landing page.
+: But again, we want to think about that user journey of finding our data.
+Jo Perez: So a couple ways we can go about it.
+Jo Perez: The first is we can leverage, you know, the search bar up top where I can type in a specific keyword, let's say customer, and see what assets might hit.
+Jo Perez: The other thing I can do is navigate over here to this, you know, left hand area where I can hit explore and this is going to give me objects Based off popularity.
+Jo Perez: So maybe I don't know exactly what I'm looking for, but I just want to see, you know, what's out there and what's popular and then kind of build from there.
+Jo Perez: By doing this I get a lot of results.
+Jo Perez: I can see everything that's in the tool.
+Jo Perez: So 10671 pages with 10 objects per page is a whole lot of objects.
+Jo Perez: And we won't want to sit here and click object by object to find what we're looking for.
+Jo Perez: So we can leverage a couple of filters, you know, right here conveniently at the top we can specify that maybe we want tables that would still obviously leave us a lot.
+Jo Perez: We can specify by things in a certain domain.
+Jo Perez: Maybe we want to just narrow to the customer domain.
+Jo Perez: Or maybe we want a specific owner.
+Jo Perez: Or maybe we want a specific owner.
+Jo Perez: Let's say we want myself to be the owner and a specific tag like pii sensitive.
+Jo Perez: And I'm going to update this and now I'm taken down to just 10 pages with 10 objects per page.
+Jo Perez: And we can continue to narrow down this by things like tiers.
+Jo Perez: So maybe we want only tier one and we're now limiting the results in a pretty fair and quick manner.
+Jo Perez: We can also use advanced search if we chose to.
+Jo Perez: So maybe we want to specify on one of these things with a specific operator.
+Jo Perez: Maybe we want an and or an or condition.
+Jo Perez: It needs to meet both of these criteria is not just one or maybe it's either.
+Jo Perez: Or we can build that out very friendly, user friendly fashion.
+Jo Perez: And then again we can also just filter.
+Jo Perez: I know what I want, it's going to be in redshift.
+Jo Perez: Let's filter on just the redshift as services one down to two pages.
+Jo Perez: The other nice thing about this ui, aside from those advanced properties is I have the ability to filter out things like popularity, name, relevance and last update.
+Jo Perez: So that is also handy.
+Jo Perez: What I also like is there's no commitment to click in a world where time is everything.
+Jo Perez: A click is a second and it's a second we want to save you.
+Jo Perez: So by having this kind of preview on the side, we're able to not have to click into objects before we're comfortable.
+Jo Perez: So we get a high level description, you know, raw payments, I can see the owner and the domains, I can see things like tiers.
+Jo Perez: But as I kind of click through these, I'm able to get a high level overview of what that object is, its quality, its columns, et cetera, et cetera.
+Jo Perez: So really handy there.
+Jo Perez: And once we do have that confidence that this is the asset that I'm interested in.
+Jo Perez: We can click through and be taken to that asset page or we're going to really start seeing a number of things.
+Jo Perez: I want to pause here again thinking about that journey.
+Jo Perez: The first step of the future of data is finding our data.
+Jo Perez: You know, that is the most important thing.
+Jo Perez: We want to be able to leverage what assets are out there.
+Jo Perez: So we found this customer table.
+Jo Perez: Now let's start to understand it.
+Jo Perez: You know, we might want to understand, you know, what columns exist.
+Jo Perez: You know, we have first name, the name of the person, we have last name, the last name of the customer.
+Jo Perez: We have first order represents the date when it was placed.
+Jo Perez: We can see a variety of tags.
+Jo Perez: So we can see that this credit card number sensitive.
+Jo Perez: We can see over here that it's part of inventory management, the glossary terms or market research.
+Jo Perez: We can see things like owners or domains or tiering.
+Jo Perez: The one thing I really like about our tags, thinking about that context of understanding is it's not that we're just slapping a label on something, calling it tier one, calling it sensitive.
+Jo Perez: When we actually float over, we get an overview of what it means to be tier one.
+Jo Perez: That's important context.
+Jo Perez: It's not good enough to just call something tier one and hope everyone knows what that means.
+Jo Perez: We need to actually understand, okay, this is critical metrics to business dashboarding.
+Jo Perez: This has a higher SLA, it's a source of truth, etc.
+Jo Perez: Etc.
+Jo Perez: Similarly, with sensitive information, we want to know, what do I do with sensitive information?
+Jo Perez: Can I send it to Brian without it being encrypted?
+Jo Perez: Can I just post it on my LinkedIn?
+Jo Perez: Obviously not, but we want to make sure that there are clear standards and definitions surrounding these things.
+Jo Perez: And it's not just this little float over.
+Jo Perez: You know, jumping into the governance area.
+Jo Perez: I can click on these things and define them in real time, so I can define what the policy is.
+Jo Perez: I can then see what objects are sensitive, what objects are not sensitive, et cetera, et cetera.
+Jo Perez: And what we can do with some of these is have them be auto generated as we ingest your metadata.
+Jo Perez: So we're going to look at a variety of patterns.
+Jo Perez: Maybe we see three digits, dash two digits, that's four digits.
+Jo Perez: We're going to say, oh, this looks like a Social Security number.
+Jo Perez: We should mark this as sensitive.
+Jo Perez: We're able to go that far with some of these elements in order to make your lives that much easier, as well as having some rich automations as well, where we can have some you know, crafty rules defined to say if this, then do that.
+Jo Perez: So here I'm looking at just tables.
+Jo Perez: If the tag is PI sensitive, make it tier one.
+Jo Perez: Now this could very much be make this team the owner, make it the data governance team or some other element.
+Jo Perez: But we have a variety of things that we can do looking at, you know, the, you know, actions, so descriptions, tags or owners based off, you know, a variety of different types of filters.
+Jo Perez: So maybe it's a specific name of a table.
+Jo Perez: We want to, you know, assign it to a specific domain.
+Jo Perez: We can just do exactly that.
+Jo Perez: And it doesn't need to be directly is can be things like regular expressions in a set, et cetera, et cetera.
+Jo Perez: And you know, the real value here is we don't want you to have a whole team of curators and data stewards having to manually add things as PII object by object.
+Jo Perez: Now this is only 194 objects.
+Jo Perez: That would take you a good hour or two if you're extremely efficient in just tagging that 194, I'm sure you have more than 194 objects.
+Jo Perez: With a basic automation, you can get that done in, you know, seconds, if not minutes.
+Jo Perez: So going back to our object here.
+: Thinking about how we can accelerate that curation, accelerate that time to understanding, we.
+Jo Perez: Also have our quality AI where I can, you know, click on that little robot guy and he's going to suggest a description.
+Jo Perez: So previously there is no description here, he realizes that, she realizes that, and then it throws out, hey, this table looks at, you know, customers, their lifetime value, their order history, number of orders.
+Jo Perez: It's looking not just not the metadata of the columns, but also what queries are being generated and things like that off of that information to provide that holistic definition.
+Jo Perez: We can also see it at the column level, the total lifetime purchases made by the customer over their lifetime value.
+Jo Perez: So again, we don't want to use it to have to describe this table one by one or have ChatGPT open in one window nowadays, have Cole open another and just copy and paste things over.
+Jo Perez: We want to bridge that gap and provide those descriptions off a variety of contextual elements.
+Jo Perez: One thing that we're working towards is our day one experience where these descriptions will be auto suggested upon ingestion.
+Jo Perez: So we don't even need to click on our little robot friend here to suggest the description.
+Jo Perez: And they're automatically going to be generated based off those factors.
+Jo Perez: So again, thinking about how we can get to understanding call AI tags, proper description and curation are one of those ways.
+Jo Perez: And that's not.
+Brian Pollack: Joe, I have a.
+Brian Pollack: Yes, I have a question about that.
+Brian Pollack: So for AI generated descriptions and summaries, are those marked or indicated?
+Brian Pollack: So that if we want to actually separate out between things we know we've labeled manually versus what we've labeled via AI.
+: So right now, yes, and we're going to probably do a way clearer job when we have that day one functionality.
+: So with this activity in test and let's actually just go to suggest the descriptions real quick.
+: Let's approve it.
+Mik Cepulis: It's a.
+Mik Cepulis: Brian, I guess like right off the bat we're going to flag like we don't, we don't change the description.
+Mik Cepulis: Like we have to take an action to approve that description.
+Mik Cepulis: So you can do that either on an individual basis or for every subset within a single table.
+Mik Cepulis: But yeah, it's anyway, continue Joe.
+Jo Perez: Yeah, so right now what it would look like is me, you know, doing it.
+Jo Perez: But then in the future if it's going to be that automation application bot so you can discern, you know, who's doing what.
+Jo Perez: So I might be doing it, the bot might be doing it.
+Jo Perez: We're able to capture that version history and even go back to those versions and see what's changed over time.
+Jo Perez: But yes, in the future we will obviously like make, provided, you know, when it's auto generated, provide a little denotation that hey, this came from quality AI versus that this didn't come from quality.
+Jo Perez: I a nice thing too would be from our insights thing.
+Jo Perez: You know, I kind of briefly hovered over it, but we can have some dashboards like these KPIs.
+Jo Perez: It'd be nice to see what descriptions are, you know, auto generated and what descriptions are done by our stewards and really build out those metrics as well.
+Jo Perez: Not just when looking at the objects.
+Jo Perez: Kind of taking that, you know, holistic 30,000 foot view as well and gotcha.
+Ashish Mukherjee: Okay, I have a question or are the couple of related questions maybe.
+Ashish Mukherjee: So with respect to security.
+Ashish Mukherjee: Right, because that's something very important to IA and I'm sure for many of your customers as well.
+Ashish Mukherjee: So one thing is that do you offer this as a like hosted on a hosted service on a private cloud or do you allow us to host it on our infrastructure?
+Ashish Mukherjee: How does that work?
+Jo Perez: Yeah, we offer a variety of deployment options.
+Jo Perez: Nick, I'm not sure if you and Brian talked about any previously, but I can at least at high level.
+Mik Cepulis: Yeah.
+Mik Cepulis: Well, so before we, before we do that, Brian, I thought that when we last spoke my understanding was you guys Were pretty keen on a SaaS solution and you know, we do have alternate deployment methods, but a lot of the beauty of, you know, running a SaaS is we're taking the DevOps burden away.
+Ashish Mukherjee: Right.
+Mik Cepulis: Shish.
+Mik Cepulis: We do offer what we call byoc, which is collate hosted within your own private cloud instance.
+Mik Cepulis: But this is a more expensive flavor of collate to deploy.
+Mik Cepulis: So it is reserved for the enterprise tier of collate, which will, Brian, increase the price from what you and I last spoke about and happy to dive into it, but just want to set those expectations that it's going to be, you know, more manual effort on your side and ultimately you'll be hosting your own SaaS.
+Mik Cepulis: So it's an option, it's available.
+Mik Cepulis: I think that a little bit later on, let's talk about, you know, SaaS versus hybrid SaaS and there are creative ways that we can actually, you know, create more isolation with.
+Ashish Mukherjee: Right, yeah, sure.
+Ashish Mukherjee: So let me just quickly talk about our scenario and of course the commercials and all those things can.
+Ashish Mukherjee: Is something which can be discussed with Brian.
+Ashish Mukherjee: So there are two things, right?
+Ashish Mukherjee: So one scenario we might be looking at, right, as an option is so basically we have our own VPN and we actually don't use AWS or GCP cloud.
+Ashish Mukherjee: We have our own dedicated hosts because of the scale of operations we have.
+Ashish Mukherjee: So if we want to deploy your application, it would not be within AWS or some standard cloud, it would be within our vpn.
+Ashish Mukherjee: Right.
+Ashish Mukherjee: So that's something I just want to share with you.
+Ashish Mukherjee: The second part is so like you were walking us through the features and that's pretty impressive, no doubt.
+Ashish Mukherjee: But what to be very specific, right?
+Ashish Mukherjee: So we have, let's say a set of databases, postgres databases, to be specific, and we probably may not want our data to be ingested into your application for multiple reasons.
+Ashish Mukherjee: It could be privacy also.
+Ashish Mukherjee: It could also be related to that the volume of data itself is immense.
+Ashish Mukherjee: Right.
+Ashish Mukherjee: And that might have some bearing on cost, performance, different things.
+Ashish Mukherjee: What we might be interested in from a data cataloging perspective is pretty much similar to, let's say what you have shared on the screen right now that our table schemas get ingested into your application and then we are able to have the data cataloging features.
+Ashish Mukherjee: Some of it might be through some human intervention and some of it might be using the sort of automated or AI driven features which you.
+Mik Cepulis: That is the purpose of the collate platform.
+Mik Cepulis: So we're not, we're here to ingest metadata, we're not here to Ingest data.
+Mik Cepulis: There is.
+Mik Cepulis: There's an asterisk, there's like a one example where that does deviate with sample data.
+Mik Cepulis: And so we do optionally pull.
+Mik Cepulis: So this is a configurable option for you.
+Mik Cepulis: We do control the ability to turn this off.
+Mik Cepulis: But sample data is, you know, it's helpful for an analyst to go in and if they're looking at the right table, look at sample data and make sure that the.
+Mik Cepulis: Okay, so the underlying data I'm looking at matches with what my expectations are based off of the table description, column descriptions and all that.
+Mik Cepulis: So that is.
+Mik Cepulis: Anyway, so to your point, we are only ingesting metadata and that also enables us to keep that volume of data flow between your VPC and our VPC very minimal.
+Mik Cepulis: So you're not paying for, you know, many data transfer, storage costs and all that.
+Ashish Mukherjee: Okay, sounds good.
+Ashish Mukherjee: Yeah, so I just wanted to give little more context.
+Ashish Mukherjee: Right.
+Jo Perez: So that's the deployment options.
+Jo Perez: We could even make sure that we're running this on your infrastructure to minimize those costs and things like that.
+Jo Perez: So you're only pushing what you want as opposed to a.
+Jo Perez: We can get into those deployment models on a whole separate call if needed.
+Ashish Mukherjee: Sure.
+Ashish Mukherjee: Sounds good.
+Ashish Mukherjee: Yeah.
+Ashish Mukherjee: Thank you.
+Brian Pollack: Yeah, I think.
+Brian Pollack: Yeah, yeah.
+Brian Pollack: Thanks for.
+Brian Pollack: We did talk about SAS initially, but yeah, we, you know, we can discuss that more, you know, after this call.
+Brian Pollack: As far as like actual deployment options, Margaret reminded me, and this is something, this is an issue that we're currently running into as far as labeling and description of columns, that kind of stuff.
+Brian Pollack: We have instances where we could have multiple tables that have the same, the same name for a certain column, but the definition of that column is different.
+Brian Pollack: Right.
+Brian Pollack: So we were sloppy with our naming and of course that.
+Brian Pollack: And now, you know, if we have weight in one column and we have weight in another column or in another table, you know, those could be different definitions of weight.
+Brian Pollack: And similarly, we have a similar problem where we can have two tables that have two columns that are named differently, but actually refer to the same object.
+Brian Pollack: And again, that's the type of unification we desperately want to have and we're working toward it.
+Brian Pollack: But.
+Brian Pollack: But those are basically two examples of common problems that are difficult right now for us to disentangle.
+Brian Pollack: Are there tools that collate has that can assist with those particular issues?
+Jo Perez: Yeah, so I will definitely say with those automations I showed at high level, we can probably get there.
+Jo Perez: We have to be very specific though.
+Jo Perez: And these are going to be rules generated.
+Jo Perez: So if you don't know, we can it would be impossible for us to know.
+Jo Perez: So if you don't know that this system does metric and this system does Imperial, there's no way col it's going to be able to, you know, figure that out.
+Jo Perez: But if we do know that this specific service is in Metric and this specific service is imperial, we can define that out.
+Jo Perez: So we can select all assets, for instance, and then our condition can be if the database model or if the database service or this schema.
+Jo Perez: The service is a specific schema.
+Jo Perez: Let's say it's coming from databricks.
+Jo Perez: We do it this way and we could add another condition where if the column is wait, and I don't know if I have a weight.
+Jo Perez: So yeah, I do have a weight.
+Jo Perez: There's zero assets, but I do column is wait, I then take this action.
+Jo Perez: I can then add an additional condition where if there's a custom property or if there's a, you know, another column in that data set or if there's a specific field value or whatever it may be, I can then build that logic out to then take X action.
+Jo Perez: What X action could be, it could be anything from adding the description, like you said.
+Jo Perez: But what might also be, you know, helpful in, in your case is adding a glossary term or something like that where we're adding the tag or we're adding the object.
+Jo Perez: So I believe it would be add tag and then add glossary term.
+Jo Perez: And then I'm doing it weight.
+Jo Perez: And now we have two definitions in our glossary for weight.
+Jo Perez: We have our EU definition of weight, and then we have our North American definition of weight.
+Jo Perez: And we're associating that, not just the description.
+Jo Perez: And then we could maintain those things essentially separate.
+: And it's just now associating a glossary term to those, you know, different parameters as opposed to having to, you know, spit out a bunch of definitions for.
+Jo Perez: Each time and, you know, change things there.
+: So that's a, you know, very simplified version of how I would solve your problem.
+: That's something we could also, you know, work on together.
+: If you guys go the collate route.
+Jo Perez: We can get creative on, you know.
+: How we can solution for this problem.
+Jo Perez: With the caveat of you guys have at least some type of logic in place because, you know.
+Brian Pollack: Of course.
+Jo Perez: Yep.
+Brian Pollack: Yeah.
+Brian Pollack: So as far as indicating the differences between those two particular columns, that would be a good solution.
+Brian Pollack: Our ultimate goal, of course, is to not have that level of ambiguity.
+Brian Pollack: So if we want to change the name of a column in a tier one table that we have right now, Then the downstream effects of that.
+Jo Perez: In.
+Brian Pollack: Our company are large.
+Brian Pollack: Right.
+Brian Pollack: Because if you have a tier one table that says we have the column weight, and now we want to call it weightpounds or whatever, to be explicit, that's going to have a significant number of downstream effects, both on the tables that draw from it and also on any code that's interacting with it.
+Jo Perez: Absolutely.
+Brian Pollack: And, you know, trying to do that, even for a simple change, is a serious undertaking that we're.
+Brian Pollack: That we're right now trying to, like, process out and plan out for things like that.
+Brian Pollack: Are there tools to help us accomplish that in a more streamlined fashion?
+: Yeah, and I think that's actually a good pivot.
+: So one thing I want to show here, I want to call out, we're in I Beta.
+: So I switched just now.
+Jo Perez: So this is kind of a version ahead.
+: This will definitely, I think, be in 1.6, which is the end of November.
+Jo Perez: But we're having this metrics component, which is similar to a glossary term.
+Jo Perez: However, I can have an expression, and that expression is that conversion for weight.
+Jo Perez: So when we get to that next stage of standardizing all our units, we can actually track when the standardization is happening.
+Jo Perez: We can add it to lineage.
+Jo Perez: There is no lineage here, but I can have a table drawn to this or a BI dashboard.
+Jo Perez: See the expression used, the overview and the description of what this gross profit margin is so similar to weight.
+Jo Perez: Maybe one's count in dollars and ones in euros and one's in pound sterling.
+Jo Perez: I can break that down and see this is how we're actually tracking gross profit margin.
+Brian Pollack: Where's that expression?
+Brian Pollack: Where's that coming from?
+Brian Pollack: Is that entered manually here?
+Jo Perez: In this case specifically, I want to say this was, you know, defined, but we will, I believe, have ingestion logic as well to, you know, mass import these or things like that.
+Jo Perez: So this is, you know, called out that it's in Python.
+Jo Perez: So this is how we're calculating it out.
+Jo Perez: This isn't, in this specific case, ingested from anything.
+Brian Pollack: So.
+Brian Pollack: So we have.
+Brian Pollack: So we have our custom BI solution as well.
+Brian Pollack: That's like another complication, another layer on top of that.
+Brian Pollack: So we don't use Tableau and Power bi.
+Brian Pollack: We have our own UI and our own charts and graphs and all that.
+Brian Pollack: The KPIs that are generated in those charts and graphs are.
+Brian Pollack: Some of them are pulled directly from tables from like these kind of like final, final leg tables that have a bunch of KPIs ready to go.
+Brian Pollack: Some of them have to be calculated on the fly.
+Brian Pollack: Depending on how we're doing it.
+Brian Pollack: If we're calculating on the fly, of course, knowing that we're calculating it the same way every time is more of an ask than simply pulling it from a table where we know, okay, that's the table, that's what it's pulling from.
+Brian Pollack: But calculating on the fly means we're using obviously a function to generate that.
+Brian Pollack: Is that something that could be incorporated here?
+Brian Pollack: Then?
+Jo Perez: Yes, it will.
+Jo Perez: The big, probably simple answer, yes, period.
+Jo Perez: However, where the it depends comes from is how we're able to pull that information from that BI source, from that data source, whatever it may be.
+Jo Perez: But we can add lineage via API, CSVs are coming soon, or manually in the UI where I can add the metric definition for each one in between these.
+Jo Perez: So I know what logics had to have taken place.
+Jo Perez: So we can say, hey, we should all be using this logic to get that we should be dividing by 100 and not 10 or whatever that is.
+Jo Perez: Or maybe this is the official currency rate we should be using for conversions to dollars, and that's updated, you know, by an API regularly or things like that.
+Jo Perez: But we can at least build that into the model, into the flow to capture it.
+Jo Perez: So yes, we can display that in Lineage.
+Jo Perez: There is nothing stopping us.
+Jo Perez: Where it depends is how we're able to connect to that, you know, native BI solution and those other, you know, moving pieces, if you will.
+Ashish Mukherjee: So, yeah, go ahead, Brian.
+Brian Pollack: Yeah, sorry, one more jump to tack on to that.
+Brian Pollack: So as far as our custom bi, at the end of the day, the main thing we're looking for for a custom UI solution is the ability for a user to hover over an entity and return the same type of glossary or definition information that we have centralized here.
+Brian Pollack: Because we're assuming a lot of end users will not be post booking through this, they'll be simply using our tools.
+Brian Pollack: And the additional functionality of hovering over something and knowing okay, that's what it means would be the ideal state for us.
+Brian Pollack: Of course, we can implement that via an API if it's stored in a central way.
+Brian Pollack: Is that something that is offered via this tool?
+Jo Perez: What we have here and let me find customer, what we can do here is we have a Chrome extension and we can sign in just like you would to your Colate instance, and then I need to refresh my screen, I think, and then I can hover over customer, and then I could search and open metadata and it's going to show me a variety of things for Customer.
+Jo Perez: And as long as your BI solution is Web based and you have access to Google Chrome, you'll be able to see what we're meaning.
+Jo Perez: And these can be data products, these can be definitions, these can be tables or topics or whatever it is that exists within quality.
+Jo Perez: And that context gets even better when you're in a ingested solution because we're able to kind of bridge those gaps.
+Jo Perez: So if I do this in databricks or snowflakes becomes a little bit more powerful.
+Jo Perez: But I like the idea of just being able to search and instead of going by what Google AI or Google tells me is a customer, I can get our definition of customer.
+Jo Perez: I can get our definition of customer lifetime value and how we should be calculating it.
+Brian Pollack: So that's a good solution for any of our internal users that we would expect to sign into Collate if we have external users like our customers that are using our service.
+Brian Pollack: Is there any way for a direct API integration?
+Jo Perez: Yeah, anything you see in the Collate tool is backed by an API.
+Jo Perez: We also offer an extensive SDK.
+Jo Perez: That's I think, one of the best things about us being open source.
+Jo Perez: We were API first and that gives you the ability to get anything that's in quality out via API.
+Brian Pollack: All right, perfect.
+Brian Pollack: Yeah, that's certainly what I was looking for.
+Brian Pollack: So I mean, I didn't realize you had the Chrome extension.
+Brian Pollack: Chrome Extension looks excellent, especially as a, as a much quicker way to onboard without, you know, pulling our engineering team in to actually link into those APIs.
+Brian Pollack: Long term API solution I think is, would still be optimal, but you guys have, have the SDK, so that looks good to me.
+Jo Perez: Yeah.
+Jo Perez: And I always go the path of least resistance first just because, you know, don't want to scare anyone with oh, you have all these APIs and SDKs.
+Jo Perez: But yes, it's definitely something we offer.
+Brian Pollack: All right, perfect.
+Jo Perez: Honestly.
+Brian Pollack: So, all right, that's the end of my long string of questions, so I appreciate that.
+Jo Perez: Yep.
+Jo Perez: Ashish, I think you had a question.
+Ashish Mukherjee: Before if we could turn back to that Python code snippet, right, you were just showing us.
+Jo Perez: Yes.
+Ashish Mukherjee: Okay, so this is basically a sort of a customization hook, like a piece of code we could write here, right?
+Jo Perez: Yeah.
+Jo Perez: So what this area allows us to do is standardize our expression so it lives within our governance area.
+Jo Perez: So with our metrics, everyone.
+Jo Perez: There's a huge problem right now where everyone's calculating the same thing slightly different, whether it's a problem with the code or it's a problem of the variables they're using or whatever it is.
+Jo Perez: This is to solve that in an easy way.
+Jo Perez: You can do this in a rich text field, certainly, but it's I have the code view, I can just copy and paste it.
+Jo Perez: I show you guys in Python and I have that context of how I can mimic this or I really understand how we're calculating gross profit margin.
+Jo Perez: There's no assumptions to be made here.
+Jo Perez: And again, this is just our beta, so it's not perfectly curated.
+Jo Perez: But how this is actually going to play out is I'll have a, you know, business overview or technical overview.
+Jo Perez: I'll be able to see the expression, see the owner of the expression and then be able to see it from a lineage standpoint.
+Jo Perez: So where is this expression being used?
+Jo Perez: Is it before it gets to our BI layer?
+Jo Perez: Is it somewhere from staging to consumption, et cetera, et cetera.
+Jo Perez: And then again, understand things like the unit of measure, the metric type, you know, the code to capture all this, eliminating that ambiguity from your complex, already complex systems.
+Ashish Mukherjee: Right, right.
+Ashish Mukherjee: And the last question from me for now is that let's say before we actually take the plunge, right into going out and doing a full scale implementation, so what is the kind of help or support you would provide us in doing some kind of a poc?
+Jo Perez: Yeah.
+Jo Perez: So from a POC standpoint, Mick, I'll let you tackle that and then we can talk about what, you know, post sales looks like if needed.
+Jo Perez: But ultimately we want you to be successful with Colate.
+Jo Perez: We're not just going to say, all right, see you in three years on Palm and hope for the best.
+Jo Perez: No, we really want to, you know, make you successful and then also hear how you're using the product and how we can improve it as well.
+Jo Perez: And I think, you know, looking at my background, that's where I come from, that post sales professional services realm.
+Jo Perez: So I'll every step of the way, you know, we have a, you know, around the world global engineering team, actually engineers, not just fending you off to, you know, some support queue to help address any issues and concerns.
+Jo Perez: So I would say it's pretty, you know, comprehensive.
+Jo Perez: And then from a POV standpoint, it really depends and that's more, you know, mix world.
+Jo Perez: But you know, typically it's about two weeks to make sure we get you stood up with your connectors, poked around and see if this could, you know, solve your problems.
+Jo Perez: We also want to make sure we, we have some pretty good requirements that we're looking for ahead of time and that it's, you know, structured and goal oriented, not just, all right, poke around for two weeks and Let us know how it is.
+Jo Perez: We want to make sure there's some definition.
+Ashish Mukherjee: No, absolutely.
+Ashish Mukherjee: I think if we go in for poc, that would be very focused and with structured approach that we would have.
+Ashish Mukherjee: So that works for both of us.
+Ashish Mukherjee: Right, okay, that sounds good.
+Ashish Mukherjee: And not strictly related to this topic, but I saw.
+Ashish Mukherjee: Right.
+Ashish Mukherjee: You guys were part of the founding team of hortonworks, I think, right?
+Mik Cepulis: Yeah.
+Mik Cepulis: Suresh and Harsha were part of that founding engineering team at hortonworks.
+Mik Cepulis: Yep.
+Ashish Mukherjee: Right.
+Ashish Mukherjee: Amazing.
+Ashish Mukherjee: Perhaps you know one of my ex colleagues who was a co founder as well.
+Ashish Mukherjee: Arun see Murthy, ACM making myself weren't.
+Jo Perez: At work in works, it was our founder.
+Jo Perez: Yeah.
+Ashish Mukherjee: Okay.
+Ashish Mukherjee: Okay, great.
+Jo Perez: But Harsha, you know, at some point during this process, you might meet Harsha and it's probably a good idea just to be.
+Jo Perez: I'm in there.
+Ashish Mukherjee: Sure, sure.
+Ashish Mukherjee: Yeah, sure.
+Ashish Mukherjee: That's, that's fine.
+Ashish Mukherjee: Yeah.
+Ashish Mukherjee: Okay, thank you.
+Jo Perez: Yeah.
+Jo Perez: With 10 minutes or so left, let's dive back into things, if that's good.
+Jo Perez: Yep.
+Jo Perez: So yeah, we found data.
+Jo Perez: We understand the data.
+Jo Perez: Can we trust the data?
+Jo Perez: Hopefully we can, but quite frankly, sometimes we can't.
+Jo Perez: And we can't even trust sometimes the descriptions provided to us.
+Jo Perez: So right here in this last name, there's a column, last name.
+Jo Perez: It's the last name of the customer.
+Jo Perez: When I see that, I think of Pollock, I think of Perez.
+Jo Perez: However, when I look at the sample data, what I'm actually seeing is P, period.
+Jo Perez: How do we trust the data?
+Jo Perez: Well, we can leverage things like sampling the data to really understand what it is that we're looking at.
+Jo Perez: And it doesn't have to be just sample data.
+Jo Perez: You know, we talked about the different deployments and do we want to turn this on and off?
+Jo Perez: We can turn it off, but what we could also leverage, we can have sample data off, but maybe we want profiling and data quality so we can have a number of data quality checks.
+Jo Perez: Last name needs to be longer or can't contain any punctuation.
+Jo Perez: Whatever rule we need to set up to make sure it's a valid value.
+Jo Perez: We could even take it a step further by looking at our table profile and our column profile.
+Jo Perez: So from a table level we're getting that, you know, high level view of how's the data changing over time?
+Jo Perez: Is the row count, you know, fluctuating between 100 and 105?
+Jo Perez: Is that expected behavior?
+Jo Perez: What's actually happening from an updates or volume change standpoint?
+Jo Perez: You know, are there deletes, are they updates?
+Jo Perez: Are there creates and really being able to kind of get to that, you know, bottom line.
+Jo Perez: And then similarly from a column profile name, we can see, you know, nullness, uniqueness, distinctness, and then value counts.
+Jo Perez: And if there's any data quality tests surrounding it, you know, kind of going back to that customer lifetime value, we can really get into the weeds of things by looking at the value counts, the proportions, the ranges, the aggregates, and even the data distribution.
+Jo Perez: So I can look at this and say, oh wow, we have an outlier here.
+Jo Perez: You know, is that just our number one customer or is there something that went wrong that may have caused this?
+Jo Perez: So really understanding the data comes from looking at the tags, the domains, all that rich metadata that we're adding to it.
+Jo Perez: But when we're thinking about trust, beings almost believing, and we can define, you know, things from a profiling standpoint and sampling standpoint to really begin to trust what we're looking at.
+Jo Perez: And it doesn't stop there.
+Jo Perez: You know, as much as we're a discovery tool, we're an observability tool and we can define custom tests.
+Jo Perez: So I can go here and add a table level test.
+Jo Perez: This is how, you know, it's a live demo because it, you know, signs me out profile and data quality quality and add test.
+Jo Perez: And then I can do it at the table level.
+Jo Perez: So let's say I want to do something like row count.
+Jo Perez: I can select the type.
+Jo Perez: Notice there's a lot of low or no code options here.
+Jo Perez: And I can say table row count to be between a min and max value.
+Jo Perez: That's great.
+Jo Perez: So now if all of a sudden we went from 100 rows to five rows, warning bells get alarmed, we get notifications on teams, slack, web hooks, whatever it may be, and we can fix why this is happening.
+Jo Perez: Or we can use dynamic assertion.
+Jo Perez: You know, you guys are, I believe in the, you know, shipping and logistic business, you guys may have high volumes from, you know, August to November so.
+: That seasonality can be accounted for by looking at your data.
+: So as your volumes naturally grow, you.
+Jo Perez: We won't be sending off a bunch of warning bells.
+Jo Perez: It's within the threshold, it's within the realms.
+Jo Perez: You don't need to go here and.
+: You know, adjust every year on all your tables.
+Jo Perez: What that change is.
+Jo Perez: We can leverage AI to kind of set that thresholds.
+Jo Perez: It does take about five to seven weeks for it to adjust and find the pattern, but that is expected over time.
+Jo Perez: And that's just an easy low code, a couple clicks way to be able to trust your data.
+Jo Perez: The other thing we can do is we can look at custom SQL.
+Jo Perez: So if you have any SQL logic that you want to incorporate, you can put it here.
+Jo Perez: We can have strategies and thresholds to capture it.
+Jo Perez: And then my favorite is the compared to table differences.
+Jo Perez: So I can choose another table, let's say staging.
+Jo Perez: So I'm in customers, I'm looking at the staging and let's say I want to compare the column ID and then I want to look at the first or last name.
+Jo Perez: I can define that rule.
+Jo Perez: And luckily for me, we already have that test, so I can just go to it.
+Jo Perez: Customer table difference.
+Jo Perez: So again, it's looking at customer id, it's looking at the columns first and last, and then it's comparing it to staging.
+Jo Perez: And what it's going to do is it's going to say, hey, in our base table it's Alexa, and then in the other table it's Ann.
+Jo Perez: They have the same customer ID but they have different first names.
+: Why is this happening?
+Jo Perez: So this is where you can see it.
+Jo Perez: Does something go wrong in the ETL process?
+Jo Perez: Did our metric or conversion not play right?
+Jo Perez: You know, what's going on here throughout your, you know, ETL or movement process?
+Jo Perez: Or maybe you have a reference table and you're expecting values to be synced up.
+Jo Perez: So, you know, ISO codes or, you know, area codes or whatever it is, you can do these comparisons to make sure things are tracking appropriately as you perform your analytics and things like that.
+Jo Perez: So just a couple different ways we can use our, you know, quality and observability from a low code option to, you know, developing SQL at a table level or at a calling level to truly trust your data.
+Jo Perez: So again, we don't want to just make assumptions and say, yeah, it said last name.
+: I didn't know it was P period.
+Jo Perez: Or I thought these two tables were the same.
+Jo Perez: Why wouldn't there be?
+Jo Perez: We could remove assumptions entirely and actually test in order to trust.
+Jo Perez: So really thinking about that quality and observability piece as a huge pillar of the future of your data.
+Brian Pollack: And then as far as, as far as these type of tests are going, is this, is this running on sample data?
+Brian Pollack: Is this running on all, all data within like a certain time period right now?
+Brian Pollack: Like, how is the data being ingested as far as just like a, what kind of technical strain could this put on our system to run these tests?
+Jo Perez: But we can develop different pipelines for each of these and we can kind of configure what some of those things should look like and then schedule them appropriately.
+Jo Perez: So maybe we want to run it in off hours.
+Jo Perez: Maybe we want to have certain criteria built into it.
+Jo Perez: We can configure that via the pipeline and then ensure that we're not putting any strain on your system.
+Jo Perez: And maybe we have some tier one tests that needs to run every morning, but maybe we have some weekly checks that can run on Saturday nights that are a little bit heavier but can happen in off hours.
+Jo Perez: We have that flexibility.
+Jo Perez: Excuse me, we have that flexibility here through our pipelines.
+Jo Perez: And that also applies not just to these data quality, but things like profiling, metadata, ingestion lineage.
+Jo Perez: We can configure all of that through our different ingestion jobs and show, you know, what's happening when.
+Brian Pollack: Gotcha.
+Brian Pollack: Okay, that makes sense.
+Brian Pollack: And as far as identifying outlier data, so kind of the high level metrics that you showed, it's very similar to what we're doing internally right now to understand the, the, you know, large scale distribution of data on, on a per column level.
+Jo Perez: Yep.
+Brian Pollack: Obviously identifying outliers is important to understand if something was inserted into the system that shouldn't be there.
+Brian Pollack: How, I guess robust is that out of the box or how customized does that have to be?
+Jo Perez: Yeah, I think it's pretty robust out of the box, you know, especially speaking from a low code standpoint.
+Jo Perez: But again, you do have those SQL expressions that you can use.
+Jo Perez: And then with our anomaly detection, we don't need the problem with an outlier.
+Jo Perez: It's great if you know what the bounds should be.
+Jo Perez: It's so easy to catch anything outside the bounds, but if that bounds is constantly changing, it's near impossible to actually appropriately detect outliers without a high level of false positives or things like that.
+Jo Perez: So with that anomaly detection, we're looking at, you know, past information in order to then, you know, define what this threshold should be.
+Jo Perez: It's not perfect, nothing in this world is.
+Jo Perez: But it does a pretty good job of at least putting those dynamic assertions on what your threshold should be.
+Jo Perez: And from my experience with it, I think it does a really good job of being able to kind of shift and catch that seasonality.
+Jo Perez: But again, with our options like our SQL codes or things like that, we can do weighting average and maybe that's a good thing for me to kind of show at the column level.
+Jo Perez: If I'm looking at, I need to select column customer lifetime value, let's say I want to look at the median to be between.
+Jo Perez: Again, I have this dynamic assertion here, which is, which is wonderful.
+Jo Perez: But I can also look at a number of things, it doesn't need to be the median.
+Jo Perez: I can use the mean, I could use max value.
+Jo Perez: So I can set these up in a variety of different ways and then obviously I can enter my min or max.
+Jo Perez: But again, with that dynamic assertion, I can have that rolling average kind of take place.
+Jo Perez: And I'm in a huge camp of dynamic assertion.
+Jo Perez: You know, my academic background is, you know, my undergrad in econ and masters in business analytics.
+Jo Perez: And you know, a lot of what I did was forecasting.
+Jo Perez: And it's great if you have all the variables, you know, perfectly laid out, but the minute you're missing one weight, it's near impossible to actually hit that trajectory, you know, appropriately if you're not, you know, moving forward and looking back constantly.
+Mik Cepulis: Do you mind flipping over really quickly to the new dequeue dashboard?
+Mik Cepulis: Yes, this is to the for as far as like strong new defaults we have in our upcoming release in our data sandbox here, which is unhappy at the moment, we, we have a new data quality dashboard.
+Mik Cepulis: So it's a new set of default dashboards that is designed for, you know, basically higher level understanding of the KPIs and how teams are tracking different goals.
+Mik Cepulis: It's also, it's, it's designed both for like, you know, actual users as well as, you know, maybe if you wanted to elevate the deque metrics to executive leadership in a more digestible format.
+Mik Cepulis: That is another great benefit of it.
+Mik Cepulis: It looks like the beta sandbox is unhappy at the moment, so I'll send you a screenshot of what that looks like.
+Mik Cepulis: It is, it's pretty interesting and it is a nice way to like have okay here, here's a general understanding of my data quality over time or it's like right from, right from day one when you have data invested separate thing that we're doing in our upcoming really I believe end of January will be released in support under the collate AI umbrella for automated data quality suggested reports.
+Mik Cepulis: So we'll be doing analytics on top of your data and based on our understanding of your data and sprinkling some AI stuff that I quite honestly don't understand like the fundamentals of how it's actually being suggested.
+Mik Cepulis: But we'll be issuing suggested data quality metrics and reports for you and then allowing those to be elevated into a dashboard where it's like you don't even have to understand your data and apply the right data quality metrics to it.
+Mik Cepulis: We'll be doing that for you, you know, obviously optionally as well.
+Mik Cepulis: But it's another way to just remove some of that burden and get right to like the okay, here's what's wrong with my data from day one and we'll be presenting that to you.
+Jo Perez: And just to have a picture, this is what it kind of looks like that mock up of that high level data quality dashboard.
+Jo Perez: But like Mick said, we can send this over after the call.
+Brian Pollack: Okay, that'll be great.
+Brian Pollack: I do have to jump to another call that's starting right around now, so I think this was a great overview.
+Brian Pollack: I appreciate you guys answering all of our questions as we were jumping around as well.
+Brian Pollack: So as far as next steps, I assume, Mick, that'll be another call for you and myself to discuss what the potential next options are.
+Brian Pollack: Is there anything else on your side that you want to suggest?
+Mik Cepulis: Yeah, no, I was going to say the exact same thing.
+Mik Cepulis: So could you and I maybe chat tomorrow at 12pm Eastern or 2pm Eastern?
+Brian Pollack: 2Pm Eastern works perfectly for me.
+Mik Cepulis: Okay, awesome.
+Mik Cepulis: I'll send over an invite.
+Mik Cepulis: All right, well, thanks everyone and thank you for the questions.
+Mik Cepulis: Great conversation today.
+Ashish Mukherjee: Thank you.
+Brian Pollack: All right, thanks a lot.
+Mik Cepulis: Have a great day.
+
+END MEETING

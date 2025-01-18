@@ -1,0 +1,1363 @@
+Meeting Name: Collate | Veho - Product Demo
+Meeting Date: 2024-12-02
+
+Jo Perez: Hey, Mick.
+adam: Hey.
+Mik Cepulis: What's up, Joe?
+Jo Perez: Not much.
+Mik Cepulis: Hey, Charlie.
+Mik Cepulis: Great to meet you.
+Mik Cepulis: Thanks.
+Mik Cepulis: Thanks for time.
+Charlie Lor: Yeah, likewise.
+Charlie Lor: Nice to meet you.
+Mik Cepulis: Where are you based out of?
+Charlie Lor: I am in Madison, Wisconsin.
+Charlie Lor: Yep.
+Mik Cepulis: In the SF Bay area in California.
+Charlie Lor: Okay.
+Charlie Lor: Okay.
+Charlie Lor: Pretty cold, pretty cold there.
+Mik Cepulis: No, we've.
+Mik Cepulis: We actually have a.
+Mik Cepulis: Some great weather this week.
+Mik Cepulis: Mid 60s sunny.
+Mik Cepulis: It's pretty unusual.
+Mik Cepulis: We usually get rained on right now.
+Charlie Lor: Got it, got it.
+Charlie Lor: Yeah, I do see snow outside, so not surprised.
+Charlie Lor: It is.
+Charlie Lor: It is a little bit colder out here.
+Mik Cepulis: I'm from Boulder, Colorado and my upbringing was.
+Mik Cepulis: Lots of snow this time of year.
+Charlie Lor: Yeah, yeah, yeah, for sure.
+Charlie Lor: I.
+Charlie Lor: Yeah, we have.
+Charlie Lor: We have some engineers out there.
+Charlie Lor: Yeah, they're saying there's some snow.
+Mik Cepulis: Yeah, good early season skiing.
+Mik Cepulis: They got a couple feet of snow already.
+Mik Cepulis: Right.
+Mik Cepulis: Pretty unusual for Colorado.
+Azeem: Right.
+Mik Cepulis: Well, thanks for taking time.
+Mik Cepulis: Do you know if Azim and Adam will be able to join as well?
+Charlie Lor: I think Adam is joining.
+Charlie Lor: I know he's gone through quite.
+Charlie Lor: Is quite busy.
+Charlie Lor: Let me just ping him quick.
+Mik Cepulis: I see Adam dialing in actually.
+Charlie Lor: Oh, got it.
+Charlie Lor: I know, I know.
+Charlie Lor: We had previously talked to Yalls about a year ago at this time.
+Charlie Lor: Do you.
+Charlie Lor: Do you guys know if it's like the two of y'all that worked with us or worked with like another co worker that I have here that.
+Mik Cepulis: Yeah, yeah.
+Mik Cepulis: I.
+Mik Cepulis: Hey Adam, Good to see you.
+Mik Cepulis: Yeah.
+Mik Cepulis: So some background on our end.
+Mik Cepulis: One of our.
+Mik Cepulis: We have part of our engineering organization who did work with Veho last year.
+Mik Cepulis: Joe and I weren't part of that engagement, but I believe that it was JP from the Veho side who was the investigation.
+Charlie Lor: Got it, got it.
+Mik Cepulis: Did you have any experience with collate back then?
+Charlie Lor: I was actually here when JP was working on it, but I was working on a different project and so I.
+Charlie Lor: I got bits and pieces of it.
+Charlie Lor: I was able to log in and that was it.
+Charlie Lor: So not too much exposure.
+Mik Cepulis: All good.
+Mik Cepulis: Adam, great to see you properly.
+Mik Cepulis: Thanks for your time.
+adam: Yeah, likewise.
+adam: Thanks all for setting us up on short notice.
+Mik Cepulis: Of course.
+Mik Cepulis: Is Am I see dialed in as well.
+Mik Cepulis: Good to meet you.
+Azeem: Hey everyone.
+Mik Cepulis: Hello.
+Azeem: Good to meet you.
+Mik Cepulis: I hear you have the team working hard right now, Z on the data initiative.
+Azeem: Yep, we do.
+Azeem: We're trying to stand up the new stack, so we'll see how that goes.
+Mik Cepulis: Okay, Very cool.
+Mik Cepulis: It's part of a redshift to databricks.
+Mik Cepulis: Migration sounds like is one of our overarching drivers right now.
+Mik Cepulis: Awesome.
+Mik Cepulis: Cool.
+Mik Cepulis: Well, today I wanted to introduce you to Joe and myself.
+Mik Cepulis: We talk about Colate at a high level, our understanding of the VAL initiative as it stands today.
+Mik Cepulis: I think that we have a lot more learning to do on both sides.
+Mik Cepulis: And then we'll spend the bulk of our time today with a product demo led by Joe.
+Mik Cepulis: So my name is Mick.
+Mik Cepulis: I'm on the sales side at Collate.
+Mik Cepulis: I've been in the data space for most of my career now, so working at databases, search companies like Elastic, elasticsearch and then other developer tools.
+Mik Cepulis: So I've been with Collate since about February, which is after the time that I think Vo first looked at Collate last in 2023.
+Mik Cepulis: But I'm well read enough into the prior relationship.
+Mik Cepulis: So excited to kind of take things out of run from today and help lead through an evaluation.
+Mik Cepulis: And then, Joe, I'll turn it over to you for a quick intro.
+Jo Perez: Yeah, similar to Mick, fairly new to the quality organization, but definitely not to the data management space.
+Jo Perez: You know, prior to joining the Quality team, I was in professional services at Elation and Informatica.
+Jo Perez: Slaughter experience on, you know, making these tools, you know, proper solutions and, you know, getting the most value that we can from them.
+Jo Perez: So excited to, you know, walk you through the product later today.
+Mik Cepulis: Awesome.
+Mik Cepulis: And I did a bit of LinkedIn searching, but Charlie, it looks like you're on the data engineering side.
+Mik Cepulis: And Zim, obviously coming in as the VP leading the initiative.
+Mik Cepulis: And I met.
+Mik Cepulis: So, um, those are good intros.
+Mik Cepulis: Azeem, Adam, Charlie, anything else you want to add before we get started here?
+Azeem: Nothing from my end.
+Azeem: Looking forward to our discussion today.
+Azeem: Awesome.
+Mik Cepulis: And you had experience with open metadata before, before joining B, is that right?
+Azeem: No, not.
+Azeem: Not open metadata, but I know the open metadata came from Uber, right?
+Mik Cepulis: It did, right.
+Azeem: Yeah.
+Azeem: So I know, I know some of the guys when I was working at LinkedIn were my counterparts and.
+Mik Cepulis: Oh, awesome.
+Mik Cepulis: Okay.
+Mik Cepulis: Very cool.
+Mik Cepulis: Was it?
+Azeem: Yeah.
+Azeem: Harsha.
+Azeem: Yeah, awesome.
+Mik Cepulis: Yeah.
+Mik Cepulis: So I think Harsha was the guy on our side who's.
+Mik Cepulis: He's one of our co founders who was leading the engagement with Veho last year and he's our.
+Mik Cepulis: He's our cto, so I try to keep him off sales calls as much as possible.
+Mik Cepulis: I'm sure you'll be meeting him again quite soon.
+Mik Cepulis: So.
+Mik Cepulis: Yeah, here are our photos and.
+Mik Cepulis: Yeah, let me.
+Mik Cepulis: Let me jump into this.
+Mik Cepulis: I have a quick slide to review Veho requirements.
+Mik Cepulis: Adam and I were able to speak last week, so I'd like to check off some of this and just make sure that we're kind of thinking about this from the right perspective.
+Mik Cepulis: Have the right context coming into the call today and are helping solve the right problem.
+Mik Cepulis: So you know, Adam and I spoke last week and it sounds like we're relaunching an initiative to evaluate collate and evaluate potentially open metadata as well, and more of.
+Mik Cepulis: More of a fast tracked initiative.
+Mik Cepulis: So I think that since we already have some of the groundwork laid out, we can maybe prioritize our time and have a focused evaluation.
+Mik Cepulis: Adam, I believe that you already have a collate cluster spun up or are maybe about to request one, but is that, is that right?
+adam: Yeah, I was going to say we were going through getting some internal sign offs and things like that last week, so I think we're finally clear those hurdles and can start the request an account now.
+Mik Cepulis: Okay, perfect.
+Mik Cepulis: Yeah.
+Mik Cepulis: As aim for your context, we were able to sign an NDA and then get some SoC2 type 2 and pen test over to the security team.
+Mik Cepulis: So I think that we're at least well underway if not completed the security approval process.
+Mik Cepulis: So Adam can dive in and start testing with data, which is awesome.
+Mik Cepulis: I think Net Net is looking for a new unified solution to help centrally manage data across the enterprise.
+Mik Cepulis: There was a preference laid out for an open source backed company which obviously COLA fulfills.
+Mik Cepulis: And there's a near term timeline.
+Mik Cepulis: Timeline.
+Mik Cepulis: We're trying to make a decision in the month of December and help solve some challenges that are around the things that collate is best at solving.
+Mik Cepulis: So centralizing data, helping increase visibility into data quality, ensuring that everyone has access to data and up to date information about all that.
+Mik Cepulis: So am I missing anything here?
+Mik Cepulis: Does anything seem off base from the bullets that are laid out?
+Mik Cepulis: Okay, awesome.
+Azeem: Cool.
+Mik Cepulis: So I'll, I'll share a quick background on collate and then dive in to the product demo led by Joe.
+Mik Cepulis: So Azeem, to your point, we are coming out of Uber.
+Mik Cepulis: Suresh and Harsha were tasked at Uber with, you know, maturing their data governance process over there and the.
+Mik Cepulis: The work they did ended up becoming open metadata.
+Mik Cepulis: So open is not a fork of the time at Uber, it's more like the philosophical foundation for what a modern platform ought to look like that helps unify data discovery, observability and governance.
+Mik Cepulis: Because we are in the age of high powered LLMs, we also can do a lot with the metadata that we ingest into Collate in helping automate many processes and layering a lot of the AI goodness that LLMs give us.
+Mik Cepulis: So you'll see a lot of that in the demo today and you'll see a lot more of that as the product continues to mature.
+Mik Cepulis: But at the end of the day we're a single place for data teams to manage and build high quality data assets.
+Mik Cepulis: We are, you know, somewhat younger company, but also made to solve the problems of the enterprise.
+Mik Cepulis: It's typically larger companies that gravitate towards or face challenges that collate solves very well.
+Mik Cepulis: So to that end we do have strong compliance and security controls and great architecture that support a strong security footprint and help us check the boxes and build a trusted relationship with the organizations that we work with.
+Mik Cepulis: We go through pen testing, SoC2 type 2, we have all the controls and a single tenant architecture in our SaaS deployments that help us easily pass security checks and get into the good productive stuff that we're actually here to solve.
+Mik Cepulis: But I think it's always important to knock these points off early on in the relationship versus figuring out later on that we don't meet these things.
+Mik Cepulis: We do work with data native and other larger enterprise customers across industries, including the US Federal government.
+Mik Cepulis: We are big globally, so the open community is global.
+Mik Cepulis: They are our main champions.
+Mik Cepulis: You'll see open source usage of open data across the world, including, you know, large Fortune 500 and 100 companies worldwide.
+Mik Cepulis: You know, again in manufacturing and technology, financial services, health and medical and obviously you know, the big tech you guys are familiar with in the Bay Area.
+Mik Cepulis: I think this is, you know, these logos here are commercial collate customers.
+Mik Cepulis: A lot of them started as open source customers and moved over to the hosted platform for commercial services, for business arrangements, for better support.
+Mik Cepulis: Anything you also would expect from, you know, a commercial SaaS vendor.
+Mik Cepulis: So onto the actual challenge, I think these will be hopefully somewhat repetitive to you, but.
+Mik Cepulis: Azim, did you have a question?
+Azeem: I did.
+Azeem: Good eye.
+Azeem: The deal.
+Azeem: Do you see like on the, on the previous slide, do you see a lot of these customers using open source or do you see them using Kollaid or do you see like back and forth between the two?
+Mik Cepulis: So all the customers here are using collate, but some of them were using open source as a way to validate, maybe build an early business case.
+Mik Cepulis: Just ensure that the technology that we are building is actually solving their problems.
+Mik Cepulis: I mean we're admittedly a newer entrant into this pretty, pretty competitive space.
+Mik Cepulis: So it's not unreasonable for the large companies to make a bet in order to make, for them to make a bet on a smaller entrant to go through some fairly serious product validation.
+Mik Cepulis: And they've done that.
+Mik Cepulis: You know, ServiceNow is a big example.
+Mik Cepulis: They spent About a year on open source and building a case, building a center of excellence internally before moving over to the self managed commercial version of Collate.
+Mik Cepulis: So we do offer different deployment layers.
+Mik Cepulis: So one of them is SaaS, one of them is self managed in their own private cloud.
+Mik Cepulis: And that's how ServiceNow is consuming collate right now.
+Mik Cepulis: Yeah, so I think that this is going to be a couple platitudes, but lots of employees are expected to consume data and be data fluent.
+Mik Cepulis: That is not news to anybody.
+Mik Cepulis: People spend a lot of money on data platforms and they are very complex beasts.
+Mik Cepulis: There are many layers to the data stack and very few technologies integrate with all of them.
+Mik Cepulis: So it's difficult to have a single place where leadership and functional users and business users can go in and figure out who owns what.
+Mik Cepulis: Where it's going are the most relevant assets that are that pertain to my job.
+Mik Cepulis: Whether you're a data scientist or an engineer or trying to implement stronger data governance across an organization, everyone needs to figure out where data lives.
+Mik Cepulis: And companies expect high data fluency due to the strong investments they've made in their data infrastructure.
+Mik Cepulis: With that said, users across functional areas have difficulty finding the right data.
+Mik Cepulis: They're frequently looking at data that they can self identify as maybe being low quality.
+Mik Cepulis: They'll spend a lot of time fixing data that they don't think meets their standards.
+Mik Cepulis: And leaders have difficulty trusting their data and receiving reports from their, you know, their lieutenants and using that data to make decisions.
+Mik Cepulis: It's difficult to make decisions when you're not trusting the underlying data.
+Mik Cepulis: Lack of trust is a huge friction point and causes companies to lose money, lose customer trust, or just to delay making decisions in the first place.
+Mik Cepulis: We have a lot of great examples.
+Mik Cepulis: Azima, you might be familiar with the Uber example.
+Mik Cepulis: Uh, but one of the highlights that Surash and Harsha always share is when their quarterly earnings were having to they had to restate them because the number of trips delivered in the prior quarter was misstated.
+Mik Cepulis: An analyst was going and looking through a list of 17 tables.
+Mik Cepulis: They all apparently reported trips delivered in the prior quarter and the analysts had to make a guess as to which was the source of truth, made the wrong guess and they under underreported trips delivered in that prior quarter.
+Mik Cepulis: And that was kind of the catalyst for the large investment that Uber ended up making that Suresh and Harsha helped lead into helping mature data governance.
+Mik Cepulis: At Uber.
+Mik Cepulis: This is, you know, these problems are they exist primarily because the data tooling for understanding metadata is broken.
+Mik Cepulis: There's lack of unification.
+Mik Cepulis: When there is unification, there's usually lack of automation.
+Mik Cepulis: So companies might have data in one place, but they're spending tons and tons of time manually updating processes, manually updating data, manually implementing data quality tests, and they do all that in a black box.
+Mik Cepulis: A lot of these older systems don't enable, you know, tier one collaboration.
+Mik Cepulis: You don't just want to be able to talk in Slack about a data problem that you're solving, but it's very helpful to have all that data contextually with you in a tool where everyone can see a full audit log and a full change log and all the other contextual information about that data when you're making a data decision.
+Mik Cepulis: So, you know, those are reasons that those are problems that we've identified that Suresh and Harsha identified as major issues in the existing market.
+Mik Cepulis: And, and that's why we decided to enter into again, you know, a pretty crowded space and brought what is open metadata and then became collate.
+Mik Cepulis: Our solution is sort of a new first principles approach at powering data with a unified metadata graph.
+Mik Cepulis: What that means is we combine the different functions of data discover discovery, slash cataloging and observability, slash quality and governance into a single solution.
+Mik Cepulis: Again, we layer on a lot of automation on top of that, using LLMs, using data machine learning, using other automation powered delivery mechanisms that help make small teams much more powerful with their data.
+Mik Cepulis: And we do that all with sort of layering on top of a metadata graph, which is really just a fancy way of saying that we store data in JSON format and we use open standards.
+Mik Cepulis: And that means we can ingest data from really any source.
+Mik Cepulis: And that enables us to be very flexible.
+Mik Cepulis: You can leverage our full suite of APIs to take that data and do more with it.
+Mik Cepulis: Every action you can take, every button you can click in the collate user interface is backed by an API.
+Mik Cepulis: So there's really nothing that's gated in the product.
+Mik Cepulis: You don't have to talk to us to get access to an API.
+Mik Cepulis: It's all available from day one.
+Mik Cepulis: That's great if you want to go above and beyond, but just the core product experience is also highly modern, very adaptable and usable, both for technical teams as well as non technical teams.
+Mik Cepulis: So let me pause for questions before I turn it over to Joe.
+Mik Cepulis: Awesome.
+Mik Cepulis: All right, Joe, it's all you.
+Jo Perez: Perfect.
+Jo Perez: Thanks, Mick.
+Jo Perez: So, you know, when we think about that, you know, unified experience that, you know, Mick just kind of talked about, we really want to, you know, break that down into a variety of kind of different segments on that, you know, data journey.
+Jo Perez: And I like to kind of think about it as the future of using your data or the future of your data.
+Jo Perez: And that's because before I can start just using my data, there's a couple key things I need to do in order to actually get value and drive insights from it.
+Jo Perez: And that first thing is finding, you know, what assets are out there.
+Jo Perez: You know, once we find what assets are out there, we need to, you know, fully understand them inside and out.
+Jo Perez: Understanding is only half the battle.
+Jo Perez: We also need to, you know, trust these things from an observability or a quality standpoint.
+Jo Perez: And then we get to that use and reusability piece that, you know, the platform allows.
+Jo Perez: So really what we're going to focus on in the Next, you know, 30 or 40 minutes is that exact, you know, process of what it looks like to uncover and unlock insights from, you know, your quality platform.
+Jo Perez: And what we're going to start with is our landing page.
+Jo Perez: So when you come into quality, where we would find a customizable landing page that we can, you know, based off a variety of Personas.
+Jo Perez: So if I want a steward landing page or a consumer landing page, I can customize that.
+Jo Perez: So maybe each different type of Persona has distinct needs.
+Jo Perez: This is also a great way to control things like who can edit what or who can view what.
+Jo Perez: That's another kind of mechanism at play.
+Jo Perez: The other thing we may want to be able to control is from a domain standpoint so I can look into my customer domain.
+Jo Perez: And right now I see all these different data assets available to me.
+Jo Perez: When I change my scope to just the customer domain, I may only see 30 or 40 different types of assets that's available to me.
+Jo Perez: So understanding and controlling that user experience by a domain is definitely important.
+Jo Perez: So really thinking about how we can find data, one thing is what we're exposed to based off our Persona or the domain assigned to me.
+Jo Perez: But once we're seeing this layout of this homepage, we can see, you know, the different types of data assets out there.
+Jo Perez: We can see, you know, kind of our, you know, data bookmark bar where we can see what assets we're following.
+Jo Perez: So think about these as your, you know, bookmarked home pages.
+Jo Perez: We can see your recently views or the data that you're responsible for from an ownership standpoint, any knowledge center content that you've produced.
+Jo Perez: Again, I'm a data steward in this example, so I can see KPIs, you know, how is ownership or descriptions, you know, trending over time, are descriptions increasing?
+Jo Perez: Are they decreasing?
+Jo Perez: You know, what's our total data asset makeup look like?
+Jo Perez: Do we have a lot of charts or a lot of tables?
+Jo Perez: How does that fluctuate from time to time?
+Jo Perez: Also, we have a little bit of an activity thread for our data.
+Jo Perez: So we can see, you know, setting up certain values, data quality test or different types of test suites, you know, passing or failing, and being able to kind of capture that history from a data quality standpoint, we can see what rules we're responsible for and their overall status.
+Jo Perez: And same with our pipelines as well.
+Jo Perez: So this is just a starting point for finding our data, the homepage, which again, is extremely customizable.
+Jo Perez: But we can also drill down and really explore what assets we have out there.
+Jo Perez: One way of doing that is obviously by searching or clicking into any of these assets.
+Jo Perez: But sometimes I don't know what I'm looking for in the first place, and that's when it's time to kind of explore.
+Jo Perez: And by clicking on this explore icon, we see all of our results sorted by popularity.
+Jo Perez: So 933 pages at 10 pages per.
+Jo Perez: Per 10 assets per page.
+Jo Perez: So we can click one by one and, you know, find our asset that way.
+Jo Perez: Or we can leverage a variety of filters.
+Jo Perez: So things I can do is maybe I'm looking for a table.
+Jo Perez: I can cut those results in half, basically.
+Jo Perez: Or maybe I'm looking for a specific owner or a specific.
+Jo Perez: A specific domain or a specific owner, or maybe a specific tag.
+Jo Perez: Maybe I want things that are tagged as PII sensitive.
+Jo Perez: I can do that.
+Jo Perez: Or maybe I'm looking for only tier one assets as well.
+Jo Perez: I can limit that from 500 pages down to less than 10 pages, and I can continue building this out in a variety of ways.
+Jo Perez: I can also use advanced filters where I can look at things like the database or the display name or the custom properties associated and build these types of filters where I'm looking for maybe the owner.
+Jo Perez: And a certified business or business owner needs to be one of these, or it needs to be a specific description or domain or owner.
+Jo Perez: And I can build these unique but pretty simple queries in order to narrow down my assets as well.
+Jo Perez: And then I could also sort by not just popularity, but things like name, relevance or last update.
+Jo Perez: So we have about these 10 pages.
+Jo Perez: In this case, it is this customer table that I'm interested in.
+Jo Perez: But some insight that we're able to gather right off of this is we can see, you know, what table it is, but also what schema or what database it belongs to and then a high level description.
+Jo Perez: And then we could understand who are the owners, what domain it belongs to and what tier it is.
+Jo Perez: So just from, you know, looking at the search results, just like when you're googling something, you're able to see at high level the different types of, you know, information and context around that, we're able to pull that as well.
+Jo Perez: And as we see on this right hand side, we can also kind of get a preview or a deeper preview into this specific table.
+Jo Perez: So we can see the number of queries, the number of columns profiling a data quality rules, different tags associated with this, whether it's glossary terms or criticality or sensitivity, we can get that description.
+Jo Perez: And then we could also see what this schema, you know, starts to look at.
+Jo Perez: So before we click in, we can get a, you know, pretty high level overview of what the object is.
+Jo Perez: But then when we do find this object, we can finally click in and then we can see this table.
+Jo Perez: And I'll go over this in just a second, but want to make sure everything, you know, makes sense so far on what I've shown and if there's any questions.
+adam: I have a question.
+adam: And maybe you're gonna drill into this a little bit more, but I'm kind of curious how the data gets sourced for things like tags or owners, certifications, tiers, all of that kind of stuff.
+adam: Is that like getting ingested from other systems?
+adam: Is it something that's manageable via ui, manageable by code, all the above?
+Jo Perez: Yeah.
+Jo Perez: And that's, that's the best, you know, perfect segue.
+Jo Perez: So thanks for teeing that up.
+Jo Perez: Just to answer it quickly, it depends.
+Jo Perez: We're able to bring in things like source comments and owners.
+Jo Perez: We can bring in things like databricks tags or snowflake tags if they exist.
+Jo Perez: So we can ingest that for a variety of sources depending on what the source is.
+Jo Perez: So yes, from an ingestion point of view, if it's already at your source, we can pull in that context and information.
+Jo Perez: The other thing we can do is we can edit through the UI like a domain or a specific owner.
+Jo Perez: Maybe I want to add a accounting team to this as one of those owners.
+Jo Perez: I can have accounting now be the owner of this specific asset instead.
+Jo Perez: Similarly, with a tag, maybe I want to be the one that edits this tier of, you know, how critical is this to the source?
+Jo Perez: I can add that in the UI we also have our, you know, MetaPilot or Cola AI which can, you know, suggest descriptions.
+Jo Perez: And one thing that we're working on is part of the day one experience of once you ingest data we can auto suggest AI generated descriptions.
+Jo Perez: And you know, right here we can see that for this customer lifetime there is no description I can edit in in the ui.
+Jo Perez: Of course I can also, you know, request somebody on the accounting team that owns this asset to write a description.
+Jo Perez: Or I can say, yeah, I like to see what you have to say about this.
+Jo Perez: And what it's going to do is suggest a description.
+Jo Perez: So instead of having a data steward copy and paste this column name into ChatGPT and say, hey ChatGPT, can you give me a description of only knowing this column name?
+Jo Perez: What we're able to do is obviously look at the column name but look how this column is used and then pass this through our machine learning and AI to provide what that description should look like.
+Jo Perez: And it's going to say something like total value of purchases made by customer over their lifetime.
+Jo Perez: So this can be number of orders placed for a given customer like we see here or different things like that.
+Jo Perez: But we're able to kind of suggest descriptions as well.
+Jo Perez: And then the last way we can do is do different types of automations.
+Jo Perez: And you know, I'm going to click into this tier and I'm going to edit it.
+Jo Perez: So what we can do here is we can say let's look at all the tables and let's say where the object name or the column name is.
+Jo Perez: Let's say email.
+Jo Perez: So for these 42 assets where this criteria is true, let's do something to it and let's add the tag sensitive.
+Jo Perez: So I can say anything that has email, Oops, anything that has email, update that tag to be sensitive.
+Jo Perez: And this way tomorrow when you ingest a new table or a new data source that has a bunch of columns titled email, this tag can automatically be applied as well.
+Jo Perez: So there's no need for a data steward to, you know, wake up every time you ingest more to add these tags.
+Jo Perez: You can set up these types of conditions and rules in order to make sure that we're able to, you know, curate in an efficient manner.
+Jo Perez: And this doesn't have to be just tags, it can be descriptions, it can be domains, it can be owners.
+Jo Perez: We can, you know, build a criteria of or a variety of conditions and then you know, set a specific action, whether it's add, remove, propagate, you know, lineage, curation, et cetera, et cetera.
+Jo Perez: And then what that's going to do when we go to our automations is create a job that we can then schedule or run ad hoc, whatever it may be.
+Jo Perez: So just the kind of different ways we can do exactly what you just described on how we can build out and curate, you know, these different elements and field to create that context and understanding.
+Jo Perez: So a variety of different ways.
+Jo Perez: But I hope that answered your question, Adam.
+adam: I think so, yeah.
+Jo Perez: Perfect.
+Jo Perez: The other thing that we're going to see here in some of those other features that we see things like these tags is it's not just sticking a label or a sticker on something.
+Jo Perez: We can float over these tags and understand, you know, what they actually mean.
+Jo Perez: So for tiering, we can see that, all right, I know it's tier one, but does that mean I can just delete it without telling anybody?
+Jo Perez: Does this mean I don't need to care about the quality or trust?
+Jo Perez: No, we can see that Tier one is used in critical metrics and dashboards.
+Jo Perez: We can see that it's used in, you know, revenue or, you know, impacts online users or high trust, machine learning algorithms and things like that.
+Jo Perez: We can click into this tier, we can click into this tier and kind of get a breakdown of, you know, what it means to be Tier 1.
+Jo Perez: We can see the usage of Tier 1 versus Tier 7 versus Tier 5, etc, etc, and if I were to click into that usage, I'm taken to a custom search based off that filter.
+Jo Perez: So really being able to understand from a governance point of view not only that this is Tier one, but what are the implications?
+Jo Perez: And similarly, sensitivity is a popular one where I might want to do more than just call something sensitive, but give a high level description of what sensitivity, you know, may mean within our organization.
+Jo Perez: And again, this is the important part, it means one thing to be sensitive.
+Jo Perez: But if I ask all five of us on this call, you know, what can we do with sensitive information, we might get slightly different answers.
+Jo Perez: So it's important that we provide that additional context as well.
+Jo Perez: And it doesn't necessarily need to be a tag, that's just one mechanism.
+Jo Perez: We can also do things like Knowledge center pieces.
+Jo Perez: So maybe we have this, you know, piece of governance living in a Confluence or Notion page.
+Jo Perez: I can click on this link here and it's going to take me to, you know, our sensitive Information policy where I can then go through it and maintain in confluence or in SharePoint or in Notion where applicable.
+Jo Perez: And that link is also going to be searchable.
+Jo Perez: So if I actually just do a search and go to Knowledge Center, I can see Sensitive Information Policy here where I have a description.
+Jo Perez: I could add tags to it, if appropriate, you know, like this.
+Jo Perez: And I can associate it to assets.
+Jo Perez: So I can even search here for something that may not even exist within quality and get access to it that way by clicking on, you know, this link and being taken outside of the tool.
+Jo Perez: But the important part here is that we don't have confluence living in one spot and our data assets living in another, but we're able to create that link between the two, but not have to maintain it in 10 different spaces or locations.
+Jo Perez: So again, really beginning to understand this asset through things like descriptions, a variety of tags, knowledge articles or glossary terms as well.
+Jo Perez: So kind of going back to that customer lifetime that doesn't have a description, it does have a glossary term associated with it.
+Jo Perez: So I can click into this glossary term and then see how do we capture or how do we define our customer lifetime value?
+Jo Perez: Oh, it's the average purchase value, the purchase frequency, the customer lifetime, and our profit margin.
+Jo Perez: So then we can really start understanding it from a, you know, business context.
+Jo Perez: But we can also see things like what assets it's associated with, how it's changed over time, any custom properties that may be relevant to it as well.
+Jo Perez: It can have a proper owner or reviewer, it can live within a domain.
+Jo Perez: So really building out that context and that understanding of not just the column customer lifetime value that we were previously looking at, but also now the actual business term or metric used to calculate custom lifetime value.
+Jo Perez: And this is expanding outwards as well.
+Jo Perez: So we have our area of govern, we have glossary, which is what I just showed, but we're also having things like our metrics area where we'll be able to build out what the technical expression is to calculate something like engagement rate.
+Jo Perez: So we're not all calculating it in 10 different ways, but we're using this standard Python function in order to calculate it.
+Jo Perez: And this just creates that governance and that standardization around not just our, you know, business terms, but also the metrics we're using to define key elements of the business.
+Jo Perez: And we can also see this from a lineage standpoint.
+Jo Perez: So we can see how a specific metric or definition feeds something like a bi object as well.
+Jo Perez: So going back into customer, we're starting to understand it, but can we trust it?
+Jo Perez: And one example I like to use is column last name.
+Jo Perez: It's the last name of the customer.
+Jo Perez: So here I'm expecting something like Perez, I'm expecting something like Smith.
+Jo Perez: But when I go into our sample data, I see it's Michael P.
+Jo Perez: So P, I was expecting a full name like Perez, and I'm only seeing the first letter of the last name followed by a period.
+Jo Perez: So having the sample information, sample data allows me to really understand and trust the values that I'm seeing.
+Jo Perez: If we were to tag these things as sensitive and set up a policy, we could also make sure that we're not exposing any sensitive information through sampling.
+Jo Perez: And this is also highly configurable as well.
+Jo Perez: But now I'm starting to not just understand the data, but I'm also starting to trust and see what data is out there for me.
+Jo Perez: And I also obviously can't, you know, go through every single, you know, row that's out there and, you know, see are they all just the first, you know, letter.
+Jo Perez: I might want to go to our profiling and data quality where I can get an overview of the quality from a table level or a column level of the different tests that we have in place.
+Jo Perez: But then I can drill down things like at the table level where I'm looking at the last 60 days, and I can see that this is fluctuating between 105 rows and 100 rows.
+Jo Perez: And I can see that there's table updates and volume changes as well surrounding this specific table.
+Jo Perez: I can drill down into the column level where I can see that first name and last name are never null, but last name has a low uniqueness.
+Jo Perez: And this kind of confirms my hypothesis that it's always the last letter of the last name because it has a very low uniqueness.
+Jo Perez: There's only 26 letters in the Alphabet.
+Jo Perez: So it checks out that this is an extremely low uniqueness.
+Jo Perez: And I can say, no, we need to remediate this.
+Jo Perez: Or I can say, nope, that's what we've expected.
+Jo Perez: And I could even drill down into something like customer lifetime value to get a better understanding of things like you distinct, your null counts, your uniquenesses, the total types of value we have.
+Jo Perez: We can see the proportions or the ranges, the aggregates, the quartiles, and my favorite, the distribution.
+Jo Perez: So we can see where these values, you know, largely usually sit.
+Jo Perez: We can see that we have an outlier in this case and we can really start understanding this specific column of customer lifetime value all that much better.
+Jo Perez: We can then go on to create, you know, data quality test if we chose to.
+Jo Perez: So I can simply hit, you know, add a test at a table level and I can say, let's look at row count.
+Jo Perez: I can type row count and then I can say I want the, you know, row count to be between two values and maybe I want it to be 100 and 105.
+Jo Perez: So this is great.
+Jo Perez: It's going to, you know, give me an alert every time it's, you know, over or under this threshold, but that's not sometimes good enough.
+Jo Perez: And you guys being in the, you know, kind of delivery and shipping industry, probably know that this time of year is incredibly busy.
+Jo Perez: I just put an espresso order today and probably in a couple days I'm going to get a text from you guys saying, oh, your Vera orders at your door, because I order maybe more coffee, you know, during this time, or more gifts.
+Jo Perez: So instead of having to set this threshold and increase this to 125 records, what we can actually do is just turn on dynamic assertion.
+Jo Perez: And what this dynamic assertion is going to do is it's going to look at trends in your data to create that upper and lower threshold automatically using AI.
+Jo Perez: And this allows you not to have to go through all your tests and manually update your upper and lower bounds, but to have that dynamic assertion to create those boundaries to better detect anomalies and detect for seasonality.
+Jo Perez: We also have the ability to custom SQL queries if you already have, or grab from things like DBT Soda and, you know, other things like Great Expectations and incorporate and import those tests into the Colate platform.
+Jo Perez: And the last one that I like is the compare two tables differences.
+Jo Perez: And that's actually a great example to show what a test actually looks like, you know, once it's created.
+Jo Perez: So I have this customer table data diff.
+Jo Perez: And what this does is it looks at the customer table I just had and it looks at table two, this staging table.
+Jo Perez: And it's using our key column of customer ID and then using columns first and last name.
+Jo Perez: And what this is going to do is detect differences in those two tables.
+Jo Perez: So in one table or in both tables we have customer ID 53, but in one table we have Alexa and the other we have N.
+Jo Perez: And they have the same last name.
+Jo Perez: So it's able to say, hey, we expected these two people to be the same first name because they have the same customer on my id.
+Jo Perez: You know what's happening here?
+Jo Perez: Maybe we have a reference table with zip codes and we're, you know, mapping them appropriately to, you know, an ISO code or something like that.
+Jo Perez: We can say, oh, this isn't yes, it expected value or no, this not, oh, something failed in our ETL from staging to our landing table.
+Jo Perez: You know, why did that happen?
+Jo Perez: And be able to get incidents and notifications of what happening.
+Jo Perez: And then when we could look at that incident we can assign it to an individual and then we can even have a discussion or you know, assign a severity and get things like the ETA or ask somebody to fix this all within the tool and send out alerts if needed.
+Jo Perez: You know, when this, you know, fails or you know, passes or you know, doesn't meet the criteria that we've established in order to get a resolution and better track these things.
+Jo Perez: So that just kind of hits on all that data quality element that helps foster our trust.
+Jo Perez: It doesn't have to happen just at the, you know, micro table level.
+Jo Perez: Something that we're rolling out this coming week is actually our data quality dashboard.
+Jo Perez: So on Wednesday we have our 1.6 release that's going to have this nice and clean data quality dashboard.
+Jo Perez: So I can see the number of test case results and see how they're broken down.
+Jo Perez: I can see it from a healthy data asset standpoint or a data asset coverage standpoint.
+Jo Perez: So I have 17,000 tables.
+Jo Perez: Only 647 have data quality rules.
+Jo Perez: I can then drill that down into a specific tier.
+Jo Perez: So maybe I want to look at tier one in gold.
+Jo Perez: I can update that and see of the 12 tier 1 and gold tables, we have 0 of them have proper coverage, 0 of them have accuracy or completeness errors.
+Jo Perez: We can see the success, aborted or failure the incidents all at this kind of narrowed down level if needed to get a comprehensive view of what the data quality is at the organizational level within collate.
+Jo Perez: So just kind of something that's pretty exciting that's on our roadmap or not even on our roadmap making its way into this product later this week, but really giving us that overall trust on what we're doing and making sure we have accurate coverage.
+Jo Perez: The other areas we can, you know, kind of explore.
+Azeem: Question for you.
+Azeem: Yes, on the data quality, can we set up alerts that go to like pagerduty or Slack when data quality goes, goes south?
+Jo Perez: Yeah, yeah.
+Jo Perez: And it's as easy as kind of creating, let's say this observability one just going to edit it.
+Jo Perez: What we can do is, you know, look at something like a test suite or maybe we want to look at a specific test case.
+Jo Perez: We can add a filter where I want it to be within a specific domain.
+Jo Perez: So I want it to be within our online sales domain because maybe that goes to a specific team.
+Jo Perez: I can then say add a trigger when it fails and then I can say set the destination to a specific team within Coli or a specific owner of that asset.
+Jo Perez: And Then I can set the destination via webhook.
+Jo Perez: So something like Jira or like you mentioned, you know, Slack.
+Jo Perez: And then I can, you know, configure that to receive a Slack notification those specific owners of this asset, it doesn't have to be just, you know, these options.
+Jo Perez: Maybe I just want to send it directly to a generic Slack channel.
+Jo Perez: I can do just that.
+Jo Perez: Where anybody that's a member of that Slack channel will receive this notification of when this online sales domain test suites fail.
+Jo Perez: So this could obviously be configured in a variety of ways for a variety of different types of test cases, test suites, schema changes, ingestion pipelines failing, et cetera, et cetera.
+Charlie Lor: Is this data quality feature of Collate open metadata?
+Charlie Lor: Is that for all tables?
+Jo Perez: Yeah.
+Jo Perez: So we can define, you know, those different test cases at a table or column level for any table that exists in collate.
+Jo Perez: Is that your question?
+Charlie Lor: Well, so.
+Charlie Lor: So we are using Monte Carlo data to do data quality checks and stuff and we're paying per table to get it monitored.
+Charlie Lor: Is.
+Charlie Lor: Is this the same pricing structure, model or so?
+Jo Perez: If it's so, we charge you per.
+Jo Perez: So the.
+Jo Perez: And make.
+Jo Perez: This might be somewhere we could talk a little bit about licensing.
+Jo Perez: Our licensing structure is just per asset.
+Jo Perez: Tables are a type of asset.
+Jo Perez: So if it exists in Colate, maybe you purchase 5,000 assets, you have 4,000 assets.
+Jo Perez: A data quality test does not count as an asset.
+Jo Perez: So we don't charge you.
+Jo Perez: If you have a hundred data quality tests for a single table, we're not charging you 100 times or anything like that.
+Jo Perez: It's just what you ingest.
+Jo Perez: We're capturing.
+Jo Perez: We're not double counting or anything weird or strange like that.
+Jo Perez: It's purely what you have in here.
+Jo Perez: If you want to see it from a lineage, we're not charging you for lineage.
+Jo Perez: If you want to create 100 tests, we're not charging you for 100 test.
+Jo Perez: It's just based off the assets you have within the tool.
+Jo Perez: And I think I did an okay job at explaining.
+Jo Perez: But Mick, if you want to add anything to that, or if Charlie, if that doesn't.
+Mik Cepulis: Yes, the addition of data quality.
+Mik Cepulis: We think it's part of our bias towards building a solution that is unified and having additional functionality beyond data discoverability, which is what a lot of catalogs are focused on.
+Mik Cepulis: We see ourselves, and we call ourselves a unified metadata platform because we're unifying many different functions of data governance and data platform teams into a single tool.
+Mik Cepulis: Data quality, we think, is a Tier 1 requirement for any new data cataloging.
+Mik Cepulis: Style platform to be implemented.
+Mik Cepulis: And we've invested a lot of our time and energy into building out better data quality, better data observability, and so all of that is included with the core platform fee.
+Mik Cepulis: And when you ingest a data asset under collate, you get access to full lineage, full data quality testing, full alerting, all of the different automation goodness.
+Mik Cepulis: You're really just paying for number of users and number of assets.
+Mik Cepulis: So think of like all the stuff that you're seeing in here, besides a few of the automation and AI components are included in that core platform fee.
+adam: When it comes to the stuff like data quality, profiling lineage, all of this type of like metadata, how much of it is available or accessible via API and able to sort of be plugged back into coexisting ecosystem.
+adam: So as an example, right, we use DBT and we have documentation in dbt.
+adam: We can certainly ingest stuff into collate.
+adam: If somebody comes in and edits a description within collate, is there any kind of feedback mechanism where that can get published back out?
+adam: Are there things like for data quality using Monte Carlo, we have monitors as code.
+adam: Is there similar functionality where monitors and data quality checks can be defined next to data models and then get sort of like imported and configured for collate?
+adam: Or is everything sort of like UI driven at the moment?
+Jo Perez: So I would, you know, kind of go back to, you know, an earlier point that Nick made.
+Jo Perez: Everything that we're seeing in COLA is backed by open a public API.
+Jo Perez: So we're an API first shop.
+Jo Perez: So if we're seeing it in the ui, you can access it outside of the ui also from a, you know, data quality, metadata extraction job.
+Jo Perez: Nothing has to be done in the ui.
+Jo Perez: Everything can be configured using our YAML files and things like that to develop, you know, our parameters that we want from an ingestion standpoint or a data quality standpoint as well.
+Jo Perez: So I think that addresses your first element and then from that, you know, monitoring as code, I'm fairly familiar with it, but I do think we possess those kind of capabilities and you can kind of see that the way we kind of could ingest.
+Jo Perez: If I kind of go here to, you know, our data quality, we can pull in a variety of different types of platforms as well.
+Jo Perez: So if I wanted to bring in data quality rules that exist in dbt, I can now the write back to DBT is a different mechanism.
+Jo Perez: And that's a question, does DBT support us using an integration and you know, writing back, I don't know.
+Jo Perez: Off the top of My head.
+Jo Perez: But if you have the API, you can, you know, get values from Colate and then you can use a DBT API, I would imagine, to then write there.
+Jo Perez: So obviously some level of orchestration would be needed on your side.
+Jo Perez: But from a technical capability standpoint, yes, we, we would support it.
+Jo Perez: Does that hit your question, Adam?
+adam: Yeah, I think so.
+adam: I guess part of what we're sort of looking at or thinking about here is I'll call it like bridging the gap in these different data domains between sort of upstream producing systems, downstream consuming systems and or users and being able to meet them all where they are.
+adam: So certainly from an engineering perspective, to be able to document data models along the way as they're going and building things out is super handy.
+adam: But then being able to have, you know, maybe less technical users who are more UI driven, create their own monitoring, augment documentation, things like that, but then be able to sort of have a single source of truth that governs it all.
+adam: That if an engineer, for instance, writes documentation in DBT that maybe has some like business nuance that's wrong or off base and somebody comes in and corrects it within the ui, I guess maybe collate ends up being sort of the ultimate source of truth for that.
+adam: But then we kind of have this like ongoing discrepancy across multiple systems, which you were kind of touching on a little bit with the, with the Knowledge center and glossary.
+adam: And I'm just kind of curious how folks are setting up these types of like large scale data governance.
+Jo Perez: Yeah, and I think that's an important aspect is, you know, we do want to be that, you know, centralized place, but we realize that, that we're not going to have a databricks guy or a DBT guy say, oh no, I'm not, I'm not going to do it in databricks or look at databricks.
+Jo Perez: I need to look at qualate.
+Jo Perez: You know, we're trying to solve that problem entirely, you know, and one thing that's coming out in January is what we're calling reverse metadata.
+Jo Perez: And that's our ability to push things that are done in coli outwards.
+Jo Perez: So, you know, databricks, snowflakes are our, you know, first contenders at that.
+Jo Perez: Not sure where exactly other sources, you know, fall in that pecking order, but the idea is if I set a tag in collate, I want it to exist in databricks or snowflake as well and ship outward with no need for complex APIs or anything like that.
+Jo Perez: So that is something that's on our roadmap.
+Jo Perez: But we can go into deeper details of what sources will be supported for that and their timelines.
+Jo Perez: But that is definitely a philosophy we have.
+Jo Perez: And something that we're able to kind of do already is if I type in customer lifetime value and I search it in Google, because I don't know what that means.
+Jo Perez: I just heard it in meeting, you know, I don't want users to come in here and Google.
+Jo Perez: What I want them to do is use open metadata to be able to kind of find that.
+Jo Perez: So I can kind of just, you know, highlight that, search it in open metadata and get my customer lifetime value here.
+Jo Perez: And this is just kind of one of the ways where we can bring collate to wherever you're working within your work stream, whether you're in DBT or you're in databricks.
+Jo Perez: You can, you know, highlight the value or be able to kind of search, you know, by just kind of clicking on the, you know, icon and be able to kind of pull, you know, what I'm actually looking for within collate.
+Jo Perez: So not necessarily bringing the data there, but at least bringing the values and contents to wherever you are throughout your journey.
+Jo Perez: But to my earlier point, with that reverse metadata, we really do want to accomplish what you're referring to, being able to accelerate consume no matter where you're at, what's in quality and have quality be that centralized part, but also have that bidirectionality.
+adam: Interesting.
+adam: I think interrelated with that, you were showing some functionality before with like a owner and a reviewer.
+adam: Is there.
+adam: Is it just like owner and reviewer as our kind of like custom fields, or are there like workflows that can be enforced within colate for that?
+Jo Perez: Yeah.
+Jo Perez: So we do have workflows coming out the middle of this week for dashboard and table certification, as well as glossary term approval.
+Jo Perez: This is relying heavily on that reviewer field that I showed.
+Jo Perez: And we can build out other custom fields if needed.
+Jo Perez: So it doesn't have to be just owner and reviewer.
+Jo Perez: If you had a business owner, we can build that field customly in the product.
+Jo Perez: But from a workflow standpoint, we can build this out where, you know, check if the reviewer is set, if it is set, you know, move it to this, you know, ready to be reviewed, state and send that user a notification based off that criteria.
+Jo Perez: And we can configure this.
+Jo Perez: We're building out more workflows in, you know, subsequent versions to govern a variety of things and also making these more configurable not just for a new term, but Maybe a specific field or things like that.
+Jo Perez: So workflows we recognize is at a heart of governance.
+Jo Perez: We want to democratize as much as possible the work stream.
+Jo Perez: And we recognize that not everyone is an expert, but that doesn't, shouldn't stop them from doing, but it doesn't necessarily mean what they do should just go right into effect.
+Jo Perez: And workflows is kind of the, one of the solutions for that.
+Jo Perez: And I think it even kind of creates that framework for the future of access requests and other elements where getting through an approval process, where I see some things in quality, I don't have, you know, necessarily access to it, but almost kind of treating it as a marketplace for your data, where I just read the description, I see that it's in a data product.
+Jo Perez: I want to request access through it, it goes through a workflow and maybe it fires off an API to ServiceNow or something like that and sets off another approval process.
+Jo Perez: So having those foundations already here within the product.
+Jo Perez: But I think that is the direction that we want to go even deeper of being able to kind of have, you know, work streams in a variety of areas across your, you know, platforms.
+Mik Cepulis: Yeah, Adam, Joe alluded to this.
+Mik Cepulis: So the workflow features that you see here are our first foray into external approval processes and getting like a formal governance structure in place to take action within collate and take action, you know, across your data governance process.
+Mik Cepulis: These are pretending, these are sort of teasing what's to come.
+Mik Cepulis: So in our 1.7 release, which is coming in January, you'll see approval workflows for external access to databases.
+Mik Cepulis: So if I'm an analyst or I'm an engineer looking through and I want to have access to an underlying database that's in like postgres or anything else.
+Mik Cepulis: Thanks, Charlie.
+Mik Cepulis: You are able to request that access and then the owner of that asset in collate can approve it and then you can get access to that third party tool or database.
+Mik Cepulis: That's one example.
+Mik Cepulis: But you'll see a lot more in the form of workflows and approval processes coming into the government section of Collate as time goes on.
+Jo Perez: With seven minutes left, the last thing I probably want to show is lineage.
+Jo Perez: So really understanding how your data moves, you know, throughout your ecosystem, you know, moving from raw payments to staging payments to customers, or, you know, orders to staging orders to customers, or seeing that it populates a variety of BI sources downstream, we can overlay, you know, different layers to this.
+Jo Perez: So if I want to look at it from a column level and I want to see how first name is, you know, moving throughout the system, I can see that it's originating in raw customer and then moving to this BI power BI report downstream.
+Jo Perez: Or maybe instead of, you know, looking at column level lineage, I want to look at it from an observability standpoint and I want to see where issues are occurring and then follow them downstream.
+Jo Perez: That's another thing that we're exploring in a subsequent version coming on Wednesday, we'll be able to see if there was an error being able to track a red line through the variety of things that it might populate.
+Jo Perez: So in this case we see that there's data quality errors here.
+Jo Perez: I would see red lines in the future populate these different dashboards if appropriate.
+Jo Perez: So kind of overlaying that, not just receiving an alert, but being able to conduct proper impact analysis and things like that.
+Jo Perez: We can export this if needed and we could also filter on maybe, let's say we only want to see PII sensitive objects from a lineage standpoint so we can do proper governance there.
+Jo Perez: We can capture that as well and search on a number, filter on a number of different types of aspects here.
+Jo Perez: The other thing that we have coming out on Wednesday is our ER diagram.
+Jo Perez: So in a similar vein to Lineage, Lineage is how data moves.
+Jo Perez: But er diagrams kind of show that relationship between a variety of tables.
+Jo Perez: So I might want to see how customers is related to orders or how, you know, new customers is related to our customers tables and things like that.
+Jo Perez: We'll be able to kind of generate these ER diagrams for you based off the metadata that we pull.
+Jo Perez: So right now we're able to see, oh, something is a foreign key or a primary key.
+Jo Perez: We want to build that out even more and have these types of visualizations for you.
+Jo Perez: So I know we only have five minutes left, so did want to leave some time for any questions.
+Jo Perez: And Mick, if you have any next steps that you want to talk about.
+adam: I was just going to ask out of curiosity, how are you all pulling the primary key, foreign key relations and many to many mappings in the cloud data warehouse era, is that like coming from metadata or is that like introspection on the data itself?
+Jo Perez: It's coming from metadata largely, but it's also generated through our usage.
+Jo Perez: So we can see how these tables are generated.
+Jo Perez: So the create statement used or anything like that to help build it out as well.
+Jo Perez: So like we saw, we had that tab for queries that didn't go into it that much.
+Jo Perez: That's kind of preliminary of just getting queries in there.
+Jo Perez: But Then we're able to analyze that usage information and build some of these things out as well.
+Jo Perez: So not just the metadata, but also usage.
+Jo Perez: Yep.
+Jo Perez: And each of these things is a separate ingestion job.
+Jo Perez: So if you didn't want us, you know, profiling, you don't have to have us profiling.
+Jo Perez: If you don't want lineage, you don't have to have lineage.
+Jo Perez: And we could kind of schedule these things accordingly and, you know, build them out or, you know, filter what's needed.
+Mik Cepulis: Gotcha.
+Mik Cepulis: Cool.
+Mik Cepulis: Awesome.
+Mik Cepulis: Zim.
+Mik Cepulis: When I spoke with Adam last week, he mentioned, you know, a lot of urgency around this initiative and I wanted to check with you and sort of understand from your perspective, like, what is the main driver behind that and what else can Joe and I do to support the evaluation that Adam is leading and if any of the questions you have.
+Azeem: Yeah, thanks for asking.
+Azeem: The.
+Azeem: In terms of.
+Azeem: In terms of the initiatives itself, we're looking to have the new stack operational at the end of the month.
+Azeem: So that's the.
+Azeem: That's what Adam and team are kind of sprinting towards the goal when we're going to have about four key metrics of the company built on the new stack so that everybody can see how it's done.
+Azeem: Adam's team is going to pull together like a list of, sorry, my kids are home.
+Azeem: So if you hear background, that's the thing.
+Azeem: But the Adam and team are building out kind of a list of best practices and things like that along the way.
+Azeem: And our goal in Q1 is to then give it out to other teams to start building data sets and whatnot.
+Azeem: So go towards, like a broader mandate of all teams owning their own data sets.
+Azeem: So that's the context and perspective of where we're going as to why we're doing this.
+Azeem: Now, I think we've got.
+Azeem: We've gotten to a stage of the company now where our existing stack is not sufficient and we're running into, like, issues every day.
+Azeem: Whether there are issues with stability of the stack, like redshift slowing down, or whether there are issues with the data itself.
+Azeem: We have a major issue with discoverability because no, people who go in don't know where to find the data and what data exists today, which is where open metadata or collate, I think comes into play and can help us potentially.
+Azeem: So hopefully that helps.
+Azeem: I think just like as Adam and Tim are running at it, they're going to build out like a bunch of information, a bunch of plans on how to, how to organize structures, how to structure all this, how to organize all of our information.
+Azeem: You all could be very helpful there in terms of letting us know what you're seeing in best practices in the industry.
+Mik Cepulis: Okay, awesome.
+Mik Cepulis: Thank you.
+Mik Cepulis: Very helpful.
+Mik Cepulis: And that definitely kind of repeats what Adam and I covered.
+Mik Cepulis: So it's helpful to hear.
+Mik Cepulis: Again, was.
+Mik Cepulis: Did you see anything today that made you think that, like, collate wasn't the right tool for the job?
+Azeem: No.
+Azeem: I am wondering whether we can.
+Azeem: And this is something Adam and I need to talk.
+Azeem: Talk more about.
+Azeem: And I'll look to Adam for his.
+Azeem: For his recommendation on this, but I am wondering if we can collapse some tools here and go with like, you guys have some of the overlapping functionality with Monte Carlo the currently use.
+Azeem: So that's the question I have, but I'll look to Adam for recommendation there.
+Mik Cepulis: The beauty is you can run side by side for as long as we need to validate that.
+Azeem: Yeah, we can, but we do have to like when we start paying everybody, we do have to pay everyone.
+Azeem: So I don't want to be paying a bunch of vendors.
+Mik Cepulis: Totally fair.
+Mik Cepulis: Okay, awesome.
+Mik Cepulis: I do have a meeting with Veho's procurement Rebecca Kittle tomorrow.
+Mik Cepulis: Is there anything I should address with her that would be relevant for right now?
+Mik Cepulis: Like, you know, we were past.
+Mik Cepulis: It's.
+Mik Cepulis: We're involved in a security review right now.
+Mik Cepulis: Do you have any.
+Mik Cepulis: Any expectations I should have for next steps with her?
+Azeem: Nothing, I think.
+Azeem: I think once you guys have numbers, we'll probably go back and forth and kind of figure out what makes sense and how to make it all work.
+Azeem: Awesome.
+Jo Perez: Okay.
+Azeem: But yeah, with Rebecca on that.
+Mik Cepulis: All right, thanks, Joe.
+Jo Perez: Thank you, everyone.
+Mik Cepulis: Adam.
+Mik Cepulis: So, yeah, work with me and we'll get you an instance provisioned.
+Mik Cepulis: You mentioned that the free tier will likely.
+Mik Cepulis: Sorry, I was going to say, should.
+adam: We wait until Wednesday for the 1.6 drop?
+Mik Cepulis: That won't.
+Mik Cepulis: So we will drop it to open source first.
+Mik Cepulis: Open source is more of a testing ground and we'll give it probably about a week and then we'll update to our free tier and some of our commercial SaaS deployments.
+Mik Cepulis: So yeah, we'll.
+Mik Cepulis: We'll need another week for.
+Mik Cepulis: For battle testing.
+Mik Cepulis: We can upgrade your free tier instance midway through, so there won't be any impacting to the work that you put in already.
+Mik Cepulis: It's just like a.
+Mik Cepulis: A couple minutes of downtime.
+Mik Cepulis: Yeah, that.
+Mik Cepulis: That's one option.
+Mik Cepulis: We do have formal POC instances.
+Mik Cepulis: Those take.
+Mik Cepulis: Those are a bit more heavy.
+Mik Cepulis: So if you want to get started right away, I think the free tier is probably the way to go.
+Mik Cepulis: And whenever you have security blessings, then just request that instance.
+Mik Cepulis: I'll approve it and you can hit the ground running.
+Mik Cepulis: Yeah.
+adam: Cool.
+adam: And sorry, remind me again, what are the limitations on the free tier?
+Mik Cepulis: So 500 assets and then five users.
+adam: Okay.
+adam: I think, yeah, for the moment, that should probably be sufficient.
+adam: So happy to start there and then decide where to go.
+Mik Cepulis: Easy.
+Mik Cepulis: Okay.
+Mik Cepulis: Awesome.
+Mik Cepulis: Cool.
+Mik Cepulis: I might have a couple more questions for you, but I think we're good to go for now.
+Mik Cepulis: And I'll chat with Rebecca tomorrow and we'll see what happens next.
+Azeem: Thanks for doing this, Mike.
+Azeem: I got to drop, so I'll talk later.
+Mik Cepulis: Thanks, Nazim.
+Mik Cepulis: Great to meet you.
+Mik Cepulis: Adam, could you and I put a placeholder down for Friday just to check in on your progress and just get up to speed on anything.
+adam: Yeah, I think that makes sense.
+adam: If you've got, I guess, time after noon Pacific, that'd be okay.
+Mik Cepulis: Easy, most workable.
+adam: But I guess also I do have a window from like 9 to 10 Pacific, if that's any better.
+Mik Cepulis: Okay.
+Mik Cepulis: Yeah, 12, 30 times.
+Mik Cepulis: Great.
+adam: Okay, that works for me.
+Mik Cepulis: Sweet.
+Mik Cepulis: Okay, I will chat with you then.
+Mik Cepulis: Yeah.
+Mik Cepulis: So share any questions with me over email.
+Mik Cepulis: And yeah, thanks for the effort.
+Mik Cepulis: It's a fast sprint here.
+adam: Yeah, I mean, likewise.
+adam: Thanks for pulling stuff together and in relatively short order.
+adam: Hopefully give you sort of a better sense and some faces to put with names and everything as opposed to just like going back and forth over email.
+Mik Cepulis: So it's super helpful.
+Mik Cepulis: Yeah, it came in.
+Mik Cepulis: Came in abruptly for just given that the Thanksgiving holiday.
+Mik Cepulis: So glad you guys were able to move fast and say money for here.
+Mik Cepulis: Cool.
+Mik Cepulis: All right.
+adam: All right, thanks again.
+adam: I guess if I don't hear from you, I'll catch you on Friday.
+adam: If not, if not before.
+Mik Cepulis: Perfect.
+Mik Cepulis: All right, sounds good.
+Mik Cepulis: Have a good week.
+adam: Yeah, have a good one.
+
+END MEETING
+
+
+Meeting Name: Collate | Veho - Progress Sync
+Meeting Date: 2024-12-11
+
+Mik Cepulis: Adam, how's it going?
+adam: Hey, man, how's it going?
+Mik Cepulis: Going great.
+Mik Cepulis: Thanks for jumping on.
+Mik Cepulis: Well, likewise.
+adam: Appreciate you setting this up and checking in with us.
+adam: It looks like based on the calendar, Azim might not be making it today, which is unfortunate, but figure maybe you and I can at least chat for a few minutes and then.
+Mik Cepulis: Yeah, perfect.
+Mik Cepulis: Yeah.
+Mik Cepulis: I sent Azeem a note.
+Mik Cepulis: One of the things I wanted to do today was like, he seems pretty engaged and you know, obviously being an executive, I wanted to get him in touch with our cto Harsha.
+Mik Cepulis: He's our co founder, cto and you know, he's very deeply product oriented and I figured like, just given Nazim's enthusiasm, he might appreciate the connection.
+Mik Cepulis: And it's always helpful to sort of establish sort of, you know, leader to leader connections, you know, during evaluations like this to give him more insight into our roadmap and things like that.
+Mik Cepulis: So I shot a Zeeman email.
+Mik Cepulis: He has not responded yet.
+Mik Cepulis: But if you, if you have a moment, I appreciate you giving him a ping about that and we can set up time for those two to connect.
+adam: Yeah, can do.
+adam: I appreciate that.
+Mik Cepulis: Yeah.
+Mik Cepulis: Beyond that, you know, I wanted to connect and get an idea of just how things have progressed and then, you know, if needed, set up time with one of our engineers tomorrow or Friday to kind of crank through some technical blockers, if there are any, or just dive deeper into any questions.
+Mik Cepulis: But I thought I could at least quick update, quick summary of progress so far and go from there.
+adam: Yeah, I will say, admittedly, progress continues to be a little bit slow just based on resource constraints.
+adam: It has been a busy few days.
+adam: On the plus side, in some internal conversations trying to drive a little bit more kind of focus and clarity around the scope and shape of our POCs.
+adam: We are sort of honing in a little bit to put more wood behind fewer arrows throughout this process.
+adam: Happy to at least report.
+adam: From an update standpoint, collate is still definitely in the mix.
+adam: The variety of capabilities in kind of the unified platform continues to kind of resonate as a good.
+adam: What's the word I'm looking for?
+adam: Don't mean to undersell this, but a good glue between all of the different platforms that we may be putting together here.
+adam: So intriguing kind of like narrative and capabilities here.
+adam: I think we're really just scratching the surface of what we can possibly do with collate and certainly getting some more technical deep dives I think would be beneficial over the next couple of weeks because that, that'll help give me myself, Charlie, you know, Maybe others on the team, the opportunity to kind of like kick the tires, understand more about the value proposition and help with kind of positioning and pitch.
+adam: One of the things, I guess that's worth mentioning or kind of highlighting for you is in particular when it comes to data monitoring, the overlaps and possibilities for consolidation when it comes to like Monte Carlo is appealing.
+adam: And from a kind of like cataloging and lineage perspective, I will say not.
+adam: Not entirely unexpected, but DBT Labs is coming up for renewal here in the next few months and they're starting renewal talks which are not exactly going super productively in terms of.
+adam: Yeah, not to air out too much dirty laundry, but they're trying to increase, you know, contract value, which they are incentivized to do.
+adam: We are on the flip side trying to reduce contract value.
+adam: And that's kind of coming to loggerheads in terms of, you know, price breaks only being available for like increasing, you know, per unit price breaks only being available for increasing total contract value.
+adam: All that fun stuff.
+adam: So that said, I.
+adam: There may be, you know, an additional window of opportunity there that when it comes to like we were sort of looking at DBT cloud, you know, catalog type functionality, lineage functionality as a sort of low cost, low overhead way of getting more folks exposure to that.
+adam: On the flip side, if they're kind of playing hardball, there's a window of opportunity there to say, how does Colate play into this picture?
+adam: Does it give us kind of a credible negotiating tactic as well?
+adam: So just kind of giving you a little bit of the, you know, inside baseball on that.
+adam: And again, I kind of see Coley story fitting in and again, kind of like opportunity to consolidate tool sets.
+Mik Cepulis: Does DBT sell modules or are they only selling like overall compute?
+Mik Cepulis: Like, how does the contract break down with them?
+adam: They have kind of a hybrid contract which they used to do a seat based model, then they moved to a hybrid seat based plus consumption based model with sort of discounts for various levels of commit.
+adam: Of course, the more seats you buy, the cheaper they charge per seat, the more committed consumption in terms of like successful model runs and model materializations.
+adam: The more you commit to out of the gate, the lower they charge per model or per thousand models or whatever they call it.
+adam: So it's a little bit of a.
+adam: And to be honest, this is just a like, you know, industry criticism.
+adam: I can understand seat based models, I can understand consumption models.
+adam: DBT Labs is kind of double dipping and that's never sat well with me in the last couple of years since they changed their pricing model, but now it's actually sort of like materially impacting our guidance from our finance team.
+adam: And so again, that's why I say there's a window of opportunity for how do we bring Koolaid into the picture, leverage this kind of unified catalog plus tooling for our data engineers, plus tooling for our analysts and consumers into sort of like one metadata platform.
+adam: Like, sign me up.
+Mik Cepulis: Okay.
+Mik Cepulis: Yeah.
+Mik Cepulis: I mean, it's not required to use DBT with collate, of course.
+Mik Cepulis: Like, we have a lot of customers that leverage both platforms.
+Mik Cepulis: I don't see any.
+Mik Cepulis: We don't have many conversations around Collate customers who are using DBT for their cataloging functionality because it's pretty limited compared to ours.
+Mik Cepulis: It's again, just for their core use case, which is, I would say, outside the scope of cataloging and lineage.
+adam: Yeah, I do get a sense that a lot of platforms are going for, I'll call it sort of like more vertical integration or whatnot.
+adam: You know, DBT is trying to develop more cataloging functionality, Collate has developed more monitoring functionality, et cetera.
+adam: But that said, again, the double dipping on pricing structure and the hardball negotiations are sort of like souring me a little bit on.
+adam: I would love to put more people into DBT Cloud to show people how great of a product it is, but they're actively working against my ability to pull more people in.
+adam: And so, you know, again, and I think to your point too, DBT Cloud's lineage functionality was kind of limited to DBT only.
+adam: Again, collate and open metadata sort of branch far beyond that and give us more capabilities in there.
+adam: So, um, all that to say technical progress, POC progress may be slow.
+adam: There are stars that are kind of aligning and wheels in motion that make me, you know, cautiously optimistic about a future and kind of where, where our data stack may be going in this regard.
+adam: So.
+Mik Cepulis: Awesome.
+Mik Cepulis: Good stuff.
+Mik Cepulis: Yeah.
+Mik Cepulis: So I met with Rebecca yesterday to have kind of a procurement sync and understand like where the overall process is tracking from her perspective.
+Mik Cepulis: She mentioned that you're looking at a couple different tools at the same time, like in the stack beyond like just data cataloging and metadata management.
+Mik Cepulis: So you're looking at looker and then potentially other tools.
+Mik Cepulis: Like, I guess this sounds like a sort of wholesale rethink of your data stack and I guess it's happening, you know, for you and crunch time.
+Mik Cepulis: But we have looker in the mix, we have collate in the mix.
+Mik Cepulis: Like, what other POC are you looking at at the moment?
+Mik Cepulis: Because it sounds, sounds like A lot on your plate.
+adam: Yeah.
+adam: We're looking at Sigma as another candidate for BI platform.
+adam: Looking at databricks from a, like, warehouse and compute layer possibility.
+adam: Snowflake is also in the mix.
+adam: So, yeah, that's.
+adam: To be perfectly honest with you, that's part of why Colate progress has been a little bit slow.
+adam: Our team, on top of all of those POCs, we still have some carryover like roadmap work that has persisted far beyond its original scope and rolled over into this month.
+adam: So a couple folks on the team are working on roadmap stuff, a couple folks are working on the POC stuff.
+adam: And unfortunately, the progress on Collate has been a little bit of a victim of that lack of bandwidth.
+Mik Cepulis: Okay, so what is.
+Mik Cepulis: What have you gotten done so far with collate?
+adam: I mean, honestly, my goal this week was to get like the NWAA agent pulling and pushing metadata.
+adam: Haven't had the chance to do that.
+adam: So basically sort of in the same place we were last time we checked in.
+adam: But that's where I was thinking if we had the opportunity to grab, you know, half an hour, hour with a sort of an expert, do a quick sort of like guided tour, just throw the time on the calendar to be able to set something up, do a screen share or something like that, we'd be able to get that next step going.
+Mik Cepulis: Could we find time potentially tomorrow with one of our DevOps guys and Hammer out some of the connection pieces and networking pieces and just get tighter on that?
+Mik Cepulis: Because I think that could be really beneficial.
+Mik Cepulis: Again, we're both victims of an unorthodox POC process here.
+Mik Cepulis: Typically we'll have an official launch, get you dev DevOps time.
+Mik Cepulis: Like we actual sit down, make sure the connections are all working out.
+Mik Cepulis: Well, usually we're able to like, you know, give a cluster to you that's, you know, again, right sized, and then connect data bricks, connect Snowflake or whatever, the core sources, and that's usually a, you know, a great way to like, get a jump start on the testing and you actually see a catalog with some data in it, and then we can kind of, you know, branch out into the broader metadata management side of things.
+Mik Cepulis: So anyway, tomorrow, Friday, we can make something happen if you're.
+Mik Cepulis: If you have an hour or so to block out.
+adam: Yeah, I was going to suggest, if we're looking at tomorrow, 11am Pacific, might work for an hour or else potentially like 1:30 Pacific or later.
+Mik Cepulis: Okay.
+adam: If.
+adam: Would either of those work on your end?
+Mik Cepulis: Yeah, they should.
+Mik Cepulis: Let's see.
+Mik Cepulis: Yeah, tomorrow at 11 I think works well.
+Mik Cepulis: Let's do that.
+adam: Okay, cool.
+Mik Cepulis: I will invite, I'll probably Charlie as well.
+adam: I was going to say invites for probably myself and Charlie would be good.
+Mik Cepulis: Can you share Charlie's email?
+Mik Cepulis: I'm not sure I have it.
+Mik Cepulis: I do have it.
+Mik Cepulis: There we go.
+Mik Cepulis: Thank you.
+Mik Cepulis: Awesome.
+Mik Cepulis: Okay, got that out.
+Mik Cepulis: So once we have data sources connected to Indicolate, what, what's the next step on your end?
+Mik Cepulis: Like what do we have to validate and test in order to kind of say okay this is the right product.
+Mik Cepulis: This is like you know, going to make us happy and satisfied for production rollout.
+adam: I think we will probably have then maybe like a two pronged approach there.
+adam: One is going to be, or I'll call it two and a half pronged approach.
+adam: One is from a like data engineering perspective just understanding management administration of the platform as a whole.
+adam: Kind of like integrations across systems.
+adam: You know we talked a little bit about data overriding and ingestion from these different sources and how that all blends together.
+adam: So like if we pull in DBT documentation, if we pull in like redshift schema information, what sources end up being sort of ingested and then reflected to end users.
+adam: How do those workflows in that administration work?
+adam: And sort of I guess second piece within that is probably going to be understanding and validating a little bit of the data quality and monitoring piece.
+adam: Again just want to understand how that's going to either augment or potentially replace Monte Carlo.
+adam: And then last thing was I thinking about there's probably, I think the other prong of this is going to be around like the more of the data consumer like using the catalog functionality.
+adam: So just general for lack of a better term like ergonomics and understanding, you know if, if we're talking about a couple different Personas, an executive, whether that's a Z or like our CTO getting in there, maybe a couple of like analysts or data scientists giving them an opportunity to like jump in just to say, you know, how does search work?
+adam: What is the overall user experience?
+adam: Could you you know answer the questions that you can't answer today or you know normally you would DM somebody on the team to ask this question can you self service through collate?
+adam: And so I think that would be probably like those are the two main like prongs of the and the final vetting.
+adam: And so from a assuming both of those pan out well then you know we have tech sign off, we have kind of like stakeholder sign off.
+adam: That's a matter of you know commercial terms.
+adam: Right.
+adam: Sizing contract, number of seats, number of assets, all that kind of stuff and.
+Mik Cepulis: Awesome.
+Mik Cepulis: Do you think that we'll have time to get enough done by next Wednesday to show Azim some progress and walk them through what the data looks like on your end?
+adam: I think we could, you know, if we, if we spend some time tomorrow, I think that'll help to kind of like give us another step forward.
+adam: Would give us at least more to kind of be able to do a guided tour or something, screen share with Azim, give him something to kind of sink his teeth into.
+adam: I will say just given sort of the number of constraints and balls we have in the air right now, again have sort of slowed down our cataloging aspirations.
+adam: So from that perspective, I understand.
+adam: I appreciate that you keep sort of checking in on timelines and everything.
+adam: Yeah, just it will probably be tight to be honest, to try to like get executive, you know, user Personas and use cases addressed plus like data scientists or analysts.
+adam: So worthwhile to kind of keep an eye on that as well.
+Mik Cepulis: Okay.
+Mik Cepulis: Yeah.
+Mik Cepulis: I mean we are not going to be at a perfect point in the poc, but I think like some kind of validation of, hey, we can roll these metrics up and put them in a view where it's digestible for someone who's not an expert or a separate matter expert in this specific area, that'll be a good goal for us.
+Mik Cepulis: I'm not sure if you noticed we did upgrade your cluster to the 1.6 version, I think yesterday, the day before.
+Mik Cepulis: So you'll have that new data quality dashboard built in now.
+Mik Cepulis: So it won't have any data in it because you don't have any data in your instance.
+Mik Cepulis: But once there is data in the instance and we have data quality tests running, you'll be able to see sort of a consolidated roll up of all those tests in a single view.
+Mik Cepulis: I mean, you know, we should at least have a placeholder then for the.
+Mik Cepulis: For Wednesday and if we can grab 30 minutes with ZM and you and walk through some progress, that'd be awesome.
+Mik Cepulis: If not, we can, you know, shift to Thursday or Friday.
+adam: Sure.
+adam: If we're looking at next Wednesday, just for the sake of argument, kind of bring things up.
+adam: Oh man, AIM is pretty packed.
+adam: We could potentially do something late day.
+adam: But to be honest, I would need to.
+adam: If we, if we want to try to get anything on his calendar for most of next week, especially Wednesday, I probably need to run through his EA to rearrange some things.
+adam: Happy to do that.
+adam: I think it Makes sense to like kind of set a target just to keep us focused on making forward progress.
+adam: I was going to say, I guess tomorrow if we can orient around probably two things.
+adam: One would be setting up like somehow and again, even if it's like manual and run from like a local runner or something like that, getting position to poll and then ingest MWAA data, I think that would be a great step.
+adam: And then also making sure we get connected to databricks.
+adam: We are early days so there's not a ton of assets in there, but just being able to like we set up redshift, connecting up to databricks and getting those tomorrow would give us a couple things again that we could then target next week being able to demo to Azim, get more sort of momentum built.
+adam: And then I would say next week maybe the target or the opportunity or the next step in this would be to sort of like start to think about, oh yeah, number one, data quality.
+adam: And then number two, how do we build a even more compelling demo for somebody who's maybe like less technical than Azeem?
+adam: Sure.
+Mik Cepulis: What does he have input on that demo, like that structure of how did run a last technical demo?
+adam: He would probably have just maybe, I don't mean to speak for him.
+adam: I can imagine that he would help point to appropriate stakeholders to include in that kind of demo or conversation.
+adam: I'm not sure that he's going to have material kind of like guidance on what they will expect.
+adam: I think we need to do a little bit of like internal discovery requirements discovery for lack of a better term.
+adam: So at that point then, you know, maybe we're looking at the week of the 23rd or something like that, which I know is a holiday week, but ideally that would be an opportunity to like, even if it's an internal roadshow, get some time with our data scientists, maybe get some time with our CTO to just say like, hey, this is what we're considering.
+adam: Here's how all of these different pieces we're exploring are coming together.
+adam: And again, here's kind of how collate sits on top and glues the whole, the whole story together for us.
+Mik Cepulis: Well, if we can get progress to tomorrow and I'm confident we'll be able to get databricks connected, redshift connected, those are basic connectors and we could do some kind of highlight reel to Azim on Wednesday or Thursday next week that could, you know, position us well for a demo on the 23rd to execs.
+Mik Cepulis: So I can see that story working.
+Mik Cepulis: It's a bit Of a stretch of course but you know we're going to give you resources to get that done to the extent that we can.
+Mik Cepulis: I do think so.
+Mik Cepulis: What I'll do tonight is have a request out to our DevOps team to provision you a POC cluster.
+Mik Cepulis: I imagine with like enough redshifted data and databricks data that we should just move you over to a larger cluster.
+Mik Cepulis: I don't want to run into like a 500 asset limit in the middle of this build out and then have to scramble and provision you more capacity.
+Mik Cepulis: Like let's just get that done now if we're presenting to Exacts, let's have you know, as big of a picture possible as a wide of a context window possible to share what we've made or the progress we've made.
+Mik Cepulis: Yeah.
+Mik Cepulis: So with for tomorrow the things that we'll need are some permission sets from databricks and redshift so you can find those in our connector docs.
+Mik Cepulis: We just need to make sure that you.
+Mik Cepulis: There's a, essentially a user profile made in databricks and redshift where we can like read the right data from those systems and pull it into collate.
+Mik Cepulis: That'll be the biggest hang up.
+Mik Cepulis: It's fairly simple.
+Mik Cepulis: We have to have some ports opened to send the data over.
+Mik Cepulis: It shouldn't.
+Mik Cepulis: It's not like a complicated networking process, but it can be a hold up.
+Mik Cepulis: If we try to connect stuff tomorrow and there aren't the correct permissions made then we're not going to make progress.
+adam: Gotcha.
+adam: Yeah, I think we can probably get that going for tomorrow.
+adam: We did set something up with redshift so redshift is connected up.
+Mik Cepulis: Nice.
+Mik Cepulis: Awesome.
+adam: Yeah, we can do the same thing for databricks.
+Mik Cepulis: It'll be a similar process then.
+Mik Cepulis: Yeah, easy.
+adam: Okay.
+Mik Cepulis: And then what is NWA?
+Mik Cepulis: Remind me.
+adam: That's the AWS's hosted version of Airflow.
+Mik Cepulis: Oh, got it.
+Mik Cepulis: Okay.
+Mik Cepulis: Yep.
+adam: Yeah, we were sort of talking about like if we would run sort of like a co located agent or you know, do something like on our own.
+adam: There's, we're talking about having a library or something that we can run locally that'll connect to mwa, pull down a bunch of data and then like push it into collide.
+adam: So again like I said, even, even just that part of it.
+adam: Happy to start manually just to get something in there to play with and then we can figure out the right deployment topology for a production use case as we, as we get further down the road.
+Mik Cepulis: Okay, great.
+Mik Cepulis: Easy.
+Mik Cepulis: Yeah, I mean for anything that's tricky.
+Mik Cepulis: We can obviously do a CSV import.
+Mik Cepulis: So that's a.
+Mik Cepulis: A pretty quick and dirty method.
+adam: Yeah.
+adam: Okay, cool.
+Mik Cepulis: Awesome.
+Mik Cepulis: All right, well, yeah, I have some notes here.
+Mik Cepulis: We'll be ready for tomorrow.
+adam: Yeah.
+Mik Cepulis: Then I'll request that POC instance and then what we'll do is just like transfer over that data.
+Mik Cepulis: We'll take a backup of your free tier cluster, how it exists today, and then restore it into the new one for tomorrow.
+Mik Cepulis: So if you.
+Mik Cepulis: Yeah, anyway, it's a pretty painless process.
+adam: Okay, cool.
+adam: I appreciate that.
+adam: I mean, yeah, I didn't.
+adam: I don't want to presume on like, POC cluster resources, but appreciate the upgrade.
+Mik Cepulis: It costs a few extra dollars.
+Mik Cepulis: But I would rather us having the right, you know, infrastructure in place instead of having to be like, oh, wait, we.
+Mik Cepulis: We hit our 500 limit cap and like that.
+Mik Cepulis: That would be a very, very painful problem to have for no reason.
+adam: Yeah, yeah, I get you.
+adam: Cool.
+adam: I appreciate that.
+Mik Cepulis: Yeah.
+Mik Cepulis: Awesome.
+Mik Cepulis: Adam.
+Mik Cepulis: Cool.
+Mik Cepulis: Well, yeah, I'll talk to you tomorrow and shoot over any questions.
+Mik Cepulis: Cool.
+Mik Cepulis: You have the Slack channel, right?
+adam: I think so.
+adam: Oh, that was.
+adam: I got an invite.
+adam: It's like, for a public kind of Slack community.
+adam: Is that correct?
+Mik Cepulis: Yeah, it's called collate customers.
+adam: Okay.
+Mik Cepulis: Yeah, we just create private channels with our customers.
+Mik Cepulis: It's kind of a startupy way of integrating Slack information, but it's a place where all of our support engineers live, so it's just easy to manage all the customer relationships in one place.
+adam: Gotcha.
+adam: Understood.
+adam: Yeah, make sure to get that logged in and accept the invite and all that kind of stuff.
+Mik Cepulis: Yeah, we'll just.
+Mik Cepulis: I mean, for the PC, we'll need you and Charlie, I think, just, you know, facilitate any Q and A.
+Mik Cepulis: Cool.
+adam: Sounds good.
+adam: I was going to say, I'm also.
+adam: I'll follow up with Azeem's EA about getting some time next Wednesday or Thursday.
+Mik Cepulis: Perfect.
+adam: You think like, 45 minutes would be a good time block for.
+Mik Cepulis: Yeah, you know, I think it depends what we want to cover.
+Mik Cepulis: Like if we can at least show them.
+Mik Cepulis: Hey, Azim, we did xyz.
+Mik Cepulis: These are some of the things we accomplished.
+Mik Cepulis: These are some future states that we want to get to as well.
+Mik Cepulis: Are.
+Mik Cepulis: Are we, you know, meeting some of your objectives and get them.
+Mik Cepulis: Get them talking and make sure that we're heading in the right direction.
+Mik Cepulis: So 30 to 45 would be awesome.
+adam: Okay, cool.
+adam: We'll get right on that and see.
+adam: See what we can find.
+adam: Probably be doing a little bit of telephone back and forth to figure out works, but we'll.
+adam: We'll figure it out.
+Mik Cepulis: Perfect.
+Mik Cepulis: Yeah, no problem.
+Mik Cepulis: Thank you, Adam.
+adam: Thanks.
+Mik Cepulis: All right.
+Mik Cepulis: Cheers to talk you soon.
+Mik Cepulis: Yeah, bye.
+Mik Cepulis: All right, bye.
+
+END MEETING
+
+
+Meeting Name: Collate | Veho - Next Steps, Transition
+Meeting Date: 2025-01-06
+
+Mik Cepulis: Hey.
+Mik Cepulis: Hello.
+Azeem: How are you doing?
+Mik Cepulis: Great.
+Mik Cepulis: Happy New Year.
+Mik Cepulis: How about yourself?
+Azeem: You as well.
+Azeem: I am trying to figure out my video here.
+Azeem: We don't use zoom very often here, so.
+Mik Cepulis: There.
+Azeem: There we go.
+Azeem: Worked.
+Mik Cepulis: Good to see you again.
+Azeem: How are you doing, man?
+Mik Cepulis: Yeah, nice and relaxed.
+Mik Cepulis: I had a solid dinner.
+Mik Cepulis: We were, we did a sort of unusual thing with my family down to Tucson for some hiking and biking.
+Mik Cepulis: Just said it needed to be warm, need to not leave the US So it was fun.
+Azeem: That sounds like a lot of fun, especially given, like, right now it's so cold.
+Azeem: Where are you based, Mike?
+Azeem: I forget.
+Mik Cepulis: I'm in San Francisco, so chilly, but not bad.
+Azeem: San Francisco is beautiful weather, man.
+Azeem: Yeah, I, I, I'm in Dallas right now.
+Azeem: I used to be in the Bay Area, so I moved here more recently.
+Azeem: But, dude, it's 21 here right now.
+Mik Cepulis: I've been reading about the cold front you guys have.
+Mik Cepulis: That's crazy.
+Azeem: Mets.
+Mik Cepulis: Yeah, my, my colleague works in Orlando and it's down in the low 30s right now.
+Mik Cepulis: Overnight.
+Mik Cepulis: Crazy.
+Azeem: Easy.
+Azeem: Crazy.
+Azeem: Yeah, all good.
+Azeem: Awesome.
+Azeem: Well, I'm glad we're, we're chatting, Mike.
+Azeem: And I think Adam told you, right?
+Azeem: He's, he has the part we host.
+Azeem: Yes.
+Mik Cepulis: Yeah.
+Azeem: For the time being.
+Azeem: I'm running the show for a bit until we get someone there.
+Mik Cepulis: Well, I, I hear nothing's on your plate, so.
+Mik Cepulis: Nice.
+Azeem: Pretty easy stuff.
+Azeem: No, no, it's, I'm excited for, for the stuff we're building here and wanted to keep close, so it makes sense for me directly work with the team here.
+Mik Cepulis: Well, yeah, I appreciate you continuing the effort.
+Mik Cepulis: I, Obviously, you know, I'm keen on understanding, like, what's, what's in your line of sight, what's your immediate priority?
+Mik Cepulis: I know you guys have a ton of different hoops in the air right now.
+Mik Cepulis: Big databricks, investments, and hopefully investing in collate and, and whatnot as well.
+Mik Cepulis: So I just figured, like, let's, let's have a level set, understand what your priorities are, what we can actually achieve, and in the next couple of weeks, next couple months, understand if priorities and timelines have shifted or if we can move forward.
+Mik Cepulis: How do we move forward quickly?
+Azeem: Yeah.
+Azeem: So can you share with me what Adam has shared with you in terms of the key problems we need to solve and why we were looking at collate?
+Mik Cepulis: Yeah, I mean, so I think that his, his understanding was.
+Mik Cepulis: So he was aware of the prior investigations into data governance.
+Mik Cepulis: Veho did an investigation into CO late last year, I think wanted to make an investment, but wasn't able to just do priorities at the time because of some newer initiatives around databricks and veho.
+Mik Cepulis: Having this understanding that there's a persistent problem with lack of data governance, lack of control from a strong data catalog.
+Mik Cepulis: This is a problem that you guys have wanted to solve for quite a while.
+Mik Cepulis: And then, you know, this is something that you elevated to Adam as a priority as part of the databricks initiative and under the broader, you know, data platform maturity.
+Mik Cepulis: So that was like how we came together.
+Mik Cepulis: And then obviously, you know, I've, I think redshift the databricks migration was a big part of it.
+Mik Cepulis: And, you know, data quality, data discoverability, the fact that we can achieve both, you know, the data governance side as well as the quality side was very appealing to Adam and your team.
+Azeem: Okay, awesome.
+Azeem: That sounds about right.
+Azeem: The two key problems.
+Azeem: Actually, governance is not the top of my list, but governance can mean a lot of things.
+Azeem: It might be like a thing that I'm thinking about, but not really thinking about governance.
+Azeem: But the number one problem we need to solve is discoverability of data and understanding, like, what data set has, what information, what grain is at, and things like that.
+Azeem: Right.
+Azeem: Like somebody who's a business user wants to come in and explore, build a new metric, should be able to easily do that.
+Azeem: So that's, that's, that's one reason why I'm looking at, I was looking at collate or open metadata, because I have open meta running on my machine.
+Azeem: So I've been playing around with it.
+Azeem: What I understand from Adam, he told me that's like, I think you guys have done, which is neat, is you guys have added like, data quality and those type of things for these data sets.
+Azeem: So the second thing that I'm looking at, which would actually be a huge win for us, is we currently use Monte Carlo data quality.
+Azeem: And I want to figure out a way, I mean, if it makes financial sense and everything, and we solve the discoverability problem and the quality problem and we can close our contract with Monte Carlo and move to collate, that will make a ton of sense for us.
+Azeem: I think from a financial perspective, if the numbers work out, that'll make a ton of sense.
+Azeem: On the governance side, the primary governance thing that we need to do, that we're trying to do right now, there's actually two angles.
+Azeem: One is controlling data sprawl, where people can just like, create new data sets all the time.
+Azeem: So being able to identify, hey, these datasets were created, like this many days they were created, and then we're gonna go ahead and clean everything every 30 days on a rolling window.
+Azeem: So data sprawl is a key thing that we wanna control.
+Azeem: And sprawl is for like public data sets.
+Mik Cepulis: Right.
+Azeem: So we are allowed to publish something to be a public to a public schema in databricks.
+Azeem: But we wanna be able to prune that schema every 30 days on a rolling window for every dataset.
+Azeem: I think collate can potentially help there just given like some of the metadata that it captures about the data set itself.
+Mik Cepulis: Yeah, we do have to that exact objective.
+Mik Cepulis: Like we have cost analysis tools and then data usability, data usage reports that are, you know, more mid level and executive level oriented.
+Mik Cepulis: So you know, taking a broad look across the entire data landscape, what's new across the prior 30 days or whatever time period.
+Azeem: Nice.
+Azeem: Excellent.
+Azeem: Yeah.
+Azeem: So that would help us.
+Azeem: The second aspect of fear is like we're building in databricks and part of the databricks investment we're building this bronze, silver, golden layer of data sets, right.
+Azeem: Which is like the medallion architecture that databricks about.
+Azeem: And we would need to control that obviously and like we'd want to be able to people to clearly identify the public, the golden data sets that are available for them to use, what's in it and what's not.
+Azeem: A kind of a slightly.
+Azeem: So these are tactical things that we need to solve slightly longer term thing here.
+Azeem: My case, I'm pretty bullish on how LLMs are going to transform this space and in workflows in general for both engineering and data.
+Azeem: So if you guys are making investments in leveraging LLMs to either produce documentation or help people understand how to bring data sets together when you query or even like help them write queries based on all the information you have.
+Azeem: Because you have a lot of information at column level that would be very useful.
+Azeem: This is a slightly longer term plan for us, right?
+Azeem: Probably by longer term I mean like four to six months.
+Azeem: I would like to solve that problem.
+Azeem: Like I think that would make collate very attractive if you guys had some investment going on there.
+Azeem: The final thing I'll share with you Mike is our security team is investing in data grail which is, I don't know what it is, I've never looked at it.
+Azeem: They just told me like a few days ago that they're going to do something with data grail.
+Azeem: They primarily are looking at it, I think for data.
+Azeem: They're looking at it from a security angle.
+Azeem: They want to, they want to understand like how data is all connected, which I Think Collate solves as well.
+Azeem: So I would love to understand the story between Collate and Data Grail.
+Azeem: And ideally, if Collate solves this problem, we tell everybody else we're not going to use Data Grail, we're just going to use Collate.
+Azeem: But I don't know if Colette solves that problem because Data Grail runs like agents everywhere, which I'm not sure if your perspective on that would be helpful for me because again, like, that will help us reduce our spend on multiple vendors here.
+Mik Cepulis: I'll need to know a bit more about Data Grail.
+Mik Cepulis: Like I, I have a, a cursory understanding of what they do, but it's not, not a deep understanding.
+Mik Cepulis: My, it looks like they have more integrations that probably do a little bit less than what Col does with our integrations.
+Mik Cepulis: They've 2,000 plus vendors they integrate with, we have 90.
+Mik Cepulis: But we're, you know, I think that our objectives are pretty different.
+Mik Cepulis: I can say that on the AI front, we have already and are continuing to make large investments in AI.
+Mik Cepulis: So part of that is documentation generation, part of that is query development, query building.
+Mik Cepulis: Some of that is natural language searching and then also using agents to programmatically suggest different data quality test suites, different data quality monitoring options, how to label your data assets more effectively, what ownership hierarchies might look like, what hacking hierarchies might look like based off of the usage patterns and the totality of all the metadata that we ingest from your data system.
+Mik Cepulis: So really compelling and powerful way to accelerate data governance and overall, you know, discoverability of data.
+Azeem: That's pretty neat actually.
+Azeem: Can I, am I able to like, look at that now or is that in the works coming out soon?
+Mik Cepulis: Yeah, so some of that will be.
+Mik Cepulis: So we, we with Adam's testing, we originally had him with our free tier, which is like really just a very, very initial cursory research process.
+Mik Cepulis: We moved him over to a formal POC cluster so he has, you know, a dedicated area or dedicated hardware provision for Veho's testing.
+Mik Cepulis: As part of that, we can turn on the Coli AI as part of, you know, for a limited set of your databases so you can start experimenting with the documentation generation with query building with the other AI features that we already have.
+Mik Cepulis: And then as part of our 1.7 release, we have some roadmap items that I can share with you that are, I think, more exciting when it comes to AI.
+Mik Cepulis: We already have a pretty compelling set of initial, you know, product areas where AI is relevant.
+Mik Cepulis: And then, you know, we'll continue as the, as the year goes on, really adding to that category.
+Azeem: Interesting.
+Azeem: Okay, awesome.
+Azeem: Yeah.
+Azeem: Can you shift that to me?
+Azeem: Um, are you able to do that?
+Mik Cepulis: I think that Charlie also has access.
+Azeem: Okay, perfect.
+Azeem: I'll talk to Charlie.
+Mik Cepulis: Yeah, if he, if he's not able to add you as an admin, then please ping us and we'll get that sorted out.
+Azeem: I think, I think Adam added me, but I need to figure out where he sent the thing.
+Mik Cepulis: Yeah, we were, we were trying to, I think, push things along quicker, but I know Adam was pretty smashed with end of year goals and then obviously with the transition, I'm sure that he, his head was in a bunch of different places.
+Mik Cepulis: So if we could get a working session, you know, this week, we'd love to, with you and Charlie or whoever else is taking the reins on the, on the, you know, hands on keyboard testing.
+Azeem: Okay, cool.
+Azeem: This week I think it'll be hard because we have an off site next week and I'm busy with a bunch of things and the team is, to be honest, 100% focused on getting databricks up and running.
+Azeem: So I think some doing sometime next week would be useful, particularly if you can give us an overview of like, how the AI integration works here.
+Azeem: I think that'll be very useful.
+Azeem: Particularly like the thing that I'm thinking about here, Mike, is like, if, if we can accelerate the business's ability to get value from the data using this, this platform, I think that would be, that would be like a huge benefit for us.
+Azeem: And, and from a documentation perspective, like the documentation that gets generated from the metadata here.
+Azeem: Can you all like pull from DBT documentation?
+Mik Cepulis: I know that we can in some contexts.
+Mik Cepulis: It'll.
+Mik Cepulis: I guess it depends a bit more.
+Mik Cepulis: Do you mean pull from DBT to inform the AI's own documentation of like a table description or.
+Mik Cepulis: What do you mean by that?
+Azeem: Yeah, so DBT has a way to document all the models.
+Azeem: Right.
+Azeem: Including like columns and everything else.
+Azeem: Right.
+Azeem: That lives in our repo.
+Azeem: So some teams have invested in that and they have like some of our models have documentation there.
+Azeem: So the thing that I'm trying to avoid here is like having two sources of documentation.
+Azeem: Truth.
+Azeem: So either we need to move everything into collate or we move everything to DBT and collate just pulls from that.
+Azeem: And if the AI engine can generate or these LLMs can generate documentation that gets then committed to DBT reposition, that would be very useful for us because it centralizes the documentation.
+Mik Cepulis: Okay, I know that.
+Mik Cepulis: I don't Believe that'll be a native integration.
+Mik Cepulis: Right now we do expose everything in the tool via API, so I don't think it would be very much legwork to have an automation that when a collate description is updated, that's propagated via API call to DBT and the DBT repo is updated.
+Mik Cepulis: No, I think that's very achievable.
+Azeem: Okay, cool.
+Azeem: Awesome.
+Azeem: That sounds good.
+Azeem: Yeah.
+Azeem: So.
+Azeem: So Mike, let's target sometime next week for.
+Azeem: For like a discussion particularly around AI.
+Azeem: And I'll pull in.
+Azeem: Pull in Charlie for us to chat through this.
+Azeem: Are you guys also familiar with like Metaphor?
+Azeem: We are for you guys, right?
+Mik Cepulis: Yeah.
+Azeem: Okay.
+Mik Cepulis: Yeah.
+Mik Cepulis: Metaphor.
+Mik Cepulis: Are.
+Mik Cepulis: There's sort of a newer branch off of, I think a different open source Y.
+Mik Cepulis: Yeah.
+Mik Cepulis: Initiative Data Hub.
+Azeem: Yeah, yeah, yeah.
+Azeem: The guy who runs Metaphor is a close friend of mine.
+Azeem: I.
+Azeem: I don't know where they are in their journey.
+Azeem: They were.
+Azeem: I'm not looking to use metaphor, but.
+Azeem: But I think that, that I.
+Azeem: I think is rather interesting in their world that they have built is the ability to integrate with Slack and capture conversations that are happening around data sets.
+Mik Cepulis: Okay.
+Azeem: I was just curious if you, if you like the question.
+Azeem: Like, you know, oftentimes what happens, to be honest, is like you have a data set that you have, but then you go ask about that data set to somebody else because you didn't find enough.
+Azeem: Right.
+Azeem: And that the conversation usually happens in Slack.
+Azeem: But I'm just thinking out loud here.
+Mik Cepulis: Yeah.
+Mik Cepulis: So we do have a pretty interesting Slack integration already.
+Mik Cepulis: It's.
+Mik Cepulis: It's probably a little different than what you're discussing, but what we do now is like, we try to centralize conversations about data within the data platform.
+Mik Cepulis: So if you go into this is just the Colate sandbox jump in here, you can see the full conversation and change log history right here on the sidebar.
+Mik Cepulis: So there's a full.
+Mik Cepulis: You know, if things happen, we try to just centralize all the changes and questions and tasks in this.
+Mik Cepulis: In the actual customer table itself, as opposed to jumping over to Slack and having a conversation about that.
+Mik Cepulis: We do have a Slack integration for alerting and for a number of other items, but in general, our philosophy was to keep the conversations about data occurring in the tool where the data is actually stored.
+Mik Cepulis: And that's one approach.
+Mik Cepulis: I know that we are open and amenable to different philosophies on how to centralize conversations, and I'm sure that as time goes on, we'll probably have other ways of conversations.
+Azeem: Just curious.
+Azeem: Your mic is no Big deal.
+Azeem: Yeah.
+Azeem: Cool.
+Azeem: This is good.
+Azeem: So let's target meeting sometime next week.
+Azeem: Mike.
+Azeem: I'll have M schedule something.
+Azeem: You can reach out to M, by the way, for any scheduling and things like that to.
+Mik Cepulis: Sorry, to who?
+Azeem: I'm gonna copy.
+Azeem: I'm gonna copy.
+Mik Cepulis: Perfect.
+Mik Cepulis: Thank you.
+Azeem: Yeah.
+Azeem: Any other questions that I can answer for you?
+Azeem: I kind of shared everything that was top of mind for me.
+Mik Cepulis: Yeah.
+Mik Cepulis: So, you know, when we first met, our understanding was veho wanted a solution in place asap and there had been a lot of pre work done already.
+Mik Cepulis: And, you know, I'm.
+Mik Cepulis: I'm working with your procurement team as well to help get, you know, an order form figured out and ultimately a contract signed.
+Mik Cepulis: I'm curious, like, is that still the priority to figure something out soon and get, you know, your hands on Collate and productionize ASAP?
+Azeem: Yeah, it is a priority to production as ASAP.
+Azeem: But the.
+Azeem: If you stack rank this, the P0 is getting Databricks up and running because without that, like, holder is not gonna make a ton of sense.
+Azeem: So the team is running slightly behind on that.
+Azeem: They are expected to wrap up our first, like, POC at the end of this week.
+Mik Cepulis: Okay.
+Azeem: Which is why I think next week makes a ton of sense for this conversation.
+Mik Cepulis: Okay.
+Mik Cepulis: So you're expecting to finalize the Databricks PoC by the end of this week?
+Azeem: We should have the POC running at the end of this week.
+Mik Cepulis: Sorry.
+Azeem: Yeah, all good.
+Azeem: Okay.
+Azeem: We should have the POC running at the end of this week.
+Azeem: Okay.
+Azeem: We'll make a decision on databricks.
+Azeem: I mean, decision and databricks is pretty much done.
+Azeem: Like we're going to go with databricks, but I want to, like, I want to see it all run and all the executives can see it all run.
+Azeem: And then, then we'll.
+Azeem: We'll move forward there and then, then I think we can have a conversation on how collate can fit into all of this.
+Azeem: I think the thing that will help me a lot, Mike, here is Monte Carlo.
+Azeem: Whether we can.
+Azeem: We can decommission Monte Carlo.
+Mik Cepulis: Okay.
+Azeem: Bring that spend into collate because from a budgetary perspective, I have to make this all work from a budget perspective.
+Azeem: So that's.
+Mik Cepulis: Who is the.
+Mik Cepulis: The Monte Carlo technical owner on your end.
+Azeem: It's this team, the Charlie, the Charlie and all of us.
+Mik Cepulis: Okay.
+Mik Cepulis: So if Charlie joins the call next week, he'll be able to speak pretty well to, like, the specific task that you're running and the requirements you have.
+Azeem: Yeah.
+Azeem: And if you just like when we Set up the call just mentioned that we were going to go over the features that Monte Carlo currently does or something like that, so Charlie can make sure we have the right people on the call.
+Mik Cepulis: Okay, awesome.
+Mik Cepulis: Yeah.
+Mik Cepulis: So then next week we'll do a data quality observability demo, talk about the AI roadmap, and then I'd also like to spend some time talking about the progress that you've made so far with the collate poc.
+Mik Cepulis: I know that some progress has been made.
+Mik Cepulis: Maybe not as much as we would have liked at this point, but, you know, now that we'll have some resources freed up with databricks POC being finished, then maybe turn our attention to collate more.
+Azeem: Yeah, yeah.
+Azeem: And if you can also add to that, anything you can share with me between now and the call doesn't have to be on the call on Data Grill and how that overlaps with collate, if at all.
+Mik Cepulis: Okay.
+Azeem: Because if I can make the plate also to decommission data Grail and just make collate the thing, then I would want to do that.
+Mik Cepulis: Okay, great.
+Mik Cepulis: I will.
+Mik Cepulis: You know, I think it's going to be a limited crossover, not a full crossover.
+Azeem: Okay, yeah, I figured as much.
+Azeem: But I think it'd be useful for me to understand because the security team is likely only using it for some very specific scenarios.
+Mik Cepulis: Okay, got it.
+Azeem: Yeah.
+Mik Cepulis: I mean, are you able to share where the startups are?
+Azeem: I can talk to Ruchi and ask how.
+Azeem: So let me, let me.
+Azeem: I can share.
+Azeem: Yes.
+Mik Cepulis: Okay, awesome.
+Mik Cepulis: Thank you so much.
+Azeem: Okay, cool.
+Azeem: I asked her.
+Azeem: I'll let you know what she says.
+Azeem: I'm gonna go from there.
+Mik Cepulis: Cool, thank you.
+Mik Cepulis: Do you have a sense of what day works next week or should I work with them to figure that out?
+Azeem: I think we'll have to work with them on that.
+Azeem: My calendar is a mess actually.
+Azeem: We have an off site next week, so we got to figure out a time that will work for everyone.
+Mik Cepulis: Okay.
+Azeem: Yeah, we'll make it work.
+Mik Cepulis: Welcome back.
+Mik Cepulis: Happy New Year.
+Mik Cepulis: Good to talk.
+Azeem: Appreciate it.
+Azeem: Thank you.
+Azeem: Talk to you later.
+Azeem: Bye.
+
+END MEETING
+
+

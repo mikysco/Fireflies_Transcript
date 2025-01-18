@@ -1,0 +1,400 @@
+Meeting Name: Touchbase
+Meeting Date: 2024-11-06
+
+Barney, Darryl: Hey, Mick.
+Mik (Collate): Daryl.
+Mik (Collate): Good to show.
+Barney, Darryl: Damn peer pressure.
+Barney, Darryl: I'll go on camera, too.
+Barney, Darryl: Like, I'm looking at you here and I know, you know, maybe it's not my bad side.
+Barney, Darryl: Yeah, that's actually not a bad side on me.
+Mik (Collate): You're looking great today, Daryl.
+Barney, Darryl: Thank you.
+Barney, Darryl: Thank you.
+Barney, Darryl: How are you doing?
+Mik (Collate): I'm good, man.
+Mik (Collate): It's been a while.
+Barney, Darryl: I told you that when I was ready, I would reach out.
+Barney, Darryl: And here we are.
+Mik (Collate): Here we are.
+Mik (Collate): I accepted the invite to Joe, by the way.
+Mik (Collate): He's a new colleague on the engineering side of Cola supporting me, and he's actually based in the Orlando area.
+Barney, Darryl: Oh, sweet.
+Barney, Darryl: Very good.
+Barney, Darryl: So let me frame the world out for you, Shahidal.
+Barney, Darryl: Our new boss has been here for just over 60 days.
+Mik (Collate): Okay.
+Barney, Darryl: We have acquired eight hospitals.
+Barney, Darryl: Wow.
+Barney, Darryl: Within the first month that he had been here.
+Barney, Darryl: He comes from a very massive hospital where he was CD AIO as well, or cdao, whatever they called him.
+Barney, Darryl: The chief data guy.
+Barney, Darryl: You know, because we added AI into our title and he had a databricks platform and he had a lot of third party strategic selections of products.
+Barney, Darryl: I don't know about all of them.
+Barney, Darryl: He's told me some of them were built.
+Barney, Darryl: He's also at other employers who use databricks environments too.
+Barney, Darryl: So he's a big fan of databricks.
+Barney, Darryl: Since he's been here, we've been building a much closer relationship with our databricks team.
+Barney, Darryl: And I'm telling you that because though I've been along for all the conversations, I just want you to kind of frame some of what we're picking up from him because I think that'll be valuable to you for when you do the demo.
+Barney, Darryl: Also, we have some strategic partners helping us build our databricks environment.
+Barney, Darryl: They don't care what products we use.
+Barney, Darryl: They really don't.
+Barney, Darryl: Okay.
+Barney, Darryl: We're databricks.
+Barney, Darryl: Like we're an Azure shop is basically his.
+Barney, Darryl: Their perspective.
+Barney, Darryl: They're a partner of the year a few times.
+Barney, Darryl: You could go Google them.
+Barney, Darryl: I may have mentioned them.
+Barney, Darryl: Regardless of the name, Bob Corp is very capable.
+Barney, Darryl: Shaheedles mentioned Data Catalog a few times and he mentions Purview a lot.
+Barney, Darryl: He mentions Unity Catalog a lot.
+Barney, Darryl: Unity Catalog is inevitable when your databricks.
+Barney, Darryl: It's just how it's painted.
+Barney, Darryl: But he's mentioning Purview for a few key reasons.
+Barney, Darryl: One, we do need a proper catalog that we can share out.
+Barney, Darryl: Two, it's dirt cheap.
+Barney, Darryl: I can run it for.
+Barney, Darryl: He's like, I can run it for a few hundred bucks a month.
+Barney, Darryl: I Think it'd probably be closer to 1500 or more, but it's still dirt cheap.
+Barney, Darryl: It's just the compute to ingest that data at a regular interval.
+Barney, Darryl: Scanning epic isn't cheap.
+Barney, Darryl: It's just not the problem with Purview as I see it.
+Barney, Darryl: Well actually I'll pause there.
+Barney, Darryl: He has not come up with his first 90 day plan.
+Barney, Darryl: His boss has not.
+Barney, Darryl: He knows that she's getting one.
+Barney, Darryl: Obviously at that level usually you have your 90 or 120 day.
+Barney, Darryl: He has not given us a lot of insight but he wants like my team to continue to grow in data bricks.
+Barney, Darryl: He's having more and more people get into databricks that already tells you that's a reasonable direction that he's going.
+Barney, Darryl: And he's still trying to figure out where he wants to take everything.
+Barney, Darryl: He's obviously talking things like streaming data, but data governance, data visibility, data quality, these are all things he's interested in.
+Barney, Darryl: And purvey is just there.
+Barney, Darryl: It's there.
+Barney, Darryl: It's actually already have it in our environment.
+Barney, Darryl: Past chiefs including Ray who you guys met last time love to get k.
+Barney, Darryl: He actually did verbally between we go that that's a pretty darn good product.
+Barney, Darryl: He hated Purview.
+Barney, Darryl: Shahido's like purviews there I can budget it, I can make it happen.
+Barney, Darryl: It's a non issue and I'm like good news.
+Barney, Darryl: There is a bucket of spend that is available for tools as part of our platform and get collate would fit finish would fit in there.
+Barney, Darryl: I told him, you know I gave him a number but I knew it was budget friendly and like it you know we could get started started for under 100k.
+Barney, Darryl: We can get the data plane which they're HIPAA Ness and he's like okay, let's let's do a demo.
+Barney, Darryl: I I sent him the, the stuff that we had already built before but we had never had it.
+Barney, Darryl: He didn't have a chance to review it but he's like no, before we go to Purview, let's look it out.
+Barney, Darryl: It really is going to come down to I I told my peers Adele and Kat and they're like oh we love to get Coli.
+Barney, Darryl: Everybody loves the product.
+Barney, Darryl: We need to get Shaheed on board.
+Barney, Darryl: Our vendor is already wanting to start poking at Purview and seeing out what they're going to need to do to make it work for our environment.
+Barney, Darryl: And one of the things they were planning on doing and I wanted to make this call up to you is they're going to Do a Unity catalog versus Purview overlap and differences.
+Barney, Darryl: What are the pros and cons?
+Barney, Darryl: A part of me almost figures that you guys we would benefit from a Unity versus Purview versus get collate.
+Barney, Darryl: Look there's some things everybody can do Ingest common data.
+Barney, Darryl: You can support definitions.
+Barney, Darryl: I know getcolate does so much more than both combined and you guys are in a conflict to Unity catalog.
+Barney, Darryl: You guys need that data.
+Barney, Darryl: You're going to feed that data.
+Barney, Darryl: So there's no but what is the added value adds and the enrichment opportunities and talking about how you guys are tightly integrated with databricks is going to be so valuable if you're if the databricks team and you guys were on good you know that that's that's stuff he's going to want to hear a few call outs or against Purview we had problems scanning certain types of data in Purview.
+Barney, Darryl: I'll give you an example.
+Barney, Darryl: PeopleSoft uses a schema called sysAdm.
+Barney, Darryl: It's a very common schema in Oracle.
+Barney, Darryl: PeopleSoft's whole database sits in sysAdm.
+Barney, Darryl: Purview when we did last would not scan that per that that schema which means we could never get data out of we couldn't get the definitions, descriptions, tables, nothing.
+Barney, Darryl: It completely ignored the PeopleSoft database.
+Barney, Darryl: Okay so when you're building Lineage and you want to build that narrative and build all that documentation and metadata the first step getting data from source couldn't even get the source scan.
+Barney, Darryl: Nonetheless the lineage beyond that obviously once you get into our databricks and environment downstream that lineage but that first few steps is missing and I don't think that's changed.
+Barney, Darryl: I don't think so.
+Barney, Darryl: I haven't also seen but you guys obviously have some spies.
+Barney, Darryl: I'm sure I haven't seen that.
+Barney, Darryl: Microsoft has been greatly investing in Purview in the last two years.
+Barney, Darryl: I feel like it's just there and they're keeping it running, they're feeding it but they're not investing in it.
+Barney, Darryl: And that's already their second generation and it didn't mature as much as I think they were thinking it would.
+Barney, Darryl: So I'm going to pause there because I've been speaking a lot kind of situating and framing things.
+Barney, Darryl: He oh one other thing he hinted to me yesterday he's really looking for a centralized place for people to live.
+Barney, Darryl: He mentioned like a data catalog plus Tableau's reports, you know kind of front end and back end all married in one.
+Barney, Darryl: There's third parties that kind of merge that stuff together he was very interested in.
+Barney, Darryl: He's like how do I give the business an entry point to the report to be able to click through and look at the metadata and learn how.
+Barney, Darryl: And so he's also interested in stuff like that.
+Barney, Darryl: So if you guys have some partnership that would kind of, you know.
+Barney, Darryl: So we were joking about Calibra meets a bit of a data platform, meets an analytics front end portal.
+Barney, Darryl: You know, he's kind.
+Barney, Darryl: He didn't.
+Barney, Darryl: This is like for a minute and a half statement from him yesterday but when we were talking about collate and that came up shortly thereafter, I'm like okay, so if get collate integrates properly, is cost effective to do what we need to do and maybe has a good strategic.
+Barney, Darryl: All other integrations that could be done.
+Barney, Darryl: Another possible selling point, I'm sure you guys are talking to some vendors.
+Barney, Darryl: I don't know what's out there, but I'm sure you guys are playing well with a lot more than I even know as in the last, you know, last six months.
+Barney, Darryl: So I'm going to pause there.
+Barney, Darryl: Lots of word dumps that were just put on you even busy.
+Mik (Collate): You bought eight companies.
+Barney, Darryl: Two acquisitions, a total of eight hospitals, a bunch of imaging centers, bunch of facilities.
+Barney, Darryl: I wouldn't be surprised if we got two or three hundred buildings as part of all that.
+Barney, Darryl: We're now in Alabama and we're now in Melbourne.
+Jo (collate): Wow.
+Barney, Darryl: Yeah.
+Mik (Collate): Why the expansion?
+Barney, Darryl: Well, buy or be bought healthcare, if you're not a $10 billion company, your supply chain costs are higher, your efficiencies are lower.
+Barney, Darryl: Our president wants us to keep growing.
+Barney, Darryl: And that was.
+Barney, Darryl: They announced both within two weeks of each other.
+Barney, Darryl: And you could hear everybody's jaws drop more like, oh crap, the amount of work we have.
+Barney, Darryl: Crazy on that.
+Jo (collate): The other thing with healthcare, I feel like it's a very broad spectrum.
+Jo (collate): You're either a good hospital or you're a horrible hospital.
+Jo (collate): So good hospitals gobble up at any chance they get just because of the discount.
+Jo (collate): We all boils down to the profit and nonprofit type status and if you're not making money to reinvest then you go down.
+Jo (collate): And it's just that self filling cycle.
+Barney, Darryl: We have a history of turning D and F rated hospitals into A and Bs.
+Mik (Collate): Okay.
+Barney, Darryl: We've done it two or three other times.
+Barney, Darryl: We did it in St.
+Barney, Darryl: Cloud, we did in St.
+Barney, Darryl: Petersburg, we did it in some other areas and they're like look, we've got the recipe, let's see if we can apply it elsewhere.
+Barney, Darryl: We also Bought a year ago Puerto Rican hospitals.
+Barney, Darryl: So we're in Puerto Rico too.
+Barney, Darryl: Those are a different kind of arrangement but kind of cool at the same time.
+Barney, Darryl: So thoughts or questions?
+Barney, Darryl: I just dumped a lot of information, Mick.
+Barney, Darryl: I know there's a little bit of context where you start thinking about how to, how to think about selling this.
+Mik (Collate): Well, I think that like the expansion of complexity and the number of data silos that Orlando is bringing on with buying different hospitals and having aggressive growth targets and like just merging a bunch of heterogeneous environments means that having a single focus solution like a databricks that focuses great on databricks cataloging or purview, that's pretty solid.
+Mik (Collate): It's pretty okay doing Azure stuff, but falls very flat outside of Azure.
+Mik (Collate): I think that I'm kind of preaching to the choir.
+Mik (Collate): But a really big selling point of collate is we are very agnostic about where your data comes from.
+Mik (Collate): We give you deep insights no matter where the origins are and where they're going to to get the deep like unified information about the quality and the ownership and the analytics.
+Mik (Collate): And since we were last serious talking, we've done a lot in the name of automation and artificially generating documentation and making when you ingest data into collate, all the parts that are hard to do are easy because we've spent time automating the ingestion processes and we've spent time structuring all that data so when it comes in it looks good.
+Mik (Collate): And the investments we're making into AI, I think are going to play a big role.
+Mik (Collate): I know earlier on we were talking about how Orlando is investing so heavily in databricks and a big part, a part of having a successful AI investment and getting value that data is having correctly structured data.
+Mik (Collate): So you know, the need for a catalog and a proper government structure is very apparent.
+Mik (Collate): So doing it the right way sounds like a worthwhile investment.
+Barney, Darryl: He absolutely is going to want to hear automate tagging the efficiencies of our unique catalog.
+Barney, Darryl: He's going to want to hear enablement of AI and ML, not only what AI might be in there to make things easier, but how can getcolate help.
+Barney, Darryl: Our AI and ML vision is he has a background in AI and ML and we have data scientists who are needing to be leveraged and, and I think is into a lot of the quality and observability of the data and you know, the governance.
+Barney, Darryl: He's now asking our data governance team to step up, which they did A.
+Barney, Darryl: They watched the video that we did of the last demo and they loved the product.
+Barney, Darryl: So I have a lot of excitement for it.
+Barney, Darryl: But at the end of the day, new boss's decision, I will tell you that he's big in security, nist high trust, hipaa, so we would want to do the data plane deployment.
+Barney, Darryl: He's probably looking at initially, you know, that 100 users, but I could see it going way above very fast.
+Barney, Darryl: But you know, that's, you know, if he wants to move forward with further conversations because I know we, we didn't even, we weren't even haggling on price.
+Barney, Darryl: I just said what was the retail?
+Barney, Darryl: And we'll see where this goes.
+Barney, Darryl: The good news is there's some money in the budget, I think for this year.
+Barney, Darryl: If it goes well and he moves forward, we'll be able to grow it out every year too.
+Barney, Darryl: So I mean, you know, it's going to take six months just to get enough rich data and enough buying and training and understanding its deployment.
+Barney, Darryl: So at that point we're already working on the next budget year.
+Barney, Darryl: So that's the cool thing I have.
+Jo (collate): If I have a quick kind of going back to that initial point, Mick hit on that agnostic element, automation, things like that.
+Jo (collate): But where do you think Insights kind of falls?
+Jo (collate): Kind of just understanding how much you guys are spending on storage, what's being used and what's not being used, who's using what, how much and stuff like that.
+Barney, Darryl: Databricks is giving us that, Azure is giving us that, you know, are you doing something different from them?
+Barney, Darryl: Because Databricks will have all the tagging and the Unity catalog for that and there's tools that Databricks is telling us they're going to bring to us.
+Barney, Darryl: So, you know, if you're giving a unique value add on top of what's already there, he's very well going to be interested.
+Barney, Darryl: So I'll defer to you to determine if that use case there.
+Barney, Darryl: I've not seen that you're offering something, but I don't think we even really focused on that last time.
+Mik (Collate): Not so much.
+Mik (Collate): And the Insights are interesting.
+Mik (Collate): I think that for more mature organizations that have different telemetry, like maybe that specific cost analysis part of the INSIGHTS is less impactful, but it's there.
+Mik (Collate): I think more importantly though, having intelligence about upstream and downstream data quality from data bricks is super important.
+Mik (Collate): Making sure that you have good data in and good data out and it's staying consistent all the way through your data pipeline, that's super important.
+Mik (Collate): We're also doing really cool things with Data cataloging.
+Mik (Collate): We do support Azure Data Factory.
+Barney, Darryl: I know you do, but I'm just saying.
+Barney, Darryl: Yeah.
+Barney, Darryl: ADF is our ingestion pipeline and then databricks is everything else.
+Barney, Darryl: Yep.
+Barney, Darryl: Okay.
+Mik (Collate): We were doing really cool with quality.
+Mik (Collate): So we have a full dashboard suite now built out, which is nice.
+Mik (Collate): It's not something you can't build yourself, of course, but the data is in there and it's easily presented from day one, which is easy to demo, easy to show value.
+Mik (Collate): I think more importantly, in our later November release in 1.6, we're actually supporting automated data quality suggestions.
+Mik (Collate): So we'll scan your data and say, hey, these are the quality checks that you should be running.
+Mik (Collate): Then beyond that, with our quality checks, we now support anomaly detection, which means we'll suggest the right test for you to run and then also let you know when we're going out of bounds.
+Mik (Collate): You're not setting strict limits on row counts are too high or whatever other data quality check we're running will just actually flag the trends that are outside of the norm.
+Mik (Collate): That's a huge sweat off your back where you don't have to be going and constantly monitoring the data quality limits you've said and making sure the alerts are set correctly.
+Mik (Collate): We're just doing more and more to make sure that there is somebody always watching over to make sure that the quality is looking good and you're alerted correctly when something is not looking good.
+Barney, Darryl: Very cool.
+Barney, Darryl: Yeah.
+Barney, Darryl: And I know you guys are constantly developing and investing, so not only the open source contributions that everybody's creating, but you're accelerating that too.
+Barney, Darryl: So.
+Barney, Darryl: So what information?
+Barney, Darryl: What are you envisioning?
+Barney, Darryl: Because he's going to want a demo.
+Barney, Darryl: Last demo we did with Ray ran way over.
+Barney, Darryl: We went down rabbit holes and he may have inquiries, but, you know, I'm gonna assume we're gonna have 50 minutes, 45, 50 minutes.
+Barney, Darryl: So a lot to cram in there.
+Barney, Darryl: Knowing that he's staring at Purview, I think kind of maybe helps give you a lot of, you know, he's looking for the opportunities.
+Barney, Darryl: I'm like, look, if we're going to invest the time, you know, this is, this is low six figures, depending on how big we want to go.
+Barney, Darryl: You know, this is, this is manageable.
+Barney, Darryl: He knows that.
+Barney, Darryl: I'm like, we could probably get started for under 100k and it'll go up.
+Barney, Darryl: I told him it is per you by users and other factors.
+Barney, Darryl: But, you know, like I said last time, I said, just what's the retail?
+Barney, Darryl: And that's kind of what we were playing with.
+Barney, Darryl: You said that cost structures are changing.
+Barney, Darryl: There's a lot of variables into that.
+Barney, Darryl: But it starts to go, can we, can we snag his interest and then you know, you guys are still not in the Azure Marketplace, right?
+Mik (Collate): We are not.
+Barney, Darryl: Is that planning to be changed or Databricks Marketplace?
+Mik (Collate): We, it's, I don't think it's difficult for us to get involved in either of those marketplaces.
+Mik (Collate): It's not a short term requirement like we, we, we make investments like that based on, based off of customer.
+Mik (Collate): So if it's a big deal, big deal mover for you guys like we can certainly see.
+Barney, Darryl: Here's why, here's why getting a PO issued at Orlando Health is painful.
+Mik (Collate): Okay.
+Barney, Darryl: Purchasing something in the Azure marketplace is not.
+Barney, Darryl: We would still get, you know, these are standard contracts, MSA or BAA or NDA or whatever you want to throw acronym.
+Barney, Darryl: But getting POS cut takes forever here.
+Barney, Darryl: And I can increase specs of a server instantly.
+Barney, Darryl: I can go throw six servers.
+Barney, Darryl: I can get, deploy the data plane.
+Barney, Darryl: I can, you know, if it's in the marketplace, it's already approved.
+Barney, Darryl: There's a cost funding, all of that.
+Barney, Darryl: So when we put money in for up for tools in our last budget, we put it in our Azure, we can technically pull it out.
+Barney, Darryl: But if it's there, it just, it's, it makes it so much quicker.
+Barney, Darryl: So as far as paperwork, if boss says yes, he wants to move forward, then we start looking at paperwork immediately.
+Barney, Darryl: MSA or NDA, depending on lawyers can go as for as quick as, you know, three weeks up to three months.
+Barney, Darryl: I've seen a year but those are more like, you know, now you're talking Microsoft size contracts.
+Barney, Darryl: So I'm not so worried about that.
+Barney, Darryl: If he says yes, let's move forward.
+Barney, Darryl: We'll probably need to rapidly.
+Barney, Darryl: I would love to see him want to do a pov.
+Barney, Darryl: We talked about doing a POV with a small deployment, so we'll see but I told him that was of interest.
+Barney, Darryl: And I'm looking at your connectors.
+Barney, Darryl: You saw way more connectors than Purview.
+Barney, Darryl: I think the best thing you guys could do is really have a slide on the compare and contrast against Unity and Purview.
+Barney, Darryl: Your connectors alone are huge.
+Barney, Darryl: Your lineage is leagues of beyond.
+Barney, Darryl: Your API integration is amazing.
+Barney, Darryl: Your AI capability, I mean we just got to make sure we're, we're very tight on that time.
+Mik (Collate): So do you think more slide oriented or more, you know, product demo oriented?
+Barney, Darryl: Slides are great for overviews.
+Barney, Darryl: I Think the demo is the reality of it.
+Barney, Darryl: He's going to want to see.
+Barney, Darryl: Okay, he's going to want to see.
+Barney, Darryl: I did give him the link to get into your sandbox that you guys already have online.
+Barney, Darryl: It's one thing for me to have that to him as per his request.
+Barney, Darryl: It's another friend to have time to look at it.
+Barney, Darryl: So it might be better to say, hey, here's kind of an overview.
+Barney, Darryl: Here's how they compare and contrast.
+Barney, Darryl: You know, we know you guys are in databricks, we know you guys are using data factory.
+Barney, Darryl: Here's the value, here's how we, you know, very quick, maybe 10 minutes of slides max and then go.
+Barney, Darryl: Now we want to zoom in on some areas for you.
+Barney, Darryl: We want to show you lineage, we want to show you the AI and how we can help you enrichen your data.
+Barney, Darryl: Talk about the AI and the quality metrics and the data observability, stuff like that.
+Barney, Darryl: That's all going to be immediately valuable.
+Barney, Darryl: Okay.
+Barney, Darryl: And then, you know, and he may ask questions as well, but he's very interested in data insights, he's very interested in data quality.
+Barney, Darryl: If my pipeline fails, you know, durations of things that run, all that stuff, it's, that's going to be a value.
+Barney, Darryl: I see an ML flow, native pipelines.
+Barney, Darryl: Yeah, you guys, man, you guys are slowly expanding.
+Barney, Darryl: And then Mick, we also had that plan, we had like a multi phase plan that we did for Ray.
+Barney, Darryl: I actually shared that with him.
+Barney, Darryl: He has that in his email.
+Barney, Darryl: So we can even go over that and go.
+Barney, Darryl: We've even proposed a small, you know, multiphase approach that data governance could take.
+Barney, Darryl: Our partners starting to get into data governance.
+Barney, Darryl: We're building a lot of that metadata that you can generate, like who owns the data set, who's a SME, who's the domain owner, etc.
+Barney, Darryl: So you know, we have the ability to start ingesting and sourcing that data very quickly as well.
+Mik (Collate): Okay, awesome.
+Barney, Darryl: So I gave you some dates.
+Barney, Darryl: You're going to look around and see if any of them are viable.
+Barney, Darryl: Yep.
+Mik (Collate): Yeah, I should have that confirmed by, you know, a few minutes from now, honestly.
+Barney, Darryl: Oh, excellent.
+Barney, Darryl: I have to work with his coordinator and like the reason I was telling you about M a lot, the acquisitions are really eating into his time.
+Barney, Darryl: I'll have a one on one and he'll cancel an hour in advance.
+Mik (Collate): Going.
+Barney, Darryl: I just got booked somewhere else I have to go.
+Barney, Darryl: You know, so I, we might end up canceling, rescheduling a few times.
+Barney, Darryl: So you know, that's why I'd love to try and if we can do next week, because if that gets canceled by getting this done and his input before Thanksgiving would be a win.
+Barney, Darryl: We'll see how it actually plays out though.
+Mik (Collate): Do you think that if we got his input before Thanksgiving that like, he would look at the demo and chat with us and be like, okay, this is the direction we're going in and just like start doing the formal evaluation or like, what is your sense for the rest of the process here?
+Barney, Darryl: Unfortunately, I've known him for under 70 days and he hasn't done any active purchases.
+Barney, Darryl: He hasn't.
+Barney, Darryl: He hasn't given us his vision and he's hinted to one of my peers that he's a few weeks left before he wants to start sharing his vision.
+Barney, Darryl: Like I don't know what my role is going to be in a month.
+Barney, Darryl: I really don't.
+Barney, Darryl: I.
+Barney, Darryl: He's telling me to continue doing what I'm doing.
+Barney, Darryl: So I suspect it's not going to change drastically.
+Barney, Darryl: But you never know.
+Barney, Darryl: That's kind of the unknown.
+Barney, Darryl: I have not seen him execute on these kinds of things yet.
+Barney, Darryl: I am seeing him work on contracts for some like data modeling to be done, some analytics stuff to be done.
+Barney, Darryl: So once he's decided, you know, verbally, I could see, I could see him go, you know what, I like this product.
+Barney, Darryl: Let's talk price in A and a pov.
+Barney, Darryl: I could see him doing that.
+Barney, Darryl: That is plausible, you know, and that might just be taking price back to Kat and I to negotiate, I don't know.
+Barney, Darryl: But he, he'll give us some.
+Barney, Darryl: Some direction of some form, I would hope.
+Mik (Collate): Awesome.
+Barney, Darryl: I know that wasn't the most helpful.
+Mik (Collate): Yeah, no, no.
+Mik (Collate): Best we can do at this point.
+Mik (Collate): New relationships and all that.
+Mik (Collate): So.
+Mik (Collate): All right, we will prep for the demo and hopefully lock in the 13th.
+Barney, Darryl: Do you guys integrate with anything else yet?
+Barney, Darryl: Do you third parties that you guys bolt on with?
+Mik (Collate): We can ingest data from a variety of sources and push data to some sources as well.
+Mik (Collate): You know, for people who are migrating from old catalogs like Elation, you know, we have connections to that so we can read and write to Elation.
+Mik (Collate): But I guess I was thinking like.
+Barney, Darryl: Do you guys have any integration with things like prophecy or at a comma or getting into the data.
+Barney, Darryl: Not data quality, but Ambassador data management.
+Jo (collate): So with that.
+Jo (collate): So a little background, me come from Malaysia and then project, I was at Informatica doing mdm data quality in the professional services capacity.
+Jo (collate): So not solutions engineering or anything like that.
+Jo (collate): And what I've seen kind of best work for those types of things is wherever Atacam or Informatic or whatever MDM solution you have is picking up and dropping.
+Jo (collate): You just catalog that appropriately.
+Jo (collate): You then add the respective metadata and you can then see that from a lineage point of view.
+Jo (collate): You can also build out these custom elements so you know when it's being transformed.
+Jo (collate): What is the golden record?
+Jo (collate): Is it tier one and things like that.
+Jo (collate): I think that's the true value add.
+Jo (collate): Not just throwing something in a catalog box and saying yeah it's in here.
+Jo (collate): But we can definitely think about what custom connectors can look like.
+Jo (collate): Especially if it has a JDBC driver on the back end, we can definitely connect to it.
+Barney, Darryl: Have you guys ever been seeing your product embedded into other things?
+Barney, Darryl: Case in point like dynamic links to the Met to the data lineage.
+Barney, Darryl: Right from a report.
+Jo (collate): I haven't seen too much of that.
+Jo (collate): Mick, have you kind of seen people sending to elation from a reporting type standpoint?
+Barney, Darryl: So.
+Barney, Darryl: So I'll give you a use case, an executive dashboard and they're like well what, what makes up these metrics?
+Barney, Darryl: And they go down to the bottom and it says click here for the cat.
+Barney, Darryl: And it clicks and it pops up on the screen and they've got that, you know, a scorecard of the reliability of the data, the data quality, some definitions, you know, almost like you're instead of sending them to a portal to access the different things, they just go to the report and it gives them the direct links to what they might be interested in.
+Mik (Collate): I don't see how that's not possible.
+Mik (Collate): We haven't, I mean I don't think it's been a request I've heard but like the links are going to be permanent.
+Mik (Collate): So if you link to Colin Sport, it's going to directly.
+Barney, Darryl: That's kind of what I was thinking is just hard coded links.
+Barney, Darryl: Okay.
+Jo (collate): Yeah.
+Jo (collate): And I've seen this done, not specifically at cola, but it's the same thing.
+Jo (collate): Like Mick just mentioned, that link is going to be static for whatever asset so you can place that literally anywhere and then be able to get then with things like single sign on.
+Jo (collate): If you're in the same ad group you're just going to get that little loading page, get into whatever you're viewing.
+Jo (collate): So definitely feasible.
+Jo (collate): And that's why I kind of mentioned that Insights and dashboards because I think to your point it's great that you can get there from third party sites but it's also great if an executive business leader can jump in here and see what's out there as well, but it doesn't necessarily need to be that way.
+Jo (collate): It can, you know, wherever you pick up, you can get to where you want to go and hopefully that's in collate.
+Barney, Darryl: Okay, well, hey, guys, I can chat more in the meantime, but I do have a hard stop in about one minute.
+Mik (Collate): Okay.
+Mik (Collate): Yep.
+Mik (Collate): Awesome.
+Mik (Collate): Daryl?
+Mik (Collate): Yeah.
+Mik (Collate): You know, with the nice thing about Colit, you can completely customize an executive view so the execs could get a link data quality.
+Mik (Collate): It would be only executive focus, data quality metrics and dashboards.
+Barney, Darryl: I remember that.
+Barney, Darryl: Yeah.
+Barney, Darryl: And I remember Purview didn't have good static links.
+Barney, Darryl: So for you to say, yeah, we have static links, we could do that.
+Barney, Darryl: I don't think Purview could.
+Barney, Darryl: So something to think about too.
+Barney, Darryl: But yeah, a compare and contrast between those three things would be immensely valuable, I think, just because, you know.
+Barney, Darryl: Okay, what am I gaining over Purview for the cost?
+Barney, Darryl: You know, it's 10 times more.
+Barney, Darryl: Yeah, it is, but here's why.
+Barney, Darryl: And you are checking off a lot of different software packages in one, so that's always nice.
+Mik (Collate): So.
+Barney, Darryl: Hey, guys, I gotta run.
+Barney, Darryl: Thank you very much.
+Barney, Darryl: Yep.
+Mik (Collate): Bye.
+
+END MEETING

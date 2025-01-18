@@ -1,0 +1,375 @@
+Meeting Name: Collate | Intelligent Audit - Next Steps
+Meeting Date: 2024-12-13
+
+Brian Pollack: Hey, Mick.
+Mik Cepulis: Hey, Brian.
+Mik Cepulis: How's it going?
+Mik Cepulis: Happy Friday.
+Brian Pollack: Going well.
+Brian Pollack: Happy Friday to you too.
+Mik Cepulis: How's the week for you?
+Brian Pollack: Not bad.
+Brian Pollack: Just got back from our quarterly leadership meetings and on site.
+Mik Cepulis: Good stuff here.
+Mik Cepulis: Right.
+Brian Pollack: I've been attending previously as director, VP level.
+Brian Pollack: So this is my first time as exec.
+Brian Pollack: Yeah.
+Brian Pollack: Okay.
+Brian Pollack: Very cool stuff.
+Brian Pollack: Yeah, it's nice.
+Brian Pollack: And I don't have to dress as Flash anymore, so I can go in full data science mode now.
+Mik Cepulis: Right on.
+Mik Cepulis: Yeah.
+Mik Cepulis: The work from home special.
+Brian Pollack: That's right.
+Mik Cepulis: How'd the leadership summit go?
+Brian Pollack: Summit went well.
+Brian Pollack: Aligning priorities.
+Brian Pollack: Now I'm taking over like big swaths of, you know, the product arm of this company in general.
+Brian Pollack: So like practically what that means from this standpoint is that our ability to actually onboard is going to be like realistically pushed until January for a data catalog.
+Brian Pollack: I can't do it any faster and people are already going to be out for, you know, so.
+Brian Pollack: However, I did get alignment across most of leadership to buy in for a SaaS based data catalog tool.
+Brian Pollack: So the benefits, you know, are obvious again like the two that we're still talking to.
+Brian Pollack: Are you guys in acrel?
+Brian Pollack: I have the.
+Brian Pollack: I forwarded the deployment options to our engineers.
+Brian Pollack: I'm still waiting for complete sign off, but I'm guessing the hybrid SAS is going to be the option we end up with.
+Brian Pollack: So a couple questions about that stuff.
+Brian Pollack: So this would be because I was talking with Acryl and they were saying they, they are the only ones that support, as far as they know, support like a remote executor or remote execution on that separates their system, you know, in a, in a cloud SaaS model from like the customer data, making sure that is a push only from customer to.
+Mik Cepulis: No.
+Brian Pollack: Right.
+Mik Cepulis: So we launched that I think a year before them.
+Brian Pollack: But yeah, okay.
+Brian Pollack: Yeah, so I, I figured it was.
+Brian Pollack: That's the same.
+Brian Pollack: But so basically just for my own clarification, this would be a, this is a push only the hybrid SaaS.
+Brian Pollack: Right.
+Brian Pollack: At the end of the day, if collate were compromised, if anything was compromised on their end, if they cannot pull data, it is defined as.
+Mik Cepulis: Okay, yeah, so the, you don't have to have it that way.
+Mik Cepulis: Like if you wanted some data sources pulled by collate, you cannot have that as well as the hybrid approach.
+Mik Cepulis: But the hybrid approach gives you the ability to, you know, route everything through that gateway to install in your vpc.
+Brian Pollack: Yeah, okay, that's what I thought.
+Brian Pollack: Yeah.
+Brian Pollack: So that's definitely the direction we'd be going with either you guys or ACRYL So some other items that they were highlighting and I just want clarification on your end as far as search.
+Brian Pollack: So when we're talking about search within the, like, you know, the open metadata, the actual gui, I guess, the UI that you guys have, do you guys support or plan to support natural language search?
+Mik Cepulis: Yes, that's, that's part of our high priority collate AI roadmap.
+Mik Cepulis: We'll see that in early 25.
+Mik Cepulis: Yeah, so, yeah, I mean, we, we have strong, you know, traditional faceted and filtered research already, and that is coming in 2025.
+Brian Pollack: Okay, yep.
+Brian Pollack: All right, makes sense.
+Brian Pollack: I think that also aligns with acrol as far as, like the push for that general release date and as far as API access.
+Brian Pollack: So I know we talked about this and I just want to reiterate because I think I probably already asked this.
+Brian Pollack: So our end goal is API access or basically using the Coli API to access the data catalog directly from our ui.
+Brian Pollack: So that when an end user of ours uses our UI and hovers over a KPI or a glossary term, any kind of term, it would pull the definition, if needed, from the central glossary from.
+Mik Cepulis: I guess.
+Mik Cepulis: So is this UI Collate UI or internal.
+Brian Pollack: Internal UI that's using the Collate API.
+Mik Cepulis: Got it.
+Brian Pollack: Yeah.
+Mik Cepulis: I mean, so you could use that Collate API to pull the most updated glossary term and reference that with your internal GUI and use the, like the pointer in the back end to the Collate API.
+Brian Pollack: So yeah, yeah.
+Brian Pollack: Is there any, is there any pricing on the API or is that free.
+Mik Cepulis: Usage so that like, in general, we, so we're built on open standards.
+Mik Cepulis: We have the API free and unfettered access.
+Mik Cepulis: Every button you can click, every action you can take within the Collate user interface is backed by an API.
+Mik Cepulis: It's fully featured.
+Mik Cepulis: There are some things that you can do in the API, like if you're modifying YAML files and whatnot that are not possible in the ui.
+Mik Cepulis: So, so yeah, there, there is anything you can think about doing in Collate is possible via API as well.
+Brian Pollack: Okay.
+Mik Cepulis: I mean, and sorry, all the other question, there's no pricing associated.
+Brian Pollack: All right.
+Brian Pollack: Even if, like, is there like a rate limit or anything?
+Brian Pollack: I don't, first, I don't expect us to like, have a level where we're, we're at such a high rate that we put any kind of like reasonable train on a resource.
+Brian Pollack: But is there some sort of rate limiting to.
+Mik Cepulis: We, if we detect something that's out of the ordinary, we might have a conversation.
+Mik Cepulis: But it's not, we're not going to stop you but we, we don't run into that problem with other customers and we have folks who hammer the API pretty heavily.
+Brian Pollack: Okay then I think that's sufficient probably.
+Brian Pollack: Then what else was I looking at?
+Mik Cepulis: Yeah, I guess I'm curious like what were some of the big call outs that acrel, you know, differentiated themselves on?
+Brian Pollack: Acryl's differentiating themselves on a larger overall user base as far as like number of customers and larger open source community.
+Brian Pollack: It's, I mean those are some of the main items.
+Brian Pollack: There's some other items that are might be differentiators but not relevant to our deployment.
+Brian Pollack: So I don't really care and I know you guys already kind of addressed user base and an open source community by showing that you're.
+Brian Pollack: I think it is that your growth is actually fairly, fairly fast given that you were more recently to the scene than.
+Mik Cepulis: Yeah, we're a company.
+Brian Pollack: Data Hub.
+Mik Cepulis: Data Hub launched.
+Mik Cepulis: Yeah, the, the open source thing is interesting.
+Mik Cepulis: There, there's a graph.
+Mik Cepulis: I'm, I'm trying to have our, our marketing guy share it because I can't pull it up myself.
+Mik Cepulis: But it's it, it's it.
+Mik Cepulis: You know we're doing this and they've been doing this and they're ahead of us but we're going, we're growing quite quickly.
+Mik Cepulis: We hold our open source very closely.
+Mik Cepulis: Like we think of it as core to the collate platform.
+Mik Cepulis: And there's no like the collate is essentially commercial plugins on top of the core open source platform.
+Mik Cepulis: So the data model is all one to one.
+Mik Cepulis: We can support, we support regularly customers migrating from open source to collate and then in the event of a disaster or whatever think of it, risk mitigation.
+Mik Cepulis: We can migrate you back from collate to open source.
+Mik Cepulis: That's kind of a peace of mind thing.
+Mik Cepulis: The Data Hub and Acre relationship is a little bit different.
+Mik Cepulis: Their UI from open source and commercial are not one to one.
+Mik Cepulis: I think there's some pretty significant shifts and I'm not sure if the underlying data models for worked but there's a substantial enough difference that people who are successful with Data Hub don't always go to my acreal because it's just like a new sort of onboarding experience.
+Mik Cepulis: So that's something to think about.
+Mik Cepulis: At the end of the day Acre and Data Hub are using some of the, most of the same underlying compute and logic run those platforms but the day to day interface is a fair bit different.
+Brian Pollack: Okay.
+Brian Pollack: Yeah, I mean I think that's yeah, makes sense what you're saying.
+Brian Pollack: Internally we are leaning toward collate more than Acryl.
+Brian Pollack: Right now.
+Brian Pollack: The biggest hurdle that I'm going to have to get across is the overall pricing for the tool.
+Brian Pollack: As far as our third party tools, this would certainly be one of the more expensive ones that we would currently be paying for.
+Brian Pollack: So on the basic pricing breakout that you guys have, if I'm looking at the hybrid SaaS model with the AI integration, it's 65k a year, the AI integration itself.
+Brian Pollack: So we already are undergoing a process of internal documentation of our glossary terms, basically.
+Brian Pollack: So for a lot of them we should be able to copy and paste once we're loaded up and don't necessarily need AI generated descriptions.
+Brian Pollack: What else is that?
+Brian Pollack: 10k AI add on buying us?
+Mik Cepulis: Yep.
+Mik Cepulis: Yeah, let me walk through a couple of them.
+Mik Cepulis: A big one is not glossary definition labeling, but the labeling of tables.
+Mik Cepulis: So if you are, you know, if you're somebody who's searching through collate and you find something interesting that you want to learn about and you click the table and so this is like the main customers table here.
+Mik Cepulis: This description is AI generated.
+Mik Cepulis: So that's kind of, it's a helpful way to just sort of like natural language, human language version of understanding what's going on here.
+Brian Pollack: So whatever, I.
+Brian Pollack: Sorry to cut you off.
+Brian Pollack: Like under the hood, what are you guys using as your primary LLM here?
+Mik Cepulis: So OpenAI, we'll use.
+Mik Cepulis: Tragic, the primary.
+Mik Cepulis: We can also use Azure AI.
+Mik Cepulis: And then in 2025 we're also integrating like bring your own LLM.
+Mik Cepulis: So if you wanted to self host llama or use clouds, anthropic or anthropocloud.
+Mik Cepulis: Excuse me, That'll be possible quite soon.
+Brian Pollack: Do you know what OpenAI models you're using?
+Mik Cepulis: I believe it is 4,0, but I'm not certain so I can get you an answer on that.
+Mik Cepulis: But I know that we're integrating with a third tool that enables us to like basically connect our product more easily to the OpenAI's API.
+Mik Cepulis: And then they basically insert a larger context window that's structured that creates the answers to the questions that we're posing, which is like, you know, give me a description of the.
+Mik Cepulis: For this table.
+Mik Cepulis: Yeah, they are just constantly shifting to the latest and greatest model under the hood.
+Mik Cepulis: So it's, it's just like leveraging the OpenAI API.
+Mik Cepulis: And I don't know if we're going to be using the 01 Pro.
+Mik Cepulis: It might not be necessary for these.
+Mik Cepulis: But you know.
+Mik Cepulis: Yeah, regardless like we're staying pretty up to date with the latest model.
+Brian Pollack: Okay.
+Brian Pollack: No, that's, that's fine.
+Brian Pollack: I kind of expected 4.0, but if you were going like 400 mini, then it would kind of be like less, I guess less trustworthy that, that we're going to have.
+Brian Pollack: Things that we can really rely on.
+Mik Cepulis: Are the contact windows are large enough because we're, we're sending them not only the, like the, to the column names and everything else, but we're also sending queries and a lot of the same information that we're using to generate lineage is also sent to the AI to generate descriptions.
+Mik Cepulis: So it's a pretty wide context window that we're sending and that helps us generate more accurate descriptions.
+Mik Cepulis: Yeah, beyond the description here we're doing column descriptions as well.
+Mik Cepulis: So this, these are, you know, it can be AI generated.
+Mik Cepulis: I'm not sure exactly of this demo column is, but that's another section of the data that's generated using.
+Brian Pollack: So for lineage generation and for some of this AI usage, is sample data needed for that or is pure schema information being used for lineage?
+Mik Cepulis: No, for the AI, I think it's only helpful.
+Mik Cepulis: It's not required.
+Mik Cepulis: So for Lineage we'll use query log data and there's.
+Mik Cepulis: I can share more information about like what we're pulling in to get Lineage.
+Mik Cepulis: That's.
+Mik Cepulis: It's a.
+Mik Cepulis: I think that we, we, we take in like more, I think than we take in a lot of information that helps us like automatically generate the lineage and the query log data is helpful.
+Mik Cepulis: There are some other schema related items that are, that are helpful for generating lineage as well.
+Brian Pollack: So something like if you can provide me with a document that shows all of the, especially if it's postgres centric of all the source of information you use to generate Lineage and the source of information you use to generate the other helpful pieces of information that using to construct this, especially broken down between things that are that use sample data and don't use sample data or at least could benefit from sample data because that will help my engineering teams be able to decipher much more quickly.
+Brian Pollack: Like the only thing we really care about on this end is the security and contractual requirements that we have.
+Brian Pollack: So you know, sending any of our internal data is just so much more.
+Brian Pollack: Yeah, you know.
+Brian Pollack: Right.
+Brian Pollack: So understanding that is going to help me relay that to the teams.
+Brian Pollack: I likely will bring someone else on board.
+Brian Pollack: I know you guys, are you west coast based?
+Mik Cepulis: I'm west coast based, yeah.
+Mik Cepulis: We have some folks in Europe as well.
+Mik Cepulis: So we're fairly global with our coverage hours.
+Brian Pollack: Okay.
+Brian Pollack: Because at some point I'll have to have the head of our sys admin side joined this conversation and he is based in Russia.
+Brian Pollack: Okay.
+Mik Cepulis: So yeah, that's fine.
+Mik Cepulis: I mean I can, I can host a conversation with somebody.
+Mik Cepulis: We have engineers based in Russia.
+Mik Cepulis: So depending on the con that, the questions that he has, I can just either select somebody from the US or in Europe.
+Brian Pollack: Okay, perfect.
+Brian Pollack: But yeah, like a simple document breaking down.
+Brian Pollack: Like, you know, if we're thinking from a postgres, a very specifically postgres centric model, where are we pulling this information from?
+Brian Pollack: One of the other things that Acryl I think highlighted was they have more built in data sources compared to open metadata.
+Brian Pollack: So on one hand we don't care that much because we're almost all postgres and if we were to switch to another source, it would be one of the major ones that both you guys cover.
+Brian Pollack: The thing where it does potentially differentiate are the third party sources like HubSpot Datadog, if that is, if that integration makes sense.
+Brian Pollack: Things like Slack or for communication.
+Brian Pollack: So I can't, I'm bad about this because I did not put all my information in one place.
+Brian Pollack: Did you already send me something that lists all of the assets that you guys integrate with?
+Mik Cepulis: So I don't believe I did, but I have an easy URL here that has the whole list.
+Mik Cepulis: We have an integration with Slack already that is a pretty robust integration.
+Mik Cepulis: It's mostly designed for alerting and uh.
+Mik Cepulis: Yeah, so that's like if you send somebody a task to do or send them a message and you tag them or there's like a data quality test that's triggered.
+Mik Cepulis: Those can all be paired off to Slack.
+Brian Pollack: All right.
+Brian Pollack: ML Flow, you have integration that's nice to see.
+Mik Cepulis: Yeah, we have, we have 90ish connectors, maybe a little bit less than that.
+Mik Cepulis: So it's, it's usually very good coverage.
+Mik Cepulis: It's usually, it's a, it's a big reason why people choose Koali in the first place.
+Brian Pollack: And how about HubSpot?
+Mik Cepulis: We don't have HubSpot.
+Mik Cepulis: Yeah, we can, I guess it depends on like what information from HubSpot you want to have the.
+Brian Pollack: So HubSpot acts right now as a ground truth source of information on high level customer stuff for us.
+Brian Pollack: So you know, in principle, and this isn't like 100% true right now, but in principle customer information is added into HubSpot and that information then fills one of our like most upstream postgres tables that then, you know, trickles down to whatever else is there.
+Brian Pollack: HubSpot obviously has API integration, which we're using already.
+Brian Pollack: So even if you guys don't have direct integration with HubSpot, are you fine integrating with the API in a way that at least grabs the necessary lineage information?
+Brian Pollack: Or like how would that work for on your guys?
+Mik Cepulis: So we support API endpoints as first class data entities and we could use, we could represent HubSpot as an API endpoint feeding data into Postgres.
+Mik Cepulis: And I just dropped a link here.
+Mik Cepulis: It's a little bit technical, but it's how you would build in demo a custom integration with collate.
+Mik Cepulis: And these are, they're, they're not simple, simple to set up, but they're simple enough to set up and we have some examples in there and we'd be happy to help you build that a little bit if it became more of a pressing need.
+Mik Cepulis: Eventually we could, we could think about building a custom native connector for HubSpot.
+Mik Cepulis: You know, basically just pull all the data points that you needed from HubSpot into Collate.
+Mik Cepulis: And if that was like a, if that was a make or break thing, like we can have a more serious conversation about it right now.
+Mik Cepulis: If it's something that we can solve in the near term with an API integration, then that would be, I think preferable for us.
+Mik Cepulis: But I think, you know, kind of cue off of like where the need is from, from, from your end.
+Brian Pollack: So.
+Brian Pollack: Okay, first question is, do you intend to have HubSpot as kind of a native connector at some point or is that not on your radar right now?
+Mik Cepulis: It's not a, we have pretty good coverage.
+Mik Cepulis: Like, honestly, like the integrations that were, that were more important near term were things like a Sigma connector, a Matildon connector, and those are I think maybe more enterprise focused data sources for HubSpot.
+Mik Cepulis: We don't get the ask that often.
+Mik Cepulis: You know, we have a salesforce connector.
+Mik Cepulis: Not that many people use it, you know it.
+Mik Cepulis: So yeah, it's, I don't think I've heard it from any other customers so far and I talked to too many people, so.
+Brian Pollack: Gotcha.
+Brian Pollack: Yeah.
+Mik Cepulis: But regardless, like, we would at least be happy to help you build out the custom connector and became a bigger need for you.
+Mik Cepulis: Like we could scope out what a native connector would look like and have that built into our roadmap at some point.
+Brian Pollack: Okay.
+Brian Pollack: So I would say it's not the highest priority.
+Brian Pollack: The postgres information is the highest priority for putting this together.
+Brian Pollack: You know, assuming we Move forward with this at some point next year when we're more ramped up.
+Brian Pollack: We will want HubSpot to be referenced on this as like the, you know, we don't have many pieces, but this is certainly one piece that we're, we're going with.
+Brian Pollack: So we would want some level of integration and so you know, when it comes time to actually like hash out a contract, we would want something explicit about like some level of assistance with that if needed for getting that spun up.
+Mik Cepulis: Yeah, I mean I can tell you right now like we would be happy to.
+Mik Cepulis: I can have an engineer sit with one of your engineers and talk about the scope and let's figure out is this feasible for you guys to help self manage or if it's not like let's, let's at least figure that out short term.
+Mik Cepulis: But yeah, I mean I'll, we'll be more than happy to assist with like the scoping and like know just structure of how the connector would have to be built.
+Mik Cepulis: A lot of folks are able to build these connectors that, that don't come from like you know, Netflix level engineering orgs.
+Mik Cepulis: It's not, it's not so complex and we would certainly be happy to help you build this out.
+Brian Pollack: Okay, and then I don't know if I see it here.
+Brian Pollack: What about direct Atlassian integration?
+Mik Cepulis: Yeah, we, I know that we've heard of Atlassian as a need before, so it's, it's higher on our roadmap than HubSpot is.
+Mik Cepulis: But yeah, we don't have Atlassian right now.
+Brian Pollack: Okay.
+Brian Pollack: So Atlassian would be something that again is likely not a, not a primary, but it is a main part of our overall integrations.
+Brian Pollack: Some of it is where, you know, on the Confluence side is where we host a lot of our documentation that is supposed to represent some level of, you know, ground truth on a project, obviously JIRA for ticket management.
+Brian Pollack: And so I can imagine there could be good automations and overlap there if a data quality issue arises that we'd want actioned on via our more, you know, our main ticket boards.
+Mik Cepulis: With JIRA we can trigger alerts to generic webhook endpoint, which would be jira.
+Mik Cepulis: And that would be a pretty simple configuration to stand up.
+Brian Pollack: Okay.
+Mik Cepulis: So that the JIRA should already be handled.
+Mik Cepulis: And then for Confluence, like for Wiki, we can point Glossary terms and Knowledge center articles to a Confluence page already.
+Mik Cepulis: That's simply just adding the correct URL to the correct glossary term and we can import that data via CSV and markdown files and all that.
+Mik Cepulis: So if you have a built out wiki already, that's not hard at all to bring into collate and then we can reference those source documents natively within the product.
+Brian Pollack: Yeah, I mean that would be an excellent way.
+Brian Pollack: I expect a subset of power users to use the actual UI that you guys stand up and a lot of end users, internal end users to use.
+Brian Pollack: Confluence is still like their go to and so just like having hover tools built into our native UI or our customer facing UI is important for us, being able to pull centralized gloss.
+Brian Pollack: Like looking up the glossary terms and knowing that if we update it in one place it automatically updates in the other place is.
+Brian Pollack: Yeah, cool.
+Brian Pollack: And then what was the other question I had?
+Brian Pollack: That might be it as far as integration based questions.
+Brian Pollack: Yeah, and then it's just a question of pricing.
+Brian Pollack: So again we're also having the same talk with Acryl.
+Brian Pollack: The pricing is a little high right now.
+Brian Pollack: If there is wiggle room there, that would definitely make the decision much easier on our end.
+Mik Cepulis: Is there a number that you're targeting?
+Brian Pollack: So I think so.
+Brian Pollack: I'm looking at 65 right now for the AI stuff plus the, plus the hybrid SaaS model.
+Brian Pollack: The AI stuff itself is interesting but.
+Brian Pollack: But not.
+Brian Pollack: I'd say it's not so interesting that we feel like we have to purchase that right now given where we think we are.
+Brian Pollack: That being said, I'd love to still try it out to understand if it really does improve workflow for us.
+Brian Pollack: I am going to have a hard time Getting approval over 50k.
+Mik Cepulis: Okay.
+Brian Pollack: All in.
+Brian Pollack: So if that, if there's wiggle room there on your guys's end again, then the conversations I have to have become much easier and the decision to go with this, which will likely be the contract with the, with the one month out as opposed to a two week POC and then the contract stuff, I'd rather have the month to stand up and really get people to use it and try it out.
+Mik Cepulis: Yep.
+Mik Cepulis: Okay.
+Mik Cepulis: The.
+Mik Cepulis: So the pushback I'd give on the AI piece is like there, there's the automatic documentation generation piece, there's the SQL.
+Mik Cepulis: So for a tableau power user, power BI power user to be able to reference all of your core, you know, queries and statements and tables in a single place to generate the best SQL query to build a table is pretty powerful.
+Mik Cepulis: Or just run a.
+Mik Cepulis: Run a generic database query.
+Mik Cepulis: What you're seeing right now is essentially V1 of the Collate AI initiative V2 is coming out quite soon.
+Mik Cepulis: It's going to be part of a 1.7 release.
+Mik Cepulis: So we released 1.6 early December, and then in February, March timeframe, we'll see 1.7 rollout.
+Mik Cepulis: And that's going to have what we call Collate Day one added onto it.
+Mik Cepulis: And Collate Day one is very cool.
+Mik Cepulis: It's like our new sort of automated onboarding workflow where once we have data sources connected, will ingest all the data and then automatically suggest data quality tests, will automatically generate all of your documentation, will automatically assign ownerships, suggested tags, suggested tiering based off of your query data, and a whole bunch of other context.
+Mik Cepulis: So it's going to be like, is.
+Brian Pollack: Ownership based off of like, individual users or based off of like overall, like groupings that you guys are deciding on?
+Mik Cepulis: I think it's based off of the individual users.
+Mik Cepulis: I, I'm not certain though, so I'd have to ask her for sure on the references there.
+Mik Cepulis: But it's, yeah, like the idea is not only are we importing your data and assigning lineage and giving structure and like figuring out where things live, but also assigning automatic data quality tests to the data.
+Mik Cepulis: So from day one, it's like, oh, based on the context of the data contained within this table, you ought to have a table diff test here and you ought to have like a, you know, if X exceeds a certain limit, then call it flag and alert.
+Mik Cepulis: Those are going to be really powerful.
+Mik Cepulis: Obviously not here yet, but that's part of our grander vision for like, okay, you know, the hard parts of data cataloging and data governance are hard and people get frustrated by them and don't invest in us.
+Mik Cepulis: So I mean, there could be a part one and a part two.
+Mik Cepulis: I mean, we'd love to give you at least a taste of the collate AI experience.
+Mik Cepulis: So maybe we can include that for the PoC period and then you can decide whether or not to include that in the final contract and include some kind of language in that to the extent where if you want to keep AI, great, if not, then you don't have to worry about it.
+Brian Pollack: Okay, so I guess a couple things then.
+Brian Pollack: Again, I'm interested in the AI tools, but one of the issues right now is we are relatively, we're relatively young when it comes to implementing a full data governance approach.
+Brian Pollack: And so we of course know of some pain points that we run into constantly and we can imagine some pain points that are going to show up during the process that we've outlined and we've been working on for the past quarter, but it's not going to be obvious which of these, to us at least, which of these are greatly eased by the usage of AI because we don't have something to compare with.
+Brian Pollack: So even if we were to have, I would love something that is equivalent to a longer trial with the AI tool and for you guys to help upsell us on that, seeing exactly what the process is like with and without AI.
+Brian Pollack: I don't know how to do that compare and contrast given what you described, because I obviously want to get set up fast.
+Brian Pollack: I want everything to work and if AI makes it work faster, great.
+Brian Pollack: But I don't know how much faster the AI is helping us.
+Brian Pollack: Right.
+Brian Pollack: And I also don't know how much of that is part of the one time like the initial setup where it's, is it a once and done thing where then you know, the impact is much, much lower after the initial setup, whether or if there's continual, continual benefit, like six months, eight months down the line.
+Mik Cepulis: Yep, that's, that is totally fair, I think that.
+Mik Cepulis: But yeah, what I'd like to do is at least in the effort of keeping a contract simple for you, let's remove the AI requirement from the contract right now and then we'll give you a first year discount to get this down to 50k.
+Mik Cepulis: So essentially waiving the hybrid fee for the first year.
+Mik Cepulis: And then we'll give you a trial of the AI during that one month period and talk about how to use it.
+Mik Cepulis: It's likely that you won't get so much usage out of the AI early on.
+Mik Cepulis: If we're not, you know, scoping it out to every single database.
+Mik Cepulis: A lot of the time spent with the first month is going to be connecting data sources and getting some of that ground truth established so we can, we can shift out the trial period of an AI engagement to, you know, maybe a month or two down the road, give you a taste of it.
+Mik Cepulis: Hopefully at that point we'll have the day one experience wrapped up as well.
+Mik Cepulis: So we could like target one year of postgres databases and then kind of show what the benefits of that are and then talk about including it later on for, you know, later this year, sorry, later in 2025 or potentially two.
+Brian Pollack: I think that's a good strategy.
+Brian Pollack: I have no problem myself with being upsold on AI tools if they actually, they provide like a decent benefit.
+Brian Pollack: We are obviously doing the same thing for our own internal stuff in different areas of focus.
+Brian Pollack: So yeah, I know there's, you know, there's certainly a lot of hype and certain Some things where it falls flat, but there are obvious areas where it's great to have.
+Brian Pollack: It really reduces the total lift.
+Brian Pollack: And I also like the idea of having the initial one month trial, whatever, starting up, getting our feet under us and then adding on this digital component to see really what is it doing here.
+Brian Pollack: And by that time, if we're already happy with colored product as is, it'll much be much easier to add it on as an additional feature.
+Mik Cepulis: Yep.
+Brian Pollack: So, yeah, I am.
+Brian Pollack: I'm aligned with that strategy.
+Brian Pollack: Certainly.
+Mik Cepulis: Perfect.
+Mik Cepulis: Okay.
+Mik Cepulis: Well, yeah, why don't I update our contract.
+Mik Cepulis: I'll send you over an order form with some of that language that's kind of mapped out.
+Mik Cepulis: Is.
+Mik Cepulis: Is there somebody with like a.
+Mik Cepulis: On the legal or procurement team I should connect with to discuss the order form and any specifics there?
+Brian Pollack: I'll reach out.
+Brian Pollack: It'll probably be through our cfo.
+Mik Cepulis: Okay, great.
+Mik Cepulis: Awesome.
+Mik Cepulis: All right, I'll get that to you today and then touch base early next week to see if there are any questions, any follow up needed.
+Brian Pollack: Yeah, I'll reach out again.
+Brian Pollack: People are in and out now that it's toward the end of December, so I can't promise like a super fast turnaround.
+Brian Pollack: But if you do get that information in front of us, I have confidence that we will be able to move forward on something like this.
+Mik Cepulis: Excellent.
+Mik Cepulis: Should I shoot for just a tentative January 6th start date?
+Mik Cepulis: I think it's the Monday after holidays.
+Brian Pollack: Let me look at the calendar.
+Brian Pollack: Yeah, it is, sure.
+Brian Pollack: So you could throw that in.
+Brian Pollack: I wouldn't be surprised if that slips one or two weeks on our side.
+Brian Pollack: Again, I have unfortunately a lot more.
+Brian Pollack: Well, fortunately, I guess for.
+Brian Pollack: But yeah, the.
+Brian Pollack: There's a serious product arm component now that I need to shore up, which.
+Brian Pollack: Which also has a lot of early January targets right now, so.
+Mik Cepulis: All good?
+Brian Pollack: Yeah.
+Mik Cepulis: Well, yeah, that sounds good.
+Mik Cepulis: Brian, I will get you the docs over asap.
+Mik Cepulis: I've got another call to hop on, so today.
+Mik Cepulis: And happy Friday.
+Brian Pollack: Thank you.
+Brian Pollack: You too.
+Mik Cepulis: Cheers.
+Brian Pollack: Bye.
+
+END MEETING

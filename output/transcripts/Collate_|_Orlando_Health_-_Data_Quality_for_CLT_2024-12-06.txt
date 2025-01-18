@@ -1,0 +1,283 @@
+Meeting Name: Collate | Orlando Health - Data Quality for CLT
+Meeting Date: 2024-12-06
+
+Mik Cepulis: No worries.
+Mik Cepulis: Happy Friday, man.
+Jo Perez: Happy Friday.
+Jo Perez: Weird being back on a Friday.
+Jo Perez: Like being out all week and then back.
+Mik Cepulis: It's like, why didn't you make your vacation one more.
+Mik Cepulis: One day longer?
+Jo Perez: Just because I knew Monday would be absolutely crazy.
+Jo Perez: And this time of year, you know how busy it starts getting, so.
+Jo Perez: Yep.
+Jo Perez: Hey, Daryl.
+Darryl: Guys, we may need to reschedule.
+Darryl: I don't see Adele on this invite.
+Darryl: He's going to be critical to this.
+Mik Cepulis: Okay.
+Mik Cepulis: He responded back earlier this morning with a no.
+Mik Cepulis: So I think he was invited.
+Mik Cepulis: He was invited.
+Mik Cepulis: And then I think he had to decline the invite.
+Darryl: Yeah, I'm not surprised.
+Darryl: His schedule is crazy because of his epic connection, but, I mean, we can briefly talk, but, you know, the dashboards are something he's going to have more direct understanding of than I on the analytics side.
+Darryl: So I'm not sure what I could really, truly contribute.
+Mik Cepulis: All good.
+Mik Cepulis: Yeah, we.
+Mik Cepulis: We can meet then.
+Mik Cepulis: I mean, if maybe the ball.
+Mik Cepulis: Might as well take a look at his calendar and find the time next week.
+Darryl: Yeah, I'll.
+Darryl: I'll pull up his calendar right now.
+Darryl: I mean, and ultimately, you know, I don't know if.
+Darryl: I don't know if Cat mentioned this, but what we're going to do is take all this output and then we're going to set up a team meeting directly with Shaheed.
+Darryl: So instead of me bringing it on my one on ones or in our leadership calls, we're just going to have one dedicated to this conversation.
+Darryl: He still doesn't know what's in the budget.
+Darryl: He doesn't know that there is or isn't money available.
+Darryl: There is.
+Darryl: I believe it's adequate for what we need to do as a phase one year one.
+Darryl: So that's all good news.
+Darryl: But we don't know what his plan is.
+Darryl: So he's only been here now, I think he's at 96 days.
+Darryl: So he's probably drafting his proposal to this to his boss, our cio.
+Darryl: And I think that's kind of the situation.
+Mik Cepulis: That being said, enable that conversation, Daryl, with like a one pager or, like, is there a focused slide deck that we can help deliver?
+Darryl: That's what this is about.
+Darryl: That's what this call was about.
+Darryl: Because remember, he did see the demo.
+Darryl: I did send him all the links that he asked for and information about the product.
+Darryl: So this meeting was about.
+Darryl: He has three cloud working on purview for the CLT dashboard.
+Darryl: So this is allowing you guys to come in and do an equivalency and show how it's more our biggest Concern, though, is Coli is going to be a lot more staffing intense because it's far more vast and capable of a product.
+Darryl: To me, though, no matter what tool we use, we fail if data governance and business buy in and the data domain owners don't step up.
+Darryl: So, you know, what we're going to do is just say, hey, look, here's the products, here's the differences, and then lay it out and go, you have money available for this.
+Darryl: We can make this work and get his confirmation one way or the other.
+Darryl: The only slot I see for him.
+Darryl: Wow.
+Darryl: Oh, good Lord.
+Darryl: His calendar is hideous.
+Darryl: Let me see.
+Darryl: And holidays are not helping.
+Mik Cepulis: No.
+Darryl: Okay, I've got training then I've got a meeting with data bricks on Monday.
+Darryl: Let's see, Tuesday.
+Darryl: Book, book, book.
+Jo Perez: You can just cancel that databricks meeting.
+Mik Cepulis: Yeah.
+Darryl: Let'S see.
+Darryl: That's unavailable.
+Darryl: I'm now looking for what I can move.
+Darryl: So we can 11.
+Darryl: Man, that's even bad.
+Darryl: But 11am on Wednesday, that is his only slot I see.
+Darryl: At this moment.
+Mik Cepulis: Yeah, we can make that work.
+Darryl: Might be the other.
+Darryl: I see.
+Darryl: Yeah, let's try and make that work.
+Darryl: I have a team potluck at our data center 30 minutes after that.
+Darryl: So we'll be time constrained.
+Darryl: But yeah, let's shoot for 11 on the 11th and see if we can make that happen.
+Mik Cepulis: The idea is to review the dashboards the CLT is reviewing today.
+Darryl: Yeah.
+Darryl: And start thinking about how we can.
+Darryl: I don't know how we could do this if we don't have it in our environment.
+Darryl: Based on our data, you're not going to get far.
+Darryl: So I might talk to Kat a little bit before that as well.
+Darryl: But knowing what kind of metrics there are and how that would be represented in collate, I think is the biggest win.
+Darryl: And then simulating whatever we can in your sandbox or in an environment to kind of show the representation, I think might be the best shot we've got.
+Mik Cepulis: And we.
+Mik Cepulis: We have customizable dashboards available.
+Mik Cepulis: I will say that if there is some kind of metric or a way to display data that we don't support right now, like, that's.
+Mik Cepulis: That's going to be a very low lift.
+Mik Cepulis: Like, we'll, like, we will make that happen for Orlando.
+Darryl: Let me, let me show you the dashboard.
+Darryl: I'm going to clear out our metrics and I'm going to make sure this isn't being recorded.
+Darryl: Correct.
+Mik Cepulis: It is not.
+Darryl: I'm going to screenshot this into paint, block out the numbers, because that is privilege.
+Darryl: But it's going to give you a very good idea.
+Darryl: So let's see full screen paint kind of what we're trying to get that governance viewpoint on because I think you remember Kat was saying instead of us starting with the data source and following the data in a solution like collate, he's wanting us to look at hey our number one visible dashboard.
+Darryl: The CLT dashboard is, is you know the best thing that we can kind of simulate.
+Darryl: 3Cloud has even determined what they need to do it in purview by the way.
+Darryl: So you're kind of your, your job wasn't go look at tools and see what was fitting in our budget.
+Darryl: So you know where your, your bleeding edge for that.
+Darryl: But this gives you some metric sa.
+Darryl: I'm almost done hitting delete on various metrics.
+Mik Cepulis: Painting your masterpiece.
+Darryl: Yeah, I, I mean this literally goes to the health and well being of our, you know, our org.
+Darryl: Yeah.
+Darryl: And though a lot of that is kind of public, some of it's not and this would be definitely the details.
+Darryl: Let me see.
+Darryl: Go on.
+Darryl: Okay, so let me share screen one.
+Darryl: Okay so you'll see this is generally the dashboard but you know Kat was mentioning the metrics, you know, how are we monitoring the governance and the health of and the definitions and everything that you guys can provide us about this dashboard so that people can dive into the meanings and the descriptions and the health and the quality of the data going in here.
+Darryl: So you know he was, she was mentioning she line items.
+Darryl: You know, cauti clabsi cdi, iuss chg, mortality readmission.
+Darryl: You know you can see there's a lot of health but there's finance including you know, operating a margin.
+Darryl: I did leave EDXes that's nothing too drastic.
+Darryl: But you know our EDXes are when you know people are just leaving the ED without being seen.
+Darryl: You know our goal is to make sure that less than 2% are not being seen satisfactory.
+Darryl: You know our HCAPs, you know which is a healthcare scoring know kind of review system that most of America uses.
+Darryl: So these are all those metrics that make up this one dashboard.
+Darryl: So how do we package that into collate so that the descriptions, the definitions, you can see the lineage kind of build that view that tells the story in a sense.
+Mik Cepulis: And this is the idea to have CLT in collate looking at a dashboard or is the idea to have an external storage to like this weekly?
+Darryl: This dashboard is in power bi.
+Darryl: So we're not asking you guys to simulate and you can't, I mean you're not a Dashboarding solution in this sense, the goal is that collates capabilities in the data governance and data quality world, the data that's in clt.
+Darryl: So you know, how do we monitor the health and well being of COTI and the data that then gets brought into Power bi.
+Darryl: So it's not that you guys are building us a dashboard for clt, these are our metrics.
+Darryl: You're not a Power BI competitor, you're a purview competitor.
+Darryl: So you're looking at governance definitions, owners classification, quality of the data and its ingestion and its failures and jobs and et cetera.
+Darryl: So that stuff that feeds the health.
+Jo Perez: Of this dashboard and the idea is we would connect to this dashboard but then layer on those metrics, those terms.
+Darryl: No, I mean you wouldn't connect to this dashboard at all, would you?
+Jo Perez: And that way you can have this dashboard represented and discovered and then from a lineage standpoint I can see the C metric feed into this specific dashboard.
+Jo Perez: So depending on how my search goes, I don't always need to search for coti.
+Jo Perez: I can search for weekly CLT executive dashboard, see a little PI and see the metrics that might be related that end to end back and forth.
+Jo Perez: We can be a glorified glossary, but I think that's where the power comes in, is understanding the metadata surrounding this dashboard.
+Darryl: Exactly.
+Darryl: And where did this metric come from?
+Darryl: What's its definition?
+Darryl: When was it last updated?
+Darryl: How good is that data?
+Darryl: All the data was sourced from these things and it was refreshed at this time successfully.
+Darryl: All that narrative because you'll see at the bottom, see reference guide, scorecard, catalog.
+Darryl: We want people to see dashboards across our environment, but they want to use CLT first to click on and go catalog and boom, we get landed on everything that's relevant to this so that a leader or a consumer or an analyst can understand how it was made up and know that its health is good.
+Jo Perez: Yeah, absolutely.
+Darryl: Yep.
+Jo Perez: And that catalog link can link directly to the entity in coli or maybe a collection of all these different things.
+Jo Perez: We can design, you know, both ways out.
+Darryl: Yeah, I love that.
+Darryl: I'd love to be able to go from collate into the dashboard and then vice versa.
+Darryl: That'd be really cool too.
+Jo Perez: Yeah, we can do that for sure.
+Jo Perez: That's not, that's not rock science.
+Jo Perez: And then the other thing, by being able to go from the dashboard into Colate, the different data sources that are feeding this, we may have data quality rules and things like that that we want them to set up not on the power BI side, but the, you know, MySQL, the databricks, that's actually a.
+Darryl: Dashboard that shows the quality of Cauti, the quality of collabse, that its jobs ran, that its records were within whatever the quality metrics are.
+Darryl: Yeah.
+Darryl: You can see a dashboard that reflects the quality and governance of this dashboard.
+Jo Perez: And then a dashboard to represent that dashboard.
+Darryl: Yeah, seriously, we're going to end up inception here.
+Darryl: I'm going to turn on the light at 8.
+Darryl: It's dark in Orlando.
+Jo Perez: It's a cloudy day.
+Darryl: Yeah, yeah, it's, it's.
+Darryl: Let's see.
+Jo Perez: I'm happy though, Darryl.
+Jo Perez: I was in New York these past couple of days, so it's nice to be in 70 degree weather and not 25 degree weather.
+Jo Perez: Yeah.
+Darryl: You know the truth.
+Darryl: There we go.
+Darryl: A little better light.
+Darryl: So, yeah, that's.
+Darryl: This is the nature of some of our dashboards and you can kind of see the styling and all that.
+Darryl: And these go to our leaders weekly and they're taking actions but they can dive into this too.
+Darryl: So we would probably start the conversation at the highest level and then eventually, you know, when we bring your product and go down the weeds.
+Darryl: I'm also curious to see what 3Cloud proposes for purview that.
+Darryl: Because literally Shi just said, you know, use Purview.
+Darryl: It's already there.
+Darryl: Go what that means and how.
+Darryl: One of the data sources that feeds this is actually PeopleSoft and purview can't scan PeopleSoft's main schema by design at Microsoft, so you can't capture that data.
+Darryl: They're forcing Purview to only look at what's in our data platform.
+Darryl: So in our data lake because they can't scan the source through from beginning to end.
+Darryl: But we're going to see their data classification, we're going to see all those metrics and they're going to try and tie it all together.
+Darryl: So the question ultimately will be is how can we simulate the concept, seeing as you're not in our environment, to be able to do a like for like.
+Darryl: Yep, there we go.
+Darryl: We'll pull.
+Darryl: I'll tap Cat a little further and then we'll meet with Adele on Wednesday and see where things go.
+Darryl: But I think this might help at least with your mind a little bit.
+Darryl: Start, start getting those, those hamsters running around.
+Jo Perez: You know, this is super helpful and you know, a quick mock.
+Jo Perez: I could do a quick mock up of just grabbing some of these terms and you know, in definitions on how we would describe it, but at least showing the potential and then linking it to a random power bi dashboard that we have just kind of a basic, you know, mock up proof of concept.
+Jo Perez: Not a full on exactly, but stimulate the imagination a little bit.
+Mik Cepulis: And Daryl, is one of the problems that you're trying to solve right now like a lack of ownership of some of these underlying metrics, or is it a lack of insight into the, like a consistent quality?
+Darryl: It's everything.
+Darryl: We don't have governance and quality here, we really don't.
+Darryl: And right now this dashboard is highly made up of Excel spreadsheets that are derived off other Excel spreadsheets derived off exports.
+Darryl: We're automating this.
+Darryl: But what happens now is all the different service lines look at the data and go, well, what makes this, what's, what's this made up of?
+Darryl: No, that's not how I look at that metric.
+Darryl: That's how you look at that metric.
+Darryl: And you know, there, there's a lot of elements to that in quality and governance that are missing.
+Darryl: And so what we're trying to do is just start getting that bubbled up into a single point.
+Darryl: You know, we have a consumption environment, but people don't know how much to trust it, how it's defined, what its metrics are, what its glossary looks like.
+Darryl: And so this is now us trying to grow that maturity and start helping with data quality, governance, confidence, trust in our data, et cetera, et cetera.
+Mik Cepulis: So we're looking at like, you know, essentially there's a fear that we could be reporting the wrong data up to Shaheedl and the executive team.
+Mik Cepulis: And collate is essentially, you know, helping mitigate that risk in a lot of ways.
+Darryl: I mean, look, this is the exact use case is exactly what data quality and data governance tools are for.
+Darryl: How do you trust the data?
+Darryl: What am I looking at?
+Darryl: What's made, what's behind that?
+Darryl: This report isn't for Shaheel specifically.
+Darryl: This is Shaheedl as the head of enterprise data, making sure that this is something that's trustful, reliable, automated, streamlined, clean, healthy, high quality, et cetera, et cetera.
+Darryl: But to me, that's just data.
+Darryl: I boil it down.
+Darryl: You guys are good at defining the definitions of that.
+Darryl: I'm like, this is just what we need in analytics, a trustworthy product that people can understand and investigate and break out and derive understanding from.
+Mik Cepulis: Okay, okay, great.
+Darryl: Hope that helps.
+Mik Cepulis: No, yeah, it does help.
+Mik Cepulis: And I guess like is this will be maybe the face of the problem collate is solving when we're positioning this to the executive team?
+Darryl: I think so.
+Darryl: I think taking, hey, she told this is what three clouds working on with Purview and this is how colic could take that further is ultimately what we're going to try and narrate and cats like, you know, Adele, I Cat, you know, the three of us are just going to get on a call with Shaheedle, hopefully in person and go look, it's going to take staff and we do have a small data governance team.
+Darryl: But you know, this is, this is a sustainable, reliable, long, you know, plan.
+Darryl: So we'll see what happens.
+Jo Perez: Yeah, the way I kind of look at it with the whole staffing argument is it's going to take more staff to do it without a tool then.
+Jo Perez: But it will take staff to do it with a tool.
+Jo Perez: You're going to, you need staff regardless for this problem.
+Jo Perez: This problem doesn't exist just because you don't have staff assigned to it.
+Jo Perez: Let's try leveraging the manpower we do have, use them efficiently, put the right tool in their hands to do a number of things.
+Darryl: Yes, the problem we're going to have is Purview doesn't do a fraction of what you guys do.
+Darryl: It just doesn't.
+Darryl: They're not advertising themselves as much as Quality in quality and other areas that you guys are.
+Darryl: I got to admit the new Purview look is a lot better than it used to, but I don't its capabilities are so much smaller that it is less laborious.
+Darryl: The thing of it is though is you guys are doing far more and he's used to Informatica and those level things.
+Darryl: So it's like, you know how if purview is a 3 and you guys are a 7 on the informatica scale of a 10 and I know Informatica isn't even necessarily the best in the world, but you know, I'm just giving that as an example.
+Darryl: You know, it's like, look, you're going to roll this out at the rate that you want to roll it out.
+Darryl: It's going to take the step that you want.
+Darryl: But our tool can help make that roll it easier.
+Darryl: I mean, you guys have automated tagging and AI capabilities, the summarization and imported capabilities and there's a lot more functionality that Purview does not have to help with that as well.
+Darryl: So you're going to do more with our product with less labor to accomplish more.
+Darryl: So that's kind of along the lines of what we're going to need to try to walk through.
+Mik Cepulis: Well, how soon will we be working together building a business value case?
+Darryl: You gotta until he says, yes, let's move forward.
+Darryl: He's not asking for a case.
+Darryl: He's not, we're not taking it above him either.
+Darryl: He's the decision maker.
+Darryl: So you're, we're taking.
+Darryl: We took all the demo to him.
+Darryl: Yeah.
+Darryl: He's seen it.
+Darryl: We haven't gotten any feedback from him.
+Darryl: So what cats want you to do is to go, look, here's what they could do for CLT as an example.
+Darryl: And then she's like, I'm going to bring the budget, the cost, and we're going to try and get some out, some, some, some response from him that we could action on.
+Darryl: He knows the value.
+Darryl: Your value statement is going to be a variation of any other value statement for a tool that we don't have.
+Darryl: You know, the value is in data governance and data quality.
+Darryl: We understand the cost differences are a magnitude different.
+Mik Cepulis: Okay.
+Darryl: So.
+Darryl: Yep.
+Darryl: Okay.
+Mik Cepulis: Well, yeah, I appreciate the time, Gerald.
+Mik Cepulis: And yeah, let's, let's plan on meeting on Wednesday after the Wednesday meeting.
+Mik Cepulis: The next step would be for your team to kind of like combine information and present a sheetle whenever you have a moment.
+Darryl: Yeah.
+Mik Cepulis: Okay.
+Darryl: Yep.
+Mik Cepulis: Great.
+Darryl: Okay, so we'll Talk soon.
+Darryl: Wednesday, 11:00.
+Darryl: You'll send an invite?
+Mik Cepulis: Yes.
+Darryl: Okay, cool.
+Mik Cepulis: Unless you need to be on teams like we can, we can do teams if you prefer.
+Darryl: Teams works way easier for us.
+Darryl: I actually had to copy and paste this link onto my other desktop because Zoom does not work on our desktops very well.
+Darryl: Thank you very much.
+Darryl: Yeah, appreciate it.
+Darryl: You guys have a good one.
+Mik Cepulis: Thanks for watching.
+
+END MEETING

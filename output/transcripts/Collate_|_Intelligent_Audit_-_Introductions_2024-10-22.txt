@@ -1,0 +1,308 @@
+Meeting Name: Collate | Intelligent Audit - Introductions
+Meeting Date: 2024-10-22
+
+Brian Pollack: Located in Pennsylvania.
+Brian Pollack: I'm on the northeast Pennsylvania, the company's headquarters in New Jersey.
+Mik Cepulis: Okay, awesome.
+Mik Cepulis: Very cool.
+Mik Cepulis: Yeah, I'm based in the west coast, so San Francisco for me.
+Brian Pollack: Yeah, I guess from the background, peak.
+Mik Cepulis: Summer for us right now it's quite lovely.
+Brian Pollack: Excellent.
+Mik Cepulis: Yeah.
+Mik Cepulis: Awesome.
+Mik Cepulis: Well, I appreciate you reaching out.
+Mik Cepulis: You know, today I wanted to take some time to get to know you a little bit better, understand what brought you to collate and answered any initial questions.
+Mik Cepulis: Usually in calls like these, you just get a sense for the project and the pain points you guys are understanding or expanding right now.
+Mik Cepulis: And then usually we'll move on to like a product demo with some technical teams and dive deeper into your use case and share more about the full breadth and depth of the collate offering.
+Mik Cepulis: But yeah, wanted to make sure that today is useful for you as well.
+Mik Cepulis: So I can answer plenty of questions on your end.
+Mik Cepulis: But to start off, it'd be helpful to get some context about who you are, what an intelligent audit is.
+Mik Cepulis: And then what brought you to collate?
+Brian Pollack: Sure.
+Brian Pollack: I am the head of data science at intelligent audit.
+Brian Pollack: I'm also in charge of our newest data governance initiative.
+Brian Pollack: I'm reaching out to data catalog companies with that in mind, that we want to really kind of shore up our foundation and solve a lot of data governance issues that we're running into and just trying to unify some of our internal data sources and solve some of these problems.
+Brian Pollack: So intelligent audit is a freight auditing company, been around for about 25 years, with much more significant growth in the last four or five years.
+Brian Pollack: We have hundreds of customers, a lot of like Fortune 50 customers.
+Brian Pollack: We audit all of their shipment data.
+Brian Pollack: So that means we deal with like a billion packages a year or something like that, maybe more.
+Brian Pollack: All of our data is.
+Brian Pollack: The vast majority of our data is hosted in house on prem, on postgres servers.
+Brian Pollack: There's very little real time actionable data that we need that is hosted on any cloud service.
+Brian Pollack: Right now.
+Brian Pollack: The vast majority of data is tabular, obviously, so postgres makes a lot of sense that way.
+Brian Pollack: The key pain points we're trying to solve right now are unifying our tables, identifying areas of data quality, making sure there's one source of truth, understanding what our column level lineage looks like, some access control stuff, ideally integration with our BI tools.
+Brian Pollack: We host our own UI that is both internal facing and customer facing, and we also have our own UI and BI tools built into that.
+Brian Pollack: We're unfortunately not using something as, as standard, as like tableau or something.
+Brian Pollack: We have our own plots, graphs, reports.
+Brian Pollack: And one of the things we want to make sure is that if you get a certain KPI or certain metric in one tool, that, that should be uniform across every tool that's offered by us.
+Brian Pollack: We have a couple other third party integrations that are important to us.
+Brian Pollack: GitHub obviously for code versioning we use Jira.
+Brian Pollack: So Atlassian, Jira confluence, we have datadog for monitoring and logging.
+Brian Pollack: We've started using HubSpot a lot for customer centric information.
+Brian Pollack: On the development side, we have a lot of jetbrains, of PHP, storms and Pycharm.
+Brian Pollack: Also some versus code stuff.
+Brian Pollack: I think that is a quick rundown of some of our tools and what we do for those tools.
+Mik Cepulis: Are you looking for a solution that'll integrate with versus code and jetbrains and all these the tools that are, I guess, not part of the core data stack necessarily.
+Brian Pollack: Yeah, I mean, as much integration as possible to facilitate communication and knowledge sharing.
+Brian Pollack: So ideally, whatever kind of catalog system we end up with, we want an easy way to locate our sources of truth, to view our lineages, but also to share that information as seamlessly as possible.
+Brian Pollack: I want to make sure that the barrier of entry to actually using a catalog is very low.
+Brian Pollack: If there are direct integrations with our development tools, great.
+Brian Pollack: If there's a way we can integrate it into our custom UI and our Bi tools, that would be ideal.
+Brian Pollack: And then integrations with Jira confluence, anything like that as well.
+Brian Pollack: The more the marry, just to make sure that we're not hard coding things in multiple places.
+Mik Cepulis: Yep.
+Mik Cepulis: Okay, understood.
+Mik Cepulis: Is your team, do you have development resources for things like a custom integration with your in house bi tool?
+Brian Pollack: Yeah, so we do.
+Brian Pollack: And I understand that, um, you know, your product is, is open source.
+Brian Pollack: Um, but to fully jump into a new open source product would be a lot of upfront, uh, manpower cost that we can't prop.
+Brian Pollack: We, even if we could allocate it right now, I think the, the startup time would likely be much longer.
+Brian Pollack: Long term.
+Brian Pollack: I think we could, we could ease into that.
+Brian Pollack: Uh, but I'm wondering, timeline wise, does it make sense for a more enterprise service, more SaaS service with a possible transition to in house?
+Mik Cepulis: Okay, got it.
+Mik Cepulis: So your ideal journey, it sounds like you want to start commercial and then move everything in house to an open source platform.
+Brian Pollack: It's possible.
+Brian Pollack: I mean, if the commercial solution is, if that works for us long term, then that's a great solution.
+Brian Pollack: Either we're paying for a commercial source or we're paying for manpower.
+Mik Cepulis: Totally.
+Mik Cepulis: Yeah.
+Mik Cepulis: There's an interesting relationship between.
+Mik Cepulis: It's not an interesting relationship, it's a standard relationship between our open source and the commercial entity collate, which is behind it.
+Mik Cepulis: So think of like an elasticsearch or Grafana where our core product is open source, but then we have the commercial company on top of it that is providing enhanced features.
+Mik Cepulis: Business relationship 24 by seven support.
+Mik Cepulis: Anything else you'd expect from a SaaS vendor.
+Mik Cepulis: That's what colate is.
+Mik Cepulis: We are built as more of a plugin structure to the open source.
+Mik Cepulis: Open metadata, the open source and the commercial really speak to the one to one.
+Mik Cepulis: The commercial, it's only an extension or a plugin on top of the open source.
+Mik Cepulis: All of the APIs on the open source are mapped one to one with the commercial.
+Mik Cepulis: The commercial has additional APIs for the commercial features, but everything in the user interface that you see, it's all mapped one to one to an APIs.
+Mik Cepulis: Any button you can click, any action you can take is mapped to an API.
+Mik Cepulis: The reason they bring that up is because in the case of having a custom business intelligence tool, we can certainly integrate with it.
+Mik Cepulis: If there was appetite from your team, we could help you develop that connector as well.
+Mik Cepulis: But the ability to connect to a custom source like that is absolutely supported by colit.
+Brian Pollack: Excellent.
+Brian Pollack: Yeah.
+Brian Pollack: Not going to be moving away from our custom front end custom UI anytime soon, so having that ability is very important to us.
+Mik Cepulis: Okay, understood.
+Mik Cepulis: How is, I guess, where are you in the journey right now?
+Mik Cepulis: Are you at the point where you're doing demos, other vendors, and starting testing processes and pocs?
+Brian Pollack: Yeah, so we are very early in this process, but we do want to move on it and I have relatively high leniency in the calls that I can make on this point.
+Brian Pollack: So I am talking to different vendors.
+Brian Pollack: I'm trying to get an idea of what can be provided.
+Brian Pollack: I would like to have a decision made and be able to move on that within the, you know, like order a month kind of timeline.
+Mik Cepulis: Okay, got it.
+Mik Cepulis: And what bandwidth do you or your team have for testing?
+Mik Cepulis: Like do you want to do some demos and learn about the vendor landscape and then only do like a single vendor for testing?
+Mik Cepulis: Or is your intent to have like multiple vendors as a sort of poc bake off?
+Mik Cepulis: Do you have an idea of that model?
+Brian Pollack: I think our bandwidth is going to be pretty limited, so we will have to do some testing.
+Brian Pollack: But ideally I want to have a good idea of what I'm getting myself into before we unwrap there.
+Brian Pollack: We don't typically have a lot of engineers with nothing to do.
+Brian Pollack: It is a little hard to schedule it in.
+Mik Cepulis: Yes, understood.
+Mik Cepulis: Would it be helpful to share some context about collate as a company and a product with a few slides?
+Brian Pollack: Yeah, go for it.
+Mik Cepulis: Awesome.
+Mik Cepulis: I'll be sort of efficient.
+Mik Cepulis: Usually we'll go through a faster version of the deck to set some contacts and then ahead of a full demo in front of a wider audience, we could take a bit more time.
+Brian Pollack: That's fine with me.
+Mik Cepulis: So let me know when you hit my screen.
+Brian Pollack: Yep, looks good.
+Mik Cepulis: So Koli was founded about four years ago by our two co founders, Harsha and Suresh, who have a pretty storied history in the world of developing enterprise data management solutions.
+Mik Cepulis: They're behind Hortonworks and Apache Hadoop, Apache Atlas and more recently Ubers databook.
+Mik Cepulis: We're all very foundational experiences that helped them, uh, you know, build what is now, uh, our version of a modern unified metadata platform.
+Mik Cepulis: Uh, we separate ourselves, uh, philosophically at least from the old world of data catalogs by uh, you know, positioning ourselves as a unified metadata solution.
+Mik Cepulis: We combine discovery, observability and governance functionality into a single platform because we think that's the best way to solve the problem of, you know, what is typically the first pain point of data discoverability.
+Mik Cepulis: But very quickly, to have a more comprehensive view of what is going on in your data environment, you need to have observability and stronger governance measures and instructors in place in order to properly manage data.
+Mik Cepulis: So we separate the old world of glossary and catalog and level one metadata management from what we'd see ourselves as a more unified solution that offers a lot more functionality and room for companies that want to invest in the level one practice room to grow into additional levels of structure management over time.
+Mik Cepulis: So our open source community on the right here we have some splashy stats.
+Mik Cepulis: It's large and growing.
+Mik Cepulis: If you look at some of the open source project trackers out there, you'll see that open metadata is a little bit of a newer entrant, but the fastest grower and very well adopted.
+Mik Cepulis: We have an open slack community that we facilitate most of our open source engagement with.
+Mik Cepulis: That's very lively, a lot of people asking questions in there, a lot of great use cases that we're supporting, and a lot of large production deployments out there with the likes of Crowdstrike and other very big names that you're very familiar with.
+Mik Cepulis: On the commercial side, though, we're also very pleased with our success so far.
+Mik Cepulis: We've a lot of Fortune 50 brands using us, some in more narrow use cases, some in larger use cases.
+Mik Cepulis: But we have a lot of battle tested commercial use cases out there, both on premise and with our cloud offerings.
+Mik Cepulis: So again, just as an earlier sales guy at this company, it's been a fun journey so far.
+Mik Cepulis: A lot of teams and brands to work with.
+Mik Cepulis: We have built the product and the company to suit the needs of the enterprise.
+Mik Cepulis: So we've gone through a lot of the compliance work through soccer type two certifications, GDD PR, CPA.
+Mik Cepulis: We have a global operations team, so our support is available 24 x seven.
+Mik Cepulis: We have teams in Brazil, US, Europe and India, so through around the clock support.
+Mik Cepulis: And we've also designed the product to meet the needs of various security environments.
+Mik Cepulis: So we have offer on premise and then a variety of different cloud offerings.
+Mik Cepulis: So just to be adaptable and again suit the needs of whoever we're working with.
+Mik Cepulis: Let me see.
+Mik Cepulis: I think this is.
+Mik Cepulis: Sorry about that.
+Brian Pollack: All right.
+Mik Cepulis: I'm regularly back to back, if you couldn't notice.
+Mik Cepulis: Okay.
+Mik Cepulis: Back to our regular scheduled programming.
+Mik Cepulis: Yeah, and the deployment options are really interesting.
+Mik Cepulis: This is, it's a little bit in the weeds, but it's, I think, a big investment for a relatively small company to invest in different deployment options.
+Mik Cepulis: We're helping push the industry vertical that we play in that as well.
+Mik Cepulis: So you'll see other competitors who've recently launched their own versions of on premise after having been cloud only or cloud native for a long time.
+Mik Cepulis: But the fact that we're open sourced from the ground up, we've always had an on premise offering or self hosted offering of our commercial.
+Mik Cepulis: And I think that helps.
+Mik Cepulis: It just helps prove out that we were a nimble team and are able to meet a wide variety of needs.
+Mik Cepulis: So onto the actual purpose of collate and the reason that we engage with teams is companies see really big opportunities with their data.
+Mik Cepulis: Data traditionally has not been managed in a unified way from the perspective that just having a more comprehensive metadata managed, there are large opportunities with deriving more value from data, usually in the form of investing in generative AI or ML models, or just having more employees at companies become data fluent and have access to data on their own in a self service format.
+Mik Cepulis: A lot of ways to unlock and tackle data, but it's difficult to do so.
+Mik Cepulis: Platform teams are usually the ones who are owning the own, all of the data sources and data volumes, and are the ones tasked with thinking about ways to derive more value from data.
+Mik Cepulis: But in between there's a lot of complexity and that's where teams get stuck.
+Mik Cepulis: If data is siloed, if data is not managed correctly, going from point a to point b is quite difficult.
+Mik Cepulis: The platform teams are usually the ones who are servicing the end practitioners and managing all these different sources together.
+Mik Cepulis: People usually come to them asking questions about where my data is coming from and where is the right customer table and these growing numbers of requests and growing demands from the business to provide tools and ensure that the organization is data fluent is quite difficult.
+Mik Cepulis: And it takes away platform teams from their core mission of designing scalable tools for an entire business because they're just stuck in the weeds dealing with more level one requests and level one questions.
+Mik Cepulis: Practitioners themselves get frustrated because they want to go to a single place to understand where their data lives and understand if it's high quality, who owns it when it was last changed, if it can even be used for the project that they want to be using on.
+Mik Cepulis: If data is PII, if data is under security or other kind of certification requirements that's not always immediately available to them.
+Mik Cepulis: It's also difficult to understand if you're a new employee and trying to onboard like we have ten customer tables, what is our actual source of truth?
+Mik Cepulis: Customer table and all the, all the iterations of that silof problem are quite common.
+Mik Cepulis: And usually traditionally you'd have a data catalog for discovery, a quality tool to understand data quality, and a variety of sources of confluence or jira or wikis to understand governance structures and what can and can't be done with a piece of data.
+Mik Cepulis: We think it makes a lot more sense to combine these functions into a single tool.
+Mik Cepulis: So that's, you know, again, we'll, our unification message is going to be, you'll kind of hear that as a drumbeat.
+Mik Cepulis: Some of the implications of failure to have a single source of truth in a single place to manage data can lead to confusion.
+Mik Cepulis: Where for business leaders and decision makers, when they don't know, are they looking at the right piece of data?
+Mik Cepulis: Or is the KPI they're receiving from data science and data engineering versus the core application teams?
+Mik Cepulis: Like they're, they're getting different metrics from different.
+Mik Cepulis: That can be frustrating.
+Mik Cepulis: It can be the lead to slow decision making and obviously risks around financial reporting or misreporting to end customers.
+Mik Cepulis: So as a result, the journey or the goal of unlocking value from data can be stymied.
+Mik Cepulis: So platform teams with higher TcO practitioners not knowing where to go to find answers to questions and leaders having issues with revenue making decisions.
+Mik Cepulis: So the collate approach here again is a unified one we've invested very heavily in the idea of better together and unifying these different cataloging and discovery and observability and governance functions into a single tool and have invested heavily in automation.
+Mik Cepulis: So the teams we work with are usually resource limited like everyone else these days.
+Mik Cepulis: So we've done a lot in the way of automating manual tasks and integrating generative AI in clever ways to make your job easier and to enrich the core catalog and metadata source that you're trying to build out.
+Mik Cepulis: We've also done a lot in the way of ensuring that collaboration and communication are first class citizens and give our customers a lot of autonomy for how they want to facilitate that communication.
+Mik Cepulis: So whether that be in product or whether that be out of product via confluence or slack or teams or whatever other communication tool you're using, we integrate with all of them and we make sure that the communication is centralized where you want it to be.
+Mik Cepulis: At the core of collate, we're open source.
+Mik Cepulis: So built on top of open metadata, which is also built on top of open standards and uses API first and schema first philosophy to manage data.
+Mik Cepulis: So we have this metadata graph which really means we're storing data in JSON format, which means it's flexible, it's very highly customizable, and we can abstract that JSON out to helping manage any kind of data source.
+Mik Cepulis: So whether that be a couch base and NoSQL database or structured databases or data streams and everything else that you can think of, they can all be sent to collate.
+Mik Cepulis: And JSON is a flexible enough data format to facilitate any kind of data storage.
+Mik Cepulis: The open standards are very helpful as well.
+Mik Cepulis: We integrate with a wide variety of tools, external data quality tools, external lineage tools, anything that you want to bring into the Colette universe is possible.
+Mik Cepulis: And the fact that we're built on open source and have an elegant core stack of system requirements or architecture requirements means that we have been able to iterate quickly on the product roadmaps.
+Mik Cepulis: The features and functionality that we release are pushed out at a very rapid clip and you'll see that looking twelve months ago or 24 months ago, the products made massive, massive leaps and bounds in terms of its functionality and breadth and depth.
+Mik Cepulis: So like I said, self service is big for us.
+Mik Cepulis: We've done a lot in the way of building out very robust lineage.
+Mik Cepulis: So for engineering and science focused teams, they can get a rich map of end to end.
+Mik Cepulis: What's going to happen if I change this API endpoint or this data source and my downstream implications?
+Mik Cepulis: Collaboration again is very big.
+Mik Cepulis: And we've done a lot in the way of investing in reporting capabilities and helping communicate the efforts that you're making on the data governance side, how they're impacting the business and how you're reaching those goals through KPI's and other ways to report up the chain.
+Mik Cepulis: Excuse me, I mentioned automation and productivity, so this is big for us as well.
+Mik Cepulis: We have a new feature called Metapilot, which is an auto description generation engine for your new data that's imported.
+Mik Cepulis: So if you have tables that don't have descriptions or columns that don't have descriptions, that's a big frustration in the onboarding process.
+Mik Cepulis: As part of the core platform.
+Mik Cepulis: When you sign up with colate, each data asset that you import, each table that you import can be automatically labeled through Metapilot.
+Mik Cepulis: And this also gives us the capability to offer query generation based on the full context of your databases and tables and joins and queries and ownership structure, other metadata that we import.
+Mik Cepulis: It helps us form pretty elegant ways of creating automated queries and refining queries that already exist within your system.
+Mik Cepulis: So pretty powerful tool.
+Mik Cepulis: And then the generic automation here is just helping automate manual tasks, doing things like lineage propagation, mass tag updates, mass ownership updates.
+Mik Cepulis: Should you not want to go through and manually update 1000 tables?
+Brian Pollack: Yeah.
+Brian Pollack: So what you're describing is that like a change management system?
+Brian Pollack: Is that like a system to help database migration and update?
+Brian Pollack: Is that.
+Brian Pollack: No, actually like first and foremost with that, or is that just like an additional benefit?
+Mik Cepulis: It's my, we do have, I mean.
+Brian Pollack: Something like actual data quality monitoring that's important to us, something that would help with database migration, especially when we're going to have to go through the arduous task of unifying column names descriptions.
+Brian Pollack: We've multiple tables, some of them have different names for the same thing.
+Brian Pollack: Going through a simple change like that can have massive downstream effects without additional assistance and a lot of legwork to prevent unexpected errors.
+Mik Cepulis: Right?
+Mik Cepulis: Yeah, the automation tool, it's very powerful.
+Mik Cepulis: You wouldn't want to give this to anybody who has a seat with collate, but it's something where you can define the scope.
+Mik Cepulis: So this is essentially filtering down on the specific pieces of data that you want to have changed and there are different filters and conditions that you can add.
+Mik Cepulis: So if we want to have just tables that are tagged with PII, we can update those in a certain way and then take an action on that.
+Mik Cepulis: So this is a very, very quick sampler of what the metadata actions or automations tool is.
+Mik Cepulis: ML tagging tiering lineage propagation or removing information from this if you maybe made a mistake or wanted to change something about the existing assets.
+Brian Pollack: So yeah, I mean, I don't mean to cut you off, but I do have to jump to another meeting right after this one.
+Brian Pollack: I mean, your offerings look pretty interesting to us and it hits a lot of different items.
+Brian Pollack: And I would love to cross off things like not just the cataloging aspect, but also data quality, also assistance migration.
+Brian Pollack: So hitting like all of these various aspects of data hygiene in general would be excellent.
+Brian Pollack: Before we go too much farther, what is your guys price point and startup procedures look like?
+Mik Cepulis: Yep.
+Mik Cepulis: So the startup procedure of actually deploying a new Cola production instance is very quick on our end.
+Mik Cepulis: If we're using SaaS that give us a half day or day heads up and we'll have an instance provision for you, the onboarding process is as complicated as we need to make it.
+Mik Cepulis: I think that we try to chunk things out.
+Mik Cepulis: So just integrating with your security infrastructure, then having a couple tier one data sources integrated first, goes a long way to teaching you the ropes of how to actually connect data to colate and make sure it's looking the way it ought to look.
+Mik Cepulis: A big part of the onboarding process is making sure that things like automated lineage are updating correctly when those core systems are updated.
+Mik Cepulis: So just ensuring that the airflow systems are correctly communicating with colaid and some of those more tricky to set up pieces of the architecture, that's where we'll be a lot more hands on during the onboarding process.
+Mik Cepulis: But if, if the underlying system is extremely complex, then the onboarding process takes longer, and if it's less complex and it's quicker.
+Mik Cepulis: So I think that the main takeaway is our we don't really have tier one support.
+Mik Cepulis: We work with engineers only internally.
+Mik Cepulis: So everyone who you're working with in the shared slack channels that we set up as part of the support experience are product experts and they've done it before.
+Mik Cepulis: They're also helping build the product in one way or another.
+Mik Cepulis: You're working with high quality folks on the colate side.
+Mik Cepulis: We're very hands on during the onboarding process and do a lot of the way of just investing and ensuring that you're successful.
+Mik Cepulis: So, yeah, obviously, pretty early to say whether it'll be an easier or harder onboarding experience because we're more modern, because we're a newer solution using modern paradigms, we have been able to automate a lot of the tricky parts about integrating your data.
+Mik Cepulis: So I think in general, it's safe to say that using cola SaaS is going to be a lot less overhead than a more traditional data catalog.
+Brian Pollack: Okay.
+Brian Pollack: Yeah, I mean, assistance with integration, assistance with setting up.
+Brian Pollack: Like we know we have people that know our data.
+Brian Pollack: We don't necessarily have the tools at our disposal right now to enact the actions that we want to do a lot of the time, but we do have engineering power that we can set up.
+Brian Pollack: So getting our handheld through that process would be excellent.
+Brian Pollack: Again, what does pricing look like in general?
+Brian Pollack: For this type of setup, we have.
+Mik Cepulis: Two primary tiers of our product, the premium, the enterprise.
+Mik Cepulis: The premium we solved primarily dividing by seats and number of data assets.
+Mik Cepulis: Data assets, typically a table, but it can also be other ML objects and dashboards.
+Mik Cepulis: I can share over the full definition with you, but mostly think about the number of tables that you have.
+Mik Cepulis: And we don't differentiate seats.
+Mik Cepulis: So the number of users that you have, the permissioning structure, whether it's a viewer or an admin, we don't differentiate that at the moment.
+Mik Cepulis: So anybody who is using cola counts as a user.
+Mik Cepulis: Do you have a sense for the initial phase one deployment, how many users and data assets that you would have in Coli?
+Brian Pollack: Let's say users would probably be relatively few.
+Brian Pollack: That we would need to have half dozen, maybe ten users max.
+Brian Pollack: I don't think we would have enough work for that many users to do to assign more seats than that.
+Brian Pollack: As for data assets, if we're just talking about tables, in principle, we have hundreds of tables.
+Brian Pollack: A lot of them don't need this process.
+Brian Pollack: But we do have core tables that we've already identified that do certainly need this process.
+Brian Pollack: Let's say core tables, a dozen.
+Mik Cepulis: On.
+Brian Pollack: That order at least.
+Brian Pollack: Yep.
+Mik Cepulis: Okay.
+Mik Cepulis: Yeah.
+Mik Cepulis: So the premium SaaS would be an easy, I think you have a fair bit of headroom.
+Mik Cepulis: So 25 users and 5000 data assets.
+Mik Cepulis: The asset count, the asset definition is beyond just a table.
+Mik Cepulis: So there are other things that would draw down that number, but that starts at year, includes everything we've talked about.
+Mik Cepulis: So onboarding support the core platform, as well as the automated description generation from the metapilot tool.
+Brian Pollack: Okay.
+Brian Pollack: Yeah.
+Brian Pollack: So fifty k a year is probably at the maximum end of our budget, if that's something I can swing.
+Brian Pollack: So that doesn't mean it's completely ruled out.
+Brian Pollack: But if this can solve multiple issues that we have and take the place of a couple of different tools, which it sounds like it, you might have solutions for there.
+Brian Pollack: Are you guys familiar with data?
+Brian Pollack: True?
+Mik Cepulis: I don't think so, but our other guys might be.
+Brian Pollack: Yeah.
+Brian Pollack: So it's a data quality tool.
+Brian Pollack: Again, if you have the ability to help us automate our data quality and restrict the inputs or cleanse the inputs to some level of sanitation above and beyond what we currently have, that is certainly something we're interested in.
+Brian Pollack: I do need to jump to another call.
+Brian Pollack: I would like to have a follow up, though, to get more information and maybe give you guys some more hard examples of problems we're trying to solve right now and see exactly how that would be used for open metadata and collate.
+Mik Cepulis: Awesome.
+Mik Cepulis: Yeah.
+Mik Cepulis: Let's set up a demo then.
+Mik Cepulis: If we have other stakeholders we can include in a walkthrough and q and a.
+Mik Cepulis: I think it may be a valuable next step then.
+Brian Pollack: Okay.
+Mik Cepulis: Let'S you and I connect on that.
+Mik Cepulis: Probably aim for next week for a demo.
+Brian Pollack: That'd be great.
+Brian Pollack: I could probably get a couple more stakeholders involved at that point too, and we can discuss it beforehand.
+Brian Pollack: That'd be excellent.
+Mik Cepulis: Hi, Brian.
+Mik Cepulis: Well, it's been a pleasure meeting you.
+Mik Cepulis: And I'll share some information over email, and then we'll connect next week.
+Brian Pollack: All right, sounds great.
+Brian Pollack: Thank you very much.
+Mik Cepulis: Cheers.
+Brian Pollack: Bye.
+
+END MEETING

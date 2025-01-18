@@ -1,0 +1,483 @@
+Meeting Name: Collate  Persona Demo +
+Meeting Date: 2024-12-02
+
+Barney, Darryl: Voice Thunder is interesting.
+Barney, Darryl: Not a lot of companies do that.
+joseph: Honestly, super helpful just to be able to actually absorb what someone's saying, but then also be able to get, you know, context through notes.
+joseph: Luckily, Mick's actually a really, really good note taker, aside from the, you know, the collate note taker that we have.
+joseph: But I'm always looking back at his nose because I can't do two things at once, sadly.
+Barney, Darryl: I get that I can balance between things, but I can't do things concurrently.
+Barney, Darryl: I can do that fast.
+joseph: Yeah.
+joseph: If I'm writing something down, I am not listening.
+Barney, Darryl: Oh, yeah, yeah, yeah.
+Barney, Darryl: That's.
+Barney, Darryl: That's me.
+Barney, Darryl: Hey, Cat.
+Walker, Kathleen R: Hey.
+Walker, Kathleen R: How are y'all doing?
+joseph: Good, Good.
+Barney, Darryl: Well, Joe, you're welcome to run with it.
+Barney, Darryl: We're all here.
+joseph: Yeah.
+joseph: And Kat, I think what we can do is kind of bounce back and.
+joseph: Forth, you and me, between those different.
+joseph: Types of, you know, Personas that you guys have at Orlando Health, and, you know, making sure that Cola can capture and be customized, you know, for those.
+joseph: Needs, but also can, you know, drill down into some of those different areas.
+joseph: So, Kat, I didn't know if there was a specific type of Persona you want to start with.
+joseph: We could kind of show some key elements of collate that way, or if we want to kind of take a broad step back and kind of just show it all.
+Walker, Kathleen R: Well, let me give you some for instances, right?
+Walker, Kathleen R: And then you figure out how you want to show things.
+Walker, Kathleen R: So I think you're going to have what I'll say the technical developers, engineer folks who, you know, they're going to have, let's say they might be on Adele or Daryl's team, and they're going to have full access to the data lake to see all the sourcing, to see anything they want, and kind of, for lack of another phrase, go and query and say, hey, where's our readmission metrics?
+Walker, Kathleen R: Right.
+Walker, Kathleen R: Like.
+Walker, Kathleen R: Or to back determine the lineage of how data flu went from an analytics dashboard all the way downstream back to main source, whether there might have been disruption in the CICD pipeline for the raw layer or there was disruption in the data model layer.
+Walker, Kathleen R: So that's.
+Walker, Kathleen R: That's one Persona.
+Walker, Kathleen R: Right.
+Walker, Kathleen R: But the bigger.
+Walker, Kathleen R: So that one's super important.
+Walker, Kathleen R: And then go ahead and record, Darrell, unless the collate folks don't want you to.
+Mik (Collate): Okay.
+Walker, Kathleen R: And then the other Persona I would say to look at is from the business side layer.
+Walker, Kathleen R: Right.
+Walker, Kathleen R: So meaning we have folks who.
+Walker, Kathleen R: They're not going to be in there doing the data engineering, building the pipelines, understanding how it flew, how the data went from raw state to from ingestion to raw into a data model that might now be silver within the data lake to then a visualization on the dashboard.
+Walker, Kathleen R: What they're seeing is that dashboard, right.
+Walker, Kathleen R: The in state visual.
+Walker, Kathleen R: And they're saying, hey, I can see that this is a readmission KPI or this is a length of stay KPI.
+Walker, Kathleen R: Where is it coming from?
+Walker, Kathleen R: And kind of how do I walk back and understand.
+Walker, Kathleen R: And I say this because a lot of health systems like ours, right, so industry agnostic to healthcare, there's you know, 100 different definitions and ways they define readmissions or length of stay.
+Walker, Kathleen R: You know, revenue might look at it differently than a clinical nursing area versus you know, even our case management areas.
+Walker, Kathleen R: Right.
+Walker, Kathleen R: So there's just different ways they view that type of data.
+Walker, Kathleen R: Right.
+Walker, Kathleen R: So to me, when I think of analytics catalogs versus like, you know, data mapping catalogs, like there's just such a big variance there.
+Walker, Kathleen R: And I think I'd like to understand how you kind of traverse this with your tools, if that makes sense.
+joseph: No, that's, that's perfect.
+joseph: And I will start on the technical show some things, you know, and then I also kind of spend probably a little more time on that business side of things.
+joseph: But before I do that, Daryl, you.
+joseph: Have your hand raised.
+Barney, Darryl: Yeah.
+Barney, Darryl: As you go through that with Kat too, making call outs because if I recall, right, collate allows a lot of like hiding and changing the dash dashboards and perspectives.
+Barney, Darryl: So making sure we hit all that because that'll show all the flexibility and variations from, you know, what you're going to see and beyond.
+joseph: Absolutely.
+Walker, Kathleen R: One more, one more thing and I'm sorry I had to leave Yalls demo prior when you were here, but the one more avenue that I'd like to understand is what's the support and maintenance here from both avenues.
+Walker, Kathleen R: Right.
+Walker, Kathleen R: And I say this because in my head, right, like data catalogs take a lot of grooming, a lot of, you know, or typically the ones I'm familiar with.
+Walker, Kathleen R: And it is, it's, it's a job, you know, just to maintain and understand because we might have 20 sources in a lake and they may have home address one field, right.
+Walker, Kathleen R: In all 20 of those sources and which one becomes really that source of truth if you now have 300 analytics developers hitting that same data lake and they're like let me find home address one, you know.
+Walker, Kathleen R: So I kind of also want to understand what is a, the, the more technical support, maintenance, grooming and then I'm going to casually use the word data steward grooming.
+Walker, Kathleen R: But where it becomes that business ownership of, hey, you're the data owner, you're the, the KPI owner.
+Walker, Kathleen R: So you also own some form of backlog, catalog grooming, you know, maintenance, that kind of thing.
+Walker, Kathleen R: So just understanding all of those, I threw a lot out there, by the way.
+joseph: Oh no, I think, you know, and that's the best thing about Koali.
+joseph: It is that unified platform.
+joseph: And I think it does a really good job of bridging that technical gap to that business focus gap, because you do.
+joseph: There is a lot out there that needs to be, you know, under control.
+joseph: And another thing I think, you know, Coley does extraordinarily well is limits those efforts or at least create a path forward to either automate or do a lot of this in bulk.
+joseph: I'm not saying qualitative make all these problems disappear, but there's definitely ways where it can expedite these different data steward s tasks.
+joseph: But the first place I want to start is to Darryl's point of how can we show certain things to those actual, those different groups?
+joseph: So the technical lens versus maybe a data steward lens and things like that.
+joseph: And there's two large ways we can do that.
+joseph: The first is we can have different types of Personas.
+joseph: So here I have my Personas and I can say this is what I want you to see.
+joseph: If you're a data steward, I want you to see your data assets.
+joseph: I want you to see the KPIs, the total assets.
+joseph: I want you to see all this quality stuff as this specific Persona.
+joseph: But then as I switch to the data consumer, I can see maybe I only want my recent views following and knowledge center some data quality stuff.
+joseph: And that's it.
+joseph: I don't want you to see all the different types of assets we have or these pipeline things and whatnot.
+joseph: This Persona lives with that user.
+joseph: So I can put a team or a group of individuals or an individual in this Persona and then I can create different rules and roles based off either that Persona or that team, where I only want certain people to do that.
+joseph: And that's where our access controls come into play.
+joseph: They're pretty rich.
+joseph: So I can say, you know, only data owners can edit these certain things or only specific types of people are able to view everything, including sample data.
+joseph: So a lot of different facets we can control and then we can apply this outwards.
+Walker, Kathleen R: Yeah, Catherine, so question is there, and forgive my ignorance when I say it this way, but is there a way to create multiple.
+Walker, Kathleen R: We're going to use this one.
+Walker, Kathleen R: Data owner Personas and I say this because some of our data owners are incredibly savvy.
+Walker, Kathleen R: I don't mind the being able to edit and do all of it on the technical layer.
+Walker, Kathleen R: Some of them who really are the data owners, they aren't that technical.
+Walker, Kathleen R: So I want them to still be a data owner, but maybe they're like a business data owner so they can just, they can't edit in general.
+Mik (Collate): When there's a question about, hey, can I logically segment or create a personalization or customization with a data view or Persona or something like that, the answer is yes.
+Mik (Collate): We sort of abstract away the idea of what a Persona is defined as, what a consumer is defined as, and you set your own permissions.
+Mik (Collate): We'll give you guidance around what a typical consumer or Persona might need to have access to, but you have full control over duplicating those views, modifying them, segmenting them based off of group or subgroup.
+Mik (Collate): It's the same way with viewing and accessing data through the domains feature.
+Mik (Collate): So it's really just like you wanted to find the set of permissions and access grants and then we propagate that access down to whichever teams and individuals have access to it.
+Barney, Darryl: Yeah, perfect.
+joseph: And these things are called kind of based off percentage.
+joseph: But like Mick mentioned, these can be very action oriented and then we could assign action oriented policies towards certain teams or certain groups or certain areas of the organization where it's not, oh, you're a data steward so you can do all these things.
+joseph: It's oh no, this team can write, this team can read and that be the end all, be all.
+joseph: Again, we can get extremely granular and kind of create that based off not just your typical role based access controls, but also what we call attribute based access control.
+joseph: So we could even look at the certain tag on an element and that be the criteria for you to edit or view something or the domain in which it's part of, can you view or edit it from that standpoint?
+joseph: So lots we can do in that area from a viewing standpoint, but also controlling from a fine grain standpoint, your technical audience or your technical teams versus maybe your more business oriented areas.
+joseph: Perfect.
+joseph: And then the other area where we can really kind of control what that looks like is from a domain standpoint, maybe we don't want everyone to be able to see finance.
+joseph: Maybe we don't want everyone to see, you know, the number of beds that we have occupied if we were to set it to finance.
+joseph: Now we only have one data asset within finance.
+joseph: So we can, you know, have 100 data assets within Finance, but we can control that.
+joseph: And we could also limit only these people in this domain can see these specific assets.
+joseph: One, we don't want everyone to be able to see everything.
+joseph: But two, we don't want people to muck around things that are completely irrelevant to them or might have different meanings or contexts that aren't necessarily related to them.
+joseph: So maybe you do have two definitions of, you know, occupancy of hospital beds.
+joseph: And that's okay as long as we assign it, you know, proper context, proper domain and things like that.
+joseph: So users know, okay, this is within my domain, this is my context.
+joseph: And going down that we have the ability to have glossary terms.
+joseph: So if I click here and go into Glossary, I can have a human resources glossary and I can define what account payables mean or what does occupancy mean and how it's calculated for these different things.
+joseph: So when I click into this, I can see any synonyms, related terms, any tags, the proper owner or reviewer.
+joseph: Now, this can be an individual, but it could also be a team.
+joseph: And this starts going on to your how do we get people to do things?
+joseph: Maybe the team is responsible for upkeeping this definition and not John Smith.
+joseph: Because if John Smith goes on holiday, we don't want things to come to a grinding halt.
+joseph: So there's different things we can do in that regard to kind of show ownership.
+joseph: We can have different types of ownerships from our custom properties, so it doesn't all need to be the same type.
+joseph: We can define these custom properties to whatever you want, and then we can link these kind of to each other.
+joseph: So maybe within account payable we have these sub definitions as well.
+joseph: And maybe I came into Colate looking for accounts payable, but now I want to see what assets are related to accounts payable.
+joseph: Are they BI objects, are they tables?
+joseph: And from a, you know, metric standpoint, I want to see what dashboards use, accounts payables.
+joseph: I want to see what metrics or glossary terms use, you know, this field and what we're doing, you know, later this week, as early as this Wednesday, we have our 1.6 release.
+joseph: So right now I'm going into our beta sandbox to show metrics, which is a type of term.
+joseph: So here I might have something like engagement rate, where I can define what engagement rate is, but I could also have a proper definition.
+joseph: This could be Python or SQL or whatever it is.
+joseph: But now everyone's calculating these metrics, these rates in the same fashion.
+joseph: So we really have some governance around that in order to make sure that we're doing things right and proper.
+joseph: And then we can track it from a lineage standpoint so we can see how this metric might feed in to a specific dashboard and things like that.
+joseph: And this is where we start maybe bridging that gap from maybe just business focus, you know, looking and understanding the definition.
+joseph: But then from a technical audience, you know, where does this actually get used?
+joseph: How is it actually calculated from a code standpoint?
+joseph: My business user may not care, but my technical user might care.
+joseph: So we could have these things live or coexist to be able to provide that, you know, full on context.
+joseph: Want to pause here just because we kind of mentioned, you know, metrics and glossary terms, you know, earlier.
+joseph: Does this kind of address some of those key needs, you know, being able to have owners, domains, custom fields, tags associated to help your business users, but also your more technical audience?
+Walker, Kathleen R: I think it does.
+Walker, Kathleen R: I, and this is maybe more from my own learning perspective here with this as well.
+Walker, Kathleen R: I guess what I'm, you know, when I look at things and I hate this phrase, so I'm not going to lie to you, but everyone says don't boil the ocean around here.
+Walker, Kathleen R: I hear that phrase a lot.
+Walker, Kathleen R: But there's, there's just an overwhelming amount that, that I've seen from an analytics standpoint from our healthcare system, right.
+Walker, Kathleen R: And because we're just growing and getting bigger and bigger and bigger, I partly wonder, you know, and we cannot be the only people with this issue as well, right?
+Walker, Kathleen R: Like how are other, how is this working effectively with other orgs on kind of again, the maintenance support aspect, because I think it's pretty easy what you're saying and intuitive to how you can, you know, manage this and then who can do what to edit.
+Walker, Kathleen R: But it's to me, it also reminds me, and I don't like to say this because this looks much better but like SharePoint, you know how Microsoft turned it on everybody and their brother creates a site, they own their own site, they maintain, they're supposed to maintain all everything associated with it, the ownership, the.
+Walker, Kathleen R: And it's just again, to me, for this to be effective, we have to have some form of support and maintenance structure at least to make it efficient for I personally would assume the first year.
+Walker, Kathleen R: But you all, I'm assuming, have done this with other health systems.
+Walker, Kathleen R: What have you seen be successful?
+Walker, Kathleen R: Because it obviously looks like a very intuitive tool.
+Walker, Kathleen R: That would be great, but I certainly would hate to see, you know, a Lack of proper maintenance with it or support, and then it just becomes a shelf product that isn't, you know, utilized effectively.
+joseph: And I think, you know, the biggest thing to realize here is Cola is just a tool.
+joseph: Yeah, it becomes a solution when we have the right people and processes in place to address the needs of Orlando help.
+joseph: And I think the first step in doing that is, you know, understanding our users, you know, talking to people like you and Nadeel and Daryl on, you know, what are the pain points and then working together to come up with a specific solution on what do you actually need?
+joseph: What do you struggle with?
+joseph: Do you struggle with having 10 different definitions of hospital bed occupancy?
+joseph: If so, how can we design a glossary?
+joseph: How can we design terms to let you know when to use what?
+joseph: But it's not just us shoving a bunch of dictionary items in here and hoping it works and figuring it out that way.
+joseph: There's a big people component that we really need to think about to get that user adoption, to get that change management.
+joseph: It starts, I think, by allowing them to have your end users awareness of the problem.
+joseph: Right now we have been growing at an exponential rate.
+joseph: We've acquired eight different medical facilities in the past six months.
+joseph: We don't know what is the right term given the context.
+joseph: So we're aware of the problem.
+joseph: Then we have to think about what's in it for the individual.
+joseph: So it's great for Orlando Health if we're all talking in the same language, if we're all using the right data sets.
+joseph: But how does Joe Perez, his life get any better from using Kolate?
+joseph: We have to introduce that the what's in it for me type mentality of using the tool because otherwise, if it's just good for Orlando Health and not for me, it's going to collect dust.
+joseph: So it's going to make your life easier, it's going to make your job easier, it's going to save you time.
+joseph: That you can be doing on more important things.
+joseph: Less rework, less revision, things like that.
+joseph: We have to identify.
+joseph: So that's kind of that understanding aspect.
+joseph: So we built up that awareness for the problem at whole.
+joseph: Now we kind of sell it as, you know, how do you benefit?
+joseph: But then we need to take it a step further and think, how do you actually use the tool?
+joseph: Making sure there's support to use the.
+joseph: Tool, whether it's from our core teams or their management teams throughout the organization.
+joseph: But if they have a problem, who do they go to?
+joseph: Making sure that's clear and then reinforcing these elements periodically and a lot of what I just described, sadly, the tool doesn't magically solve for.
+joseph: That's going to be SharePoint, that's going to be Purview, it's going to be Unity catalog.
+joseph: They're all going to face these same type of problems unless you kind of build up that, you know, framework for.
+joseph: Awareness, desire, you know, knowledge and understanding and then reinforcing these elements.
+Walker, Kathleen R: Do you have recommend?
+Walker, Kathleen R: So fully agree with everything you said, by the way, and this is much nicer than Purview of my personal opinion, but do you have, I don't know if you guys share this with Shahadal yet or not, but do you have like one pagers or, you know, something where it, it points out, yes, this is what you need to do and we've seen success with these, you know.
+joseph: Yeah.
+joseph: And we actually have something bigger than a one pager.
+joseph: We offer a launchpad program that does exactly what I walk through and build success.
+joseph: What I did prior to becoming Mix Robin from a solutions engineering standpoint was I was at elation and informatica implementing these solutions, not trying to sell them.
+joseph: And that's where I dealt with a lot of this change management ad card type framework on how do we actually make this tool, this catalog, this MDM or data quality solution successful within an organization.
+joseph: And you know, the thing I kind of like about quality is I get to be there from, you know, start these, you know, pre adolescent phases, the beginning of your journey all the way to the end of your journey.
+joseph: And you know, what Mick has on screen here is absolutely perfect.
+joseph: You know, that step one is establishing what's even out there in the first place and then, you know, making sure it's certified if it's a glossary term or it's, you know, property or property observability rules if it's a table.
+joseph: So really building that trust and then.
+joseph: That standardization, you know, comes in place, you know, making sure the right tags are there and then we can start accelerating and building on that, you know, data culture.
+joseph: So, you know, this is definitely a great, you know, one slider, but we go a whole lot more in building these frameworks out from a people and processes side, not just a purely data and technology side.
+Mik (Collate): And yeah, Kathleen, to Joe's point, you know, we do start basic and we usually start with a technical team because the technical team is going to have to have the full comprehensive knowledge of end to end lineage and end to end information transformation.
+Mik (Collate): That's our step one.
+Mik (Collate): Like discovering all the Assets, putting them into a single place, starting to get your arms around the problem at the highest level possible.
+Mik (Collate): And then once we have things baked out, we can bring in other teams, we can add in more the business nuance and that, you know, to your point earlier about not boiling the ocean like this is more of a step by step process and you'll never have success dropping a legal team into a data catalog product that is intended for engineers if it's not been built out and thoughtfully constructed in a way where it's, you know, sectioned off.
+Mik (Collate): The legal team can jump in and they can understand like what are, what are the pieces of information here that relevant to me and are they easily surfaced?
+Mik (Collate): Like that's part of the onboarding process, that's part of the, the sort of data culture maturity process.
+joseph: Yeah, because you don't want to just give an empty tool and then say hey, figure it out.
+Barney, Darryl: Because yeah, sorry, no worries Joe.
+Barney, Darryl: I also feel teams has a slight delay sometimes so you never know about the duplexing and stuff like that.
+Barney, Darryl: So question for you, do you guys have any diagram or something that kind of says, you know, when we're doing a rollout we're looking at initially for the first phase, 60% data engineer.
+Barney, Darryl: So you'd get like my admins, my engineering platform guys, maybe a resource or a few hours from an analytics person like ADELE or Power BI to kind of get that the foundation in place.
+Barney, Darryl: And then we expect at this phase to start needing a lot of data domain owner or steward and or alignment governments.
+Barney, Darryl: Do you have any like, you know, pie chart that kind of says yeah, phase one looks like this but when we start to get operationalized and your business line is starting to use it, you're 80% stewards and you see where I'm going with that?
+joseph: Yeah, so I don't have that exact.
+joseph: You know, diagram, but it's definitely something.
+Barney, Darryl: Well then just in the call build.
+joseph: Out, yeah, I'm going to, I'm going to drop.
+joseph: If you saw the rest of my afternoon, you'd be like, yeah, you can.
+Barney, Darryl: Go, no, I'm messing with you.
+Barney, Darryl: Let's go on.
+joseph: So you know what we really do with again kind of tying it back to this launch pad is that first step of launching is really that technical piece that Mick was referring to where it is going to be more tech heavy.
+joseph: We then get into this foundational elements where it's making sure you actually know how to use the tool.
+joseph: This starts getting a little bit mixed.
+joseph: It's not going to be all Data engineers, you're going to have your, you know that dirty word data steward or custodian in there as well.
+joseph: And then we get to that third phase where it's really thinking about how are we onboarding some of those end users, the people who aren't necessarily going to maintain collate, but who are going to actually consume within Colate.
+joseph: And then we think about how do we set this thing up for success, how do we manage this on a regular basis?
+joseph: So it's one thing to implement the solution, it's an entirely different thing to keep the lights on.
+joseph: So what are some best practices around there?
+joseph: And the other core thing that's not really caught out here, but it's kind of done in that Colate101 is what are your use cases?
+joseph: Because as much as I would love just a generic boilerplate of these are all the things you need to do.
+joseph: Sadly my job's not that easy.
+joseph: It really takes an in depth understanding of your problems, your use cases, your.
+joseph: Totem pole of activities that we could kind of go to co develop a.
+joseph: Tak plan to say, all right, this is what we should face first from.
+joseph: A rollout standpoint or this is the usual we should focus on next based.
+joseph: Off Orlando Health, different initiatives and needs and things like that.
+joseph: That's something we can co develop.
+joseph: I have some templates for use case development and workshops.
+joseph: So we could not just say, oh, we want to classify our data, that's great.
+joseph: What are the classifications?
+joseph: Who's classified, what's our timeline?
+joseph: What is this from a priority standpoint?
+joseph: What collate features and elements are we going to use to make this super.
+joseph: Easy and super quick?
+joseph: That's all something we will co develop during our, you know, initiative to make sure we're having a tailored solution.
+joseph: It's much like a doctor, a doctor, you know, before he just writes you a script for, you know, Advil or penicillin, he says, hey, what are you feeling?
+joseph: Oh, my head hurts.
+joseph: Okay, here's some, you know, an anti inflammatory.
+joseph: It's.
+joseph: Oh, we have a data classification challenge.
+joseph: All right, let's do some tagging and things like that to address it in the best way possible.
+Barney, Darryl: So question, Mick, is this any chance the slide deck that you helped build when Ray was looking at this product?
+Barney, Darryl: Because if so, there's a slide I want to present to the screen.
+Mik (Collate): It's similar, this is a, I think a newer iteration of it, but you're welcome to share your screen.
+Mik (Collate): There are more slides in the stack that Joe is showing now.
+Barney, Darryl: Okay, I'm going to show this slide because this is exact one because Ray had asked, hey, give me an implementation plan.
+Barney, Darryl: And we never got to show this to Ray because Ray was interested too and you had built like a multi phase plan.
+Barney, Darryl: And it's almost like we might want to take these phases and go, okay, what is this technical versus analyst steward kind of role or how much of this like this one data discovery and visibility is almost purely someone connected to enterprise data.
+Barney, Darryl: You know, firewalls, discovery, getting the scans running, security in place.
+Barney, Darryl: So that's our governance and probably my team.
+Barney, Darryl: Then you'd go down to the next phase and go, okay, now we're prioritizing key data.
+Barney, Darryl: So now governance is starting to light up in partnership with the governance teams, data domain owners.
+Barney, Darryl: And you can kind of see that pie chart shifting as we go through the phases.
+Barney, Darryl: And then there'll be this phase where it's just Adele 24 by 7 working, you know.
+Walker, Kathleen R: So if I may, Adele 247 would be fantastic by the way.
+Walker, Kathleen R: But if I may, I actually think, Daryl, I like where you're going on, you know, some of the.
+Walker, Kathleen R: But I think what's been understood from Shahadal or what we've heard over the last few weeks has been really the focus on clt, right?
+Walker, Kathleen R: And kind of, I don't want to say backwards walking some of those major executive facing KPIs, but maybe this is an opportunity to say, hey, we do know these are the high visible executive facing KPIs.
+Walker, Kathleen R: This is a tool we could use to at least map that as a start, right?
+Walker, Kathleen R: And then it a, it also becomes where we're mapping it, meaning it on our side.
+Walker, Kathleen R: But we're naming somebody in the business who's that actual owner so that then they maintain, you see what I'm saying?
+Walker, Kathleen R: Like if I was thinking of how to present this back when we discuss internally, that would be part of my strategy.
+Mik (Collate): You know what?
+Barney, Darryl: Actually Kat, maybe take CLT and NOM and go, okay, connectivity is going to be the first 10% and scan and the next 20% is cataloging and what domain it belongs in.
+Barney, Darryl: What are the terms that we need to build out?
+Barney, Darryl: Then it's governance and partnership with the data domain owner to populate.
+Barney, Darryl: Then it's enrichment.
+Barney, Darryl: And you know, while that's happening, my team is making sure all the connections for Lineage are coming in.
+Barney, Darryl: You know, something like that.
+Barney, Darryl: And we could probably take that.
+Barney, Darryl: And that's almost a template for.
+Barney, Darryl: All right.
+Walker, Kathleen R: And that's what I'm trying to tell you.
+Walker, Kathleen R: I would Go from that perspective.
+Walker, Kathleen R: Because I like that if you just did it from all, hey, I can identify all these tech sources.
+Walker, Kathleen R: That's going to be great for the technical people, but that doesn't mean shit for the rest.
+Walker, Kathleen R: And I know I'm on recording saying that, but that's the reality, you know.
+Barney, Darryl: Yeah, I think.
+Barney, Darryl: And we can give Shaheedle both too and go, look, here's how we can be attacking your high priority reports.
+Barney, Darryl: And in parallel there's this thing that we could be slow walking in a secondary way.
+Barney, Darryl: And here's how we were going to phase the slow walk where the priority is, you know, hey, connect Daryl seemed to connectivity and scan.
+Barney, Darryl: They're going to now go do these things while we run this work stream and we show them the work streams in parallel and simultaneously that Adele's doing 24 by 7.
+joseph: Yeah.
+joseph: And it really does build up kind of those different flow charts where, you know, during this segment then we have this three week overlap where we're moving into the next phase.
+joseph: But we're still in the first step essentially.
+joseph: And I think the important thing is that I liked about what you showed and I think Vic had something similar on that little curve.
+joseph: I think it kind of just represents that in greater detail is you do really need to kind of take that step back first and see everything that's out there before you can say this is the most important thing.
+joseph: And it's that, all right, let's see things and then let's kind of target what we're looking at.
+joseph: So yeah, that baseline visibility and inventory.
+joseph: But we want to then prioritize those key metrics in those different areas that Kat was just referring to as well to meet those initiatives that Shahid has like clt.
+joseph: Not that I know what CLT stands.
+Walker, Kathleen R: For, but yeah, it's like our corporate leadership team.
+Barney, Darryl: So Kat, actually this is again from the old slide deck that we had that never got presented, but almost like taking this and aligning it to clt, you know, and there'll be a few extra little pieces, data ingestion, the technical firewalls, initial deployments, blah, blah, blah, and then building the Personas that first stream is going to be probably the most because once you have Personas, you're going to copy and paste and tweak filters and stuff.
+Barney, Darryl: But yeah, you and Adele could kind.
+Walker, Kathleen R: Of showcase that with him for executive high level analytics.
+Walker, Kathleen R: So you could name like CLT NOM Census, because those three are the probably most visible and highest for analytics, corporate executive level.
+Walker, Kathleen R: So I would almost take it that way.
+Barney, Darryl: And you know, Kat, what are the odds?
+Barney, Darryl: And Adele and I were talking earlier.
+Barney, Darryl: I wonder if we can find a way to show a variation of this work stream for a service line.
+Barney, Darryl: Like.
+Walker, Kathleen R: Oh, you absolutely can.
+Barney, Darryl: And go like, here's stuff that we own and here's how this would affect the service line when we want to map one of theirs.
+Walker, Kathleen R: Well, that's my point.
+Walker, Kathleen R: If you take and just say, hey, if we glued this in with clt, right now you have a service line that quality owns in clt just like you have an area that finance owns and clt because there's ownership of four big service lines just in that one dashboard.
+Walker, Kathleen R: There's quality, there's finance, there's the patient safety.
+Walker, Kathleen R: And then I always forget the other one.
+Walker, Kathleen R: But it's, there's, there's, there's.
+Walker, Kathleen R: I think it's something with travelers maybe.
+Walker, Kathleen R: But anyways, there they are.
+Walker, Kathleen R: It's like an HR service line.
+Walker, Kathleen R: But you get my point.
+Walker, Kathleen R: There are four big areas of focus that you can say they become the service line owners and data owners.
+Barney, Darryl: I think that sounds good.
+Barney, Darryl: And you know, I can work on, you know, make working with Adele to get availability to kind of break one or two of those apart.
+Barney, Darryl: Then we can draft it, get it in front of Cat and if she likes the draft, she'll make whatever tweaks and then we can polish it.
+Mik (Collate): I love that.
+Mik (Collate): Yeah.
+joseph: Iterate.
+Barney, Darryl: Iterate through one of the bosses.
+Barney, Darryl: Yeah.
+Mik (Collate): And our reporting in our native dashboarding and reporting capabilities have improved a lot since this summer when we first started looking at collate.
+Mik (Collate): So there's a lot more built in.
+Mik (Collate): Telemetry and progress stats and ability to notify people of progress towards those objectives built into collate from day one.
+Barney, Darryl: Well, the other thing that would be neat is we piece these together.
+Barney, Darryl: Cat, they now have an auto ERD capability and Shadido was mentioning some diagramming colic could help auto map and build those erds, you know, which.
+Walker, Kathleen R: So, okay, I was about to say I love those and I also like the decision tree.
+joseph: The.
+Walker, Kathleen R: And the.
+Walker, Kathleen R: I forget the other one that's like the tree flowing.
+Walker, Kathleen R: But I like this.
+Walker, Kathleen R: This is one of my favorite types of diagramming.
+Barney, Darryl: So it would be neat because as you're piecing CLT together, you're going to start seeing the ER diagrams which, you know, our previous call was saying, hey, what documentation should we be generating?
+Barney, Darryl: Well, hey, part of that's already been auto generated for you as the data is coming in.
+Barney, Darryl: Agreeing that might be a nice little value add.
+Barney, Darryl: To get in this, this final, you know, thing to Shahido when we sit down with them is to show and as we do that work stream, here's all the artifacts we're getting like in er diagram and what have you.
+Walker, Kathleen R: I think it makes sense as long as you and Adele are up for it.
+Barney, Darryl: 24 by 7.
+Mik (Collate): If you send over one of those requirements, maybe Joe and I can start tackling like the structure from the color side and see if that maps to what you're looking for and we can sort of meet and discuss.
+Mik (Collate): I'm not sure if that's your thought process, if it would be a good move forward.
+Barney, Darryl: Well, I'm almost wondering if what is the best way.
+Barney, Darryl: So do we.
+Barney, Darryl: Do we go over one with you guys like here's a report and kind of break out all the aspects of it and then you guys help figure out how that would align.
+Barney, Darryl: How would you.
+Barney, Darryl: What would be best to try to pull out KPIs.
+Mik (Collate): Thanks Adele.
+Mik (Collate): We try to pull out KPIs and map those to a collate dashboard or talk about how to achieve those objectives within the product.
+Mik (Collate): That might be one approach I guess like the, is the end objective to present to Shaheedl.
+Mik (Collate): Hey, here is, here's how we like report up to one of our, one of your top line reports information that he or she is interested that's related to like what collate governs.
+Mik (Collate): Like what are, what's the end goal in mind here?
+Walker, Kathleen R: I mean the way I look at it, this is just me.
+Walker, Kathleen R: I think it's, it's showcasing the a, the tool and how it could be beneficial for us.
+Walker, Kathleen R: And I say it because I don't know like, I mean I've, I've played around with Purview but I've never seen it be I guess super fluid to do this from the business value add side on the analytics catalog.
+Walker, Kathleen R: Right.
+Walker, Kathleen R: Whereas I know you can just auto pull in all the sources.
+Walker, Kathleen R: I'm sure you can too.
+Walker, Kathleen R: And we can see all of that hierarchy from like your, your table structures and the database architecture.
+Walker, Kathleen R: But that's not the worst part of what we have going on.
+Walker, Kathleen R: So I'm sure you both offer that.
+Walker, Kathleen R: Right?
+Walker, Kathleen R: I know Purview does, I have no doubt Collate does.
+Walker, Kathleen R: It's the other side.
+Walker, Kathleen R: That's I think very not ease of use in the current Purview stack that I've seen at least.
+Walker, Kathleen R: But maybe I'm missing.
+Walker, Kathleen R: Right.
+Walker, Kathleen R: But if Microsoft is what I would say the alternative is, it'd be nice to showcase where you all can do something and make it more effective and efficient than Purview.
+joseph: Yep.
+Walker, Kathleen R: Okay, that's my thought, but maybe I might be too simplistic on this.
+Mik (Collate): The idea is essentially how do we make the information more accessible to the business as opposed to something through a fairly technical tool to pull out insights.
+Walker, Kathleen R: Yes.
+Barney, Darryl: Yep, yep.
+Barney, Darryl: And you guys, you and Joe can talk and then message me and we'll, we'll figure out what calls or information you need.
+Barney, Darryl: I think.
+Barney, Darryl: Yeah, it's.
+Barney, Darryl: We were talking, the phased approach was scaled across everything, but she's saying let's build that into a use case from beginning to end and then we can also.
+Walker, Kathleen R: Yeah, I would take just one.
+Barney, Darryl: Yeah, yeah, yeah.
+Barney, Darryl: I mean that's probably going to template, copy and paste.
+Barney, Darryl: Almost anything really, you know, you're going to need.
+Barney, Darryl: So.
+Barney, Darryl: Okay, I think that sounds awesome.
+Barney, Darryl: And then we have lots of options and cards to show.
+Mik (Collate): Kathleen, of those four pillars you mentioned earlier, is there one that seems like a P1 or like quality?
+Walker, Kathleen R: Quality, quality.
+Walker, Kathleen R: In any health system, it's always quality.
+Walker, Kathleen R: We're not unique on this one.
+Mik (Collate): Okay, that's, that's great.
+Mik (Collate): I think that we have a.
+Mik (Collate): I'm already thinking of ways we could easily demonstrate a strong case here.
+Walker, Kathleen R: Yeah.
+Walker, Kathleen R: Even if you all have some playground environment where you've built up something, I guarantee you, whatever your quality departments are in the healthcare vertical.
+Walker, Kathleen R: Right.
+Walker, Kathleen R: Industry wise, they're always the ones with a thousand KPI and definitions and a lot of different data, some from spreadsheets, some from, you know, raw sources that are in data lakes, some that are in other data lakes on other data platforms.
+Walker, Kathleen R: I mean, it's always the case with quality because they're always going to have your HAIs, your hospital acquired infections, your throughput.
+Walker, Kathleen R: So like your ED throughput, your hospital wide throughput definitions, like kind of typically you see like patient survey data in those areas.
+Walker, Kathleen R: Like, so there's a lot, a lot when it comes to that quality brand vertical.
+joseph: Yeah.
+joseph: And I think even more specifically within like those dimensions, readmissions, mortality.
+Walker, Kathleen R: Yeah, all of those.
+Walker, Kathleen R: Sorry, I was just thinking off my head.
+Barney, Darryl: Yeah, no, I think that Clapsy C.
+Barney, Darryl: Diff.
+Walker, Kathleen R: So hopefully that helps.
+Walker, Kathleen R: And yeah, you're.
+Walker, Kathleen R: You're right.
+Walker, Kathleen R: Joseph, Mick and Clabsi C.
+Walker, Kathleen R: Diff is part of that.
+Walker, Kathleen R: The HAI is the acquired infections.
+Walker, Kathleen R: I can name probably 30 off the top of my head.
+Walker, Kathleen R: But that's why I just say quality is always going to be clinical.
+Walker, Kathleen R: Quality at any organization in healthcare space will always be one of your biggest verticals.
+joseph: Okay.
+Walker, Kathleen R: Okay, thank you so if you're talking to any other health systems, use.
+Walker, Kathleen R: That.
+joseph: Sounds good.
+Walker, Kathleen R: And I'll.
+Walker, Kathleen R: I'll take any, you know, lunches.
+Walker, Kathleen R: You can send them straight to Daryl first.
+joseph: Perfect.
+joseph: All right.
+Mik (Collate): Well, yeah, so we'll.
+Mik (Collate): We'll put our hands together with Daryl and the case here.
+joseph: Excellent.
+Mik (Collate): Daryl, did you have a chance to chat with.
+Mik (Collate): She had a little.
+Mik (Collate): Last week or earlier today?
+Barney, Darryl: I did not.
+Barney, Darryl: I spoke to him briefly last week and this we did not get to any information I can share at this point?
+Barney, Darryl: Yeah.
+Mik (Collate): Awesome.
+Mik (Collate): All right, so Joe is out for the next couple days.
+Mik (Collate): We can meet again on Friday maybe to tackle some of the stuff live.
+Mik (Collate): But in the meantime, could you share over with me some of the high level requirements or maybe some structure that we can help use to put together a quality proposal and then we can try to discuss that on Friday.
+Barney, Darryl: Yeah, I think you wanted us to use clt, right.
+Barney, Darryl: Which has quality in it.
+Barney, Darryl: You're muted.
+Walker, Kathleen R: Yeah, I would.
+Walker, Kathleen R: I would use that as the example because I think it's just.
+Walker, Kathleen R: It's so visible.
+Barney, Darryl: Yeah, it does help with the like for like for what is being looked at in purview too, so.
+Walker, Kathleen R: Well, because then you.
+Walker, Kathleen R: You already know where the discrepancy is.
+Walker, Kathleen R: I mean.
+joseph: Yep.
+Barney, Darryl: Point blank.
+Barney, Darryl: Love it.
+Walker, Kathleen R: That's my thought.
+Barney, Darryl: Excellent.
+Barney, Darryl: Thank you, Mick.
+Barney, Darryl: Yeah.
+Barney, Darryl: Send over your schedule, Joe, on Friday and we'll go from there.
+Barney, Darryl: I think I'm only booked at 1:00, so we're good there.
+Mik (Collate): Okay, awesome.
+Barney, Darryl: Thank you.
+Mik (Collate): Talk you then.
+Barney, Darryl: Have a great one.
+Walker, Kathleen R: Thanks.
+Walker, Kathleen R: Bye.
+
+END MEETING

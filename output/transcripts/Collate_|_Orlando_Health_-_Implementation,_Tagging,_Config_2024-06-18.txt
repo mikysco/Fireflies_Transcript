@@ -1,0 +1,351 @@
+Meeting Name: Collate | Orlando Health - Implementation, Tagging, Config
+Meeting Date: 2024-06-18
+
+Mik Cepulis: How things in the past couple weeks going well yourself?
+Mik Cepulis: Yeah, well, busy making good progress in the quarter, so always happy for my team.
+Mik Cepulis: Thanks for getting the team together today.
+Mik Cepulis: Yeah, no problem.
+Darryl: I know Kat's been having Internet issues, so I'm not sure if she'll be able to join.
+Darryl: But we'll record this.
+Darryl: But Ray and I are able to move that forward, I'm sure.
+Mik Cepulis: Awesome.
+Mik Cepulis: With.
+Mik Cepulis: While Ray is still dialing in goals today, on our end, we understood you wanted to review tagging, the process of tagging, and I wanted to cover the deployment options that we have and land on one that we'll use to work with going forward and then talk about what the implementation process looks like for the deployment model in question.
+Darryl: So for this call, I want to focus on curious that Ray is looking at if we need to go into the technical and implementation capabilities.
+Darryl: I can do that separately, but Ray had particularly asked for this, and I know he just joined in around understanding what it takes to make this a usable thing, and I'm probably worrying that very poorly, but I think you get the concept.
+Darryl: So when it comes to infrastructure and things like that and ways to deploy, if we need to, for time reasons, we can take that to a separate call, which I can help facilitate.
+Sriharsha Chintalapani: Okay.
+Mik Cepulis: Easy.
+Sriharsha Chintalapani: Awesome.
+Mik Cepulis: Yeah.
+Mik Cepulis: Ray, good to see you again.
+Ray Deiotte: Yep, good to see you as well.
+Mik Cepulis: Awesome.
+Mik Cepulis: Well, yeah, Daryl, I think that was a good, good team.
+Mik Cepulis: Things up before we talk about implementation, I think that'll be, honestly a relatively brief conversation.
+Mik Cepulis: It's not the most complex tool to implement and we have harsha here to dive deeper into specifics and use cases and to get into any nuance.
+Mik Cepulis: Was hoping to get a quick summary of where we're at post demo and any conversations and feedback that you've heard from the team after that, after that session.
+Darryl: So I can't speak for Ray, obviously, but he's here.
+Darryl: I can tell you that the feedback from a few of my team members have been very positive.
+Darryl: My data engineers actually were liking it.
+Darryl: And even our data governance manager, who wasn't able to make this call, but will record when we start to attack the meat of it, showed a lot of interest for our level of maturity.
+Darryl: This is a.
+Darryl: This is a tool that can get us to the next level.
+Darryl: So, um, you know, a lot of conversations are had about, well, tagging and how do we automate, how do we streamline?
+Darryl: You know, it's very easy for you guys and me to get the tool available.
+Darryl: It's another for me to get the data ingested in there.
+Darryl: It's another to actually make it consumable and usable to an end user who's not, you know, as technical as the people doing the implementation.
+Darryl: So the same feedback was, was a curiosity of others that I picked up.
+Darryl: Ray, anything that you wanted to add to that?
+Ray Deiotte: No, I think those were my biggest questions.
+Ray Deiotte: Is time from deployment to ingestion to usability?
+Ray Deiotte: Given that our maturity is low in terms of process and already working through some of the data governance things.
+Darryl: Every.
+Ray Deiotte: Other tool we've looked at, right, is, oh, yeah, we can deploy, we can get up and it's super easy, and then it's, oh, it's going to take us a year to make it useful.
+Ray Deiotte: And so that's what I want to kind of gauge today, as Darryl alluded to.
+Mik Cepulis: I guess, with those other tools, in the other conversations you've had, has that one year implementation timeline been sort of disqualifying or are you just trying to get a sense for what the investment will look like across the market at.
+Ray Deiotte: Just, just trying to get a sense of it right.
+Ray Deiotte: I mean, even with, even as we were looking at, you know, purview or Atacama, it's like, yeah, great, we can ingest the data, but then it's going to take a hot minute to do anything with it.
+Ray Deiotte: So I guess I'd love to understand kind of what you guys have seen and what, you know, help gauge our expectations on, you know, as we ingest each data source or as we hook it up to our enterprise data platform.
+Ray Deiotte: How long is it going to take it to be useful?
+Mik Cepulis: Yeah, so Harsha has a lot of experience actually building these tools.
+Mik Cepulis: He built the databook platform at Ubers.
+Mik Cepulis: That was a massive project at uberskale data.
+Mik Cepulis: So I think that a big forcing function is data prioritization.
+Mik Cepulis: So there's going to have to be a level setting on your side understanding what's the prioritization, which teams are number one, which data sources are number one, and stack, rank that and integrate data sources and chunk things out.
+Mik Cepulis: From that perspective, we can get into this, but we do offer more hands on implementation support and we can work with your team more directly to tackle any of the more painful problems.
+Mik Cepulis: And then as well.
+Mik Cepulis: Yeah, let me record, this meeting is being recorded.
+Mik Cepulis: I think beyond the hands on support that we can offer and just setting up Zoom sessions and whatnot, a lot of the investments that we've been making as a company have been around automating this tedious task of tagging data sources and ensuring that data is correctly labeled and whatnot.
+Mik Cepulis: And that's a lot of the more time consuming efforts that you'll have to go through.
+Mik Cepulis: So with the new automations feature that we released, you can essentially set up parameters to ensure correct ownership, ensure correct tagging, ensure that PII is labeled correctly, and if so, do XYz with it.
+Mik Cepulis: Those are a lot of the sort of more tedious tasks that were, that were a reality in prior iterations of metadata management platforms.
+Mik Cepulis: And harsher, you're screen sharing now.
+Mik Cepulis: So if you wanted to say a.
+Sriharsha Chintalapani: Few things, I want to talk about, address these questions.
+Sriharsha Chintalapani: So we kind of faced similar kind of issues in Uber when we built Ada book the chicken and situation would be, hey, you have all the assets, but there is no ownership, there is no quality controls enabled, there is no description, documentation.
+Sriharsha Chintalapani: Then again, why would people want to come here and visit it if you don't, if you don't get people to come and visit it, you don't get that output either in terms of documentation and everything.
+Sriharsha Chintalapani: So all of our focus has been from the day one one with the data collaboration where you can request, update, description, provide solution.
+Sriharsha Chintalapani: If you are a user familiar with a table, you can provide solution.
+Sriharsha Chintalapani: All of these are built into open metadata from day one.
+Sriharsha Chintalapani: So from our experience, from our customers, our goal, the default support that we built is to make sure you can connect to all of your infrastructure, get the metadata.
+Sriharsha Chintalapani: That is like day one goal.
+Sriharsha Chintalapani: It all depends on how much of time you have.
+Sriharsha Chintalapani: But from our side, we'll fully engage with you to get the data access into the system.
+Sriharsha Chintalapani: That's day one, let's say week one goal.
+Sriharsha Chintalapani: Then once you have that, the next step of the process is to actually organize your teams and users and set up policies and roles and access control.
+Sriharsha Chintalapani: Get the invitation going, get the people excited about this data.
+Sriharsha Chintalapani: Now, the core of this around here, what we are investing, what Nick is talking to is how do we provide, for example, automated data classification?
+Sriharsha Chintalapani: How do you provide description generation?
+Sriharsha Chintalapani: So to that effect, we built, you know, data classification, automated data classification.
+Sriharsha Chintalapani: When you deploy a profiler, it will take into account of your table name, your column names, your sample data and provide is it a sensitive tag, is it a person API, sensitive data classification, whatnot, all of that automated and provided for you.
+Sriharsha Chintalapani: Secondly, we built metadata metapilot genai, which will allow you to automatically generate descriptions for pretty much all of your data.
+Sriharsha Chintalapani: For example, let me go back into my, here.
+Sriharsha Chintalapani: If I go to the orders table, if you do not have any descriptions, you have a session, descriptions that will show up and running right here.
+Sriharsha Chintalapani: So your users will take a value of not only able to discover the data that they have which will all automate run day one.
+Sriharsha Chintalapani: When you actually ingest the data, when your user go to explore page, they will see all of this data.
+Sriharsha Chintalapani: They will be able to search and everything else.
+Sriharsha Chintalapani: Maybe you do not have ownership, maybe you do not have descriptions.
+Sriharsha Chintalapani: Descriptions can be auto generated by Metapale.
+Sriharsha Chintalapani: You can also if you have description generated somewhere you may be using the spreadsheet.
+Sriharsha Chintalapani: You can import the data within one click across all of your data assets.
+Sriharsha Chintalapani: So generating data classification, generating description.
+Sriharsha Chintalapani: Now finally, how do we enable the ownership so to that effect we have insights KPI's this is again, this is a work we have done at Uber.
+Sriharsha Chintalapani: At Uber scale we have the same issues.
+Sriharsha Chintalapani: Nobody actually knows who the owner, nobody knows what the documentation is.
+Sriharsha Chintalapani: CD of the Uber has to sit down with us and say that okay, we have to define company level okrs, which is what we calling as KPI's saying that hey, we should get all the assets tiered, all the assets owned, all the assets have a documentation.
+Sriharsha Chintalapani: Once you have set the goals, we weekly send an email to all the teams saying that your company has 5000 tables, your team own 100 tables.
+Sriharsha Chintalapani: Out of that, only 20 tables have documentation.
+Sriharsha Chintalapani: And you should get a move on because you have a deadline approaching end of this quarter.
+Sriharsha Chintalapani: We want to achieve this.
+Sriharsha Chintalapani: This has worked really well at Uber.
+Sriharsha Chintalapani: We were able to achieve a lot of tiering, documentation, ownership and we were able to get to our goals fairly quickly.
+Sriharsha Chintalapani: Otherwise it was sitting there.
+Sriharsha Chintalapani: All the new stuff that we built, nobody's coming there.
+Sriharsha Chintalapani: So you need to have some kind of organizational push coming from saying that hey, let's actually set a goal and achieve that goals.
+Sriharsha Chintalapani: That's where we are enabling the KPI's and what we are doing in the current release, also allowing you to create your own KPI's could be test coverage, could be, you know, tiering of the data assets, could be anything.
+Sriharsha Chintalapani: You can build your own dashboards as well to achieve the kps that you're setting out to.
+Sriharsha Chintalapani: And quickly, I want to show the new feature that we have built, automations.
+Sriharsha Chintalapani: So all of the goal of the automation is to in a bulk way, how can I do emitter data updates for example, it's called this as metadata updates and select source.
+Mik Cepulis: Before you dive into automations, Ray or Daryl, any questions about the approach so far and the way that we've laid out okrs and tiering data and assigning ownership to data sources.
+Ray Deiotte: No, I think it's helpful to see it and to know that there's some modicum of automation to it, like the automatic metadata scale.
+Ray Deiotte: Geez Louise.
+Ray Deiotte: Having a hard time sourcing and scanning and pulling all of those things in.
+Ray Deiotte: Because I think a lot of what we struggle with is that a lot of that has been manual and it's painful and this and that and the other, and being able to do that and at least give our people who don't want to be doing this work in the business a leg up to say, oh, we've already done this.
+Ray Deiotte: We need you to add in these key pieces.
+Ray Deiotte: I think that helps lend to us managing the people in process side of this and getting ourselves into a place where we can actually reform our process to say, okay, here's what stewardship now means.
+Ray Deiotte: It means doing curation in this tool.
+Ray Deiotte: And it's not spreadsheet driven.
+Ray Deiotte: It's not endless meetings of going line by line, row by row, column by column, which has been the approach to governance and cataloging.
+Darryl: And, Ray, to that point, you know, we've got a lot of new blood, so to speak, that aren't part of our team where, and I'm sure you can think of names where the people are, like, we need to keep them busy while they're getting their orientation.
+Darryl: It's like, here or yourself, by filling in some data.
+Mik Cepulis: Yeah, yeah.
+Ray Deiotte: And that, and that makes it much easier because I know, as Darryl, we've engaged with, you know, the business owners who really should be stewards and data owners, they, they just don't get it.
+Ray Deiotte: They don't understand why we're asking the questions.
+Ray Deiotte: We're asking what we're trying to get to.
+Ray Deiotte: And if all we have to do is say, hey, define this.
+Mik Cepulis: Yep.
+Ray Deiotte: Or annotate this or describe this, it makes life a hell of a lot easier for them, thereby making it easier for us.
+Darryl: And there was a way to do that with other products that you were listing, but they weren't as graceful as this.
+Darryl: The other thing is, too, to your point, the moment those annotations happen and then the lineage, and it understands the queries and how different people are joining the data, the narrative writes itself.
+Darryl: We're joining this data that looks like x to this data that looks like that, and the result has been this.
+Darryl: So you're allowing collaboratively to piece together the, the big picture.
+Ray Deiotte: Yeah.
+Darryl: Very cohesive.
+Sriharsha Chintalapani: Yeah.
+Sriharsha Chintalapani: So, on that subject.
+Sriharsha Chintalapani: Right.
+Sriharsha Chintalapani: So let's say you may have a user who understood certain database schemas and they want to update certain ownership or not, they can select, for example, I want to select, you know, a table asset.
+Sriharsha Chintalapani: I found 74 tables here.
+Sriharsha Chintalapani: And out of that I want to actually look for certain database in this, let's say sample DB.
+Sriharsha Chintalapani: And for this sample DB, I can add description domain ownership tags here or even lineage propagation.
+Sriharsha Chintalapani: Let's say you have a root raw tables at the beginning of the lineage, you already very well documented.
+Sriharsha Chintalapani: And those tables becoming your model tables, your ML model tables, your dashboards and so on.
+Sriharsha Chintalapani: We can propagate the descriptions all the way to the downstream.
+Sriharsha Chintalapani: You can do that as well.
+Sriharsha Chintalapani: This gives everyone an ability to create a bulk workflows, to update the documentation, update the ownership, update the tier tags, whatnot.
+Sriharsha Chintalapani: And we can continue to add more and more actions to make it really simple.
+Sriharsha Chintalapani: So it's like a one click deployment.
+Sriharsha Chintalapani: And whenever new assets are being added here into sample DB, they will get these properties as well.
+Sriharsha Chintalapani: So you don't need to kind of repeat your work at all.
+Sriharsha Chintalapani: So we, we understood this problem is kind of a crux of if this project makes or brexit, right?
+Sriharsha Chintalapani: So that's where we are investing a lot of our time and want to work with our customers to make sure the project is successful.
+Sriharsha Chintalapani: Otherwise, you know, we want to be a, a product that is live longer rather than just one time interpretation.
+Mik Cepulis: Go away.
+Darryl: So taking a step back, I almost see get the tool and the data plane able to access the source, enjoy just the raw metadata.
+Darryl: Let it do your thing.
+Darryl: It's going to figure out some lineage.
+Darryl: If it has enough data, go and set auto tagging.
+Darryl: This system is all clinical.
+Darryl: This system is all x.
+Darryl: This system is owned by Bob.
+Darryl: Start with that.
+Darryl: You're going to do the metadata evaluation for data sensitivity automatically.
+Darryl: And so we already gain all those wins early on.
+Sriharsha Chintalapani: Exactly the day one, you will be just by connecting to your metadata sources, you will get an ability for your teams, your users to understand and explore the data and search for the data.
+Sriharsha Chintalapani: Right now they have to go.
+Sriharsha Chintalapani: Let's say you may have ten different system.
+Sriharsha Chintalapani: They have to go in.
+Sriharsha Chintalapani: Each data need to understand what is the database?
+Sriharsha Chintalapani: Where is the schema?
+Sriharsha Chintalapani: Where is this table is as, where do I find this report?
+Sriharsha Chintalapani: Where do I find this dashboard?
+Sriharsha Chintalapani: All of those can be answered on a, in any day one or a week one of this too.
+Darryl: Have you, have you ever seen mass bulk imports of table definitions?
+Darryl: So for example, I go to my vendor, we don't hide it.
+Darryl: We're an epic shop and say, hey, epic, you have in your catalog this.
+Darryl: Can we get that in a CSV file?
+Darryl: Do you have the ability to mass import descriptions of tables?
+Darryl: If that were something?
+Darryl: I don't know how good epics are, but is that an opportunity here as well?
+Sriharsha Chintalapani: Yes.
+Sriharsha Chintalapani: So at the schema level you can import and export all of this data.
+Sriharsha Chintalapani: So for example, if I export this, I'm going to show a simple example.
+Sriharsha Chintalapani: So I have sample data and CSV.
+Sriharsha Chintalapani: Now I can just import it and it will show I have a name called customers as a table display name.
+Sriharsha Chintalapani: Is this, this is the description, this the user is the owner.
+Sriharsha Chintalapani: Tags, glossy term tier, retention period, social domain, everything.
+Sriharsha Chintalapani: You can edit it right from here if you want to update it and, you know, change it directly.
+Darryl: I love it when a demo can go that smooth.
+Darryl: It's only 15 seconds long.
+Darryl: That was great.
+Mik Cepulis: Thank you.
+Sriharsha Chintalapani: And again, we don't want to be kind of leave you on your own.
+Sriharsha Chintalapani: We want to understand the problems that you're facing.
+Sriharsha Chintalapani: We want to automate all of this stuff.
+Sriharsha Chintalapani: That's where we believe the power of metadata and along with our application suite.
+Sriharsha Chintalapani: So that's why we build all of these applications.
+Sriharsha Chintalapani: If you using GitHub, for example, GitHub has all of these applications that you can work on your code and empower your users to do a lot of automations.
+Sriharsha Chintalapani: That's our goal with this metadata automations and application framework as well.
+Darryl: So do you guys have stage like a summary of stages of maturity?
+Darryl: Hey, you're at stage one when you get the data ingested and that means x for the user.
+Darryl: And then when you get descriptions in there, you're at stage two or 50% of stage.
+Darryl: And that means this for the user and by capturing your pipelines you're at a phase three and it means this for the user and kind of showing you what you're lighting up of the ecosystem by getting each notch in the belt, so to speak.
+Darryl: Because we've kind of described like three or four big wins that aren't too heavy, even more big wins if we have vendors with good documentation that we can get extracts from.
+Darryl: Do you have any kind of like rollout maturity phase kind of recommendations and what it means to the end user when we get to that level of maturity?
+Sriharsha Chintalapani: Yeah, definitely.
+Sriharsha Chintalapani: I think we have a bunch of documents to that effect, but definitely this available document for us to put together.
+Sriharsha Chintalapani: I mean, we can take a action item and share this with.
+Sriharsha Chintalapani: Please.
+Mik Cepulis: Thank you, Darryl.
+Mik Cepulis: I'm not sure we've captured it in the exact way you're describing, but honestly, like just speaking out loud, it makes a lot of sense and it's a great way of like logically thinking about the implementation steps and especially positioning from a win perspective.
+Mik Cepulis: I like the framing a lot.
+Mik Cepulis: So to Harsh's point, we have a lot of implementation docs already, but this is a, it'd be a good one to generate.
+Darryl: I can, I can imagine that the first, the laundry list of big wins is metadata ingestion, tagging who owns it, tagging what it is, getting classified, getting the lineage.
+Darryl: That's probably like phase one maturity.
+Darryl: Ray, are there any immediate gaps that you're seeing to this level of conversation at least?
+Ray Deiotte: Sorry, no, I'm over here talking on mute.
+Ray Deiotte: No.
+Ray Deiotte: What I do think would be nice though is in order to sell this to our leadership, Daryl, and to our customers having that kind of pictorial evolution, like here's what it looks like.
+Ray Deiotte: Here's what this looks like to your point, not necessarily in a maturity state, but just in a.
+Ray Deiotte: This is what this system does.
+Ray Deiotte: This is what the people need to do.
+Ray Deiotte: This is what the system does.
+Ray Deiotte: This is what the people need to do.
+Ray Deiotte: And this is what it looks like as you start chunking down each, each data source and then what comes out of it.
+Ray Deiotte: So that way we can go to finance, we can go to supply chain, we can go to these other people and be like, hey, this is now what we're going to be asking of you.
+Ray Deiotte: Can we get your buy in?
+Ray Deiotte: And that helps us then roll the dominoes on bringing, you know, bringing a cola to the table.
+Darryl: You know, I like that.
+Darryl: There's another thing that we could consider too is every time someone makes a request for the data, you are not the data domain owner.
+Darryl: And setting expectations that they will participate.
+Mik Cepulis: In that work effort.
+Darryl: They're hiring teams and saying, hey, we need new data source.
+Darryl: Bob and Sam and Sally and.
+Darryl: Okay, well then are you also going to agree to commit to this?
+Ray Deiotte: Yeah, no, yeah, yeah.
+Ray Deiotte: And I think that that's a perfect way to couch it to them.
+Ray Deiotte: You know, I would love to say, hey, quality, you want premier in.
+Ray Deiotte: That's what you're now the data owner and data steward.
+Ray Deiotte: But here's the framework that you have to deal with that.
+Darryl: Yeah, we have and we'll help you along it, but you're going to lift.
+Ray Deiotte: Yeah, yeah, yeah.
+Mik Cepulis: Valuable conversation so far.
+Mik Cepulis: Go ahead.
+Ray Deiotte: How good is one quick question.
+Mik Cepulis: In.
+Ray Deiotte: Terms of like, you know, it's going to go scan table metadata.
+Ray Deiotte: How you have any capabilities in your kind of your genai offering to say, oh, this is labeled as CST.
+Mik Cepulis: O.
+Ray Deiotte: Underscore hiss to know that that's a customer order history table.
+Ray Deiotte: Like is it doing that level of reasoning on the column names and the data that's coming in.
+Ray Deiotte: I know you showed the description on your output, but I'm curious how much of that is auto generated from shiftily named tables.
+Sriharsha Chintalapani: Yeah, so it's columns.
+Sriharsha Chintalapani: What we are doing right now is to be able to kind of look at the database tables and schemas and also the query data that is coming in.
+Sriharsha Chintalapani: How this query, you know, a customer table linked to an orders table in terms of queries.
+Sriharsha Chintalapani: So you will be able to analyze that and also look at the explain plan of the query, including if you enable sample data, unless take that into account as well and recommend that as a documentation.
+Sriharsha Chintalapani: So we're not just looking and saying that in a even if the table is misnamed, maybe you can actually generate a use case there like in an abbreviated format or whatnot.
+Sriharsha Chintalapani: You'll be able to determine that this is actually contains a customer's table, it's actually joined with others table and historically it's been queried in this context.
+Sriharsha Chintalapani: So it means all of that into account into the context and generate.
+Ray Deiotte: Awesome.
+Darryl: You know, Ray, I'm envisioning this solving some other problems that we've had too, and that is our Ola and SlA being undefined.
+Darryl: You know, when you look at all our lineage, understanding the urgency and priority and who to notify when and what, where, it all gets wrapped up in this, if it's filled in, and I see that this is a tool that not only the stewards are contributing, obviously we have our data governance, but we also have our own developers.
+Darryl: If you're writing a report and you learn something or you're running a report and you're in here, go update these things.
+Darryl: It's a collaborative, so it's not a team, it's an army contributing into it.
+Darryl: If we can bake it into the, bake it into their minds.
+Ray Deiotte: Yeah.
+Darryl: The benefits potentially are huge though for sure.
+Darryl: Is there any other automation or methodology approaches that we haven't discussed or is that really the heart and potatoes.
+Darryl: And there's a lot there.
+Darryl: Hot and potatoes.
+Darryl: We need potatoes of it all.
+Sriharsha Chintalapani: Yeah, I think these are the main contributing factors.
+Sriharsha Chintalapani: There is many in terms of API, automation and everything else, but we want to make it as simple to consume as possible.
+Sriharsha Chintalapani: So in that aspect, you know, this is the automation and one of the key aspects.
+Sriharsha Chintalapani: I don't know if I mentioned if your database already has comments.
+Sriharsha Chintalapani: Let's say you have a postgres table and a snowflake table does already have comments or ownership associated with it.
+Sriharsha Chintalapani: We will be able to bring it during the meta transition itself.
+Sriharsha Chintalapani: So you don't need to even transfer that.
+Sriharsha Chintalapani: Many companies have already put an effort to document within the data warehouses databases.
+Sriharsha Chintalapani: We'll be able to pull those documentation as well.
+Mik Cepulis: Nice.
+Darryl: Actually, that's good to know.
+Mik Cepulis: Arjun, could you speak to the maintenance of quality over time with the data shape and the reporting mechanisms we have built in?
+Sriharsha Chintalapani: You're talking the insights.
+Sriharsha Chintalapani: Yeah, yeah.
+Sriharsha Chintalapani: So in terms of data assets, so there is continuous kind of give this percentage of data with descriptions, you know, expert assets with no description, you can generate a report and ping those owners of this data assets.
+Sriharsha Chintalapani: You can automate all of these things saying that, hey, again, you know, data assets doesn't have descriptions.
+Sriharsha Chintalapani: Please go and fill this periodically.
+Sriharsha Chintalapani: So there's a lot of work that we are building right now where we, so these are all kind of dashboards that we built for you.
+Sriharsha Chintalapani: They come as kind of a system level default dashboards.
+Sriharsha Chintalapani: There is not a lot of customization in terms of what shots you want to add and other things.
+Sriharsha Chintalapani: What we are adding in this upcoming release ability to add a dashboard, for example, you want to have generated from a governance perspective.
+Sriharsha Chintalapani: I want to look at the glossary term called account number.
+Sriharsha Chintalapani: How many of these tables are associated with the account number and how many of these tables has intellectual quality test associated with the account number column does.
+Sriharsha Chintalapani: For example, one glossary term rule could be if anyone using an account number, the column must not be null and it should be of this length.
+Sriharsha Chintalapani: So when you generate that kind of glossary term, we can generate a report for you saying that, hey, there are hundred tables using account number and out of them, 98 of them are actually passing the test.
+Sriharsha Chintalapani: Two of them are failing.
+Sriharsha Chintalapani: So those level of customization also comes into play.
+Sriharsha Chintalapani: So this way your users can actually get empowered, your leaders can be empowered.
+Sriharsha Chintalapani: In terms of the visibility of the data, how do you govern better?
+Sriharsha Chintalapani: How do you actually monitor this data better?
+Darryl: And I also think that there's a takeaway too, from a governance point of view.
+Darryl: Ray, one of the first things we could be doing is just detecting spaces and columns and start showing people look, we're just making sure the data you're bringing in is healthy so that these downstream things can happen.
+Darryl: So if we did some lazy, let the engine figure out what the standardized row count should be retrieved, how big table should be, no spaces and columns because we have excel spreadsheets coming in.
+Darryl: One day it has no space, and the next day it does be someone wasn't paying attention in a comma delimited file.
+Darryl: Immediately we can start showing those on dashboards and going, look, we've captured these events.
+Darryl: We're checking the quality of your stuff as you're describing it.
+Darryl: So there might be a good win there, too.
+Sriharsha Chintalapani: And you can be able to define the test case one time and propagate that through our metadata missions as well.
+Sriharsha Chintalapani: So you don't need to go every column and create a test case.
+Sriharsha Chintalapani: You want to do it again bulk way.
+Darryl: That's great.
+Mik Cepulis: Thank you.
+Darryl: Well, I am out of questions and thoughts, and I'm at top of time.
+Darryl: Ray, did you have anything you wanted to add to it?
+Ray Deiotte: No, I don't.
+Ray Deiotte: I really appreciate the follow up, guys.
+Ray Deiotte: I think there's, there's a pony here, and if we can articulate it to our business customers and our leadership, I think it's, it would be a boon for Orlando.
+Mik Cepulis: Love that.
+Mik Cepulis: Should we, you know, plan on working together in sort of forming a plan for that presentation to leadership?
+Mik Cepulis: And do you have a sense for when that will happen?
+Ray Deiotte: Yeah, we can do that.
+Ray Deiotte: I don't think we're going to be able to get in front of anybody until the second ish week of July because our person that we will need buy in from is out of town until then.
+Ray Deiotte: So I think if we take the next couple weeks and formulate that storytelling, we'll be okay.
+Ray Deiotte: And then we shoot for the week of the 8th or the week of the 15th, try and get in front of her.
+Mik Cepulis: And would it be helpful to have Harsha and her eye present during that pitch.
+Ray Deiotte: TBD.
+Ray Deiotte: Let me gauge that as we move along the storytelling route because I got to figure out, too, where I want to position it with all the other shit we're doing, how I want to guys it, couch it, because honestly, I'd love to figure out how to couch it as, listen, the business needs this.
+Ray Deiotte: We're going to divvy it up between business capital expenses.
+Ray Deiotte: It really is.
+Ray Deiotte: It's a business tool.
+Ray Deiotte: It doesn't, shouldn't fit.
+Ray Deiotte: Foot the bill on this one.
+Ray Deiotte: But that's not a mindset.
+Ray Deiotte: That's.
+Ray Deiotte: Yeah, at.
+Ray Deiotte: Oh.
+Darryl: Mick, I'll circle back with you in a day or two.
+Darryl: I'll probably, Ray, I'll try and touch base with you just to help envision what it is I need to work with, make to accomplish.
+Darryl: I think we already have some ideas, but just to lock that in place and then I'll work with them and start iterating with you.
+Mik Cepulis: Okay.
+Darryl: Excellent.
+Mik Cepulis: Thank you, Darryl.
+Mik Cepulis: Thank you, Ray.
+Darryl: Thank you.
+Darryl: Talk to you soon.
+Mik Cepulis: Cheers.
+Mik Cepulis: Bye.
+Darryl: The recording has stopped.
+
+END MEETING

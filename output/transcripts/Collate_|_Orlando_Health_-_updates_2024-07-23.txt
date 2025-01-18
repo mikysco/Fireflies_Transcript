@@ -1,0 +1,430 @@
+Meeting Name: Collate | Orlando Health - updates
+Meeting Date: 2024-07-23
+
+Darryl: Hey, Mick.
+Mik Cepulis: Hey, Daryl.
+Mik Cepulis: How's it going?
+Darryl: It's going self.
+Mik Cepulis: Not bad.
+Mik Cepulis: Middle summer here.
+Mik Cepulis: It's been steamboat.
+Darryl: Where are you at?
+Mik Cepulis: I am in San Francisco, but I was actually.
+Mik Cepulis: I was in steamboat over the weekend for friends wedding.
+Mik Cepulis: It was pretty fun.
+Mik Cepulis: Beautiful time of year to be there.
+Darryl: Yeah, we're in Florida baking.
+Darryl: It's like 93 degrees and like the devil's armpit for humidity.
+Darryl: I grew up in Virginia.
+Mik Cepulis: Yeah, I grew up near DC and not quite Florida community, but it's.
+Mik Cepulis: It gets brutal there in the summer, too.
+Darryl: I really do hate the state from a weather point of view, from a politics point of view, from.
+Darryl: It really is the devil's armpit.
+Darryl: From a Florida man point of view, I'm in Orlando and Orlando is not Florida.
+Darryl: But it doesn't mean that Florida does not affect Orlando.
+Darryl: And it is the devil's armpit.
+Darryl: It might be his ass crap, too.
+Darryl: I don't know.
+Darryl: Yeah, there you go.
+Darryl: There's a whole.
+Mik Cepulis: I hope you stick around long enough to get colated.
+Mik Cepulis: Orlando.
+Darryl: I've been here a decade.
+Darryl: 1420.
+Darryl: No, 1420 some years in Florida.
+Darryl: I'm here because I got in at low cost of living and now I'm in a high cost of living area.
+Darryl: You know, my house doubled in value state.
+Darryl: Ridiculously stable job.
+Darryl: But anyways, there's two big conversations.
+Darryl: One, you were working on building like a little slide deck.
+Darryl: And I've got that.
+Mik Cepulis: Okay, great.
+Darryl: Part of the conversation is the other part that you need to be aware of.
+Darryl: I needed to wait a little longer.
+Darryl: Kathleen Walker, my director and I and my peers are 100% on board and like your product, fine print.
+Darryl: Now, we've submitted you guys in our fiscal year 24 budget, which starts October 1.
+Darryl: We went in between your fully hosted, I'm sorry, fully on prem.
+Darryl: We went up like your level one, level two, level three, where we went in between level two and three because we want our data plane here.
+Darryl: But we would need to scale probably more than that mid tier offered.
+Darryl: So we padded it like 85,000 or something as a starting point.
+Darryl: We know we have a crap ton of artifacts.
+Darryl: It's constantly growing.
+Darryl: So it's in the budget now for the bullet points.
+Darryl: One, Ray Dioy, our chief, will no longer be with Orlando Health starting on August 1.
+Darryl: He will not be able to sell this.
+Darryl: Okay, we are interviewing new candidates.
+Darryl: I will be.
+Darryl: I've already interviewed two.
+Darryl: Then our CD chief digital and information officer has added a third candidate, which we're meeting next week.
+Darryl: Best case, we would have someone for sometime in mid September, assuming, you know, any true executive is going to need to give a 30 day notice if they have to relocate, blah, blah, blah.
+Darryl: That's assuming that, you know, they make a decision and accept an offer rapidly.
+Darryl: It's still higher.
+Darryl: Yeah, we're mid September, which is right in alignment with October budget.
+Darryl: Obviously, when they get here and start warming up the chair, they're figuring out where the bathrooms are, what's the technology, who are the leaders.
+Darryl: So you can kind of see that we're really sitting in that October window.
+Darryl: That being said, if the money does get approved, I see my director and I moving that forward.
+Darryl: So I just wanted to be very transparent with you that there's high interest, high desire that timing is going to be our challenge.
+Darryl: I was waiting long enough.
+Darryl: We've known about our departure of Ray for a little while now, but I only told my team a week ago because I had no clear to communicate.
+Darryl: Yep.
+Darryl: So you're being looped in within a week of my team.
+Darryl: But the interest and appetite for your product, we really feel it's one of the.
+Darryl: It's probably the best product with the technology stack we have.
+Darryl: And we still had the lack of synapse or data factory integration that was going to be a barrier within the next 30 to 60 days anyways.
+Darryl: So we're back to that October ish timeframe for the remaining features that we needed, because you wouldn't have been able to capture all the lineage without the azure piece.
+Darryl: Instead of trying to push that forward for us, it'll probably just be ready when we're ready to do a proof of concept.
+Darryl: So my hope is new boss comes in 2030 days, starts to recognize a gap, and then we go, hey, we have a vendor that we've been interested in.
+Darryl: We put it on our budget.
+Darryl: It's not so much money that we can't shake some seat cushions.
+Darryl: If we can get the contract signed, the money should be able to come from somewhere.
+Darryl: Please approve a POC.
+Darryl: So that's my hope.
+Darryl: Just full candidates.
+Darryl: You know, you don't.
+Darryl: You guys obviously know you don't need to allocate resources.
+Darryl: Just help me build and refine the presentation, and then probably when we get a new boss, I'll be introducing you.
+Darryl: If we don't have a new boss, my boss is going to move forward, you know, one way or the other.
+Darryl: So that's kind of where we're at.
+Darryl: So just, you know, out there.
+Darryl: So, you know, that's.
+Mik Cepulis: I appreciate the candidates, as always, and I.
+Mik Cepulis: Yeah, top Liz and Ray, I liked him a lot.
+Mik Cepulis: He seemed like a great guy, but he's always good adventurers.
+Darryl: He is a very.
+Darryl: He's a brilliant guy.
+Darryl: And I mean that.
+Darryl: Like, you watch big bang theory.
+Mik Cepulis: Yeah, yeah.
+Darryl: He's literally Sheldon in knowledge with more social capability.
+Darryl: Okay.
+Darryl: He has, I think, two master's degree and is working on his PhD.
+Darryl: And he literally was studying astrophysics before he got into it.
+Darryl: Yeah.
+Darryl: Hearing him talk is mind boggling.
+Darryl: Like, he was telling his story over drinks once with another data security vendor that I introduced him to because we were using their product.
+Darryl: And I'm like, you need to be looped into what they are.
+Darryl: And 15 minutes of papers and his involvement with the Pentagon at one moment, it's.
+Darryl: I've heard.
+Darryl: He told me that he had to speak up against four star generals in the Pentagon once.
+Darryl: Like, just mind boggling guy.
+Darryl: Let me say not speak up.
+Darryl: Correct.
+Darryl: I wasn't there.
+Darryl: I don't know the exact terminology, but I don't imagine you yell at a four star general.
+Darryl: But I'm sure.
+Darryl: Correct and guide.
+Darryl: But, yeah, he's a brilliant, brilliant, smart man.
+Darryl: And.
+Darryl: But, yeah, again, without the Sheldon social challenges.
+Mik Cepulis: No.
+Mik Cepulis: Yeah.
+Darryl: He seemed like.
+Mik Cepulis: I actually care.
+Mik Cepulis: It's not a guy.
+Darryl: He was.
+Darryl: And the fact that I've been on demo product, showing him products, and I've been on not related to your industry, in your area, but on other calls and he picked them apart and he didn't do that with you.
+Darryl: And then he messaged me, goes, that's an intriguing product.
+Darryl: Like, that's something that would make sense.
+Darryl: And he was very.
+Darryl: And he's like, we just got.
+Darryl: And you heard it.
+Darryl: We've got to sell it.
+Darryl: We got to sell it to the business.
+Darryl: We got to show them why they need this product because they're not data people and they don't get it because we had to get them to buy into committing the resources to make that product worthy, which is obviously where the presentation came into play.
+Darryl: So I think he's given us, thanks to, in partnership with you, the slide deck.
+Darryl: To take that further.
+Darryl: He's here ten more days.
+Darryl: He's not going to get anything sold.
+Darryl: Even if a month ago, the moment you gave me that slide deck, the next day he was selling it, he wouldn't have been able to move forward.
+Darryl: Um, just here, where our contracting is painful.
+Darryl: The fastest I've seen a contract signed is 45 days.
+Mik Cepulis: Okay.
+Darryl: Um, but we need to get that proof of concept to get people bought in, and you guys don't have the integration yet anyways.
+Darryl: So where you, you kind of see where we're at, but I also don't want to be that, that person that you're dealing with that leaves you in the dark and you're wasting your time.
+Darryl: I want you to know there's interest, there's desire.
+Darryl: You were submitted on our budgets.
+Darryl: We don't know what the look like for another month and a half, but you were submitted and you had our chief support.
+Darryl: So we've been serious about it and we still are.
+Darryl: Now it's a timing thing and almost a miniature resell, but it's a lot easier when the budget could be there, the proposals there, and there's not really any competitor to you guys.
+Darryl: Without going way over now you're in a whole different price category of things and I don't, I would still argue that they don't fully integrate the way you guys can and will.
+Mik Cepulis: Yeah.
+Darryl: You know.
+Mik Cepulis: Okay.
+Darryl: There you go.
+Darryl: Lots of words.
+Mik Cepulis: Yeah.
+Mik Cepulis: Good, good updates when.
+Mik Cepulis: So, sounds like our best case scenario would be starting a contract October 1 and then more likely than not we'll have, you know, new chief in place and probably push out.
+Darryl: My gut feeling is we're going to have a better understanding about budget in September.
+Mik Cepulis: Yeah.
+Mik Cepulis: Okay.
+Darryl: What would happen is we would then work on getting approvals for a proof of POV or POC depending on whatever terminology we both want to use, which was what we've already discussed.
+Darryl: Your big boss is not a problem.
+Darryl: We deploy the data plane or whatever that one server is in our cloud and then we'll.
+Darryl: We want to use you guys as the GUI.
+Darryl: I'm not touching a Kubernetes cluster, no way.
+Darryl: But that you guys won't be a security problem.
+Darryl: I can tell you that now.
+Darryl: And what I mean by that is security will send you eventually when we're ready.
+Darryl: And I have a leader saying yes, move this forward your SoC, they'll want a copy of your SoC certificate.
+Darryl: You'll fill out a questionnaire, mention that you're not seeing any Phi or Pii necessarily, that the data is with us, you're deploying it.
+Darryl: It took tableau, I think like 20 minutes to fill out.
+Darryl: And with your SoC rating that it's not a big deal.
+Darryl: You'll just find the right.
+Darryl: You have an engineer over there I'm sure, who's done those before for healthcare.
+Darryl: The SoC alone solves most of the concerns.
+Darryl: And them knowing that we're going to keep the data plane connectivity on our side and not yours.
+Darryl: I've been through this irregular role.
+Darryl: It's not an issue.
+Darryl: That is only about a two week process on our side.
+Darryl: You know, they'll use third party products to make sure that you guys are good.
+Darryl: I don't know all the, how they do all the validations.
+Darryl: They're like a background check to make sure there's no risks that they're aware of.
+Darryl: And then I would be helping deploy the solution with Lol on my side, and we'd be deploying it as fast as your system can, days would be my guess.
+Darryl: And then bolting firewalls are actually probably the biggest part of the delay.
+Darryl: Yeah, firewalls are a pain.
+Darryl: We're micro segmented in most of our network.
+Mik Cepulis: Okay.
+Darryl: So it's a Palo Alto party.
+Darryl: So at that point then obviously we need to get enough data in there with our data governance team.
+Darryl: So now we're looking into early October.
+Darryl: You'd be looking at contract, probably November if all goes well, just a rough timeline.
+Darryl: But again, we don't know if budget gets approved and we don't know who our leader is going to be, if they have us pivot or what.
+Darryl: But just kind of saying, you know, if you were to look at a timeline, I'd say touch base with me kind of mid September, and if I hear that we have a leader before then, I'll let you know.
+Darryl: I'm sure we'll have an, I can't imagine her waiting another, our chief waiting another 60 days to hire someone.
+Darryl: So I'm sure we'll have a name, but I may not even have shaken his hand at that point.
+Darryl: So that's why mid September, I'll have a feel for the budget, maybe, and that will help you get a good temperature check of where we are.
+Mik Cepulis: Okay, awesome.
+Mik Cepulis: That makes sense.
+Mik Cepulis: Yeah.
+Mik Cepulis: I mean, November, not ideal, but totally works.
+Darryl: Yeah.
+Mik Cepulis: We might have to update a couple things in the proposal here and there in terms of the line items that might shift around a little bit, but I don't expect any major changes.
+Darryl: And pricing could shift a little bit.
+Darryl: I know there's other variables.
+Darryl: So when we get closer to wanting to represent, I would let you know a good week or two in advance, or I would have met the boss and proposed this verbally and been like, would you like to get a quick demo?
+Darryl: Get the 30, 45 minutes demo, see the presentation that's been smocked together from his predecessor.
+Darryl: And, you know, you definitely know.
+Darryl: So I just, you know, we have 21 data sources in a combination of synapse and databricks.
+Darryl: I can't, I.
+Darryl: There's no documentation, no nothing on it, no lineage, no, like, we need something, it's inevitable.
+Darryl: And the unity catalog isn't going to get us all the way there.
+Darryl: So, you know, it's a piece to the puzzle, but it's not going to get the business in a good place.
+Darryl: It's just not totally.
+Darryl: So.
+Darryl: Okay, so that's where we're at.
+Mik Cepulis: Is there any opportunity to.
+Mik Cepulis: I guess, like it's.
+Mik Cepulis: Are you able to perform any POC actions ahead of budget approval or is that a blocking function on your end?
+Darryl: Here's the thing.
+Darryl: I would hate to do a POC, want something and have no money for it.
+Mik Cepulis: Yep, yep.
+Mik Cepulis: Okay, got it.
+Darryl: It's a waste of everybody's time.
+Darryl: And even if we did the POC and we go, well, let's try next year, and the new boss comes in and pushes for it, we're almost gonna need a new POC because your product is maturing so rapidly, you know, how does that fit?
+Darryl: You know, so, yeah, and it's, you know, it's not just deploying and getting firewalls, it's getting our data governance team involved.
+Darryl: It's getting probably some service line involved in the business, getting that time in the POC POV.
+Darryl: So it's a big commitment.
+Darryl: I want to know that if we're going to put that commitment in, you guys know that its success means moving forward and not freezing 100%.
+Mik Cepulis: Okay, got it.
+Mik Cepulis: Well, yeah, I mean, honestly, the longer you wait, the more features you get.
+Mik Cepulis: So come October we'll be at 1.5, probably 1.6.
+Mik Cepulis: There's a lot of new exciting stuff in the pipeline, so.
+Mik Cepulis: Well, it'll be worth.
+Darryl: You had three features we were salivating for that you don't have yet.
+Darryl: And that was the data factory synapse integration, the schema compare.
+Darryl: You had a diff compare kind of capability and you were also adding a.
+Darryl: Oh, ERD diagramming, I think, if I recall right, and I'm not probably using the exact terminologies you guys are using.
+Darryl: So let me pull that.
+Darryl: I'm going to pull up your exact terminologies, the things that some of us were on.
+Darryl: I'm pulling onto 1.5.
+Darryl: Ok, your capture rows, your synapse integration.
+Darryl: Actually, there's a few things in 1.6 data diff showing difference between tables.
+Darryl: Anomaly.
+Darryl: An ER diagram.
+Darryl: Yeah, it's a combination of 1.5 and 1.6 that are huge and data asset naming conventions, reverse metadata.
+Darryl: I mean, SQL query editor, really 1.5 and 1.6 being in that point where 1.5 all have been rolled out and maybe even 1.6 close that you buttoned up every gap that we had.
+Darryl: That's advantageous too.
+Darryl: It's not a discussion of reprioritization for you guys.
+Darryl: It's when we do the POC, you're going to be lined up already.
+Mik Cepulis: Awesome.
+Mik Cepulis: Okay.
+Darryl: Which is cool.
+Mik Cepulis: Great.
+Mik Cepulis: On the.
+Mik Cepulis: We'll have the metapilot AI capabilities for natural language search as well, or for data.
+Mik Cepulis: That'll be pretty interesting as well.
+Darryl: Yeah, and databrick shifting rapidly.
+Darryl: You guys are going to be competing to be the better.
+Darryl: Somebody asked, why not the unity catalog?
+Darryl: Well, Ray was like, it's too technical.
+Darryl: And to me, the unity catalog is 50% meant for administrators and operators of the databricks platform, where your catalog is not what unity catalog is.
+Darryl: It's something that's totally different.
+Darryl: But what is the new boss going to think?
+Darryl: Our partner three cloud has said, well, the unity catalog can do x, Y and z because they don't sell third party products.
+Darryl: So we have databricks.
+Darryl: They want to use those products and they don't necessarily start referencing other third parties.
+Darryl: So, you know, talking with them, seeing where that goes with the new boss and the directions you can see new boss, new job almost.
+Darryl: So I've had five of them.
+Darryl: My job has never shifted too much.
+Darryl: My cheese hasn't moved.
+Darryl: But at the same time, never know what the next boss is going to do.
+Mik Cepulis: So I imagine that Orlando is a broad reaching organization.
+Mik Cepulis: You aren't just in databricks.
+Mik Cepulis: There must be many other sources out there that probably need tailoring, which is a great reason why you have a third party tool like collate.
+Darryl: We're an epic shop.
+Darryl: One of the data sources was going to be epic.
+Darryl: We also have other analytic platforms, but they're not.
+Darryl: Enterprise data provided solutions.
+Darryl: We're actually trying to get rid of them.
+Darryl: What matters is we can't completely show the narrative around the data that we bring into our enterprise data platform, our platform.
+Darryl: So could some other platforms be a feeder into this?
+Darryl: Yes, but we don't have access to them to even necessarily get an adequate scan.
+Darryl: So we're worrying about our platform and the scope of all the tentacles our platform has.
+Darryl: First, there could be opportunities with other ones, because as long as we have enough read access, you guys can probably extract some of the data that we need.
+Darryl: And there will be those opportunities.
+Darryl: We experimented with them with purview, actually, but you'd never know the lineage because you'll never get to their ETL data because they don't give us that.
+Darryl: So there's always going to be a gap there.
+Mik Cepulis: Purview is similarly limited to Unity catalog where it's like it's focused on Microsoft only information.
+Mik Cepulis: So again, if you need that heterogeneous information organization, then you got to use a third party tool.
+Darryl: Exactly.
+Darryl: So really our bread and butter is the EDP.
+Darryl: But capturing its lineage would be extremely valuable because we're seeing it from the source.
+Darryl: We're seeing it come through our hydrator and synapse, getting in the data lake, seeing how databricks does its thing, seeing it virtualized, seeing it, you know, blah, blah, blah, all the way down and seeing it consumed.
+Darryl: That's why power Bi eventually to be able to see it from beginning to all the way through to power bi.
+Darryl: Purview could, Purview could see power Bi.
+Darryl: And oh, the report went into a data set that went into power Bi.
+Darryl: I don't know if you guys have power Bi yet, but we do.
+Mik Cepulis: Yeah.
+Darryl: We can do that same API.
+Mik Cepulis: Call MySQl all the way through to power bi and understand the changes throughout.
+Darryl: Oh yeah, there it is.
+Darryl: I see open metadata.
+Darryl: Power Bi integration.
+Darryl: Yep.
+Darryl: Sweet.
+Darryl: Yeah.
+Darryl: Tenant information, dataset, read all.
+Darryl: Yeah, it's exactly what I've done for other needs.
+Darryl: So that's easy enough to implement as well.
+Darryl: So there we are.
+Mik Cepulis: Okay.
+Mik Cepulis: Yeah.
+Mik Cepulis: On the epic piece, we haven't had the need to integrate with them yet, but if they have an API that we can read, then we can also pull that information as well.
+Darryl: Epics, the SQL server.
+Darryl: Epics a SQL server.
+Darryl: All I do is talk with them to get you an account that can read what you need to read and, and the rest is gravy.
+Darryl: At that point it's a non issue.
+Darryl: They are not their own platform, but they are Microsoft SQL and SQL analysis services.
+Darryl: And I've heard they're going to start putting an Azure footprint up there.
+Darryl: So yeah, there's nothing you wouldn't be able to capture.
+Darryl: Even our other data platforms that we use are usually Microsoft based.
+Darryl: I only know one that's teradata.
+Darryl: But you guys support teradata.
+Darryl: But they will never let us see into their secret sauce because of the nature of that product.
+Darryl: But the ones that we can, we can get you to scan the data.
+Darryl: Getting the SSIs data out of both of them would be almost impossible.
+Darryl: So you would never have that lineage.
+Darryl: We could assume a one for one mapping and maybe create an API process that says, okay, well, because it came from this vendor and it got dumped into raw, assume the lineage was managed, you know, and that's about all we could do.
+Darryl: I've had that battle.
+Darryl: Yeah.
+Darryl: But that goes a long way to say, hey, got source from them.
+Darryl: It's a one to one match.
+Darryl: You know, you would be assuming you'd be forcing the lineage versus it being discovered.
+Mik Cepulis: Focuses your search to where problems might be.
+Mik Cepulis: Yeah, okay.
+Darryl: Exactly.
+Darryl: So, hey.
+Mik Cepulis: This.
+Mik Cepulis: Yeah.
+Mik Cepulis: Okay.
+Mik Cepulis: This is helpful.
+Mik Cepulis: Again, appreciate the transparency.
+Mik Cepulis: Yeah.
+Mik Cepulis: And so reach out September, if not earlier.
+Mik Cepulis: And, yeah, I mean, that's luck with the search for new.
+Mik Cepulis: For new big guy.
+Darryl: Yep.
+Darryl: And really, at the end of the day, I'm really hoping we get the budget or that we can get the contract signed knowing there's money in the cushion somewhere.
+Darryl: And that does happen.
+Darryl: But, you know, if it literally has your name on it, you know, we said data catalog.
+Darryl: And the price for you guys specifically, it's basically earmarked, you know, and all new boss SSA is, yes, go.
+Darryl: When it's earmarked.
+Darryl: That money is so specific to you guys, it won't let us go anywhere else anyways.
+Darryl: So either boss is happy.
+Darryl: Yes, we need a solution.
+Darryl: Go.
+Darryl: Or.
+Darryl: That's why I love, I hope that budget line item gets approved, because it does make the conversation a lot more narrow.
+Mik Cepulis: Okay.
+Mik Cepulis: Easy.
+Darryl: Also.
+Mik Cepulis: Yeah.
+Mik Cepulis: Anything we can do to help champion that and help sell, obviously.
+Mik Cepulis: Talk to me about that.
+Mik Cepulis: We're also happy to facilitate a new leadership introduction, executive level conversation between our CEO and who, your chief data guys.
+Mik Cepulis: Yep.
+Mik Cepulis: Okay.
+Darryl: No matter what it will happen, whether it be because we've rolled it out and we want them to be familiar with you guys or because we're trying.
+Darryl: We want to get it rolled out, and we need to have them familiar.
+Darryl: You will have to get pulled in.
+Darryl: Um, short of the.
+Darryl: Short of new boss coming in and going, flip the script, rip it all out.
+Darryl: But we're too invested.
+Darryl: I can't imagine them ripping out this investment.
+Darryl: So, um, and to your point, we can get some tentacles into other environments and understand what other people are doing, and that's valuable, too.
+Darryl: So.
+Mik Cepulis: Okay, awesome.
+Darryl: Thanks a lot.
+Mik Cepulis: Yeah, you know, I guess since if you.
+Mik Cepulis: I forgot.
+Mik Cepulis: I honestly forgot how detailed we got on the data asset side and the number of users.
+Mik Cepulis: Like, there might be some tailoring that we can do ahead of final budget approval.
+Mik Cepulis: If the number has to shift at all.
+Mik Cepulis: Like, might be worth us spending a couple days revisiting those items to make sure we're.
+Darryl: There will be numbers.
+Darryl: When we get closer, we'll definitely be able to give you guys information to be very specific because we only bring like for epic we bring about 900 tables.
+Darryl: Well the 900 tables is in our data lake.
+Darryl: Our 900 tables is at its Azure source and the 900 tables are at the epic source.
+Darryl: So nine, eight, 2700, boom.
+Darryl: Already I know 2700.
+Darryl: We can do that math because we have a metadata table and we know how to multiply that out immediately.
+Darryl: Then it's just the miscellaneous, the modeling transformations, pipelines, notebooks and power bi's.
+Darryl: Okay, so that's why we took your 10,000 and go.
+Darryl: Actually we're probably around ten to 12,000.
+Darryl: And then we bumped it up a little more to kind of like, okay let's assume 15,000.
+Darryl: We only have about 50 non it consumers so we're at about 80.
+Darryl: That gave us 250.
+Darryl: So you can see why.
+Darryl: But you know, when we come in hard and fast I know there's a lot of conversations that can go into really refining that number.
+Darryl: But you can see we kind of were able to, we'll be able to give you very concrete information to help refine it.
+Mik Cepulis: Great.
+Mik Cepulis: Awesome.
+Darryl: That's a nice thing.
+Mik Cepulis: One other thing that we will shift on the deployment and package options is that the enterprise version of colate will be the only one that is fully single tenant in SaaS will eventually migrate the middle premium tier to a multitenant system.
+Mik Cepulis: I think for Orlando, probably going to have a strong incentive to have a single tenant.
+Mik Cepulis: Essentially no colocation, no noisy neighbor issues that's not implemented yet.
+Mik Cepulis: Currently all versions of collate SaaS are single tenant and fully isolated.
+Mik Cepulis: But again, we're giving an enterprise service to the smaller customers we work with in the premium package today that will shift over time.
+Mik Cepulis: I'm not sure if it'll be in October or a bit later, but um, just kind of more lines actually.
+Darryl: Yeah, I understand.
+Darryl: Yeah.
+Darryl: The biggest thing is from a security point of view and a firewall nightmare, we would have to have that data plane in our environment.
+Darryl: That would be a non negotiable.
+Darryl: Beyond that, we're flexible.
+Darryl: Um, okay.
+Darryl: And yeah, we understand things are going to shift as time passes just the way it is.
+Darryl: So awesome.
+Mik Cepulis: Okay, well great.
+Mik Cepulis: Yeah, I appreciate the transparency.
+Mik Cepulis: We'll, we'll keep in contact and yeah, best luck with the search.
+Darryl: Sounds good.
+Darryl: Thanks a lot.
+Darryl: You have a great one, Mick.
+Darryl: Have a good one.
+Mik Cepulis: Well, stay cool out there.
+Darryl: Trying to.
+Darryl: Thanks a lot.
+Darryl: Bye.
+
+END MEETING

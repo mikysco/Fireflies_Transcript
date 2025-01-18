@@ -1,0 +1,724 @@
+Meeting Name: Collate | Orlando Health - Demo, Q&A
+Meeting Date: 2024-05-28
+
+Darryl: Right.
+Mik Cepulis: Well, I'd like to introduce you to Harsha, one of them, and Collate's CTO.
+Darryl: Excellent.
+Darryl: Nice to meet you.
+Sriharsha Chintalapani: Nice to meet you as well.
+Mik Cepulis: How was your long weekend, Darryl?
+Darryl: It was good.
+Darryl: Not long enough, but it was good yourself?
+Mik Cepulis: Never is.
+Mik Cepulis: Yeah, it's been good.
+Mik Cepulis: I was able to do some friends and get one of my best friends married, so that was a big event.
+Darryl: Well, it's nice knowing him.
+Darryl: Right?
+Darryl: The moment I got married, most of my friends don't see me anymore.
+Mik Cepulis: We'll make sure they're.
+Mik Cepulis: They stand the orbit.
+Darryl: It's just funny how families take distract.
+Darryl: I mean, you just can't go out and have a beer as often.
+Mik Cepulis: Yeah.
+Darryl: Okay.
+Darryl: I think I see Ray's online.
+Darryl: Can you hear us, Ray?
+Darryl: Sir?
+Mik Cepulis: Excellent, Ray, good to hear from you again.
+Mik Cepulis: We have Arsha, Khalid's co founder and CTO, on the line today leading the demo portion.
+Mik Cepulis: Daryl, should we give Kathleen a few more minutes?
+Darryl: Yeah, let's give her another 30 seconds or so and we can get started.
+Darryl: I was hoping when we get to, like, just the core of the demo, I was hoping to record, if that's okay with you.
+Darryl: Because if this is something that, you know, Ray and Kat like, or if Kat's not able to attend, we can show some of the other engineers.
+Mik Cepulis: Perfect.
+Mik Cepulis: Okay, sounds great.
+Mik Cepulis: No problem.
+Darryl: Give her.
+Darryl: I see she's away.
+Darryl: Probably she's been buried in budget, so I'd say let's get started and I'll catch her up if she misses.
+Mik Cepulis: Okay, sounds great.
+Mik Cepulis: Well, yeah, so today, main goals for us and general structure is going to be running through the collate demo and then opening up for Q and A.
+Mik Cepulis: We discussed a few use cases last time, but I thought it would be helpful to start with a broader overview of collate, and then we can dive into more specific use cases and questions towards the end.
+Mik Cepulis: So we'll leave time for that.
+Mik Cepulis: But, yeah, keep this interactive.
+Mik Cepulis: We want to make sure that we're addressing relevant points to you and Ray and Daryl.
+Mik Cepulis: If you have questions about situations that pop into your head as we go through the demo, don't hesitate to raise those and we can discuss in a moment or at the end.
+Ray Deiotte: Sounds good.
+Mik Cepulis: Awesome.
+Mik Cepulis: So, yeah, this will be more comprehensive, and then we'll for sure dial into a few of the more specific points around discoverability and lineage that we brought up last time.
+Mik Cepulis: And we can chat a bit about databricks in purview and sort of how those relate to collate, how we differentiate.
+Mik Cepulis: And again, I think we'll save those discussions for the end.
+Darryl: Thank you very much.
+Mik Cepulis: Awesome pressure link to you.
+Sriharsha Chintalapani: All right, thanks, Mick.
+Sriharsha Chintalapani: Thanks everyone for joining.
+Sriharsha Chintalapani: So this is our public sandbox.
+Sriharsha Chintalapani: So this is, anyone can join in and kind of play around with our sandbox and get all the features and idea about how things are looking to start off.
+Sriharsha Chintalapani: So when we get into our open metadata instance here, one of the first things that we do is to give a simple interface for anyone to kind of connect to your data warehouses, your dashboards, your pipelines to extract the metadata.
+Sriharsha Chintalapani: And as part of this effort we built 80 plus connectors and continue to grow every release.
+Sriharsha Chintalapani: We have at least four connectors coming in and our goal is obviously to democrat as the data.
+Sriharsha Chintalapani: So we want to connect every this meeting is being recorded aspect that is out there so that, you know, your admins can get the metadata into open metadata.
+Sriharsha Chintalapani: So the way to do this is to go to, for example, in this case I'm going to databases, add new services.
+Sriharsha Chintalapani: You see different connectors, different data warehouses.
+Sriharsha Chintalapani: Here, for example, I can choose Snowflake and give it a meaningful name called Snowflake, underscore prod, go here and you get all the kind of documentation right here on how to create this connection, test the connection, save it.
+Sriharsha Chintalapani: And that's about the things that you need to do to start extracting the metadata.
+Sriharsha Chintalapani: And again, we have different services here to connect to different parts of your data infrastructure, your services or whatnot.
+Sriharsha Chintalapani: Once you brought the metadata into open metadata, your users can log in and click on Explore.
+Sriharsha Chintalapani: Once they go to explore they get different data assets that your organization may have like you may have table stored pleasure databases.
+Sriharsha Chintalapani: Kind of gives an idea of how my data infrastructure is there, what data that I have in my company and so on.
+Sriharsha Chintalapani: From here onwards, user can search for, let's say I want to search for customers table and we go to and we search based on the keyword names and that matches not only the table names but any descriptions, documentation, column names and so on.
+Sriharsha Chintalapani: It also gives you an ability to kind of filter by ownership tag, service, database and schema a way to explore, a way to search for it.
+Sriharsha Chintalapani: And when you're on this particular interface you can also go through, sorry, go through different panels here to look at, you know, what is my data quality is what are the test.
+Sriharsha Chintalapani: I bought it.
+Sriharsha Chintalapani: What are the test passed.
+Sriharsha Chintalapani: And it gives an idea of is this the right table that I'm looking for?
+Sriharsha Chintalapani: And once you found out the table, the other things that we on this topic that we do unique at computer.
+Sriharsha Chintalapani: The solution is we extract the usage and we extract what we call as tiering.
+Sriharsha Chintalapani: Tiering is what is the most important tables to the company, where to tag the tables, or any data asset for that matter.
+Sriharsha Chintalapani: And when we found the same tables, the one with the highest usage will be ranked higher.
+Sriharsha Chintalapani: So in any company, in any infrastructure, for example, you may have different tables that named similarly.
+Sriharsha Chintalapani: And one of the famous example we put here is in Uber, when we joined there, in one of the quarterly earnings, we underreported number of trips taken, because the person who was looking for the table called trips found like ten different tables, which is similarly named.
+Sriharsha Chintalapani: They found and they picked the one that has, doesn't have the full information.
+Sriharsha Chintalapani: So tiering is a way to kind of identify what is the best table, what is the right table to use.
+Sriharsha Chintalapani: And usage is another aspect to it, to say that, hey, in your company, most of your analysis using this table versus rest of the customers table.
+Sriharsha Chintalapani: So if you're looking for maybe building a report, building a dashboard, maybe you should look at this particular table first rather than other tables.
+Sriharsha Chintalapani: So that's why we rank them higher, get all of these queues, all of these signals to rank it higher so that your users find the right table.
+Sriharsha Chintalapani: And once you found that, how are.
+Ray Deiotte: You estimating or reporting on or calculating usage?
+Sriharsha Chintalapani: Yeah, so we, unless we are extracting all the unique queries that are coming through and landing on a table, it may be a dashboard querying it, it may be a pipeline, it may be someone generating a generic query to generate a report.
+Sriharsha Chintalapani: So the more people that use the table, and by use, we mean that number of queries that are running against the table across the data warehouse.
+Sriharsha Chintalapani: We take the entire percentage of your tables and how many queries are running is one particular table to another table.
+Sriharsha Chintalapani: And also we do a relative ranking as well.
+Sriharsha Chintalapani: So all of these signals will give us saying that, hey, you know, you may have ten different customers table, but this particular customer table gets a lot more traffic than other customers table.
+Sriharsha Chintalapani: And once I found the table that I'm interested in, I can click on customers table.
+Sriharsha Chintalapani: And this gives me, you know, all the, you know, critical details.
+Sriharsha Chintalapani: Who is the owners of this table?
+Sriharsha Chintalapani: Again, what is the tiering?
+Sriharsha Chintalapani: What is the retention period, what is usage?
+Sriharsha Chintalapani: What are the number of columns?
+Sriharsha Chintalapani: And gives me tags and glossary terms at the table level and gives you a schema, that schema used for this particular table, for example, what column it has, what is a type it has, what is the description it has, and so on.
+Sriharsha Chintalapani: And one of the unique things we do also is by virtue of not only reading the schema, but also looking at the queries that are being joined.
+Sriharsha Chintalapani: We know which table, which column it is being joined with.
+Sriharsha Chintalapani: For example, my intent here is to come here and you know, I've been tasked to create a customer churn rate, a month or month.
+Sriharsha Chintalapani: I need customers table.
+Sriharsha Chintalapani: I need orders table.
+Sriharsha Chintalapani: I found the customers table I'm looking through.
+Sriharsha Chintalapani: I can see my frequently joined tables.
+Sriharsha Chintalapani: I see that, you know, it's actually joined with orders table.
+Sriharsha Chintalapani: Now to look at customer id, that is my primary key.
+Sriharsha Chintalapani: And it's also joined with orders customer id.
+Sriharsha Chintalapani: So not only you're exploring, you're discovering the data by keyword, by understanding the usage, you understand the tier, but also you are discovering the data by virtue of relations, how this particular table is related to other table, how this being joined with.
+Sriharsha Chintalapani: So it gives you a lot of this important information right in this page so that your users can understand.
+Sriharsha Chintalapani: Okay, now, if on the customers table understood the schema, I can also, you know, look at what are the related tables, how it's joined with all within this particular place, and another unique things that we do out of this is the data collaboration aspects of it.
+Sriharsha Chintalapani: Especially in catalog world, when you actually bring in the metadata, you may not have all the documentation, all the tagging, all the glossary terms, governance set in place at the beginning.
+Sriharsha Chintalapani: You may have some documentation, you may not have whatever you have in database process we extract as part of our ingestion.
+Sriharsha Chintalapani: But there's a way to kind of, you know, make this as a team effort to document these data assets.
+Sriharsha Chintalapani: So when I see a most recent order, I see this is a date format and I know customer stable.
+Sriharsha Chintalapani: I've been using this, I'm an expert at this, I want to contribute and make this documentation better so I can click on this button, request, update description and say that it's so just a hint for any users who are looking for this particular schema and submit this, and this became a task and assigned to the owner of this particular table, they get a notification saying that, hey, you know, harsh task to update the description.
+Sriharsha Chintalapani: They can look at it and see, okay, this looks good, and I can accept the session.
+Sriharsha Chintalapani: And once you have done that, the description is updated directly.
+Sriharsha Chintalapani: So instead of making this as Jira request or, you know, any other format of pinging the owners of this table to get it updated, I can just come here and make it, you know, a collaborative effort to update the documentation, make it easy for everyone involved.
+Sriharsha Chintalapani: And apart from that we do on this page is what we call as version history.
+Sriharsha Chintalapani: So any change that may be happening in your data warehouse, let's say someone changed the name of first underscore name to first name.
+Sriharsha Chintalapani: That's a backward, incomparable someone came in like me, just update the documentation.
+Sriharsha Chintalapani: Someone removed a tag or whatnot, or added a tag.
+Sriharsha Chintalapani: Every change, either the source or within open metadata is versioned.
+Sriharsha Chintalapani: And it also takes the stand of that change and also notes which person made the change.
+Sriharsha Chintalapani: You can use it as a version history to track as an ownership, how my table is evolving, what changes it went through over a period of time.
+Sriharsha Chintalapani: And also from a governance perspective, you can use this as an audit log of how the table is evolving, what changed, who changed and whatnot.
+Sriharsha Chintalapani: So it gives you a lot of powerful capabilities right here within augmented and jumping into activity feed and task.
+Ray Deiotte: Before we move to the activity feed and task, as you're doing the ingestion of the metadata table, how much automation is done around auto tagging and glossary terms, or is that very much a manual effort on ingestion?
+Sriharsha Chintalapani: Yeah, so we do two things right now.
+Sriharsha Chintalapani: We just released a new feature as well to make it easy.
+Sriharsha Chintalapani: So let me jump into that particular conversation.
+Sriharsha Chintalapani: So as part of automation, let me go to bigquery.
+Sriharsha Chintalapani: So we have a profiler.
+Sriharsha Chintalapani: This is part of data quality, I'll talk more about it.
+Sriharsha Chintalapani: But during the profiler itself you have an option to process bi sensitive data.
+Sriharsha Chintalapani: So what it does is it looks at the table name, column names, including sampling of the data.
+Sriharsha Chintalapani: To understand is this column contains an API sensitive data?
+Sriharsha Chintalapani: For example, does it contains an email?
+Sriharsha Chintalapani: If it's so, it marks this SAPI sensitive automatically applies the tag as well as what type of data in it.
+Sriharsha Chintalapani: Is it email, is it an access and is it an address and so on.
+Sriharsha Chintalapani: And as part of this initiative we also mask the data, like if you are collecting a sample data, we mark that as since masked encrypted data so that nobody else can see it except the owner and admin of the system.
+Sriharsha Chintalapani: So that's the peers since two processing of the data.
+Sriharsha Chintalapani: Now I think I'll use this an opportunity to talk about automations.
+Sriharsha Chintalapani: So automation is a new feature that we released as part of 1.4.
+Sriharsha Chintalapani: So just to talk about this particular topic.
+Sriharsha Chintalapani: So as a governance, as a metadata expert or catalog stewards, I want to have some sort of metadata automations.
+Sriharsha Chintalapani: For example, I want to select all my table right?
+Sriharsha Chintalapani: And out of that I want to make sure a particular schema is selected.
+Sriharsha Chintalapani: In this case I will say admin schema and I have 14 assets within this particular condition and I can apply certain action.
+Sriharsha Chintalapani: These action could be adding a description, adding a domain, adding an owners, adding a tax, adding a tier, lineage propagation.
+Sriharsha Chintalapani: I'll talk a little more ML tagging, which is auto recommended tagging.
+Sriharsha Chintalapani: So you can create these automations right now with no code, right within open metadata and schedule it.
+Sriharsha Chintalapani: For example, I want to add a tags whenever there is a table that in an admin database schema, any new table that may be coming, any existing table that may be coming, I want to add a tag called maybe ana quantity for example.
+Sriharsha Chintalapani: Right?
+Sriharsha Chintalapani: And I can go and schedule this thing is going on this one.
+Sriharsha Chintalapani: The goal is to go to the next step and go and schedule this particular workflow.
+Sriharsha Chintalapani: And right there you can have this automation that runs periodically at a scheduled time and make sure any new table added under the admin schema gets these changes automatically.
+Sriharsha Chintalapani: So two ways to do it, use the profiler to automatically understand the PI sensitive data, get recognized what object in it and get the data masked and have all those policies applied.
+Sriharsha Chintalapani: And as a data steward person you can come here and add define different types of metadata, actions that could be updating the descriptions, tags, our MLVF recognizing assets and so on.
+Sriharsha Chintalapani: Any questions before I move on?
+Ray Deiotte: No, it's helpful.
+Sriharsha Chintalapani: Thank you.
+Sriharsha Chintalapani: So now I'm going to jump into active field and task.
+Sriharsha Chintalapani: So any change that is happening within automated and within source will be created as a version.
+Sriharsha Chintalapani: So each version has a, an activity feed as well.
+Sriharsha Chintalapani: The goal of this is to actually have others to kind of say that hey, why did we in this case, so the goal of this is actually in a typical decentralized data world, you may have a slack at MS team where people are coming and asking question, hey, why did we add this column?
+Sriharsha Chintalapani: What is this reason for who is owner of this table?
+Sriharsha Chintalapani: And so on.
+Sriharsha Chintalapani: We want these conversations to be preserved against the data asset rather than in a slack or MS team where there is a single channel.
+Sriharsha Chintalapani: The conversation will scroll up a week later, a day later, a month later, similar kind of question comes in.
+Sriharsha Chintalapani: So instead of like, you know, people trying to search and scroll away all of these things, if you preserve this tribal knowledge that is being discussed within a room context against red and asset, all the history of what decision we made, why did we add certain tags?
+Sriharsha Chintalapani: Why did we make changes to schema?
+Sriharsha Chintalapani: All of them were preserved and gives an ability for other users to come and comment.
+Sriharsha Chintalapani: So that's the reason we build active defeat.
+Darryl: Do you integrate with email notifications or teams if you tag someone?
+Sriharsha Chintalapani: Exactly.
+Sriharsha Chintalapani: So going back to settings, so notifications you can add a generic alert.
+Sriharsha Chintalapani: Let's say that any announcement send it to all the users of followers of the table, teams or not.
+Sriharsha Chintalapani: You can use email, google Chat, MS team, slackening, webhook as well.
+Sriharsha Chintalapani: So some of our customers use webhook.
+Sriharsha Chintalapani: For example, hey, give me anytime API sensor tag is added.
+Sriharsha Chintalapani: I want to kick off a workflow and do something else on the other side of this.
+Sriharsha Chintalapani: Like one of our customers users, whenever there is a new user joins within their arc, they want to send an email saying that hey, here is the resources for you to understand how we organize this data here in open metadata.
+Sriharsha Chintalapani: So there are a lot of automations.
+Darryl: Yes, this is very flexible.
+Darryl: Thank you for this.
+Sriharsha Chintalapani: Yeah, and task is where we capture not just the request, update description request for, you know, tags and glossary terms.
+Sriharsha Chintalapani: You can also add request for, you know, certain feature requests or whatnot.
+Sriharsha Chintalapani: What we are also adding right now is a data access request where I'm new to this company or new to this particular table, I'm trying to build a use case around it or report around this.
+Sriharsha Chintalapani: And I can ask permissions to the owners of this table saying that, hey, I'm harsha, I'm this team, this is my use case.
+Sriharsha Chintalapani: I need to read permissions, I need to write permissions, so on.
+Sriharsha Chintalapani: And once they approve it, it will go and issue the policy accordingly in whichever data warehouse they have.
+Sriharsha Chintalapani: So those are the additional tasks that we continue to bring in here.
+Sriharsha Chintalapani: So that again people find it easier to discover the scheme and ask any questions.
+Sriharsha Chintalapani: Maybe someone has this, I want to add additional column to this schema, another feature request.
+Sriharsha Chintalapani: So all of those things comes here and lives here in the task, task page, jumping out to sample data.
+Sriharsha Chintalapani: So as part of the now I understood, I'm an analyst, I understood how the schema looks like.
+Sriharsha Chintalapani: I went and looked at the active fit and task, now I can come here into sample data, understand how this data looks like in the data warehouse.
+Sriharsha Chintalapani: This is a randomized sampling that we do it as part of our profiler workflow so that people understand, okay, you know, what is the user id, what is the customer id, how it looks like, is it an integer, is it uid and so on.
+Sriharsha Chintalapani: So instead of me running into data warehouse and, and doing a select star, I can get an understanding of this data right here.
+Sriharsha Chintalapani: And again talking about the processing that PI sends to.
+Sriharsha Chintalapani: So whenever you find any PI sends to automatically.
+Sriharsha Chintalapani: This data is masked and stored as encrypted so nobody else can see it until, unless it's just generic data that they can send.
+Sriharsha Chintalapani: And we'll talk a little more into roles and access control policies.
+Sriharsha Chintalapani: You'll have a lot of customization here on how to who can view, who cannot view and all of that in the sample data in general.
+Sriharsha Chintalapani: So sample gives me this idea.
+Sriharsha Chintalapani: Now I can jump into queries.
+Sriharsha Chintalapani: Queries is a great way of me understanding how my colleagues are doing, how my colleagues are using this customer stable.
+Sriharsha Chintalapani: What are the frequently run queries?
+Sriharsha Chintalapani: I can actually model my own queries right here and understand, maybe copy this and kind of, you know, differently use it for my own use case.
+Sriharsha Chintalapani: This will be a great learning experience for anyone coming from the point of view of having new users to customers table and understand how this particular queries are running.
+Sriharsha Chintalapani: And this is a great way of understanding from a ownership point of view like hey, how often these queries are run, what is the duration of it, who is running it and so on.
+Sriharsha Chintalapani: And lastly, I'll take this as a segue to kind of infuse our metapilot and application, this archen AI integration into open metadata.
+Sriharsha Chintalapani: The great thing about open metadata is we organize all of this data into metadata graph and we collect all the tables, metadata dashboards, queries, pipelines and so on.
+Sriharsha Chintalapani: It gives you a good 360 degree view of how the data is structured and with that we will be able to answer.
+Sriharsha Chintalapani: For example, I'm a business user, I'm not very well versed with SQL.
+Sriharsha Chintalapani: I can come here and ask my meta pilot saying that hey, give me a query, a natural language query that I can give.
+Sriharsha Chintalapani: And this will take the metadata that we already collected.
+Sriharsha Chintalapani: So which database contains customers, how it is related to order stable and how they are being queried.
+Sriharsha Chintalapani: It takes all that knowledge and generates a query and gives it back to a user so that they can just copy paste and it actually speaks the dialect of that particular data warehouse as well and explains the query as well, like what it is trying to do.
+Sriharsha Chintalapani: So all that information comes back and user can just copy and run that within the data warehouse and see how the data looks like.
+Sriharsha Chintalapani: So great way of not so super technical users coming in, understanding the data that they need.
+Sriharsha Chintalapani: Now coming back again onto the description.
+Ray Deiotte: Generation before we move on, when you have the metapilot integration, how are you or are you preventing any sort of sensitive information from going to the LLM provider?
+Ray Deiotte: I assume you're using OpenAI or one of the other providers.
+Sriharsha Chintalapani: Yeah, so we are integrating right now with OpenAI and Azure OpenAI.
+Sriharsha Chintalapani: So we are also allowing the customers to use their own token.
+Sriharsha Chintalapani: So if you have an agreement with a lot of our customers, enterprise customers have an agreement with OpenAI saying that hey, we will want to use you your APIs, but do not process our data for training, do not use that data for anywhere else.
+Sriharsha Chintalapani: So when you have that agreement, the token is identified by the open AI saying that this data, whatever submitting any request coming for this submission with the token is not used for any training.
+Sriharsha Chintalapani: So when you're configuring and installing the meta pilot application, you get a chance to use the token of your own.
+Sriharsha Chintalapani: So that agreement is preserved between yours.
+Ray Deiotte: So feasibly.
+Ray Deiotte: We could point it at our own Azure OpenAI subscription and know that it's quote unquote held within our own environment based on what Microsoft is telling us.
+Sriharsha Chintalapani: Yeah, so we're not using any of these queries for any other.
+Sriharsha Chintalapani: Again, slightly tangential discussion for every customer, we are creating a isolated cluster.
+Sriharsha Chintalapani: So everything that is packaged open my data servers, MySQL postgres database on the backend open search as our search indexes, including the argo where the workflow runs, and this process where we are doing the metapilot talking to OpenAI.
+Sriharsha Chintalapani: Everything is isolated for each of our customers.
+Sriharsha Chintalapani: So there is no multitenants, there is no data that we are using to train it.
+Sriharsha Chintalapani: We are not running any models to train it.
+Sriharsha Chintalapani: We are using the query informations to make it better.
+Sriharsha Chintalapani: But that is pertaining to that one single customer, not across the customers.
+Sriharsha Chintalapani: Okay, so on the same topic on the meta pilot.
+Sriharsha Chintalapani: So that's the natural language processing.
+Sriharsha Chintalapani: Now I can go to the, for example, again, talking to the documentation and everything else.
+Sriharsha Chintalapani: Getting the documentation and getting people to use it is kind of a chicken and egg situation where you have a catalog, you have metadata, but if it doesn't have a documentation, people are not find it useful.
+Sriharsha Chintalapani: Meta palette allows you to kind of generate, again based on the schemas and joins and the career information it is looking at.
+Sriharsha Chintalapani: Stable generate.
+Sriharsha Chintalapani: For example in this table we do not have any descriptions at the table level, not at the common level.
+Sriharsha Chintalapani: Meta palette is able to generate the documentation.
+Sriharsha Chintalapani: And you know, as a user, as an owner of this table, I can just accept all and make it, you know, a description that is generated by the meta palette.
+Sriharsha Chintalapani: So gives you a great way of starting at least to have some documentation at the earlier stage.
+Sriharsha Chintalapani: So that's the second benefit of metapilot.
+Sriharsha Chintalapani: Finally, since we are in the queries table, for example, I came into this query and I can ask explain this query.
+Sriharsha Chintalapani: So what it does, again, it looks at all of your query here and tries to explain in a natural language level to your analysts, your data users or whatnot.
+Sriharsha Chintalapani: And it also allows you to use this as a way to kind of copel it so you can actually take this query and optimize it.
+Sriharsha Chintalapani: Maybe you have a query that is running 2 hours, 3 hours or 6 hours.
+Sriharsha Chintalapani: You can use the external plan of this query and use LLM models to understand the query as well as optimize.
+Sriharsha Chintalapani: And maybe we can figure out a better way of running this query that is shortens the lifespan of this.
+Sriharsha Chintalapani: So it takes this query explain plan and generates a better query here and the user can take it and run with it.
+Sriharsha Chintalapani: So again, another way of kind of data analysts to be productive with the meta pilot.
+Sriharsha Chintalapani: Any questions before I move on to data quality?
+Darryl: I'm good, thank you.
+Sriharsha Chintalapani: So that's the, you know, I came to the schema, understood all the collaboration that is happening, understood the sample data, understood how, you know, my, my colleagues are running queries against the customers table.
+Sriharsha Chintalapani: Finally, if I want to generate a report at a dashboard, I want to make sure that customer table is actually a high quality table and has data quality test.
+Sriharsha Chintalapani: It has metrics that I'm interested in so I can click on profile data quality.
+Sriharsha Chintalapani: And one of the key foundation, one of the key visions behind open metadata is to have all of these pillars as part of single metadata platform.
+Sriharsha Chintalapani: Giving a story about Uber when we went there, there are around 30 tools kind of doing overlapping things.
+Sriharsha Chintalapani: There are lineage to multiple lineage to multiple quality tools, multiple metadata tools.
+Sriharsha Chintalapani: The problem with that is each analyst has to jump into one, each user of the data jump into one to figure out where the data is.
+Sriharsha Chintalapani: Then if they want to understand the data quality, they need to jump into another one.
+Sriharsha Chintalapani: Dinesh, another tool.
+Sriharsha Chintalapani: And if they want to set any alerts on those observability aspects of the table, then should jump in another tool.
+Sriharsha Chintalapani: So goal is to build a metadata platform that is built on top of schemas and standards and APIs so that we can build all of these as an applications on top of it.
+Sriharsha Chintalapani: So with that idea, we built a native data profile and data quality right within open metadata.
+Sriharsha Chintalapani: So what it does is actually understands how the data volumes are growing, how the table sets, updates are coming, how the volume change is coming.
+Sriharsha Chintalapani: And we also give an ability to kind of create a custom metrics which may be relevant for your own use cases.
+Sriharsha Chintalapani: And what we are building out of this is anomaly detection.
+Sriharsha Chintalapani: For example, in this table for a x number of days, let's go for last twelve days, the data is always between 90 and 120 rows.
+Sriharsha Chintalapani: So we know this dips below 90.
+Sriharsha Chintalapani: That means there might be an anomaly that may be causing a data loss.
+Sriharsha Chintalapani: And if it goes above, that means there may be a duplicated rows happening.
+Sriharsha Chintalapani: So we observe these things, we automatically alert the data owners of this data followers, the asset users of this directly from open metadata and from a user's perspective they can see and understand.
+Sriharsha Chintalapani: Hey, how often table is getting updated?
+Sriharsha Chintalapani: Are there neuroslining?
+Sriharsha Chintalapani: Is this table being maintained?
+Sriharsha Chintalapani: It's not stale data and so on.
+Sriharsha Chintalapani: Why?
+Sriharsha Chintalapani: With this dashboard and going into column profile will gives you lot more metrics about the column level.
+Sriharsha Chintalapani: Like for example, customer id is a primary key, is it?
+Sriharsha Chintalapani: Does it have enough values?
+Sriharsha Chintalapani: Zero percentile values?
+Sriharsha Chintalapani: Great.
+Sriharsha Chintalapani: Hundred percent unique, hundred percent distinct.
+Sriharsha Chintalapani: That means it's holding the primary key constraint really well.
+Sriharsha Chintalapani: And actually click on the customer id and understand over a period of time how this particular table is column is evolving.
+Sriharsha Chintalapani: What are the data counts, data proportions, range, aggregates and distributions as well.
+Sriharsha Chintalapani: It gives kind of innate details about the tables data and gives me a much more confident to rely on this particular table to build my dashboard that, you know, that will be really useful for rest of the company.
+Sriharsha Chintalapani: So now I am here, I want to make sure that customer id is going to stay unique.
+Sriharsha Chintalapani: And I can add a test case right from here.
+Sriharsha Chintalapani: So in this case I can give a meaningful name here I can choose because customer id is an integer type.
+Sriharsha Chintalapani: I have a bunch of tests that are related to integer type tests that are predefined for you.
+Sriharsha Chintalapani: So I can say that, hey, column value mean to be between, median to be between, mean to be between, so on.
+Sriharsha Chintalapani: And I can look at column value should be not insert inset.
+Sriharsha Chintalapani: In this case, I'm more interested in column values to be unique.
+Sriharsha Chintalapani: I can select that.
+Sriharsha Chintalapani: I can also compute the row count if I need to be and submit this test case.
+Sriharsha Chintalapani: This is all you need to do.
+Sriharsha Chintalapani: Create a test within open metata.
+Sriharsha Chintalapani: So, and there's a pipeline associated with it.
+Sriharsha Chintalapani: It defines when you want to run it and at what cadence you want to run it, and captures all the results of these test cases that are created by owners of this table, users of this table.
+Sriharsha Chintalapani: And we know there's a.
+Sriharsha Chintalapani: You can also look at over a period of time how this particular, this is last 30 days.
+Sriharsha Chintalapani: Let me look at 14 days to give this is column wireless to be unique and it's kind of looking at how this data, you know, data results are coming through.
+Sriharsha Chintalapani: Is it being successful with the condition that the user is mentioned or not?
+Sriharsha Chintalapani: And at a table level you can also define a test case that captures, for example, you may have a business test case that cannot be captured through this.
+Sriharsha Chintalapani: You need to define a SQL query, for example, every customer id in customer table must also exist in others table.
+Sriharsha Chintalapani: So you can write that SQL expression right here and create a test case.
+Sriharsha Chintalapani: Gives you a lot more flexibility to check the data that may be a data model that lands in multiple tables and everything.
+Sriharsha Chintalapani: And when a test case failure happens, we automatically send a notification to the owners of this table and users of this table.
+Sriharsha Chintalapani: We also open an incident, for example, the test case started failing.
+Sriharsha Chintalapani: We open an incident and user can click this is to come to the incident and say that, oh, this is assigned to peer here.
+Sriharsha Chintalapani: And as a data user I can ask what's the ETF, this fix and kind of have this communication right here gives you all of 360.
+Darryl: I'm sorry, does this have the opportunity to be integrated into a tool such as Azure DevOps for bug tracking and things like that?
+Sriharsha Chintalapani: So we have all the APIs, we have all the push notification that we have.
+Sriharsha Chintalapani: So we need to figure out, we have, for example, one customer using Grafana dashboards to monitor all of these things.
+Sriharsha Chintalapani: They want to kind of give a overall ARG view of, hey, you know, how many test cases are in tier one table are passing and failing?
+Sriharsha Chintalapani: How often, how quickly are we getting to it?
+Sriharsha Chintalapani: So we have enough APIs to kind of integrate into any service.
+Sriharsha Chintalapani: So if there is a specific service that you have that you can actually integrate into it.
+Darryl: Okay, thank you.
+Ray Deiotte: What kind of overhead does this add to the database as you're talking about integration, as I look at some of the logs, you know, as you're profiling some of these tables, it looks like it's, you know, potentially minute over minute or hour over hour.
+Ray Deiotte: And I would imagine that these test cases also take up operational resources.
+Ray Deiotte: Can you give me an estimate of kind of what the overhead is that you're adding to the database.
+Sriharsha Chintalapani: In terms.
+Ray Deiotte: Of operations and then what kind of capabilities you have to limit execution of test cases that are built by users?
+Sriharsha Chintalapani: Yeah.
+Sriharsha Chintalapani: So as an admin you can control what is the profiling of the sample percentage.
+Sriharsha Chintalapani: You may want to profile 100% of the data or you may want to profile only 10% of data to get an idea of distribution of it, right.
+Sriharsha Chintalapani: The sampling may be used.
+Sriharsha Chintalapani: We use random samplers.
+Sriharsha Chintalapani: So it's not like we only taking 10% of last hundred rules or something like that.
+Sriharsha Chintalapani: So you get a good idea of, you know, if a customer is being null, is it being null, you know, in a sample percentage of 10%, that will reduce your load.
+Sriharsha Chintalapani: And also there is a partitioning columns that we use.
+Sriharsha Chintalapani: In this case, you can select the partition table, could be partitioned by a date, could be an hour, could be some column.
+Sriharsha Chintalapani: So that way when we are profiling, we are not profiling the entire data.
+Sriharsha Chintalapani: For example, let's take the customer's table and maybe profile, sorry, it may be partitioned by a date.
+Sriharsha Chintalapani: So every day when the profile runs, it looks at that particular day's data.
+Sriharsha Chintalapani: So it's aggregating over a period of time like last, you know, yesterday's profiling is only worked on yesterday's partition so that we're not quitting the entire customer stable either.
+Sriharsha Chintalapani: So you have all of these strategies to optimize this.
+Sriharsha Chintalapani: Yeah, hopefully that addressed your question and in terms of.
+Darryl: So go ahead, Daryl.
+Darryl: I'm sorry.
+Darryl: So, but again, so we're going to mine some of this data from the source, like a source database that might be application facing.
+Darryl: You're querying things like dmvs off the SQL and Oracle servers equivalencies, is that correct?
+Sriharsha Chintalapani: Wherever there is a system table with the metrics, we actually use the system metrics.
+Sriharsha Chintalapani: For example, tables, row count, we don't need to go to the table and scan the entire table to understand the row count.
+Sriharsha Chintalapani: All of these are like in MySQL, Oracle and everything there is a systematic that we can query with the minimum expenditure to run the data warehouse.
+Sriharsha Chintalapani: We use that.
+Sriharsha Chintalapani: But if you have a complex metric, that may be a data distribution, for example, if you enable that again, you can enable which metrics you want to collect and which metrics you don't want to collect.
+Sriharsha Chintalapani: There is also possible at the global level, at the table level and customer id distribution, you may not want to query a online database such as MySQl, PostgreSql, Oracle.
+Sriharsha Chintalapani: You can turn off that metric.
+Darryl: Okay, that helps because I know that your guys costs of how many items that are being tracked is a factor too.
+Darryl: So if I'm only capturing 500 tables in my platform with 10,000 tables, we're going to narrow it down to where all these metrics are gathered on those specific ones.
+Darryl: And I take it we can control the frequency and the like over and give it a timeout and things like that to help control.
+Sriharsha Chintalapani: Yeah.
+Sriharsha Chintalapani: So pretty much all you see in any pipeline, you have pretty much every control you have.
+Sriharsha Chintalapani: Let me quickly go there.
+Sriharsha Chintalapani: We have here bigquery prod.
+Sriharsha Chintalapani: So you can get to choose which database you want to include, which schemas, which tables you want to enable.
+Sriharsha Chintalapani: You can include the percentage profile, and you can also choose when and how often this runs and how many tries you want.
+Sriharsha Chintalapani: Those kind of things completely in control of the use.
+Darryl: Okay, so Ray, I would be thinking that we would do it against the source a lot more infrequently, but on our replicas or bronze Azure, we could do it a little more frequently depending on the use case, some data sets very rarely, some a lot more frequently, etcetera.
+Ray Deiotte: That's exactly why I was asking the question, because I'm with you, Darrell.
+Ray Deiotte: We would probably profile source tables weekly and do our bronze and silver tables daily so that we've got.
+Darryl: Yeah, I think you're right.
+Darryl: Generally that would probably be the go to pattern.
+Darryl: I think clarity, like for example, we know when the upgrade schema changes, rote changes would happen.
+Darryl: So we could do those more infrequently at the source.
+Darryl: But the EDP is constantly evolving yet, to your point.
+Darryl: And when we're going against a data lake, we're not talking compute risk or anything like that because you're going to read the metrics off our Azure data lake, not actually read through the parquet files.
+Darryl: Is that correct?
+Sriharsha Chintalapani: Yes, that's right.
+Darryl: Okay.
+Darryl: And you're capturing.
+Darryl: Yeah, and much like a profiler traces SQL.
+Ray Deiotte: Go ahead, Darryl.
+Darryl: Oh no, after you.
+Darryl: I was just going to say I think you're getting the query data too out of the dmvs.
+Darryl: Or is it correct that we would want to capture the stored procedures and views as well so that you're capturing the queries associated with it?
+Sriharsha Chintalapani: Yeah.
+Sriharsha Chintalapani: The reason for stored procedures and views is for the lineage capture.
+Sriharsha Chintalapani: Like maybe a stored procedure is reading from a rock table and creating a dimension table instead of pipeline.
+Sriharsha Chintalapani: So we will show that stored pressure as a edge between those two tables and capture the column level image.
+Sriharsha Chintalapani: So it will help you not just for the profile and data quality, to help you kind of having the stock of all your data, you know, infrastructure inventory and gives a complete view of lineage.
+Darryl: Understood.
+Darryl: Okay, thank you.
+Darryl: And I'm sorry, Ray, I think we have a slight delay with Zoom, but thank you.
+Ray Deiotte: My Internet's being a, so I'm, I get little snippets delayed, but no, you hit the nail on the head, Daryl.
+Darryl: Excellent.
+Darryl: And by the way, Ray, this is a lot more configurable than purview was.
+Darryl: So when purview was running against it, it was almost an all or nothing.
+Darryl: And we never found, even against production clarity at Epic, if we were strategic in the time that we ran it, even they said that they never saw a blip on the radar.
+Darryl: So with the granularity controls and things like that, this actually might be a lot safer compared to historic attempts at this kind of thing.
+Ray Deiotte: Yeah.
+Sriharsha Chintalapani: And another great thing with the data quality here we have a dashboard for the data leaders admins to look at how and how many tests you, how many are getting successful and when you are about and fail and so on.
+Sriharsha Chintalapani: You now have ability to kind of filter out based on what is failing.
+Sriharsha Chintalapani: You can also add additional filters such as.
+Sriharsha Chintalapani: One of the great things about open metadata APIs is if you have already a data quality platform that you are interested in and you want to continue to use that, you can use that to publish the test results into the.
+Sriharsha Chintalapani: So we have integrations into DBT, dequeue, great expectations and other tools as well.
+Sriharsha Chintalapani: By using open metadata, you get an easier option to kind of develop this test case.
+Sriharsha Chintalapani: Right.
+Sriharsha Chintalapani: With an open metadata deploy and manage them.
+Sriharsha Chintalapani: But if you already have integration, you can publish that.
+Sriharsha Chintalapani: That way you can say that.
+Sriharsha Chintalapani: Okay, what in my DBT platform, what are the tables that have test cases that are getting fairly.
+Mik Cepulis: Do you guys already have an existing tool.
+Darryl: For test cases, for example?
+Sriharsha Chintalapani: Yes.
+Darryl: Not a primary tool that I would suggest using.
+Sriharsha Chintalapani: Yeah.
+Sriharsha Chintalapani: So this will give a great way of analyzing the data quality insights and dashboards so that this other team also on the same page in terms of making a data quality successful platform and gives you an ability to kind of look at the instant Malaysia and so on.
+Darryl: Understood.
+Darryl: Thank you.
+Darryl: There's nothing stopping us from also having critical test cases on quality actually alert to our monitoring system in like Azure monitor, so it gets consumed to a pageable team.
+Darryl: Is that correct?
+Sriharsha Chintalapani: Yes, exactly.
+Sriharsha Chintalapani: So in this case, in the data quality alerts, you can say that, for example, I want to see all the test cases and you can select the trigger off only, you know, you want to alert when you fail, are aborted, successful, cured.
+Sriharsha Chintalapani: You know, you're not that much worried about it.
+Sriharsha Chintalapani: Yeah, we can use webhook and alert that and publish those skills into your dashboard.
+Darryl: Nope, that makes sense.
+Darryl: So Ray, I'm thinking this is very interesting when we can start looking at failures and alerting before we're being called saying that there's an issue because we're seeing pipeline fail succeed, but there's no data in there.
+Darryl: We could have a bug created and someone paged in a critical OlA or SLA situation.
+Sriharsha Chintalapani: So that's a data quality story from outside jumping into lineage.
+Sriharsha Chintalapani: So lineage, the way we calculate here is, let me simplify this a bit.
+Sriharsha Chintalapani: This is visible, it's a longer, it's better.
+Sriharsha Chintalapani: So lineage, we can be gathered from three different, four different ways.
+Sriharsha Chintalapani: One is obviously looking at the query logs and looking for create table, select as view definitions, store closure definitions, anything that we get hold of in the query logs.
+Sriharsha Chintalapani: Part of it, we parse it, we use it for usage information, use it for lineage information.
+Sriharsha Chintalapani: Second thing is we integrate into most of the data workflows, ETL tools like Spark airflow, your airbyte, any other kind of integration tools that we have, we integrate into that so that we can automatically extract that lineage and publish into open metadata, that is.
+Sriharsha Chintalapani: And also we look at the dashboards, for example, which may be running your dashboard data model, which internally connects to a database table.
+Sriharsha Chintalapani: So how they are kind of related and how they are kind of pulling the information.
+Sriharsha Chintalapani: So we connect that as well.
+Sriharsha Chintalapani: That is the client and SDK options that we have.
+Sriharsha Chintalapani: So you can embed into your own code and emit the lineage events directly to open metata.
+Sriharsha Chintalapani: So this can be captured as well.
+Sriharsha Chintalapani: Finally, we also give you some nifty tool right within the UI so that your data stewards, our experts can say that, hey, you know this, I want to actually construct a lineage that's not visible here and I can pick and choose a table here and say that this particular s three storage is connected to here.
+Sriharsha Chintalapani: And one of the cool things we do is we have integration from all the way from s three storage bucket.
+Sriharsha Chintalapani: For example, s three Azure, GCP, how they are transforming into a table and how they are actually being queried in a pipeline level at the dashboard level.
+Sriharsha Chintalapani: So have a comprehensive schema level, including that, you know, kafka topics if they are using.
+Sriharsha Chintalapani: We have a schema level integration here.
+Sriharsha Chintalapani: And so let me come out of.
+Darryl: The, is there, just out of curiosity, it's not quite lineage, but it's kind of in the same ballpark.
+Darryl: Is there a way to zoom in down to like a tables erd?
+Darryl: And it's, and it's correlating joins and things like that.
+Darryl: Can you zoom in that, that detailed?
+Sriharsha Chintalapani: So what we have capturing, for example, in this case customers is transformed into customers table.
+Sriharsha Chintalapani: There is a pipeline as an edge.
+Sriharsha Chintalapani: So this one will capture the transformation logic that is being used inside the pipeline to create the customer clean table.
+Sriharsha Chintalapani: So we're capturing that part of it.
+Sriharsha Chintalapani: But we do have joints and everything else.
+Sriharsha Chintalapani: But joins is not necessarily lineage.
+Sriharsha Chintalapani: We do not show right in this graph, but it will be visible in terms of going to and visiting that table and seeing that frequently join table, frequently joined columns.
+Sriharsha Chintalapani: When we first showed in the schema, for example, jumping back here, this information is what's coming from joins.
+Sriharsha Chintalapani: And there's a table constraints as well that we capture.
+Sriharsha Chintalapani: We already capturing the schema level constraints too here.
+Sriharsha Chintalapani: So those are available from the, in this context, not in the lineage context.
+Darryl: Understood.
+Darryl: Yeah.
+Darryl: I was almost seeing like a hybrid where you could see the ERD made up of those common joins.
+Darryl: A part of my scenario is we have customers who, let's just say I have 20 people with a single data source.
+Darryl: I bet you all 20 start with the same key, four tables.
+Darryl: And to throw that up in a dynamic diagram would be going, here's probably your starting point.
+Darryl: It's just a visual representation of the data you already have.
+Darryl: So that's why I was kind of saying it's kind of lineage, but kind of not.
+Sriharsha Chintalapani: Yeah, that's true.
+Sriharsha Chintalapani: So we are actually building the ERD entity.
+Sriharsha Chintalapani: There it is.
+Darryl: I saw it down, down there.
+Darryl: You have it down there.
+Darryl: ER diagram tool at schema level.
+Sriharsha Chintalapani: Yes.
+Darryl: That what you're referring to?
+Sriharsha Chintalapani: Yeah, yeah.
+Darryl: So third line item under release six, 1.6.
+Darryl: Okay.
+Sriharsha Chintalapani: So we want to kind of separate that out.
+Sriharsha Chintalapani: Lineage is used for like root cause analysis.
+Sriharsha Chintalapani: You know, who are my downstream consumers?
+Sriharsha Chintalapani: If I make a change in a schema, who will be impactful?
+Sriharsha Chintalapani: Like impact analysis of those kind of nature.
+Sriharsha Chintalapani: So you want to address those kind of questions through the lineage.
+Sriharsha Chintalapani: And here diagram definitely is really useful from kind of, hey, how this database is constructed, which table is referring to which table and so on.
+Sriharsha Chintalapani: So you want to kind of show that as a different diagram with the schema level.
+Darryl: Nope, understood.
+Darryl: Thank you.
+Darryl: Just an interesting possibility, quick context on.
+Mik Cepulis: The roadmap you're looking at right there.
+Mik Cepulis: So we released our major versions every two months.
+Mik Cepulis: So 1.4 was released actually last week.
+Mik Cepulis: And you can expect 1.5 later this summer and then 1.6 late summer, early fall.
+Sriharsha Chintalapani: Now jumping back here.
+Sriharsha Chintalapani: So we also added what we call as a layers.
+Sriharsha Chintalapani: So the goal of this is to kind of simplify lineage where it needs to be.
+Sriharsha Chintalapani: You may have different Personas of data users coming in, maybe a data leader says, hey, just give me the service level architecture from which service data is flowing to which service and so on.
+Sriharsha Chintalapani: So we want to add, we were going to add a service level layer here.
+Sriharsha Chintalapani: So that will be simplified not at the table level, but saying that, hey, there's an s three bucket that's landing into redshift.
+Sriharsha Chintalapani: From there it's going into a power bi dashboard.
+Sriharsha Chintalapani: So gives you kind of architectural kind of another diagram.
+Sriharsha Chintalapani: Then you can add column level, which gives you column level lineage.
+Sriharsha Chintalapani: And one of the cool things that we do, for example, in this case there is, you know, how the data is flowing and, you know, you can search based on what columns it has, how the first name is evolving and so on.
+Sriharsha Chintalapani: For example, I can search for customers customer id, so I can see the tracing of customers going into customers clean table and so on.
+Sriharsha Chintalapani: So you can have a trace of how this particular column is evolving.
+Sriharsha Chintalapani: Even if it gets renamed.
+Sriharsha Chintalapani: You will be able to connect through that because we are understanding the lineage in that level.
+Sriharsha Chintalapani: So you will be able to connect even when the custom one id may be changed to a custom id or some other name.
+Sriharsha Chintalapani: Secondly, from a governance perspective, they are looking at this complex diagram.
+Sriharsha Chintalapani: And I'm interested in, hey, you know, I don't want to look at all of this data.
+Sriharsha Chintalapani: Just show me the data where there is a PSN stick getting processed.
+Sriharsha Chintalapani: So I can just select the tag and update it.
+Sriharsha Chintalapani: And it gives me a much more compressed graph of all the nodes that contains bi sensitive data and who's processing, who's actually learning it.
+Sriharsha Chintalapani: So it gives an inherent view from a governance perspective.
+Sriharsha Chintalapani: Hey, I want to look at nature, that user data is actually constrained and it's not going to go out of certain, you know, services, certain dashboards and so on.
+Sriharsha Chintalapani: You see, we are looking at that particular graph as well.
+Sriharsha Chintalapani: So these are changes, these are the improvements that we added that you can think of this as another way of, you know, search by lineage kind of a feature.
+Sriharsha Chintalapani: Any questions before I move on?
+Darryl: I'm good, thank you.
+Sriharsha Chintalapani: Finally, I want to show the schema definition.
+Sriharsha Chintalapani: So the goal of this is, hey, we have this schema, you know, we have some questions from our customers saying, I have 100 columns, I want to take this and kind of create my own table, manipulate a little bit.
+Sriharsha Chintalapani: And that's the answer for that is to bring the schema definition right here so that user can understand how this particular table is constructed and so on.
+Sriharsha Chintalapani: Finally, custom properties.
+Sriharsha Chintalapani: So the goal of the custom properties is with the standards and APIs that we have we have a structure in place on how we capture tables, data, a topic or a pipeline like table has columns, table has description, table has tags and glossary terms, table has an owner and so on.
+Sriharsha Chintalapani: With custom properties, you as an admin can create additional important information that may be relevant to your company, to your organization, to your own teams and create those properties here.
+Sriharsha Chintalapani: Once you create those properties here, it will be applied to all the tables of that type and the custom properties will be visible here.
+Sriharsha Chintalapani: For example, we have a business owner you can actually set as other additional owners, teams or whatnot, any different types of properties that you can actually expose here and capture through the UI, through the APIs and able to search based on this custom properties as well.
+Sriharsha Chintalapani: So that's kind of how we are pulling all the data asset information, the 360 degree view of who is the owner, what is the importance to the business, what is the documentation at the schema level, at the column level, tanks, governance glossary terms and what are the frequently joined terms with active feed and task version history.
+Sriharsha Chintalapani: Sample data varies to understand it profile and data quality to test it lineage to understand the impact definition, so on.
+Sriharsha Chintalapani: So it gives you the overall aspects of all the things that you are interested against data.
+Sriharsha Chintalapani: Now going to data insights.
+Sriharsha Chintalapani: So data insights is to showcase from how this data infrastructure is evolving.
+Sriharsha Chintalapani: What is your total data assets that are growing in which aspects of this total data assets that are growing on a daily basis.
+Sriharsha Chintalapani: And secondly, what are the percent of data assets with descriptions and ownership and hearing?
+Sriharsha Chintalapani: We want to kind of improve the data culture of the organizations.
+Sriharsha Chintalapani: So one way to do that is to define a KPI, saying that hey, as a company we want to improve the documentation to let's say 50% by end of June and ownership coverage 20%.
+Sriharsha Chintalapani: When you define this KPI, we send a weekly email to all the teams saying that your company set a goal like this and you are at 10%, we have 50%.
+Sriharsha Chintalapani: We need to make a move on.
+Sriharsha Chintalapani: As a weekly email, it gives you the current status of their data, their part of data and what the company defined goals are.
+Sriharsha Chintalapani: And secondly, we also showcase application analytics.
+Sriharsha Chintalapani: What is your mostly viewed data assets page views daily active users on this platform, most active users so that you can the investment made into open metadata.
+Sriharsha Chintalapani: Is it being successful?
+Sriharsha Chintalapani: Is the people are being used or not?
+Sriharsha Chintalapani: Finally, cost analysis, another unique dashboard that we built.
+Sriharsha Chintalapani: So again, giving some anecdote from the Ubers life there.
+Sriharsha Chintalapani: So when we went there, there are 300k tables and it's growing every day, right?
+Sriharsha Chintalapani: So we went through this process of identifying how many of them are used versus unused.
+Sriharsha Chintalapani: Again, by using the query analysis like how many queries are being run, we found out that there are 125k tables nobody queried in last twelve months.
+Sriharsha Chintalapani: So that gives an incentive to move the data into a cold storage, gain efficiency in the data platform, not just the infrastructure level but also human resource level.
+Sriharsha Chintalapani: That we're not splitting ourselves too thin trying to manage this huge data infra with 300k tables and move the unused tables out of the way.
+Sriharsha Chintalapani: We're also bringing in query credits and everything else into this so that this dashboard is much more interesting in terms of, for example, think of Snowflake.
+Sriharsha Chintalapani: The data itself is not that expensive, but the queries are going to be expensive.
+Sriharsha Chintalapani: So how those queries, how long those queries are running, what are the grades it's using, how it's impacting the organization.
+Sriharsha Chintalapani: And with everything we have, team level, you can actually filter it by team and other grouping so that you know which team is kind of impacting your data infrastructure to understand it.
+Mik Cepulis: And Harsha, I want to jump in really quick.
+Mik Cepulis: Ray, I know you have to leave in about a minute or two.
+Mik Cepulis: I thought we could spend a minute before Harsha wraps the full demo discussing timeline and next steps and just understanding when your team would be available for proof of value proofing concept exercise.
+Ray Deiotte: Yeah, so I appreciate that, Mick.
+Ray Deiotte: This has been a really great overview.
+Ray Deiotte: Harsh, thank you so much.
+Ray Deiotte: You know, I think we have need for governance, quality cataloging and in the next two to three quarters, it's going to become imperative for us.
+Ray Deiotte: I think what I'd like to do is go back with Darrell to Kat and the rest of the team and figure out where we need to slot this into our timeline in terms of proof of concept and then potential onboarding and look at our budget over the next couple of quarters.
+Ray Deiotte: Because as we onboard, new customers ourselves, this, as you know, problem of metadata management, metadata analysis becomes compounded with each customer that we onboard and with each dataset that we onboard.
+Ray Deiotte: So Mick, what I can commit to you is to come back to you by first of next week with, with some timelines and thoughts on what a potential PoC would look like.
+Sriharsha Chintalapani: And then.
+Ray Deiotte: What our kind of longer full in timeline would look like.
+Mik Cepulis: Okay, great.
+Mik Cepulis: Thank you, Ray.
+Ray Deiotte: Yeah, you bet.
+Ray Deiotte: And gents, thanks so much.
+Ray Deiotte: I got to drop in, prep for my next one, but this has been really, really fantastic.
+Sriharsha Chintalapani: Thank you.
+Sriharsha Chintalapani: Thanks.
+Sriharsha Chintalapani: Good meeting you.
+Darryl: Thanks, Ray, for your time.
+Darryl: And now that Ray is left, where I'd like to focus.
+Darryl: Just our time is to briefly discuss the RBAC capabilities of the tool and go from there, because that's probably the next biggest, most important thing with the time that we have left.
+Sriharsha Chintalapani: Yeah, definitely.
+Sriharsha Chintalapani: So the way we do RBAC here is role and attribute based access control.
+Sriharsha Chintalapani: And roles can be assigned to teams, to users.
+Sriharsha Chintalapani: Roles contain one or more policies, and policies contains one or more rules.
+Sriharsha Chintalapani: For example, if I go to the data consumer policy, we are saying we give a more generous rule here, but I can add a rule saying that I can select the resources.
+Sriharsha Chintalapani: Resource could be anything that you see in open metadata, could be glossary or glossary, term ingestion pipeline, deploying, setting KPI's and so on.
+Sriharsha Chintalapani: Like for example, I want to look at a table under here.
+Sriharsha Chintalapani: You can also select what operations that they can do.
+Sriharsha Chintalapani: Create, delete, view all the information, view only, test or view only queries and so on.
+Sriharsha Chintalapani: And you can pick and choose which one.
+Sriharsha Chintalapani: For example, in this case, I only want to allow view basic, and you have an effect of allow deny in here.
+Sriharsha Chintalapani: The condition is the interesting part.
+Sriharsha Chintalapani: So this is where the attribute part of comes in, where you can say that, okay, allow on this on any table, view basic information if the logged in user is an owner of that particular user, if the table matches certain conditions, and so on.
+Sriharsha Chintalapani: So this gives you an ability to create a rule which contains not only look at what is the users context is, and also look at the resource they are trying to access, the context is.
+Sriharsha Chintalapani: So once you set a rule like that.
+Sriharsha Chintalapani: So once we have the rule like this, you can then also create a role saying that there is a data consumer role.
+Sriharsha Chintalapani: It has a data consumer policy.
+Sriharsha Chintalapani: Again, you can add multiple of these policies.
+Sriharsha Chintalapani: The way we process these access controls is we look at first deny policy.
+Sriharsha Chintalapani: For example, you can say that, hey, the user cannot have view all information, deny that, but allow view basic information.
+Sriharsha Chintalapani: We process the view all and say that, okay, this particular user doesn't have any access to any information.
+Sriharsha Chintalapani: So that the deny is the first one to bid.
+Sriharsha Chintalapani: And the way you can also organize these roles is to go back to the teams.
+Sriharsha Chintalapani: Here, the teams are organized in a hierarchical fashion.
+Sriharsha Chintalapani: You have organization, which is the company at the top.
+Sriharsha Chintalapani: Underneath that, you may have department, you may have business unit, and then you have a teams that have.
+Sriharsha Chintalapani: That has, you know, that can have the users who can associate with it.
+Sriharsha Chintalapani: So it's a hierarchical structure that you want to try to capture how, you know physically the companies are organized.
+Sriharsha Chintalapani: The goal of this is to do is you can at the organization level put a role and once you have that role, the things underneath them cannot overwrite the settings.
+Sriharsha Chintalapani: At the like, for example, you can say that no one will have access to bi sensitive data and I as a sales team cannot say that I will have a say, sensitive data access to it.
+Sriharsha Chintalapani: So that is the goal of organization.
+Sriharsha Chintalapani: You can have a default behavior, a common pattern to put a role there.
+Sriharsha Chintalapani: And a sales team or a finance team or a data infrastructure team can then say that, come back and say that, hey, I'm a data infrastructure team.
+Sriharsha Chintalapani: Only the users within the data infrastructure team can access to the data owned by the data, nobody else.
+Sriharsha Chintalapani: So you can give it restrictions like that.
+Sriharsha Chintalapani: So as a goal of this project is to kind of give at the arc level more lenient policies.
+Sriharsha Chintalapani: And each individual team can then structure according to their needs, according to their understanding of their own data, who can access, who cannot access it.
+Darryl: So, okay, can I, can I completely hide sections of the product?
+Sriharsha Chintalapani: So sections of the product in the.
+Darryl: Sense that, so here's my use case.
+Darryl: Here's my use case.
+Darryl: I have some business owners that all this would be too much for them.
+Darryl: What if I want to strip this down?
+Darryl: Very minimalistic interface with very minimalistic access so that a leader who's not a data person or overly technical can be locked down to almost a very simple high level portal at max.
+Sriharsha Chintalapani: Yeah.
+Sriharsha Chintalapani: So that's the goal of Personas.
+Sriharsha Chintalapani: Personas will allow you to, you can create like a collaborator, consumer data stored and everything else.
+Sriharsha Chintalapani: Once you have that Personas cleared, you can go to preferences.
+Sriharsha Chintalapani: Right now you have customized landing page.
+Sriharsha Chintalapani: For example, in this case I don't want to see knowledge center.
+Sriharsha Chintalapani: I can remove this.
+Sriharsha Chintalapani: I can remove knowledge indicators.
+Sriharsha Chintalapani: I just want to keep my daughter let access my data and save this.
+Sriharsha Chintalapani: And this will customize the landing page.
+Sriharsha Chintalapani: But the goal of this is right now we are working into this is to also give you options too.
+Sriharsha Chintalapani: I only want to give Explore page option.
+Sriharsha Chintalapani: I'm going to remove observability insights, domains governance knowledge center and I can keep one of these two.
+Sriharsha Chintalapani: So you will get that and including the tables pages as well.
+Sriharsha Chintalapani: For example, in tables for certain users Personas.
+Sriharsha Chintalapani: I just want to give schema.
+Sriharsha Chintalapani: I don't want to show any of this.
+Darryl: Sure.
+Sriharsha Chintalapani: So you give all of that.
+Darryl: So it's, I can remove sections, I can remove tabs.
+Darryl: Okay.
+Darryl: That's extremely powerful because we have business owners think executives who just don't need to go into the weeds, but maybe they want the knowledge, maybe they want some basic, basic lineage, basic descriptions, tagging, who owned it, how healthy is it?
+Darryl: Nothing more maybe?
+Darryl: Okay.
+Darryl: Love it.
+Darryl: Okay, great, great.
+Sriharsha Chintalapani: Yeah.
+Mik Cepulis: So going back to, sorry, going back to our first call, you know, the part of the ability or the reason we're able to have such nuanced granularity here is because the whole product is built with API first principles.
+Mik Cepulis: So really every UI element you see on the screen, everything, every single action you can take has an associated open API behind it.
+Mik Cepulis: So that's why we're able to be so extensible and flexible.
+Darryl: Love it.
+Darryl: And I take it that OpenaPI is available for others to consume as well.
+Darryl: So I could create my own sharepoint site, tapping into the API if I wanted to really simplify it beyond certain people's beliefs.
+Sriharsha Chintalapani: We have documentation on all the APIs.
+Sriharsha Chintalapani: We have SDKs in Java and Python, Golang.
+Sriharsha Chintalapani: So which one you want?
+Sriharsha Chintalapani: You have access to all of the APIs?
+Sriharsha Chintalapani: A lot of our customers are actually using our APIs to do their own custom things on top of what we provide here.
+Darryl: No, it makes sense being able to inject additional data in that you might not be able to source right now because it's all synapses in there.
+Darryl: We use synapse for now.
+Darryl: I can have it pushed into the API, but in the next version I might not even need that.
+Sriharsha Chintalapani: Exactly.
+Darryl: Perfect.
+Sriharsha Chintalapani: Sweet.
+Darryl: Okay.
+Darryl: Any other key things?
+Darryl: I know we're a little over and I've got to run to my next call.
+Darryl: Is there any other good call outs that you guys have for us?
+Darryl: Otherwise, I'll circle back with Ray in the near future and, and figure out where, which direction we can take.
+Sriharsha Chintalapani: Any other features you were talking about harshly.
+Mik Cepulis: A lot of knowledge center.
+Sriharsha Chintalapani: Yeah, yeah.
+Sriharsha Chintalapani: So knowledge center is way off.
+Sriharsha Chintalapani: Like, you can think of notion or a confluence right within open metadata.
+Sriharsha Chintalapani: Like typically, like, you know, we end up having companies end up having a conference wiki somewhere else.
+Sriharsha Chintalapani: At Google Docs, the knowledge about data itself kind of spread around in multiple places.
+Sriharsha Chintalapani: The goal with Knowledge center is to bring all of that into one central place again, share it with your collaborators, have comments, have version history, build really rich text right here with images or whatnot, and associate with the data assets.
+Sriharsha Chintalapani: So for example, I go to the customers table, I want to have some context.
+Sriharsha Chintalapani: Like, you know, how do this define what is logic behind it?
+Sriharsha Chintalapani: What is the thoughts behind it?
+Sriharsha Chintalapani: I can see knowledge center right here.
+Sriharsha Chintalapani: I can see a lot of associated articles.
+Sriharsha Chintalapani: I can just click and go there and understand it.
+Mik Cepulis: And Daryl, this is really meant for onboarding new employees or maybe somebody switches teams or whatever and they understand that team's usage and understanding of data best practices.
+Mik Cepulis: We differentiate it from the glossary, which is more tied to individual names of rows or columns or whatever.
+Darryl: No, I understand entirely.
+Darryl: No, this makes sense.
+Darryl: There's a lot of tribal knowledge that can vary from system to system, source to source REMR and how they structure data.
+Darryl: And key things to be aware of can vary just on how you configure the tool.
+Darryl: Nonetheless, the differences between how vendors implement.
+Darryl: So I can see knowledge center being very valuable when you're trying to understand one source from another source, especially, or different best practices for joining data based on it being Oracle versus SQL being or a parquet file that's been virtualized, etcetera.
+Darryl: So lots of interesting opportunities there.
+Darryl: Very good.
+Darryl: Hey, at this moment I don't have any further questions and I'm late to my next call.
+Darryl: I appreciate this.
+Darryl: If you could get me this recording, I want to share it with some people and check in with Ray.
+Darryl: I think some other areas that might benefit from this, including our data governance team and enterprise data, and start seeing where we can take this.
+Sriharsha Chintalapani: Awesome, right?
+Mik Cepulis: Daryl, that's a little plan.
+Mik Cepulis: We'll circle back next week and then talk about timelines, next steps.
+Darryl: Sounds good, Mick.
+Darryl: I meet with rays on Tuesdays usually, so we might be shoot for or reach out to me if you don't hear from me by Wednesday at the latest.
+Mik Cepulis: Perfect, will do.
+Darryl: Okay, excellent.
+Darryl: Thanks a lot.
+Darryl: Thanks a lot.
+Darryl: Have a good one.
+Sriharsha Chintalapani: Thanks, darling.
+Sriharsha Chintalapani: Bye.
+Darryl: Thank you.
+Sriharsha Chintalapani: Bye.
+Sriharsha Chintalapani: The recording has stopped.
+
+END MEETING

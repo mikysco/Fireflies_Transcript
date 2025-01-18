@@ -1,0 +1,315 @@
+Meeting Name: Collate | Veho - Next Steps, Transition
+Meeting Date: 2025-01-06
+
+Mik Cepulis: Hey.
+Mik Cepulis: Hello.
+Azeem: How are you doing?
+Mik Cepulis: Great.
+Mik Cepulis: Happy New Year.
+Mik Cepulis: How about yourself?
+Azeem: You as well.
+Azeem: I am trying to figure out my video here.
+Azeem: We don't use zoom very often here, so.
+Mik Cepulis: There.
+Azeem: There we go.
+Azeem: Worked.
+Mik Cepulis: Good to see you again.
+Azeem: How are you doing, man?
+Mik Cepulis: Yeah, nice and relaxed.
+Mik Cepulis: I had a solid dinner.
+Mik Cepulis: We were, we did a sort of unusual thing with my family down to Tucson for some hiking and biking.
+Mik Cepulis: Just said it needed to be warm, need to not leave the US So it was fun.
+Azeem: That sounds like a lot of fun, especially given, like, right now it's so cold.
+Azeem: Where are you based, Mike?
+Azeem: I forget.
+Mik Cepulis: I'm in San Francisco, so chilly, but not bad.
+Azeem: San Francisco is beautiful weather, man.
+Azeem: Yeah, I, I, I'm in Dallas right now.
+Azeem: I used to be in the Bay Area, so I moved here more recently.
+Azeem: But, dude, it's 21 here right now.
+Mik Cepulis: I've been reading about the cold front you guys have.
+Mik Cepulis: That's crazy.
+Azeem: Mets.
+Mik Cepulis: Yeah, my, my colleague works in Orlando and it's down in the low 30s right now.
+Mik Cepulis: Overnight.
+Mik Cepulis: Crazy.
+Azeem: Easy.
+Azeem: Crazy.
+Azeem: Yeah, all good.
+Azeem: Awesome.
+Azeem: Well, I'm glad we're, we're chatting, Mike.
+Azeem: And I think Adam told you, right?
+Azeem: He's, he has the part we host.
+Azeem: Yes.
+Mik Cepulis: Yeah.
+Azeem: For the time being.
+Azeem: I'm running the show for a bit until we get someone there.
+Mik Cepulis: Well, I, I hear nothing's on your plate, so.
+Mik Cepulis: Nice.
+Azeem: Pretty easy stuff.
+Azeem: No, no, it's, I'm excited for, for the stuff we're building here and wanted to keep close, so it makes sense for me directly work with the team here.
+Mik Cepulis: Well, yeah, I appreciate you continuing the effort.
+Mik Cepulis: I, Obviously, you know, I'm keen on understanding, like, what's, what's in your line of sight, what's your immediate priority?
+Mik Cepulis: I know you guys have a ton of different hoops in the air right now.
+Mik Cepulis: Big databricks, investments, and hopefully investing in collate and, and whatnot as well.
+Mik Cepulis: So I just figured, like, let's, let's have a level set, understand what your priorities are, what we can actually achieve, and in the next couple of weeks, next couple months, understand if priorities and timelines have shifted or if we can move forward.
+Mik Cepulis: How do we move forward quickly?
+Azeem: Yeah.
+Azeem: So can you share with me what Adam has shared with you in terms of the key problems we need to solve and why we were looking at collate?
+Mik Cepulis: Yeah, I mean, so I think that his, his understanding was.
+Mik Cepulis: So he was aware of the prior investigations into data governance.
+Mik Cepulis: Veho did an investigation into CO late last year, I think wanted to make an investment, but wasn't able to just do priorities at the time because of some newer initiatives around databricks and veho.
+Mik Cepulis: Having this understanding that there's a persistent problem with lack of data governance, lack of control from a strong data catalog.
+Mik Cepulis: This is a problem that you guys have wanted to solve for quite a while.
+Mik Cepulis: And then, you know, this is something that you elevated to Adam as a priority as part of the databricks initiative and under the broader, you know, data platform maturity.
+Mik Cepulis: So that was like how we came together.
+Mik Cepulis: And then obviously, you know, I've, I think redshift the databricks migration was a big part of it.
+Mik Cepulis: And, you know, data quality, data discoverability, the fact that we can achieve both, you know, the data governance side as well as the quality side was very appealing to Adam and your team.
+Azeem: Okay, awesome.
+Azeem: That sounds about right.
+Azeem: The two key problems.
+Azeem: Actually, governance is not the top of my list, but governance can mean a lot of things.
+Azeem: It might be like a thing that I'm thinking about, but not really thinking about governance.
+Azeem: But the number one problem we need to solve is discoverability of data and understanding, like, what data set has, what information, what grain is at, and things like that.
+Azeem: Right.
+Azeem: Like somebody who's a business user wants to come in and explore, build a new metric, should be able to easily do that.
+Azeem: So that's, that's, that's one reason why I'm looking at, I was looking at collate or open metadata, because I have open meta running on my machine.
+Azeem: So I've been playing around with it.
+Azeem: What I understand from Adam, he told me that's like, I think you guys have done, which is neat, is you guys have added like, data quality and those type of things for these data sets.
+Azeem: So the second thing that I'm looking at, which would actually be a huge win for us, is we currently use Monte Carlo data quality.
+Azeem: And I want to figure out a way, I mean, if it makes financial sense and everything, and we solve the discoverability problem and the quality problem and we can close our contract with Monte Carlo and move to collate, that will make a ton of sense for us.
+Azeem: I think from a financial perspective, if the numbers work out, that'll make a ton of sense.
+Azeem: On the governance side, the primary governance thing that we need to do, that we're trying to do right now, there's actually two angles.
+Azeem: One is controlling data sprawl, where people can just like, create new data sets all the time.
+Azeem: So being able to identify, hey, these datasets were created, like this many days they were created, and then we're gonna go ahead and clean everything every 30 days on a rolling window.
+Azeem: So data sprawl is a key thing that we wanna control.
+Azeem: And sprawl is for like public data sets.
+Mik Cepulis: Right.
+Azeem: So we are allowed to publish something to be a public to a public schema in databricks.
+Azeem: But we wanna be able to prune that schema every 30 days on a rolling window for every dataset.
+Azeem: I think collate can potentially help there just given like some of the metadata that it captures about the data set itself.
+Mik Cepulis: Yeah, we do have to that exact objective.
+Mik Cepulis: Like we have cost analysis tools and then data usability, data usage reports that are, you know, more mid level and executive level oriented.
+Mik Cepulis: So you know, taking a broad look across the entire data landscape, what's new across the prior 30 days or whatever time period.
+Azeem: Nice.
+Azeem: Excellent.
+Azeem: Yeah.
+Azeem: So that would help us.
+Azeem: The second aspect of fear is like we're building in databricks and part of the databricks investment we're building this bronze, silver, golden layer of data sets, right.
+Azeem: Which is like the medallion architecture that databricks about.
+Azeem: And we would need to control that obviously and like we'd want to be able to people to clearly identify the public, the golden data sets that are available for them to use, what's in it and what's not.
+Azeem: A kind of a slightly.
+Azeem: So these are tactical things that we need to solve slightly longer term thing here.
+Azeem: My case, I'm pretty bullish on how LLMs are going to transform this space and in workflows in general for both engineering and data.
+Azeem: So if you guys are making investments in leveraging LLMs to either produce documentation or help people understand how to bring data sets together when you query or even like help them write queries based on all the information you have.
+Azeem: Because you have a lot of information at column level that would be very useful.
+Azeem: This is a slightly longer term plan for us, right?
+Azeem: Probably by longer term I mean like four to six months.
+Azeem: I would like to solve that problem.
+Azeem: Like I think that would make collate very attractive if you guys had some investment going on there.
+Azeem: The final thing I'll share with you Mike is our security team is investing in data grail which is, I don't know what it is, I've never looked at it.
+Azeem: They just told me like a few days ago that they're going to do something with data grail.
+Azeem: They primarily are looking at it, I think for data.
+Azeem: They're looking at it from a security angle.
+Azeem: They want to, they want to understand like how data is all connected, which I Think Collate solves as well.
+Azeem: So I would love to understand the story between Collate and Data Grail.
+Azeem: And ideally, if Collate solves this problem, we tell everybody else we're not going to use Data Grail, we're just going to use Collate.
+Azeem: But I don't know if Colette solves that problem because Data Grail runs like agents everywhere, which I'm not sure if your perspective on that would be helpful for me because again, like, that will help us reduce our spend on multiple vendors here.
+Mik Cepulis: I'll need to know a bit more about Data Grail.
+Mik Cepulis: Like I, I have a, a cursory understanding of what they do, but it's not, not a deep understanding.
+Mik Cepulis: My, it looks like they have more integrations that probably do a little bit less than what Col does with our integrations.
+Mik Cepulis: They've 2,000 plus vendors they integrate with, we have 90.
+Mik Cepulis: But we're, you know, I think that our objectives are pretty different.
+Mik Cepulis: I can say that on the AI front, we have already and are continuing to make large investments in AI.
+Mik Cepulis: So part of that is documentation generation, part of that is query development, query building.
+Mik Cepulis: Some of that is natural language searching and then also using agents to programmatically suggest different data quality test suites, different data quality monitoring options, how to label your data assets more effectively, what ownership hierarchies might look like, what hacking hierarchies might look like based off of the usage patterns and the totality of all the metadata that we ingest from your data system.
+Mik Cepulis: So really compelling and powerful way to accelerate data governance and overall, you know, discoverability of data.
+Azeem: That's pretty neat actually.
+Azeem: Can I, am I able to like, look at that now or is that in the works coming out soon?
+Mik Cepulis: Yeah, so some of that will be.
+Mik Cepulis: So we, we with Adam's testing, we originally had him with our free tier, which is like really just a very, very initial cursory research process.
+Mik Cepulis: We moved him over to a formal POC cluster so he has, you know, a dedicated area or dedicated hardware provision for Veho's testing.
+Mik Cepulis: As part of that, we can turn on the Coli AI as part of, you know, for a limited set of your databases so you can start experimenting with the documentation generation with query building with the other AI features that we already have.
+Mik Cepulis: And then as part of our 1.7 release, we have some roadmap items that I can share with you that are, I think, more exciting when it comes to AI.
+Mik Cepulis: We already have a pretty compelling set of initial, you know, product areas where AI is relevant.
+Mik Cepulis: And then, you know, we'll continue as the, as the year goes on, really adding to that category.
+Azeem: Interesting.
+Azeem: Okay, awesome.
+Azeem: Yeah.
+Azeem: Can you shift that to me?
+Azeem: Um, are you able to do that?
+Mik Cepulis: I think that Charlie also has access.
+Azeem: Okay, perfect.
+Azeem: I'll talk to Charlie.
+Mik Cepulis: Yeah, if he, if he's not able to add you as an admin, then please ping us and we'll get that sorted out.
+Azeem: I think, I think Adam added me, but I need to figure out where he sent the thing.
+Mik Cepulis: Yeah, we were, we were trying to, I think, push things along quicker, but I know Adam was pretty smashed with end of year goals and then obviously with the transition, I'm sure that he, his head was in a bunch of different places.
+Mik Cepulis: So if we could get a working session, you know, this week, we'd love to, with you and Charlie or whoever else is taking the reins on the, on the, you know, hands on keyboard testing.
+Azeem: Okay, cool.
+Azeem: This week I think it'll be hard because we have an off site next week and I'm busy with a bunch of things and the team is, to be honest, 100% focused on getting databricks up and running.
+Azeem: So I think some doing sometime next week would be useful, particularly if you can give us an overview of like, how the AI integration works here.
+Azeem: I think that'll be very useful.
+Azeem: Particularly like the thing that I'm thinking about here, Mike, is like, if, if we can accelerate the business's ability to get value from the data using this, this platform, I think that would be, that would be like a huge benefit for us.
+Azeem: And, and from a documentation perspective, like the documentation that gets generated from the metadata here.
+Azeem: Can you all like pull from DBT documentation?
+Mik Cepulis: I know that we can in some contexts.
+Mik Cepulis: It'll.
+Mik Cepulis: I guess it depends a bit more.
+Mik Cepulis: Do you mean pull from DBT to inform the AI's own documentation of like a table description or.
+Mik Cepulis: What do you mean by that?
+Azeem: Yeah, so DBT has a way to document all the models.
+Azeem: Right.
+Azeem: Including like columns and everything else.
+Azeem: Right.
+Azeem: That lives in our repo.
+Azeem: So some teams have invested in that and they have like some of our models have documentation there.
+Azeem: So the thing that I'm trying to avoid here is like having two sources of documentation.
+Azeem: Truth.
+Azeem: So either we need to move everything into collate or we move everything to DBT and collate just pulls from that.
+Azeem: And if the AI engine can generate or these LLMs can generate documentation that gets then committed to DBT reposition, that would be very useful for us because it centralizes the documentation.
+Mik Cepulis: Okay, I know that.
+Mik Cepulis: I don't Believe that'll be a native integration.
+Mik Cepulis: Right now we do expose everything in the tool via API, so I don't think it would be very much legwork to have an automation that when a collate description is updated, that's propagated via API call to DBT and the DBT repo is updated.
+Mik Cepulis: No, I think that's very achievable.
+Azeem: Okay, cool.
+Azeem: Awesome.
+Azeem: That sounds good.
+Azeem: Yeah.
+Azeem: So.
+Azeem: So Mike, let's target sometime next week for.
+Azeem: For like a discussion particularly around AI.
+Azeem: And I'll pull in.
+Azeem: Pull in Charlie for us to chat through this.
+Azeem: Are you guys also familiar with like Metaphor?
+Azeem: We are for you guys, right?
+Mik Cepulis: Yeah.
+Azeem: Okay.
+Mik Cepulis: Yeah.
+Mik Cepulis: Metaphor.
+Mik Cepulis: Are.
+Mik Cepulis: There's sort of a newer branch off of, I think a different open source Y.
+Mik Cepulis: Yeah.
+Mik Cepulis: Initiative Data Hub.
+Azeem: Yeah, yeah, yeah.
+Azeem: The guy who runs Metaphor is a close friend of mine.
+Azeem: I.
+Azeem: I don't know where they are in their journey.
+Azeem: They were.
+Azeem: I'm not looking to use metaphor, but.
+Azeem: But I think that, that I.
+Azeem: I think is rather interesting in their world that they have built is the ability to integrate with Slack and capture conversations that are happening around data sets.
+Mik Cepulis: Okay.
+Azeem: I was just curious if you, if you like the question.
+Azeem: Like, you know, oftentimes what happens, to be honest, is like you have a data set that you have, but then you go ask about that data set to somebody else because you didn't find enough.
+Azeem: Right.
+Azeem: And that the conversation usually happens in Slack.
+Azeem: But I'm just thinking out loud here.
+Mik Cepulis: Yeah.
+Mik Cepulis: So we do have a pretty interesting Slack integration already.
+Mik Cepulis: It's.
+Mik Cepulis: It's probably a little different than what you're discussing, but what we do now is like, we try to centralize conversations about data within the data platform.
+Mik Cepulis: So if you go into this is just the Colate sandbox jump in here, you can see the full conversation and change log history right here on the sidebar.
+Mik Cepulis: So there's a full.
+Mik Cepulis: You know, if things happen, we try to just centralize all the changes and questions and tasks in this.
+Mik Cepulis: In the actual customer table itself, as opposed to jumping over to Slack and having a conversation about that.
+Mik Cepulis: We do have a Slack integration for alerting and for a number of other items, but in general, our philosophy was to keep the conversations about data occurring in the tool where the data is actually stored.
+Mik Cepulis: And that's one approach.
+Mik Cepulis: I know that we are open and amenable to different philosophies on how to centralize conversations, and I'm sure that as time goes on, we'll probably have other ways of conversations.
+Azeem: Just curious.
+Azeem: Your mic is no Big deal.
+Azeem: Yeah.
+Azeem: Cool.
+Azeem: This is good.
+Azeem: So let's target meeting sometime next week.
+Azeem: Mike.
+Azeem: I'll have M schedule something.
+Azeem: You can reach out to M, by the way, for any scheduling and things like that to.
+Mik Cepulis: Sorry, to who?
+Azeem: I'm gonna copy.
+Azeem: I'm gonna copy.
+Mik Cepulis: Perfect.
+Mik Cepulis: Thank you.
+Azeem: Yeah.
+Azeem: Any other questions that I can answer for you?
+Azeem: I kind of shared everything that was top of mind for me.
+Mik Cepulis: Yeah.
+Mik Cepulis: So, you know, when we first met, our understanding was veho wanted a solution in place asap and there had been a lot of pre work done already.
+Mik Cepulis: And, you know, I'm.
+Mik Cepulis: I'm working with your procurement team as well to help get, you know, an order form figured out and ultimately a contract signed.
+Mik Cepulis: I'm curious, like, is that still the priority to figure something out soon and get, you know, your hands on Collate and productionize ASAP?
+Azeem: Yeah, it is a priority to production as ASAP.
+Azeem: But the.
+Azeem: If you stack rank this, the P0 is getting Databricks up and running because without that, like, holder is not gonna make a ton of sense.
+Azeem: So the team is running slightly behind on that.
+Azeem: They are expected to wrap up our first, like, POC at the end of this week.
+Mik Cepulis: Okay.
+Azeem: Which is why I think next week makes a ton of sense for this conversation.
+Mik Cepulis: Okay.
+Mik Cepulis: So you're expecting to finalize the Databricks PoC by the end of this week?
+Azeem: We should have the POC running at the end of this week.
+Mik Cepulis: Sorry.
+Azeem: Yeah, all good.
+Azeem: Okay.
+Azeem: We should have the POC running at the end of this week.
+Azeem: Okay.
+Azeem: We'll make a decision on databricks.
+Azeem: I mean, decision and databricks is pretty much done.
+Azeem: Like we're going to go with databricks, but I want to, like, I want to see it all run and all the executives can see it all run.
+Azeem: And then, then we'll.
+Azeem: We'll move forward there and then, then I think we can have a conversation on how collate can fit into all of this.
+Azeem: I think the thing that will help me a lot, Mike, here is Monte Carlo.
+Azeem: Whether we can.
+Azeem: We can decommission Monte Carlo.
+Mik Cepulis: Okay.
+Azeem: Bring that spend into collate because from a budgetary perspective, I have to make this all work from a budget perspective.
+Azeem: So that's.
+Mik Cepulis: Who is the.
+Mik Cepulis: The Monte Carlo technical owner on your end.
+Azeem: It's this team, the Charlie, the Charlie and all of us.
+Mik Cepulis: Okay.
+Mik Cepulis: So if Charlie joins the call next week, he'll be able to speak pretty well to, like, the specific task that you're running and the requirements you have.
+Azeem: Yeah.
+Azeem: And if you just like when we Set up the call just mentioned that we were going to go over the features that Monte Carlo currently does or something like that, so Charlie can make sure we have the right people on the call.
+Mik Cepulis: Okay, awesome.
+Mik Cepulis: Yeah.
+Mik Cepulis: So then next week we'll do a data quality observability demo, talk about the AI roadmap, and then I'd also like to spend some time talking about the progress that you've made so far with the collate poc.
+Mik Cepulis: I know that some progress has been made.
+Mik Cepulis: Maybe not as much as we would have liked at this point, but, you know, now that we'll have some resources freed up with databricks POC being finished, then maybe turn our attention to collate more.
+Azeem: Yeah, yeah.
+Azeem: And if you can also add to that, anything you can share with me between now and the call doesn't have to be on the call on Data Grill and how that overlaps with collate, if at all.
+Mik Cepulis: Okay.
+Azeem: Because if I can make the plate also to decommission data Grail and just make collate the thing, then I would want to do that.
+Mik Cepulis: Okay, great.
+Mik Cepulis: I will.
+Mik Cepulis: You know, I think it's going to be a limited crossover, not a full crossover.
+Azeem: Okay, yeah, I figured as much.
+Azeem: But I think it'd be useful for me to understand because the security team is likely only using it for some very specific scenarios.
+Mik Cepulis: Okay, got it.
+Azeem: Yeah.
+Mik Cepulis: I mean, are you able to share where the startups are?
+Azeem: I can talk to Ruchi and ask how.
+Azeem: So let me, let me.
+Azeem: I can share.
+Azeem: Yes.
+Mik Cepulis: Okay, awesome.
+Mik Cepulis: Thank you so much.
+Azeem: Okay, cool.
+Azeem: I asked her.
+Azeem: I'll let you know what she says.
+Azeem: I'm gonna go from there.
+Mik Cepulis: Cool, thank you.
+Mik Cepulis: Do you have a sense of what day works next week or should I work with them to figure that out?
+Azeem: I think we'll have to work with them on that.
+Azeem: My calendar is a mess actually.
+Azeem: We have an off site next week, so we got to figure out a time that will work for everyone.
+Mik Cepulis: Okay.
+Azeem: Yeah, we'll make it work.
+Mik Cepulis: Welcome back.
+Mik Cepulis: Happy New Year.
+Mik Cepulis: Good to talk.
+Azeem: Appreciate it.
+Azeem: Thank you.
+Azeem: Talk to you later.
+Azeem: Bye.
+
+END MEETING
